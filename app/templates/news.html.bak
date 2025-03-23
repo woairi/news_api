@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 뉴스 요약</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; max-width: 800px; margin: auto; }
+        h1 { text-align: center; font-size: 2em; }
+        .news-item { border-bottom: 1px solid #ddd; padding: 15px 0; line-height: 1.6; }
+        .news-title { font-size: 20px; font-weight: bold; margin-bottom: 5px; }
+        .news-source { font-size: 14px; color: gray; }
+        .news-summary { margin-top: 10px; }
+        .news-link { color: blue; text-decoration: none; }
+        .news-link:hover { text-decoration: underline; }
+        .date-selector { text-align: center; margin-bottom: 20px; }
+        input[type="date"], input[type="text"], button {
+            padding: 8px; font-size: 16px; margin: 5px 0;
+            width: 100%; max-width: 300px; box-sizing: border-box;
+        }
+        button { background-color: #007bff; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        @media (max-width: 600px) {
+            .news-title { font-size: 18px; }
+            h1 { font-size: 1.5em; }
+        }
+    </style>
+</head>
+<body>
+    <h1>AI 뉴스 요약</h1>
+
+    <!-- 날짜 + 키워드 검색 폼 (값 유지 + 예시 ChatGPT) -->
+    <div class="date-selector">
+        <form method="get" action="/filter">
+            <label for="date">날짜 선택:</label><br>
+            <input type="date" id="date" name="date" value="{{ selected_date }}"><br>
+            <label for="keyword">키워드 검색:</label><br>
+            <input type="text" id="keyword" name="keyword" placeholder="예시: ChatGPT" value="{{ keyword or '' }}"><br>
+            <button type="submit">검색</button>
+        </form>
+    </div>
+
+    {% if "error" in news or not news %}
+        <p style="text-align: center; color: red;">해당 날짜의 뉴스가 없습니다.</p>
+    {% else %}
+        {% for item in news %}
+        <div class="news-item">
+            <div class="news-title">
+                <a class="news-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+            </div>
+            <div class="news-source">{{ item.source.name if item.source else '' }}</div>
+            {% if item.summary_en %}
+                <div class="news-summary"><strong>English:</strong> {{ item.summary_en }}</div>
+            {% endif %}
+            <div class="news-summary"><strong>Korean:</strong> {{ item.summary_ko }}</div>
+        </div>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>

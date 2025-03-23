@@ -1,0 +1,1228 @@
+{
+    "status": "ok",
+    "totalResults": 1472,
+    "articles": [
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "Emma Roth",
+            "title": "The Pixel 9A’s version of Gemini is missing a few features",
+            "description": "The Google Pixel 9A may have the same Tensor G4 chip as its more expensive counterparts, but it comes with a text-only version of Gemini AI. Google confirmed to Ars Technica that the Pixel 9A doesn’t have access to certain features, like the AI-powered Pixel …",
+            "url": "https://www.theverge.com/news/633446/google-pixel-9a-gemini-nano-xxs-ai",
+            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/257623_Pixel_9a_VPavic-84.jpg?quality=90&strip=all&crop=0%2C10.819412060707%2C100%2C78.361175878586&w=1200",
+            "publishedAt": "2025-03-20T18:53:25Z",
+            "content": "The budget-friendly phone doesnt support Pixel Screenshots and Call Notes.\r\nThe budget-friendly phone doesnt support Pixel Screenshots and Call Notes.\r\nThe Google Pixel 9A may have the same Tensor G4… [+1217 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Thomas Maxwell",
+            "title": "OpenAI Says Disciplining Chatbots for Lying Just Makes Them Worse",
+            "description": "The company warns against applying strong supervision to chatbots, as they will continue lying and just not admit it.",
+            "url": "https://gizmodo.com/openai-says-disciplining-chatbots-for-lying-just-makes-them-worse-2000578608",
+            "urlToImage": "https://gizmodo.com/app/uploads/2024/12/GettyImages-21653483551.jpg",
+            "publishedAt": "2025-03-20T17:45:27Z",
+            "content": "As many people know, chatbots have a proclivity for lying. They are perhaps one of the worst use cases for AI, trained to produce sentences that sound authoritative but could be presenting completely… [+4597 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Cheryl Eddy",
+            "title": "Does Netflix Know What It’s Doing With Roald Dahl?",
+            "description": "The streamer acquired the Roald Dahl Story Company for a hefty sum in 2021, and its latest project is... a game show.",
+            "url": "https://gizmodo.com/netflix-roald-dahl-willy-wonka-gameshow-2000578635",
+            "urlToImage": "https://gizmodo.com/app/uploads/2025/03/golden-2.jpg",
+            "publishedAt": "2025-03-20T18:30:28Z",
+            "content": "Netflix acquired the Roald Dahl Story Company in 2021but it’s been tapping into the author’s vast catalogue since 2018, when it inked an animation-specific deal to bring his work to the streamer. How… [+3457 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Mike Fazioli",
+            "title": "Ditch Your Apple Watch, The Galaxy Watch Ultra Is Now 50% Off on Samsung’s Store",
+            "description": "Nothing to trade in? Samsung's also offering $230 of instant credit and phenomenal deals on accessories when you buy the brand-new Galaxy Watch Ultra.",
+            "url": "https://gizmodo.com/ditch-your-apple-watch-the-galaxy-watch-ultra-is-now-50-off-on-samsungs-store-2000578493",
+            "urlToImage": "https://gizmodo.com/app/uploads/2024/11/GalaxyWatchUltra.jpg",
+            "publishedAt": "2025-03-20T11:10:20Z",
+            "content": "When Samsung dropped the Galaxy Watch Ultra last July, it was instantly compared to the Apple Watch Ultra 2 which had come out several months earlier. In fact, we compared them directly, and basicall… [+2734 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "patrick.farmer@futurenet.com (Patrick Farmer)",
+            "title": "Almost gone! Score up to $900 off the 'almost perfect' Galaxy S25 Ultra (or $300 without trade-in) with this Samsung deal",
+            "description": "For a limited time, Samsung is offering up to $900 off the Galaxy S25 Ultra when you trade in an eligible device on its site.",
+            "url": "https://www.androidcentral.com/phones/samsung/almost-gone-score-up-to-usd900-off-the-almost-perfect-galaxy-s25-ultra-or-usd300-without-trade-in-with-this-samsung-deal",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/HXmEwKsjEoZjtXKpcmdBiZ-1200-80.jpg",
+            "publishedAt": "2025-03-20T17:21:00Z",
+            "content": "Amazon's Prime Day-esque Big Spring Sale is still a few days away, but I just uncovered an outstanding Samsung Galaxy S25 Ultra deal for those who don't want to wait. Buy the super-powered flagship d… [+2098 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "bradypsnyder@gmail.com (Brady Snyder)",
+            "title": "Gmail's new search results prioritize relevant emails over recent ones",
+            "description": "Gmail's upgraded search algorithm will factor in recency, most-clicked emails and frequent contacts, rather than solely focusing on chronological order.",
+            "url": "https://www.androidcentral.com/apps-software/gmail/gmails-new-search-results-prioritize-relevant-emails-over-recent-ones",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/GUs6ZKiyd2bJdRk2rFiemA-1200-80.jpg",
+            "publishedAt": "2025-03-20T21:25:35Z",
+            "content": "What you need to know\r\n<ul><li>Gmail is rolling out a new, upgraded version of mail search that can prioritize \"most relevant\" results.</li><li>Users can still manually sort \"most recent\" results to … [+2305 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "nickodiaz@sbcglobal.net (Nickolas Diaz)",
+            "title": "Pre-ordered Nothing Phone 3a Pros reportedly get hit with a long shipping delay",
+            "description": "Nothing reportedly sent an email to consumers about a shipping delay for the Phone 3a Pro.",
+            "url": "https://www.androidcentral.com/phones/nothing-phone-3a-pro-pre-order-shipping-delay-email",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/vWDEtP4BEGQTFQJnvXHdSC-1200-80.jpg",
+            "publishedAt": "2025-03-20T19:36:26Z",
+            "content": "What you need to know\r\n<ul><li>Nothing was spotted sending out an email to consumers who pre-purchased a Phone 3a Pro, informing them of a shipping delay.</li><li>The email states the device will \"sh… [+2805 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "nickodiaz@sbcglobal.net (Nickolas Diaz)",
+            "title": "Huawei's new flip phone blurs the line between foldables",
+            "description": "Is it a clamshell or is it a book-style? Huawei challenges you with a \"why not both\" scenario.",
+            "url": "https://www.androidcentral.com/phones/huawei/huawei-pura-x-foldable-launch-details",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/e24nhVbDDMyjMN8XmUwyT3-1200-80.jpg",
+            "publishedAt": "2025-03-20T19:36:41Z",
+            "content": "What you need to know\r\n<ul><li>Huawei launched its latest foldable, the Pura X, which makes you double take at its clamshell, book-style fusion.</li><li>The device remains small like a clamshell with… [+3496 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "patrick.farmer@futurenet.com (Patrick Farmer)",
+            "title": "The best Google Pixel 9 deals of March 2025 — spring sales, trade-in discounts, and more",
+            "description": "Google's latest flagship lineup features some of the best Android phones we've ever seen, and there's no shortage of Pixel 9 deals to explore.",
+            "url": "https://www.androidcentral.com/phones/google/the-best-google-pixel-9-deals-of-the-month",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/HLjRCX2zMkWQ4UnoGFHREQ-1200-80.jpg",
+            "publishedAt": "2025-03-20T20:17:01Z",
+            "content": "The Pixel 9a preorders may have been delayed, but there are still plenty of Google Pixel 9 deals to check out while you wait. Whether you want the base model Pixel 9, the Pixel 9 Pro, or the impressi… [+1933 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "patrick.farmer@futurenet.com (Patrick Farmer)",
+            "title": "Who needs the Pixel 9a? The Google Pixel 9 Pro XL is selling for the SAME PRICE at Best Buy right now",
+            "description": "Best Buy is slashing $600 off the Pixel 9 Pro XL when you activate today, knocking the price of the phone down to just $499.",
+            "url": "https://www.androidcentral.com/phones/google/who-needs-the-pixel-9a-the-google-pixel-9-pro-xl-is-selling-for-the-same-price-at-best-buy-right-now",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/hvh9ZW7GrL9pbwz2nzQWo-1200-80.jpg",
+            "publishedAt": "2025-03-20T21:22:58Z",
+            "content": "If you're one of the millions of people who sighed in disappointment when Pixel 9a preorders were delayed this week, I have some good news: Best Buy has just dropped a deal that carves $600 off the P… [+1318 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "jerry.hildenbrand@futurenet.com (Jerry Hildenbrand)",
+            "title": "How can a tech giant 'build' a smartphone chip without its own foundry?",
+            "description": "Fabless design isn't a new idea but companies like Apple and Google are making it an art form.",
+            "url": "https://www.androidcentral.com/phones/how-can-a-tech-giant-build-a-smartphone-chip-without-its-own-foundry",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/v4UfhEAHRKweSbNVbN9Y98-1200-80.jpg",
+            "publishedAt": "2025-03-20T20:57:34Z",
+            "content": "The modern smartphone is a marvel of miniaturization, packing the power of a desktop computer into a device that fits in your hand. At the heart of this revolution lies the System on a Chip (SoC), a … [+4750 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "bradypsnyder@gmail.com (Brady Snyder)",
+            "title": "Google is reportedly switching from Samsung to TSMC for the Tensor G5. Why could this be a big deal?",
+            "description": "Google is reportedly making a manufacturing shift with its next-generation Tensor processors, switching from Samsung Foundry to TSMC. Here's what it all means.",
+            "url": "https://www.androidcentral.com/phones/google/is-googles-switch-from-samsung-foundry-to-tsmc-for-the-tensor-g5-chip-a-big-deal",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/e9cmFTHgKTTLrGuFyEfYP4-1200-80.jpg",
+            "publishedAt": "2025-03-20T16:48:02Z",
+            "content": "Google has equipped Pixel smartphones with its own in-house systems-on-a-chip (SoCs) for four generations. While the company designs the majority of Tensor processors, it doesn't make them; instead, … [+7791 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "nandika.iyerravi@futurenet.com (Nandika Ravi)",
+            "title": "Crowds are ditching the Apple Watch for Wear OS and other smartwatches, and there's a very good reason why",
+            "description": "Smartwatch sales have seen a global decline for the first time and we look at what's contributing to this downward trend.",
+            "url": "https://www.androidcentral.com/wearables/wear-os/wear-os-gains-as-apple-watch-declines-2024-global-smartwatch-shipments",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/im23gLpTgqAH6CvBdHCRUJ-1200-80.jpg",
+            "publishedAt": "2025-03-20T19:56:20Z",
+            "content": "Smartwatches are gracing almost every other person's wrist these days—precisely 454.69 million people worldwide own one of these wearables that track everything from your steps to sleep quality and e… [+9094 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "Nicholas Sutrich",
+            "title": "Google Pixel 10a: What we expect to see",
+            "description": "The Google Pixel 10a is still likely a year away from release, but we've already seen rumors and leaks of what's to come. Here's everything you need to know.",
+            "url": "https://www.androidcentral.com/phones/google/google-pixel-10a",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/BdjA7D66AaLehmfVdcPzsk-1200-80.jpg",
+            "publishedAt": "2025-03-20T20:23:20Z",
+            "content": "The Google Pixel 9a is official but won't be available until April. While people will still be deciding whether to buy the Pixel 9a or not, it's fun to deliberate about what next Spring's Pixel 10a m… [+6751 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "Nicholas Sutrich",
+            "title": "This new Meta Quest v74 feature is set to revolutionize immersive experiences",
+            "description": "Meta Quest update v74 brings a ton of new features, but none are more revolutionary than the new camera access API.",
+            "url": "https://www.androidcentral.com/gaming/virtual-reality/meta-quest-v74-feature-is-set-to-revolutionize-immersive-experiences",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/439QWMncRCakhzFtvrsuwg-1200-80.jpg",
+            "publishedAt": "2025-03-20T20:04:51Z",
+            "content": "In his weekly column, Android Central Senior Content Producer Nick Sutrich delves into all things VR, from new hardware to new games, upcoming technologies, and so much more.\r\nThe first two-hour sess… [+7148 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Makezine.com"
+            },
+            "author": "Sam Freeman",
+            "title": "Arduino Days Are Back for 2025",
+            "description": "Arduino Days are back once again for 2025! Celebrate 20 years of everyone’s favorite dev board.\nThe post Arduino Days Are Back for 2025 appeared first on Make: DIY Projects and Ideas for Makers.",
+            "url": "https://makezine.com/article/maker-news/arduino-days-are-back-for-2025/",
+            "urlToImage": "https://i0.wp.com/makezine.com/wp-content/uploads/2014/07/arduino_scan.webp?fit=620%2C465&ssl=1",
+            "publishedAt": "2025-03-20T16:00:00Z",
+            "content": "Arduino Days are back once again! Its online-only like last year, but this time its a two-day event. March 21-22 will celebrate 20 years(!) of everyones favorite dev board. Friday’s talks center arou… [+2256 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MacRumors"
+            },
+            "author": "Juli Clover",
+            "title": "Apple Facing False Advertising Lawsuit Over Apple Intelligence Delay",
+            "description": "Apple has been accused of false advertising and unfair competition for delaying the Siri Apple Intelligence features that it promoted when launching iOS 18 and the iPhone 16 models, reports Axios.\n\n\n\n\n\nThe suit targets Apple ads that showed off ‌Siri‌ feature…",
+            "url": "https://www.macrumors.com/2025/03/20/apple-intelligence-siri-lawsuit/",
+            "urlToImage": "https://images.macrumors.com/t/CKzEO2sgmRHs1CEG7jXnaVdSKtg=/1600x/article-new/2025/03/Apple-More-Personal-Siri-Ad.jpg",
+            "publishedAt": "2025-03-20T22:18:10Z",
+            "content": "Apple has been accused of false advertising and unfair competition for delaying the SiriApple Intelligence features that it promoted when launching iOS 18 and the iPhone 16 models, reports Axios.\r\nTh… [+1370 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Slashdot.org"
+            },
+            "author": "msmash",
+            "title": "AI-Driven Weather Prediction Breakthrough Reported",
+            "description": "A new AI system called Aardvark could deliver weather forecasts as accurate as those from advanced public weather services but run on desktop computers, according to a project unveiled Thursday and published in Nature. Developed by the UK's Alan Turing Instit…",
+            "url": "https://tech.slashdot.org/story/25/03/20/1811249/ai-driven-weather-prediction-breakthrough-reported",
+            "urlToImage": "https://a.fsdn.com/sd/topics/ai_64.png",
+            "publishedAt": "2025-03-20T19:02:00Z",
+            "content": "A new AI system called Aardvark could deliver weather forecasts as accurate as those from advanced public weather services but run on desktop computers, according to a project unveiled Thursday and p… [+519 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Slashdot.org"
+            },
+            "author": "msmash",
+            "title": "Apple Shakes Up AI Executive Ranks in Bid to Turn Around Siri",
+            "description": "Apple is undergoing a rare shake-up of its executive ranks, aiming to get its artificial intelligence efforts back on track after months of delays and stumbles, Bloomberg News reported Thursday, citing people familiar with the matter. From the report: Chief E…",
+            "url": "https://apple.slashdot.org/story/25/03/20/168205/apple-shakes-up-ai-executive-ranks-in-bid-to-turn-around-siri",
+            "urlToImage": "https://a.fsdn.com/sd/topics/apple_64.png",
+            "publishedAt": "2025-03-20T16:07:00Z",
+            "content": "Chief Executive Officer Tim Cook has lost confidence in the ability of AI head John Giannandrea to execute on product development, so he's moving over another top executive to help: Vision Pro creato… [+882 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Ashley Rodriguez,Mackenzie Meaney",
+            "title": "A big threat to the gambling world was on full display at one of the industry's top conferences",
+            "description": "Next.io New York Summit featured leaders in the online gambling space, talking about topics like AI, prediction markets, crypto, tariffs, and more.",
+            "url": "https://www.businessinsider.com/online-gambling-conference-next-summit-takeaways-ai-predictions-sweepstakes-2025-3",
+            "urlToImage": "https://i.insider.com/67db1250585f1dff88b29e48?width=1200&format=jpeg",
+            "publishedAt": "2025-03-20T15:00:08Z",
+            "content": "DraftKings chief product officer Corey Gottlieb speaks with \"The Prop Queen\" Ariel Epstein at Next Summit in New York.Mackenzie Meaney/Business Insider\r\n<ul><li>We went to a gambling conference to ch… [+8493 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Effie Webb",
+            "title": "Sam Altman says students should master AI tools the way his generation learned to code",
+            "description": "OpenAI CEO Sam Altman says students should get \"really good\" at using AI tools as automation reshapes software development and the job market.",
+            "url": "https://www.businessinsider.com/sam-altman-ai-coding-job-market-software-engineer-students-openai-2025-3",
+            "urlToImage": "https://i.insider.com/67dc0407b8b41a9673fb30d3?width=1200&format=jpeg",
+            "publishedAt": "2025-03-20T13:03:38Z",
+            "content": "Sam Altman said the \"tactical\" move for students is to master using AI tools. Michael M. Santiago/Getty Images\r\n<ul><li>Sam Altman says students should focus on getting \"really good at using AI tools… [+2593 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Tom Carter",
+            "title": "California is turning to satellites and AI to combat the next wave of deadly wildfires",
+            "description": "Massive wildfires devastated the Los Angeles region in January, forcing over 100,000 people to evacuate and razing thousands of homes.",
+            "url": "https://www.businessinsider.com/california-satellites-ai-to-combat-deadly-wildfires-2025-2",
+            "urlToImage": "https://i.insider.com/67bdb8b6c832c3638fa51b58?width=1024&format=jpeg",
+            "publishedAt": "2025-03-20T11:55:41Z",
+            "content": "The Los Angeles wildfires topped $150 billion in damages.The Washington Post via Getty Images\r\n<ul><li>Devastating wind-fuelled wildfires caused havoc in southern California earlier this year.</li><l… [+5283 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Gabby Landsverk",
+            "title": "Katie Couric shares what she wishes she knew about colon cancer before her husband died at 42 years old",
+            "description": "Katie Couric's husband died of colon cancer aged 42 years old. Couric shared early signs of colon cancer you should look for, and new tests to try.",
+            "url": "https://www.businessinsider.com/katie-couric-shares-early-colon-cancer-signs-2025-3",
+            "urlToImage": "https://i.insider.com/67daea44b8b41a9673fb1915?width=1200&format=jpeg",
+            "publishedAt": "2025-03-20T14:11:02Z",
+            "content": "Katie Couric has been advocating for colon cancer awareness since her husband died in 1998 at age 42.Getty Images; BI\r\n<ul><li>Katie Couric has advocated for colon cancer awareness since losing her h… [+4955 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Manisha Krishnan",
+            "title": "Gen Zers want to be doctors — but only if it makes them rich",
+            "description": "America needs 90,000 more family doctors. Students who are currently in medical school have different priorities.",
+            "url": "https://www.businessinsider.com/gen-z-doctor-shortage-med-students-primary-care-family-medicine-2025-3",
+            "urlToImage": "https://i.insider.com/67cb3226585f1dff88b18248?width=1200&format=jpeg",
+            "publishedAt": "2025-03-20T08:22:01Z",
+            "content": "Growing up with a cardiologist dad, Anna always knew she wanted to become a doctor. She had watched her father spend decades building trust with his patients so he could care for them, and she wanted… [+12805 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "VentureBeat"
+            },
+            "author": "Carl Franzen",
+            "title": "OpenAI’s new voice AI model gpt-4o-transcribe lets you add speech to your existing text apps in seconds",
+            "description": "Three, all new proprietary voice models called gpt-4o-transcribe, gpt-4o-mini-transcribe and gpt-4o-mini-tts.",
+            "url": "https://venturebeat.com/ai/openais-new-voice-ai-models-gpt-4o-transcribe-let-you-add-speech-to-your-existing-text-apps-in-seconds/",
+            "urlToImage": "https://venturebeat.com/wp-content/uploads/2025/03/robot-answers-phone.png?w=1024?w=1200&strip=all",
+            "publishedAt": "2025-03-20T18:21:53Z",
+            "content": "Join our daily and weekly newsletters for the latest updates and exclusive content on industry-leading AI coverage. Learn More\r\nOpenAIs voice AI models have gotten it into trouble before with actor S… [+8147 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "VentureBeat"
+            },
+            "author": "Dean Takahashi",
+            "title": "Remedy unveils FBC: Firebreak — a 3-player co-op multiplayer FPS in the Control universe",
+            "description": "Remedy Entertainment unveiled a new gameplay trailer for FBC: Firebreak, a three-player co-op FPS where the Federal Bureau of Control’s first-response unit must contain an escalating paranatural threat.  When the Oldest House, the Bureau’s shifting headquarte…",
+            "url": "https://venturebeat.com/business/remedy-unveils-fbc-firebreak-a-3-player-co-op-multiplayer-fps-in-the-control-universe/",
+            "urlToImage": "https://venturebeat.com/wp-content/uploads/2025/03/fbc-firebreak.jpg?w=1024?w=1200&strip=all",
+            "publishedAt": "2025-03-20T21:45:00Z",
+            "content": "Remedy Entertainment unveiled a new gameplay trailer for FBC: Firebreak, a three-player co-op FPS where the Federal Bureau of Controls first-response unit must contain an escalating paranatural threa… [+5242 chars]"
+        },
+        {
+            "source": {
+                "id": "the-next-web",
+                "name": "The Next Web"
+            },
+            "author": "Siôn Geschwindt",
+            "title": "Military vehicles to get mixed reality windshields controlled by human eyes",
+            "description": "Finnish startup Distance Technologies emerged from stealth last year with a technology it claims can turn any transparent surface into a mixed reality (MR) display. Now, it has teamed up with Patria to trial the tech on the defence firm’s armoured vehicles. T…",
+            "url": "https://thenextweb.com/news/military-vehicles-add-distance-mixed-reality-windshields",
+            "urlToImage": "https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2025%2F03%2FUntitled-design-42.jpg&signature=ea84d96cc0da8f9909c5a740c279ac3e",
+            "publishedAt": "2025-03-20T13:00:47Z",
+            "content": "Finnish startup Distance Technologies emerged from stealth last year with a technology it claims can turn any transparent surface into a mixed reality (MR) display. Now, it has teamed up with Patria … [+3372 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": null,
+            "title": "Nvidia CEO Jensen Huang predicts every company will need dual operations in the future— a site for manufacturing plus an AI twin",
+            "description": null,
+            "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_ad675107-18e8-41f1-bc94-d51175fcf76b",
+            "urlToImage": null,
+            "publishedAt": "2025-03-20T08:42:00Z",
+            "content": "If you click 'Accept all', we and our partners, including 239 who are part of the IAB Transparency &amp; Consent Framework, will also store and/or access information on a device (in other words, use … [+702 chars]"
+        },
+        {
+            "source": {
+                "id": "abc-news",
+                "name": "ABC News"
+            },
+            "author": "ABC News",
+            "title": "WATCH: Toddler demands parents play 'Apt.' by Rosé and Bruno Mars",
+            "description": "Sophia listens and dances to \"Apt.\" six to seven times a day, according to mom Darci Hughes!",
+            "url": "https://abcnews.go.com/GMA/Living/video/toddler-demands-parents-play-apt-ros-bruno-mars-119984244",
+            "urlToImage": "https://i.abcnewsfe.com/a/a8aee6ca-c3ee-48d0-8c0f-ed94d4e4dad2/250319_gma_digital_2_APT_hpMain_9x16.jpg?w=992",
+            "publishedAt": "2025-03-20T14:21:44Z",
+            "content": "<ul><li>Millions on alert for dangerous weather\r\n</li><li>Trump to sign executive order shutting down Department of Education\r\n</li><li>Trump escalates fight with federal judge over deportation fligh… [+4462 chars]"
+        },
+        {
+            "source": {
+                "id": "abc-news",
+                "name": "ABC News"
+            },
+            "author": "ABC News",
+            "title": "WATCH: Bruce Willis celebrates milestone birthday",
+            "description": "The \"Die Hard\" actor turned 70 on Wednesday, three years after stepping away from acting due to aphasia, as his wife asked fans to \"flood him with love.\"",
+            "url": "https://abcnews.go.com/GMA/Culture/video/bruce-willis-celebrates-milestone-birthday-119979793",
+            "urlToImage": "https://i.abcnewsfe.com/a/16da42ba-2805-46fb-8ff4-e84942cfb63b/250320_gma_play_brucewillis1_0748_hpMain_16x9.jpg?w=992",
+            "publishedAt": "2025-03-20T15:20:29Z",
+            "content": "<ul><li>Millions on alert for dangerous weather\r\n</li><li>Trump to sign executive order shutting down Department of Education\r\n</li><li>Trump escalates fight with federal judge over deportation fligh… [+4386 chars]"
+        },
+        {
+            "source": {
+                "id": "abc-news",
+                "name": "ABC News"
+            },
+            "author": "ABC News",
+            "title": "WATCH: Sheriff’s deputy vehicle hit by truck while responding to call in Florida",
+            "description": "No citizens were injured, while the deputy suffered minor injuries and was taken to the hospital for evaluation, authorities said.",
+            "url": "https://abcnews.go.com/US/video/sheriffs-deputy-vehicle-hit-truck-responding-call-florida-119977987",
+            "urlToImage": "https://i.abcnewsfe.com/a/7b2f8318-56fb-4f36-a688-ddfae198f57b/250320_abc_soc_crash_hpMain_16x9.jpg?w=992",
+            "publishedAt": "2025-03-20T11:15:57Z",
+            "content": "<ul><li>Millions on alert for dangerous weather\r\n</li><li>Trump to sign executive order shutting down Department of Education\r\n</li><li>Trump escalates fight with federal judge over deportation fligh… [+4489 chars]"
+        },
+        {
+            "source": {
+                "id": "fox-news",
+                "name": "Fox News"
+            },
+            "author": "Kurt Knutsson, CyberGuy Report",
+            "title": "Meta unveils new AR glasses with heart rate monitoring",
+            "description": "Meta recently introduced its new augmented reality glasses with sensor technology that opens up new possibilities for research and development in AR applications.",
+            "url": "https://www.foxnews.com/tech/meta-unveils-new-ar-glasses-heart-rate-monitoring",
+            "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2025/03/3-meta-unveils-new-ar-glasses-with-heart-rate-monitoring.jpg",
+            "publishedAt": "2025-03-20T10:00:08Z",
+            "content": "Get ready for some amazing tech that's about to change the way we see the world, literally. Meta has just unveiled its latest creation, the Aria Gen 2 augmented reality (AR) glasses. \r\nBut don't rush… [+6176 chars]"
+        },
+        {
+            "source": {
+                "id": "fox-news",
+                "name": "Fox News"
+            },
+            "author": "Kurt Knutsson, CyberGuy Report",
+            "title": "How to protect your data from IRS scammers this tax season",
+            "description": "This tax season Kurt \"CyberGuy\" Knutsson offers his expert suggestions on how to protect your personal information against tax-related scams.",
+            "url": "https://www.foxnews.com/tech/how-protect-your-data-from-irs-scammers-tax-season",
+            "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2025/03/1-protect-your-data-from-scammers-impersonating-the-irs-this-tax-season-intro.jpg",
+            "publishedAt": "2025-03-20T14:00:02Z",
+            "content": "Scammers try to impersonate everything and everyone. They email you pretending to be your boss and ask for money, call you claiming your Microsoft account has been hacked or send phishing links for f… [+9350 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Daringfireball.net"
+            },
+            "author": "John Gruber",
+            "title": "HealthKit as a Model for an Open Semantic Index From Apple",
+            "description": "Link to: https://shapeof.com/archives/2025/3/apple_needs_to_get_out_of_the_way_with_ai.html",
+            "url": "https://daringfireball.net/linked/2025/03/19/apple-needs-to-get-out-of-the-way-with-ai",
+            "urlToImage": "https://daringfireball.net/graphics/df-wide-card.png",
+            "publishedAt": "2025-03-20T14:08:11Z",
+            "content": "Gus Mueller:\r\nA week or so ago I was grousing to some friends that Apple needs\r\nto open up things on the Mac so other LLMs can step in where Siri\r\nis failing. In theory we (developers) could do this … [+4297 chars]"
+        },
+        {
+            "source": {
+                "id": "ign",
+                "name": "IGN"
+            },
+            "author": "Michael Cripe",
+            "title": "PlayStation Fans Left Disappointed After Flight Simulator 2025 Store Page Labeled 'Copycat Shovelware'",
+            "description": "Fans quick to celebrate the reveal of a Microsoft Flight Simulator PlayStation Store page have been let down after it was discovered that the actual product is little more than “copycat shovelware.”",
+            "url": "https://www.ign.com/articles/playstation-fans-left-disappointed-after-flight-simulator-2025-store-page-labeled-copycat-shovelware",
+            "urlToImage": "https://assets-prd.ignimgs.com/2025/03/20/grizzly-games-limited-flight-simulator-2025-1742489850692.png?width=1280",
+            "publishedAt": "2025-03-20T17:09:04Z",
+            "content": "Fans quick to celebrate the reveal of a Microsoft Flight Simulator PlayStation Store page were left let down after it was discovered that the actual product is little more than copycat shovelware.\r\nX… [+3535 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Judy Sanhz",
+            "title": "Google’s Gemini is coming to Chrome for faster, easier browsing",
+            "description": "Google is going to add Gemini to Chrome to make your browsing experience better with easier access to the the AI.",
+            "url": "https://www.digitaltrends.com/computing/googles-gemini-is-coming-to-chrome-for-faster-easier-browsing/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2024/12/Gemini-2.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-20T15:58:20Z",
+            "content": "Windows Latest\r\nGoogle is testing the integration of Gemini at the top of the browser in the latest Chrome Canary build, to facilitate access to the AI and make your browsing experience easier, as Wi… [+1433 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Patrick Hearn",
+            "title": "Chromebooks could soon come with Google’s best AI notetaker",
+            "description": "Google Chromebooks could soon come with NotebookLM installed by default, introducing the tool to a wider range of users.",
+            "url": "https://www.digitaltrends.com/computing/chromebooks-soon-come-with-googles-best-ai-notetaker/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2024/09/notebooklm-phone.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-20T15:28:15Z",
+            "content": "The Google Chromebook is a slim, barebones machine that relies on Google’s suite of tools to handle most tasks, but it’s perfect for on-the-go work that doesn’t need a powerhouse behind it. Now, thes… [+1494 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Willow Roberts",
+            "title": "NotebookLM’s new Mind Maps could help you learn more efficiently",
+            "description": "Google's AI research tool, NotebookLM, has a new feature that will let you break down and consume information from multiple sources all in one interactive diagram.",
+            "url": "https://www.digitaltrends.com/computing/google-notebooklm-gets-a-new-feature/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/03/Screenshot-2025-03-20-at-13.00.53.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-20T12:05:07Z",
+            "content": "NotebookLM users have a few new features to play around with starting this week, including a visual summary feature dubbed “Mind Map.”\r\nFor anyone who isn’t familiar with NotebookLM, it’s an AI tool … [+2046 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Andy Boxall",
+            "title": "Oppo Reno13 series brings flagship AI smarts to mid-range devices",
+            "description": "Oppo's new Reno13 series, including the top Reno13 Pro, all have a full suite of AI tools despite not being flagship phones.",
+            "url": "https://www.digitaltrends.com/mobile/oppo-reno13-series-brings-flagship-ai-smarts-to-mid-range-devices/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/03/oppo-reno13.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-20T10:00:26Z",
+            "content": "Oppo has announced the Oppo Reno13 series of smartphones, which do something very different to devices like the Samsung Galaxy A56 and Nothing Phone 3a Pro. Rather than holding back on AI features ei… [+2853 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Georgina Torbet",
+            "title": "OpenAI releases a new AI model, but it’s eye-wateringly expensive",
+            "description": "OpenAI's latest release is a pricey version of its reasoning model, o1-pro.",
+            "url": "https://www.digitaltrends.com/computing/openai-o1-pro/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/02/openai-typeface-2.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-20T09:54:26Z",
+            "content": "OpenAI has released its latest model, o1-pro, an updated version of its reasoning model o1 — but it’s not going to come cheap.\r\n“It uses more compute than o1 to provide consistently better responses,… [+1872 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Alex Blake",
+            "title": "Apple’s hardware can dominate in AI — so why is Siri struggling so much?",
+            "description": "Apple’s Macs lead the way in terms of computing hardware, but its artificial intelligence software is nowhere near the same level. What’s going on here?",
+            "url": "https://www.digitaltrends.com/computing/apples-hardware-can-dominate-in-ai-so-why-is-siri-struggling/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/03/Apple-Intelligence-Image-Playground-macOS-Sequoia-1.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-20T17:42:12Z",
+            "content": "Over the past year or so, a strange contradiction has emerged in the world of Apple: the company makes some of the best computers in the world, whether you need a simple consumer laptop or a high-pow… [+3538 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Willow Roberts",
+            "title": "Meta AI is coming to Europe after almost a whole year of negotiations",
+            "description": "A limited version of Meta AI will start rolling out in Europe this week after overcoming",
+            "url": "https://www.digitaltrends.com/mobile/meta-ai-is-coming-to-europe/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/03/Meta-au-widget-home-screen.jpeg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-20T08:58:35Z",
+            "content": "Meta AI has been around in the United States since 2023 but the company had to delay its launch in the EU due to regulatory concerns. Now, it seems like Zuckerberg’s team has finally come to a (limit… [+1535 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Georgina Torbet",
+            "title": "Watch a robot dog learn to stand and walk thanks to its ‘digital brain’",
+            "description": "A Swedish startup has unveiled a robot dog which uses a new approach to AI, mimicking a biological nervous system.",
+            "url": "https://www.digitaltrends.com/computing/intuicell-robot-dog/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/03/1.2.2_1.2.2.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-20T12:06:06Z",
+            "content": "Move over, Boston Dynamics, as there’s a new robot dog in town. Swedish startup IntuiCell has unveiled its AI model that learns and adapts to its environment, demonstrated through a robot dog named L… [+2187 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Bryan M. Wolfe",
+            "title": "Google Pixel 9a vs. Pixel 8a: should you upgrade?",
+            "description": "There’s a new budget Pixel phone available. How does the Pixel 9a compare to the Pixel 8a? Let’s find out.",
+            "url": "https://www.digitaltrends.com/mobile/google-pixel-9a-vs-pixel-8a/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/03/google-pixel-9a-vs-pixel-8a.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-20T15:56:34Z",
+            "content": "Table of Contents\r\nTable of Contents\r\nGoogle Pixel 9a: vs. Google Pixel 8a: specs\r\nPixel 9a vs. Pixel 8a: design and build\r\nPixel 9a vs. Pixel 8a: screen and battery life\r\nPixel 9a vs. Pixel 8a: perf… [+9903 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Nirave Gondhia",
+            "title": "Oppo Find N5 Review: the best foldable that you can’t just buy",
+            "description": "Every so often, a company launches a product that takes everyone by surprise. Oppo has done just that with the launch of the Oppo Find N5. It’s the world’s thinnest folding phone, and after spending a month with it, I can safely say it’s also the world’s best…",
+            "url": "https://www.digitaltrends.com/mobile/oppo-find-n5-review/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/02/Oppo-Find-N5-black-photos-13.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-20T18:32:30Z",
+            "content": "Table of Contents\r\nTable of Contents\r\nOppo Find N5: Specs\r\nOppo Find N5: Design\r\nOppo Find N5: An almost-creaseless display\r\nOppo Find N5: Hardware and Performance\r\nOppo Find N5: Battery and Charging… [+23288 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Bryan M. Wolfe",
+            "title": "Does the Google Pixel 9a come with a charger? Here’s what’s in the box",
+            "description": "The Google Pixel 9a has a lot going for it. And yet, does it come with a charger?",
+            "url": "https://www.digitaltrends.com/mobile/does-the-google-pixel-9a-come-with-a-charger-heres-whats-in-the-box/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/03/google-pixel-9a-2.jpeg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-20T12:00:34Z",
+            "content": "Table of Contents\r\nTable of Contents\r\nThe Pixel 9a does not come with a charger.\r\nWhat’s in the Pixel 9a’s box?\r\nAbout the Google Pixel 9a\r\nAfter much speculation in recent months, the Google Pixel 9… [+2448 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Luke Edwards",
+            "title": "Forget the iPhone 17, new leak says wait for the iPhone 18",
+            "description": "The isn’t even out yet and already we’re getting word about the following model and signs suggest the is worth waiting for. Apple has been reported as working on the manufacturing process for its A20 chip. This, according to GF Securities’ Apple analyst Jeff …",
+            "url": "https://www.digitaltrends.com/mobile/forget-the-iphone-17-new-leak-says-wait-for-the-iphone-18/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2024/09/iOS-18-thumb-1.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-20T20:58:23Z",
+            "content": "Table of Contents\r\nTable of Contents\r\nWhat does all this mean for iPhone 18 owners?\r\nSo why wait for the iPhone 18?\r\nThe iPhone 17 isn’t even out yet and already we’re getting word about the followin… [+1632 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Jon Bitner",
+            "title": "Ecovacs reveals robot vacuum with new technology ideal for carpeted homes",
+            "description": "The Ecovacs Deebot T50 Max Pro Omni uses new BLAST technology to improve airflow and suction, allowing it to better handle plush carpets.",
+            "url": "https://www.digitaltrends.com/home/ecovacs-deebot-t50-max-pro-omni-reveal/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/03/p-15-1.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-20T18:34:28Z",
+            "content": "Ecovacs\r\nEcovacs just launched the Deebot X8 Pro Omni in February, which we found to be an excellent choice for hard floors — thanks to its innovative roller mop that tackles all sorts of spills with… [+2011 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "The Atlantic"
+            },
+            "author": "Alex Reisner",
+            "title": "The Unbelievable Scale of AI’s Pirated-Books Problem",
+            "description": "Meta pirated millions of books to train its AI. Search through them here.",
+            "url": "https://www.theatlantic.com/technology/archive/2025/03/libgen-meta-openai/682093/",
+            "urlToImage": "https://cdn.theatlantic.com/thumbor/d4Gfci1_RR9IJb7TtLqFddsqEGA=/0x26:1200x651/1200x625/media/img/mt/2025/03/AI2/original.gif",
+            "publishedAt": "2025-03-20T11:30:00Z",
+            "content": "Editor’s note: This analysis is part of The Atlantic’s investigation into the Library Genesis data set. You can access the search tool directly here. Find The Atlantic’s search tool for movie and tel… [+9784 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "The Atlantic"
+            },
+            "author": "Alex Reisner",
+            "title": "Search LibGen, the Pirated-Books Database That Meta Used to Train AI",
+            "description": "Millions of books and scientific papers are captured in the collection’s current iteration.",
+            "url": "https://www.theatlantic.com/technology/archive/2025/03/search-libgen-data-set/682094/",
+            "urlToImage": "https://cdn.theatlantic.com/thumbor/FJ6czZuVTVNAqnNQObLgXm3ljI8=/0x26:1200x651/1200x625/media/img/mt/2025/03/Ai_2nd_option/original.gif",
+            "publishedAt": "2025-03-20T11:30:00Z",
+            "content": "Editor’s note: This search tool is part of The Atlantic’s investigation into the Library Genesis data set. You can read an analysis about LibGen and its contents here. Find The Atlantic’s search tool… [+592 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "The Atlantic"
+            },
+            "author": "Hanna Rosin",
+            "title": "The Bird-Flu Tipping Point",
+            "description": "If and when it happens, we might not know until it’s too late.",
+            "url": "https://www.theatlantic.com/podcasts/archive/2025/03/bird-flu-egg-prices-pandemic/682098/",
+            "urlToImage": "https://cdn.theatlantic.com/thumbor/WC7Yjhid70Eqh-7fSVuuD8K91p0=/0x81:4000x2164/1200x625/media/img/mt/2025/03/Radio_Atlantic_bird_flu_horizontal/original.jpg",
+            "publishedAt": "2025-03-20T12:00:00Z",
+            "content": "Subscribe here: Apple Podcasts | Spotify | YouTube | Overcast | Pocket CastsTop U.S. health official Robert F. Kennedy Jr. recently mused about a novel way to contain bird flu, which is to let it “ru… [+31479 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Thelibre.news"
+            },
+            "author": "Niccolò Venerandi",
+            "title": "FOSS infrastructure is under attack by AI companies",
+            "description": "LLM scrapers are taking down FOSS projects' infrastructure, and it's getting worse.",
+            "url": "https://thelibre.news/foss-infrastructure-is-under-attack-by-ai-companies/",
+            "urlToImage": "https://thelibre.news/content/images/2025/03/out-28c6c9ca2e350f7f.png",
+            "publishedAt": "2025-03-20T12:50:49Z",
+            "content": "Three days ago, Drew DeVault - founder and CEO of SourceHut - published a blogpost called, \"Please stop externalizing your costs directly into my face\", where he complained that LLM companies were cr… [+10658 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Thenewstack.io"
+            },
+            "author": "Darryl K. Taft",
+            "title": "Eclipse Theia: The 'DeepSeek' of AI Tooling?",
+            "description": "Following DeepSeek's disruption of the LLM landscape, the Eclipse Foundation bets that collaborative, open source AI tooling can outmaneuver billion-dollar proprietary competitors.",
+            "url": "https://thenewstack.io/eclipse-theia-the-deepseek-of-ai-tooling/",
+            "urlToImage": "https://cdn.thenewstack.io/media/2025/03/2ba92d47-planet-volumes-w1hqljythcm-unsplash.jpg",
+            "publishedAt": "2025-03-20T18:22:51Z",
+            "content": "Eclipse Theia: The DeepSeek of AI Tooling?"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Sethmlarson.dev"
+            },
+            "author": "Seth Michael Larson",
+            "title": "I Fear for the Unauthenticated Web",
+            "description": "LLM and AI companies seem to all be in a race to\nbreathe the last breath of air in every room\nthey stumble into. This practice started with larger\nwebsites, ones that already had protection from\nma...",
+            "url": "https://sethmlarson.dev/i-fear-for-the-unauthenticated-web",
+            "urlToImage": "https://github.com/sethmlarson.png",
+            "publishedAt": "2025-03-20T14:58:23Z",
+            "content": "LLM and AI companies seem to all be in a race to\r\nbreathe the last breath of air in every room\r\nthey stumble into. This practice started with larger\r\nwebsites, ones that already had protection from\r\n… [+1415 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Anthropic.com"
+            },
+            "author": null,
+            "title": "Claude can now search the web",
+            "description": "You can now use Claude to search the internet to provide more up-to-date and relevant responses.",
+            "url": "https://www.anthropic.com/news/web-search",
+            "urlToImage": "https://cdn.sanity.io/images/4zrzovbb/website/1ea9218af422ddb7fc319edd3633cd26080558cf-2400x1260.png",
+            "publishedAt": "2025-03-20T16:51:12Z",
+            "content": "You can now use Claude to search the internet to provide more up-to-date and relevant responses. With web search, Claude has access to the latest events and information, boosting its accuracy on task… [+1533 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "A16z.com"
+            },
+            "author": "Yoko Li",
+            "title": "A Deep Dive into MCP and the Future of AI Tooling",
+            "description": "We explore what MCP is, how it changes the way AI interacts with tools, what developers are already building, and the challenges that still need solving.",
+            "url": "https://a16z.com/a-deep-dive-into-mcp-and-the-future-of-ai-tooling/",
+            "urlToImage": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/250319-MCP-Market-Map-Yoast-1200x630-1.png",
+            "publishedAt": "2025-03-20T16:49:18Z",
+            "content": "Since OpenAI released function calling in 2023, I’ve been thinking about what it would take to unlock an ecosystem of agent and tool use. As the foundational models get more intelligent, agents’ abil… [+15996 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Techpolicy.press"
+            },
+            "author": "Riana Pfefferkorn",
+            "title": "Appeals court rules that Constitution protects possession of AI-generated CSAM",
+            "description": "This will be the first criminal case involving AI, CSAM law, and the First Amendment to reach a federal appeals court, writes Riana Pfefferkorn.",
+            "url": "https://techpolicy.press/court-rules-that-constitution-protects-private-possession-of-aigenerated-csam",
+            "urlToImage": "https://cdn.sanity.io/images/3tzzh18d/production/24f957e6d9646bebf75d19365d79843eb0541768-1200x675.png",
+            "publishedAt": "2025-03-20T21:51:40Z",
+            "content": "The Robert W. Kastenmeier US Courthouse in Madison, Wisconsin. Credit: Carol M. Highsmith Photography. Source\r\nA US district court opinion from last month has the potential to shape federal obscenity… [+6696 chars]"
+        },
+        {
+            "source": {
+                "id": "hacker-news",
+                "name": "Hacker News"
+            },
+            "author": null,
+            "title": "Pump.co (YC S22) Is Hiring",
+            "description": "We’re growing fast and looking for an outbound sales specialist who can drive pipeline growth at scale through cold email outreach. If you thrive on sending high-converting emails, testing new outbound strategies, and booking meetings like a machine—this role…",
+            "url": "https://www.ycombinator.com/companies/pump-co/jobs/7kB7DNb-email-outreach-manager",
+            "urlToImage": "https://www.ycombinator.com/images/original/missing.png",
+            "publishedAt": "2025-03-20T17:01:08Z",
+            "content": "Cloud spend is a whopping $500 billion/yr, the biggest growing expense category for any tech company - tackling these costs requires continuous effort and time from DevOps teams.\r\nPump is a building … [+487 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Servethehome.com"
+            },
+            "author": "Patrick Kennedy",
+            "title": "The Asus Ascent GX10 a Nvidia GB10 Mini PC with 128GB of Memory and 200GbE",
+            "description": "This is the ASUS Ascent GX10, a NVIDIA GB10 mini PC with 200GbE RDMA and 10GbE networking, 128GB of LPDDR5x, an Arm CPU, and a Blackwell GPU",
+            "url": "https://www.servethehome.com/this-is-the-asus-ascent-gx10-a-nvidia-gb10-mini-pc-with-128gb-of-memory-and-200gbe/",
+            "urlToImage": "https://www.servethehome.com/wp-content/uploads/2025/03/Assus-Ascent-GX10-Rear-IO.jpg",
+            "publishedAt": "2025-03-20T17:11:57Z",
+            "content": "NVIDIA’s platform, previously codenamed Project DIGITS, is a hit at GTC 2025. Apparently, big customers are asking if they can get a DGX Spark thrown in with large GPU purchases. The reason is simple… [+3680 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Unionize.fyi"
+            },
+            "author": null,
+            "title": "The Burnout Machine",
+            "description": "It's time to escape the Burnout Machine.",
+            "url": "https://unionize.fyi",
+            "urlToImage": null,
+            "publishedAt": "2025-03-20T18:24:17Z",
+            "content": "Originally written by Biozombie, published in 2600 Hacker Quarterly, Autumn 2024\r\nLet’s get real for a minute: the tech industry loves to sell us on the myth of the \"dream\r\n job.\"\r\n You\r\n know\r\n the\r… [+6189 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Substack.com"
+            },
+            "author": "Sarcastosaurus",
+            "title": "The F-35 as a Subscription Service",
+            "description": "by Benjamin Cook (into by Tom Cooper)",
+            "url": "https://xxtomcooperxx.substack.com/p/the-f-35-as-a-subscription-service",
+            "urlToImage": "https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffec38a60-7321-456c-9c38-2d0f589383ac_975x700.png",
+            "publishedAt": "2025-03-20T17:48:36Z",
+            "content": "The publication of the feature (No) Kill Switch, a few days ago, seems to have hit the nerve: it said in clear something one is not going to hear from any of involved officials. Not even from the mas… [+7003 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Elysian.press"
+            },
+            "author": "Elle Griffin",
+            "title": "We Should Own the Economy",
+            "description": "A new book about the future of capitalism and an invitation to participate in it.",
+            "url": "https://www.elysian.press/p/we-should-own-the-economy",
+            "urlToImage": "https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2895c540-6e25-40e0-bc33-8c8ca152819e_1200x675.jpeg",
+            "publishedAt": "2025-03-20T18:24:26Z",
+            "content": "We need to change who owns capital.\r\nPrivate ownership of capital has created a lot of wealth and prosperity, and for much of the past centuries that has been a good thing, but now we need to create … [+13068 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "9to5Mac"
+            },
+            "author": "Ben Lovejoy",
+            "title": "Should Apple let us choose our own AI chatbot to replace Siri?",
+            "description": "The embarrassment over the state of Siri continues, with the discovery that the ‘intelligent’ assistant doesn’t even know what month it is.\n\n\n\nMy colleague Zac Hall suggested that things are now so bad the Siri brand is irredeemably tarnished, and any new ver…",
+            "url": "https://9to5mac.com/2025/03/20/should-apple-let-us-choose-our-own-ai-chatbot-to-replace-siri/",
+            "urlToImage": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2025/03/Should-Apple-let-us-choose-our-own-AI-chatbot-to-replace-Siri.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+            "publishedAt": "2025-03-20T13:50:54Z",
+            "content": "The embarrassment over the state of Siri continues, with the discovery that the ‘intelligent’ assistant doesn’t even know what month it is.\r\nMy colleague Zac Hall suggested that things are now so bad… [+4469 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "9to5Mac"
+            },
+            "author": "Zac Hall",
+            "title": "Nothing is rotten in the state of Cupertino — Siri",
+            "description": "Ever see Jason Vorhees, hockey mask and knife in tow, out on the town on a Friday that isn’t the 13th? It turns out the masked serial killer from the movies uses Siri. Here’s how we know…\n\n\n\n more…",
+            "url": "https://9to5mac.com/2025/03/20/nothing-is-rotten-in-the-state-of-cupertino-siri/",
+            "urlToImage": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2017/10/turn-off-iphone-without-button-siri-support.jpeg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+            "publishedAt": "2025-03-20T18:19:17Z",
+            "content": "Ever see Jason Vorhees, hockey mask and knife in tow, out on the town on a Friday that isnt the 13th? It turns out the masked serial killer from the movies uses Siri. Heres how we know\r\nWhile modern … [+1635 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "9to5Mac"
+            },
+            "author": "Ben Lovejoy",
+            "title": "Meta AI chatbot rolling out to Europe after privacy delay, with a huge limitation",
+            "description": "The Meta AI chatbot is finally rolling out to European countries from this week, and will be accessible in Instagram, WhatsApp, Facebook, and Messenger. However, the headline feature of Ray-Ban Meta smart glasses will not be available.\n\n\n\nThe generative AI fe…",
+            "url": "https://9to5mac.com/2025/03/20/meta-ai-chatbot-rolling-out-to-europe-after-privacy-delay-with-a-huge-limitation/",
+            "urlToImage": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2025/03/Meta-AI-chatbot-rolling-out-to-Europe-after-privacy-delay-with-a-huge-limitation.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+            "publishedAt": "2025-03-20T11:54:23Z",
+            "content": "The Meta AI chatbot is finally rolling out to European countries from this week, and will be accessible in Instagram, WhatsApp, Facebook, and Messenger. However, the headline feature of Ray-Ban Meta … [+1616 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "9to5Mac"
+            },
+            "author": "Ryan Christoffel",
+            "title": "Apple has two big aces up its sleeve to rise above AI struggles",
+            "description": "One of the biggest narratives currently going around about Apple is the company’s AI struggles. But while those struggles are very real, Apple has two big aces up its sleeve that should minimize the damage from ‘new Siri’ shipping late, and propel the company…",
+            "url": "https://9to5mac.com/2025/03/20/apple-has-two-big-aces-up-its-sleeve-to-rise-above-ai-struggles/",
+            "urlToImage": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2023/01/Tim-Cook-Apple-shareholders.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+            "publishedAt": "2025-03-20T15:55:57Z",
+            "content": "One of the biggest narratives currently going around about Apple is the companys AI struggles. But while those struggles are very real, Apple has two big aces up its sleeve that should minimize the d… [+3556 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "9to5Mac"
+            },
+            "author": "Chance Miller",
+            "title": "Apple puts Vision Pro creator in charge of Siri as Apple Intelligence rollout falters",
+            "description": "Apple is shaking up its executive team in light of ongoing struggles to roll out advanced Apple Intelligence features for Siri. Bloomberg reports that Apple CEO Tim Cook “has lost confidence in the ability of AI head John Giannandrea to execute on product dev…",
+            "url": "https://9to5mac.com/2025/03/20/apple-puts-vision-pro-creator-in-charge-of-siri-as-apple-intelligence-rollout-falters/",
+            "urlToImage": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2025/02/siri.jpeg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+            "publishedAt": "2025-03-20T16:11:52Z",
+            "content": "Apple is shaking up its executive team in light of ongoing struggles to roll out advanced Apple Intelligence features for Siri. Bloomberg reports that Apple CEO Tim Cook “has lost confidence in the a… [+1530 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "9to5Mac"
+            },
+            "author": "Ryan Christoffel",
+            "title": "Apple’s new shake-up proves Siri’s now being taken seriously, here’s why",
+            "description": "Apple is making a big change to Siri’s leadership within the company. Per Mark Gurman, former Vision Pro head Mike Rockwell will now be in charge. While this might seem like an odd fit, the best part of the move may actually have little to do with Rockwell sp…",
+            "url": "https://9to5mac.com/2025/03/20/the-best-thing-about-apples-siri-shake-up-may-have-little-to-do-with-new-leader/",
+            "urlToImage": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2025/02/siri-iphone.jpeg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+            "publishedAt": "2025-03-20T21:06:37Z",
+            "content": "Apple is making a big change to Siris leadership within the company. Per Mark Gurman, former Vision Pro head Mike Rockwell will now be in charge. While this might seem like an odd fit, the best part … [+2856 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "9to5Mac"
+            },
+            "author": "Ryan Christoffel",
+            "title": "Rumor Replay: Siri shake-ups, iOS 19 goals, C2 modem, more",
+            "description": "This is Rumor Replay, a weekly column at 9to5Mac offering a quick rundown of the most recent Apple product rumors, with analysis and commentary. Today: Siri shake-ups, iOS 19 goals, C2 modem, and new Apple displays. Here are this week’s Apple rumors.\n\n\n\n more…",
+            "url": "https://9to5mac.com/2025/03/20/rumor-replay/",
+            "urlToImage": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2025/03/Rumor-Replay-Siri.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+            "publishedAt": "2025-03-20T19:04:15Z",
+            "content": "This is Rumor Replay, a weekly column at 9to5Mac offering a quick rundown of the most recent Apple product rumors, with analysis and commentary. Today: Siri shake-ups, iOS 19 goals, C2 modem, and new… [+3853 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Popular Science"
+            },
+            "author": "Stack Commerce",
+            "title": "PDF Pains Solved: This AI-powered app can edit, convert, annotate PDFs in moments",
+            "description": "A lifetime subscription to UPDF gives you all the modern tools you need to seamlessly convert and edit PDF files.\nThe post PDF Pains Solved: This AI-powered app can edit, convert, annotate PDFs in moments appeared first on Popular Science.",
+            "url": "https://www.popsci.com/sponsored-content/updf-ai-powered-pdf-editing-convertion-lifetime-subscription-sponsored-deal/",
+            "urlToImage": "https://www.popsci.com/wp-content/uploads/2025/03/image_130b88.jpeg?quality=85",
+            "publishedAt": "2025-03-20T13:00:00Z",
+            "content": "We may earn revenue from the products available on this page and participate in affiliate programs. Learn more In 2025, it’s embarrassing to turn in a file at work that’s lost its formatting because … [+2317 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Police"
+            },
+            "author": "Sanuj Bhatia",
+            "title": "Google Pixel 9a's Gemini experience isn't as powerful as its siblings",
+            "description": "Not all on-device Gemini features are available on the Pixel 9a, here's why",
+            "url": "https://www.androidpolice.com/pixel-9a-gemini-not-powerful-rest-of-pixel-9-series/",
+            "urlToImage": "https://static1.anpoimages.com/wordpress/wp-content/uploads/wm/2025/03/google-pixel-9a-hands-on-39.jpg",
+            "publishedAt": "2025-03-20T08:32:19Z",
+            "content": "Summary\r\n<ul><li>\r\n The Pixel 9a has a downgraded Gemini AI model, using Gemini Nano XXS instead of XS due to RAM limitations.\r\n </li><li>\r\n The on-device Gemini Nano XXS doesn't run continuously lik… [+3112 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Police"
+            },
+            "author": "Rajesh Pandey",
+            "title": "Gmail for Android update moves the annoying Gemini button out of the way",
+            "description": "The pesky Gemini button is getting a better spot in the Gmail app",
+            "url": "https://www.androidpolice.com/gmail-android-update-moves-annoying-gemini-button-out-of-the-way/",
+            "urlToImage": "https://static1.anpoimages.com/wordpress/wp-content/uploads/wm/2025/01/oneplus-13-review-18.jpg",
+            "publishedAt": "2025-03-20T10:00:36Z",
+            "content": "Summary\r\n<ul><li>\r\n Google is moving the account switcher in the Gmail app to its original position, allowing for easier inbox switching.\r\n </li><li>\r\n The Gemini button will now sit on the left of t… [+2339 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Police"
+            },
+            "author": "Andrew Morrisey",
+            "title": "Take 40% off the Fire TV Stick 4K with this deal while adding AI to your binge watching sessions",
+            "description": "Just $30 for the best Amazon streaming device",
+            "url": "https://www.androidpolice.com/take-40-off-the-fire-tv-stick-4k-with-this-deal-while-adding-ai-to-your-binge-watching-sessions/",
+            "urlToImage": "https://static1.anpoimages.com/wordpress/wp-content/uploads/2024/11/amazon-fire-tv-stick-4k-2nd-gen.jpg",
+            "publishedAt": "2025-03-20T17:03:07Z",
+            "content": "Amazon Fire TV Stick 4K (2nd Gen, 2023)\r\nSimplify your binge watching sessions with the AI search capabilities of the Amazon Fire TV Stick 4K, and save big on the streaming device while it's 40% off.… [+2074 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": null,
+            "title": "Nvidia Drops a Bombshell: AI Demand Soars, Robotics Revolution Begins, and Tariff Fears Fade",
+            "description": null,
+            "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_00268cd3-aa71-4572-90c1-40c5dd31a2da",
+            "urlToImage": null,
+            "publishedAt": "2025-03-20T18:25:25Z",
+            "content": "If you click 'Accept all', we and our partners, including 239 who are part of the IAB Transparency &amp; Consent Framework, will also store and/or access information on a device (in other words, use … [+702 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": null,
+            "title": "EU health regulator clears use of AI tool in fatty liver disease trials",
+            "description": null,
+            "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_720e371c-91ef-4c97-8058-382f5fc6f314",
+            "urlToImage": null,
+            "publishedAt": "2025-03-20T12:16:37Z",
+            "content": "If you click 'Accept all', we and our partners, including 239 who are part of the IAB Transparency &amp; Consent Framework, will also store and/or access information on a device (in other words, use … [+702 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "AppleInsider"
+            },
+            "author": "news@appleinsider.com (Malcolm Owen)",
+            "title": "John Giannandrea out as Siri chief, Apple Vision Pro lead in",
+            "description": "Mike Rockwell, the Apple Vision Pro chief, has replaced John Gianndrea as the executive in charge of Siri, in an executive shakeup to try and rescue Apple's flailing AI efforts.Apple's AI-improved Siri is late, and has forced an executive shakeupThe glacial r…",
+            "url": "https://appleinsider.com/articles/25/03/20/john-giannandrea-out-as-siri-chief-apple-vision-pro-lead-in",
+            "urlToImage": "https://photos5.appleinsider.com/gallery/57996-118130-000-lede-Siri-2-xl.jpg",
+            "publishedAt": "2025-03-20T16:32:18Z",
+            "content": "Mike Rockwell, the Apple Vision Pro chief, has replaced John Gianndrea as the executive in charge of Siri, in an executive shakeup to try and rescue Apple's flailing AI efforts. \r\nThe glacial rollout… [+936 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CNET"
+            },
+            "author": "Omar Gallaga",
+            "title": "Huawei's Pura X Is a Wideset Flip Phone With a DeepSeek AI Assistant",
+            "description": "The new phone, which costs just over $1,000, has a wide display and does not include Google's Android software.",
+            "url": "https://www.cnet.com/tech/mobile/huaweis-pura-x-is-a-wideset-flip-phone-with-a-deepseek-ai-assistant/",
+            "urlToImage": "https://www.cnet.com/a/img/resize/5dacf2bbfd3eb85dddb087da688fc2ea88ca0e28/hub/2025/03/20/c0c17cf0-8189-4267-84c3-13a98f01294f/screenshot-2025-03-20-at-14-02-34.png?auto=webp&fit=crop&height=675&width=1200",
+            "publishedAt": "2025-03-20T14:06:00Z",
+            "content": "Huawei is starting its fully Android-free era with the Pura X, a new foldable phone that runs the company's HarmonyOS 5 software and does not include the option for people to use Google's OS.\r\nThe Pu… [+573 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yanko Design"
+            },
+            "author": "Vincent Nguyen",
+            "title": "Infinix Launches NOTE 50 Pro+ 5G: Metal-Clad Flagship with Advanced AI Features",
+            "description": "Infinix Launches NOTE 50 Pro+ 5G: Metal-Clad Flagship with Advanced AI FeaturesInfinix has officially unveiled its highly anticipated NOTE 50 Series, with the NOTE 50 Pro+ 5G standing as the flagship model that aims to redefine...",
+            "url": "https://www.yankodesign.com/2025/03/20/infinix-launches-note-50-pro-5g-metal-clad-flagship-with-advanced-ai-features/",
+            "urlToImage": "https://www.yankodesign.com/images/design_news/2025/03/infinix-launches-note-50-pro-5g-metal-clad-flagship-with-advanced-ai-features/X6856_NOTE-50-Pro-5G-series-1.jpg",
+            "publishedAt": "2025-03-20T17:20:23Z",
+            "content": "Infinix has officially unveiled its highly anticipated NOTE 50 Series, with the NOTE 50 Pro+ 5G standing as the flagship model that aims to redefine premium smartphone experiences at mid-range price … [+6834 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Windows Central"
+            },
+            "author": "sean.endicott@futurenet.com (Sean Endicott)",
+            "title": "Popular Day One journal app finally lands on Windows",
+            "description": "Popular journal app \"Day One\" now has a Windows 11 app available through the Microsoft Store. Day One has been available on macOS, iOS, Android, and the web for years, and it now has an app for PCs.",
+            "url": "https://www.windowscentral.com/software-apps/popular-day-one-journal-app-finally-lands-on-windows",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/Ay6p3B6ieiSE3CYprM2qgX-1200-80.jpg",
+            "publishedAt": "2025-03-20T17:04:40Z",
+            "content": "Day One, a popular journal app, has made its way to the Microsoft Store. The app was already available on macOS, iOS, Android, and the web, but it now has a Windows 11 app with features such as offli… [+1956 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Windows Central"
+            },
+            "author": "ben.wilson@windowscentral.com (Ben Wilson)",
+            "title": "Intel Arc graphics driver update improves Call of Duty: Black Ops 6 performance — Boosting \"up to 15% average FPS\" on PC",
+            "description": "Intel Arc \"Game On\" driver 32.0.101.6651 improves average framerates in Call of Duty: Black Ops 6 on B-Series \"Battlemage\" GPUs.",
+            "url": "https://www.windowscentral.com/gaming/pc-gaming/intel-game-on-graphics-driver-march-2025-black-ops-6-performance",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/VHKwvG7ma54SZ59tHTu7mm-1200-80.jpg",
+            "publishedAt": "2025-03-20T16:35:06Z",
+            "content": "On March 19, Intel updated its \"Game On\" driver for Arc &amp; Iris Xe graphics hardware, moving to version 32.0.101.6651 non-WHQL (not tested by Windows Hardware Quality Labs but still signed by Micr… [+4740 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yanko Design"
+            },
+            "author": "Gaurav Sood",
+            "title": "Asus drops Ascent GX10, powerful AI supercomputer that can fit in the palm of your hand",
+            "description": "Asus drops Ascent GX10, powerful AI supercomputer that can fit in the palm of your handAI is transforming almost every industry in more ways than ever thought possible previously. It’s only fitting, then, that it transitions the size and possibilities...",
+            "url": "https://www.yankodesign.com/2025/03/20/asus-drops-ascent-gx10-powerful-ai-supercomputer-that-can-fit-in-the-palm-of-your-hand/",
+            "urlToImage": "https://www.yankodesign.com/images/design_news/2025/03/asus-drops-ascent-gx10-powerful-ai-supercomputer-that-can-fit-in-the-palm-of-your-hand/Asus-Ascent-GX10-AI-Supercomputer-1.jpg",
+            "publishedAt": "2025-03-20T13:20:15Z",
+            "content": "AI is transforming almost every industry in more ways than ever thought possible previously. Its only fitting, then, that it transitions the size and possibilities of personal computers to exponentia… [+3070 chars]"
+        },
+        {
+            "source": {
+                "id": "new-scientist",
+                "name": "New Scientist"
+            },
+            "author": "Matthew Sparkes",
+            "title": "AI can forecast the weather in seconds without needing supercomputers",
+            "description": "While earlier weather-forecasting AIs have replaced some tasks done by traditional models, new research uses machine learning to replace the entire process, making it much faster",
+            "url": "https://www.newscientist.com/article/2472659-ai-can-forecast-the-weather-in-seconds-without-needing-supercomputers/",
+            "urlToImage": "https://images.newscientist.com/wp-content/uploads/2025/03/20135425/SEI_244504557.jpg",
+            "publishedAt": "2025-03-20T16:00:38Z",
+            "content": "Thunderstorms over Indonesia, seen from the International Space Station\r\nNASA Earth Observatory / International Space Station (ISS)\r\nAn AI weather program running for a single second on a desktop can… [+3740 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Core77.com"
+            },
+            "author": "Rain Noe",
+            "title": "A New Form Factor for Drones: Vertical and Coaxial",
+            "description": "Since its invention, the form factor of the airplane has been bird-based; both airplanes and birds remain aloft by having appreciable wingspans. And in broad strokes, the overall form of the airplane hasn't changed much in the past 100 years. Helicopters are …",
+            "url": "https://www.core77.com/posts/135952/A-New-Form-Factor-for-Drones-Vertical-and-Coaxial",
+            "urlToImage": "https://s3files.core77.com/blog/images/lead_n_spotlight/1659612_lead_400_135952_.jpg",
+            "publishedAt": "2025-03-20T13:00:00Z",
+            "content": "Since its invention, the form factor of the airplane has been bird-based; both airplanes and birds remain aloft by having appreciable wingspans. And in broad strokes, the overall form of the airplane… [+1591 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Theregister.com"
+            },
+            "author": "Lindsay Clark",
+            "title": "Big Red and Microsoft roll out Azure database services for more mainstream Oracle users",
+            "description": "Enterprise Edition to be offered on OCI inside Redmond's cloud\nOracle is expanding its database services on hyperscale clouds outside of its muscle-car Exadata system.…",
+            "url": "https://www.theregister.com/2025/03/20/oracle_microsoft_enterprise_db_azure/",
+            "urlToImage": "https://regmedia.co.uk/2023/03/09/shutterstock_database.jpg",
+            "publishedAt": "2025-03-20T16:31:12Z",
+            "content": "Oracle is expanding its database services on hyperscale clouds outside of its muscle-car Exadata system.\r\nEarlier today, Microsoft said it plans to expand Oracle Database@Azure running on OCI (Oracle… [+2166 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Theregister.com"
+            },
+            "author": "Connor Jones",
+            "title": "The post-quantum cryptography apocalypse will be televised in 10 years, says UK's NCSC",
+            "description": "Wow, a government project that could be on time for once ... cos it's gonna be wayyyy more than a decade\nThe UK's National Cyber Security Centre (NCSC) today started the post-quantum cryptography (PQC) countdown clock by claiming organizations have ten years …",
+            "url": "https://www.theregister.com/2025/03/20/ncsc_post_quantum_cryptogrpahy/",
+            "urlToImage": "https://regmedia.co.uk/2023/02/13/shutterstock_quantum.jpg",
+            "publishedAt": "2025-03-20T13:15:05Z",
+            "content": "The UK's National Cyber Security Centre (NCSC) today started the post-quantum cryptography (PQC) countdown clock by claiming organizations have ten years to migrate to a safer future.\r\nThe guidance d… [+6934 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MakeUseOf"
+            },
+            "author": "Abhishek Baxi",
+            "title": "AI Model Names Are So Complex: Here's How I'd Simplify Them",
+            "description": "AI models are so confusing, but they could be simplified to make it easy for anyone to understand.",
+            "url": "https://www.makeuseof.com/simplifying-ai-model-names/",
+            "urlToImage": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2025/02/ai-model-names.jpg",
+            "publishedAt": "2025-03-20T11:47:43Z",
+            "content": "We're witnessing an explosion of AI models. However, a growing problem is emerging: the names of these models are becoming increasingly convoluted, a labyrinth of acronyms and technical jargon that l… [+4475 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MakeUseOf"
+            },
+            "author": "Ruby Helyer",
+            "title": "Photoshop vs. Pixlr for Editing Photos: How Do They Compare?",
+            "description": "Pro-level editing or budget-friendly convenience?",
+            "url": "https://www.makeuseof.com/photoshop-vs-pixlr-photo-editing/",
+            "urlToImage": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/wm/2025/03/photoshop-and-pixlr.jpg",
+            "publishedAt": "2025-03-20T21:00:15Z",
+            "content": "Photoshop is the industry standard for photo editing, but it comes at a cost. Pixlr, on the other hand, is free and easy to use. But can it really compete?\r\n7 \r\n Pricing and platforms\r\nYou can access… [+7431 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "DIYphotography"
+            },
+            "author": "Alex Baker",
+            "title": "If the Photo Industy Confuses You, Take a Look at This Handy Map",
+            "description": "The number of photography-related brands and resources can certainly feel overwhelming at times. It seems like every 5 minutes there’s a new company on the...\nThe post If the Photo Industy Confuses You, Take a Look at This Handy Map appeared first on DIY Phot…",
+            "url": "https://www.diyphotography.net/if-the-photo-industy-confuses-you-take-a-look-at-this-handy-map/",
+            "urlToImage": "https://www.diyphotography.net/wp-content/uploads/2025/03/Photography-Industry-Map-2025-scaled.jpg",
+            "publishedAt": "2025-03-20T15:00:49Z",
+            "content": "The number of photography-related brands and resources can certainly feel overwhelming at times. It seems like every 5 minutes theres a new company on the horizon, creating anything from tipods to le… [+2699 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "DIYphotography"
+            },
+            "author": "Soumyadeep Mukherjee",
+            "title": "ToupTek Astro StellaVita: Revolutionizing Astrophotography Control",
+            "description": "Astrophotography has always been a blend of art and technology, requiring meticulous control over equipment to capture breathtaking celestial images. The ToupTek Astro StellaVita, formerly...\nThe post ToupTek Astro StellaVita: Revolutionizing Astrophotography…",
+            "url": "https://www.diyphotography.net/touptek-astro-stellavita-revolutionizing-astrophotography-control/",
+            "urlToImage": "https://www.diyphotography.net/wp-content/uploads/2025/03/stellavita-cover.jpg",
+            "publishedAt": "2025-03-20T13:39:55Z",
+            "content": "Astrophotography has always been a blend of art and technology, requiring meticulous control over equipment to capture breathtaking celestial images. The ToupTek Astro StellaVita, formerly known as t… [+4951 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Theregister.com"
+            },
+            "author": "Dan Robinson",
+            "title": "Euro semi firms push for 'Chips Act 2.0' to expand beyond manufacturing",
+            "description": "Industry leaders want broader strategy, citing supply chain gaps, investment needs, and global trade uncertainty\nEuropean chipmakers want local politicians to look beyond the region's Chips Act and do more to support research and development, materials, and d…",
+            "url": "https://www.theregister.com/2025/03/20/european_chips_act_2/",
+            "urlToImage": "https://regmedia.co.uk/2021/09/22/shutterstock_eurochip.jpg",
+            "publishedAt": "2025-03-20T14:03:13Z",
+            "content": "European chipmakers want local politicians to look beyond the region's Chips Act and do more to support research and development, materials, and design, not just manufacturing.\r\nA group of European s… [+3758 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Phandroid - News for Android"
+            },
+            "author": "Phandroid Editors",
+            "title": "The Future of Android Gaming: What to Look Forward To",
+            "description": "The Android games sector sees increased competition, as hardware and graphics advancements improve mobile play. Quick processors and visual technology breakthroughs, for example, ray tracing, allow Android players to approach a future with detailed and immers…",
+            "url": "https://phandroid.com/2025/03/20/the-future-of-android-gaming-what-to-look-forward-to/",
+            "urlToImage": "https://phandroid.com/wp-content/uploads/2024/01/android-1.jpg",
+            "publishedAt": "2025-03-20T14:19:45Z",
+            "content": "The Android games sector sees increased competition, as hardware and graphics advancements improve mobile play. Quick processors and visual technology breakthroughs, for example, ray tracing, allow A… [+7880 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Phandroid - News for Android"
+            },
+            "author": "Specious Coda-Bishop",
+            "title": "The Best New Phones You’ve Never Heard Of (But Should Know About)",
+            "description": "The smartphone market isn’t just about Samsung, Google, and Apple—some of the most exciting innovations come from lesser-known manufacturers pushing the boundaries of AI, battery life, gaming, and sustainability. From a solar-powered phone to a credit-card-si…",
+            "url": "https://phandroid.com/2025/03/20/the-best-new-phones-youve-never-heard-of-but-should-know-about/",
+            "urlToImage": "https://phandroid.com/wp-content/uploads/2025/03/mwc_2025_winners_6.jpg",
+            "publishedAt": "2025-03-20T09:56:25Z",
+            "content": "Big-name brands like Samsung and Google might dominate the smartphone conversation, but some of the most interesting innovations come from manufacturers youve probably never heard of.\r\nAt MWC 2025, w… [+4368 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Webdesignerdepot.com"
+            },
+            "author": "Alex Harper",
+            "title": "Zeroheight Releases Its Design Systems Report 2025",
+            "description": "Zeroheight’s \"Design Systems Report 2025\" shows that design tokens are exploding in popularity, with 84% of teams adopting them, but resource shortages and communication breakdowns are still major roadblocks. As AI enters the scene and dedicated teams grow, t…",
+            "url": "https://webdesignerdepot.com/zeroheight-releases-its-design-systems-report-2025/",
+            "urlToImage": "https://webdesignerdepot-wp.s3.us-east-2.amazonaws.com/2025/03/19164516/1-16.jpg",
+            "publishedAt": "2025-03-20T12:55:00Z",
+            "content": "Zeroheights Design Systems Report 2025 is out, and lets just say its a wild ride through the world of design systems, filled with both exciting wins and a few bumps along the way.\r\nThis years report,… [+2262 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Search Engine Journal"
+            },
+            "author": "Matt Bertram",
+            "title": "A Guide To Enterprise SEO Strategy For SaaS Brands",
+            "description": "Transform your SaaS model with an enterprise SEO strategy that focuses on sustainable growth and consumer engagement.\nThe post A Guide To Enterprise SEO Strategy For SaaS Brands appeared first on Search Engine Journal.",
+            "url": "https://www.searchenginejournal.com/enterprise-seo-strategy-for-saas-brands/539360/",
+            "urlToImage": "https://www.searchenginejournal.com/wp-content/uploads/2025/03/saas-442.png",
+            "publishedAt": "2025-03-20T10:00:11Z",
+            "content": "The SaaS business model offers incredible scalability as well as profitability – but only when paired with the right marketing growth strategy.\r\nKnowing that the cost of hosting cloud-based applicati… [+16103 chars]"
+        }
+    ]
+}

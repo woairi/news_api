@@ -1,0 +1,20 @@
+services:
+  news_service:
+    build: .
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./app:/app
+      - ./.env:/app/.env
+      - /etc/localtime:/etc/localtime:ro    # ✅ KST 시간 동기화
+    restart: always
+
+  scheduler:
+    build: .
+    volumes:
+      - ./app:/app
+      - ./.env:/app/.env
+      - /etc/localtime:/etc/localtime:ro    # ✅ 스케줄러도 KST 시간 적용
+    command: python auto_scheduler.py
+    restart: always
+

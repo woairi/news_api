@@ -1,0 +1,62 @@
+[
+    {
+        "title": "How ‘Careless People’ is becoming a bigger problem for Meta",
+        "summary_en": "Meta is facing backlash for its aggressive legal tactics against Sarah Wynn-Williams, author of the memoir \"Careless People,\" which details alleged misconduct and ethical issues during her time as a policy director at the company. Despite Meta's efforts to silence her, Wynn-Williams is fighting back, and her publisher, Macmillan, continues to support the book, highlighting concerns about corporate power and free speech.",
+        "summary_ko": "메타는 전직 임원 사라 윈 윌리엄스가 쓴 회고록 'Careless People'에 대해 적극적으로 비난하고 침묵시키려 했으나, 그녀는 법적 대응을 시작했습니다. 그녀의 변호사들은 긴급 동의서를 제출하며 메타의 조치를 반발하고 있습니다.",
+        "url": "https://www.theverge.com/command-line-newsletter/634080/careless-people-sarah-wynn-williams-book-meta-congress"
+    },
+    {
+        "title": "Trump’s confusing crusade against Big Tech",
+        "summary_en": "President Trump has shifted his stance on TikTok, initially seeking to ban the app due to national security concerns but now aiming to save it. The Trump administration is exploring a deal involving Oracle to manage TikTok in the U.S., which could potentially violate U.S. law requiring ByteDance to divest its control over the app.",
+        "summary_ko": "도널드 트럼프 대통령은 과거 틱톡을 금지하려 했으나, 최근에는 틱톡을 보호하려는 입장을 보이고 있습니다. 트럼프는 틱톡 금지법 시행을 연기하고, 미국 기업과 바이트댄스의 합작회사를 제안하며 틱톡의 미국 내 지속 가능성을 높이려 하고 있습니다.",
+        "url": "https://www.theverge.com/the-vergecast/633757/trump-big-tech-tiktok-ftc-siri-vergecast"
+    },
+    {
+        "title": "Google will let you make AI podcasts from Gemini’s Deep Research",
+        "summary_en": "Google's Gemini app now allows users to generate Audio Overviews from Deep Research reports, transforming them into conversational podcasts featuring two AI \"hosts.\" This feature enables users to listen to in-depth reports in a podcast-like format, making it easier to consume complex information while multitasking.",
+        "summary_ko": "구글의 제미나이 앱은 이제 **오디오 개요** 기능을 통해 깊이 있는 연구 보고서를 두 명의 AI 호스트가 대화하는 팟캐스트 스타일로 변환할 수 있습니다. 이 기능은 복잡한 정보를 쉽게 이해하고 요약하는 데 도움을 줍니다. 또한, **캔버스**라는 대화형 코딩 툴도 추가되어 사용자가 문서와 코드를 실시간으로 작성하고 수정할 수 있게 합니다.",
+        "url": "https://www.theverge.com/news/634117/google-gemini-ai-podcast-audio-overviews-deep-research"
+    },
+    {
+        "title": "Yahoo Is Still Here—and It Has Big Plans for AI",
+        "summary_en": "Yahoo is celebrating its 30th anniversary, and despite its long history, CEO Jim Lanzone emphasizes that the company remains in \"building mode,\" indicating ongoing development and growth. Yahoo has significant plans for artificial intelligence, reflecting its commitment to innovation and expansion in the tech industry.",
+        "summary_ko": "야후는 창립 30주년을 맞아 여전히 \"건설 모드\"에 있으며, CEO 짐 란존은 AI 분야에서 큰 계획을 가지고 있다고 밝혔습니다. 이로써 야후는 AI 기술을 활용해 새로운 도약을 준비하고 있습니다.",
+        "url": "https://www.wired.com/story/plaintext-yahoo-turns-30-jim-lanzone/"
+    },
+    {
+        "title": "Low RAM on the Pixel 9a pushed Google toward a 'limited' version of Gemini",
+        "summary_en": "The Pixel 9a, a more affordable option in Google's lineup, features a limited version of Gemini AI due to its 8GB RAM constraint, which prevents it from supporting the full range of AI functionalities available on flagship models. This results in missing features like Pixel Screenshots and Call Summaries, as the phone can only run a text-processing version of Gemini Nano, known as the XXS model, which lacks the capabilities of the XS model found in higher-end Pixels.",
+        "summary_ko": "구글 픽셀 9a는 저렴한 가격에 출시된 스마트폰으로, 8GB의 RAM을 탑재하여 더 큰 AI 기능을 지원하기 어렵습니다. 이로 인해 픽셀 9a는 제한된 버전의 AI인 Gemini Nano XXS를 사용하며, 일부 AI 기능이 제한됩니다.",
+        "url": "https://www.androidcentral.com/phones/google-pixel/google-pixel-9a-low-ram-smaller-gemini-nano-model-report"
+    },
+    {
+        "title": "The Pixel 9a makes me feel weird, in a good way",
+        "summary_en": "The Google Pixel 9a is highlighted as a testament to Google's success, particularly as Samsung and Apple face challenges. The Pixel 9a offers a compelling package with its affordable price, enhanced AI features, and improved design, making it an attractive option in the mid-range market.",
+        "summary_ko": "구글의 픽셀 9a는 삼성과 애플이 어려움을 겪고 있는 반면, 구글의 상황이 더 나아지고 있다는 점을 잘 보여줍니다. 이 스마트폰은 뛰어난 사양과 합리적인 가격으로 많은 주목을 받고 있으며, 특히 아이폰 16e와 비교했을 때 더 나은 가치 제공을 강조하고 있습니다.",
+        "url": "https://www.androidcentral.com/phones/google/the-pixel-9a-makes-me-feel-weird-in-a-good-way"
+    },
+    {
+        "title": "Gmail's Search Function Just Got a Major Upgrade",
+        "summary_en": "Google has upgraded Gmail's search function with AI, aiming to provide more relevant results by considering factors like email recency, frequency of contact, and user interaction. This new feature allows users to toggle between \"most relevant\" and \"most recent\" search results, offering a more personalized search experience that is initially available for personal Google accounts, with plans to expand to business users in the future.",
+        "summary_ko": "구글은 지메일의 검색 기능을 AI 기반으로 업그레이드하여 사용자에게 가장 관련성이 높은 결과를 더 빠르게 제공할 수 있도록 했습니다. 이 새로운 기능은 검색 결과를 시간 순서가 아닌 관련성에 따라 정렬하여 사용자에게 더 효율적인 검색 경험을 제공합니다.",
+        "url": "https://www.macrumors.com/2025/03/21/gmails-search-function-major-upgrade/"
+    },
+    {
+        "title": "The Pixel 8a is still a great smartphone choice, and here's why",
+        "summary_en": "The Google Pixel 8a remains a compelling smartphone choice due to its excellent software support, capable hardware, and impressive camera capabilities, making it a great option even with the upcoming release of the Pixel 9a. Its long-term software support, which includes seven years of OS and security updates, ensures the phone will remain secure and updated well into the future, offering significant value for budget-conscious buyers.",
+        "summary_ko": "구글 픽셀 8a는 여전히 훌륭한 스마트폰 선택지로, 뛰어난 성능과 가성비를 제공합니다. 픽셀 9a의 출시에도 불구하고, 픽셀 8a는 여전히 추천할 만한 모델입니다.",
+        "url": "https://www.androidcentral.com/phones/google/the-pixel-8a-is-still-a-great-smartphone-choice-and-heres-why"
+    },
+    {
+        "title": "Pixel 10 might see improved startup following a loading process change",
+        "summary_en": "The Google Pixel 10 is expected to feature a faster startup process thanks to a new loading technique called Parallel Module Loading, which loads different parts of Android simultaneously rather than sequentially. This improvement could result in a 30% speed boost during the boot process, though further development is needed to confirm its effectiveness.",
+        "summary_ko": "구글의 Pixel 10은 \"병렬 모듈 로딩\"이라는 새로운 소프트웨어 변경으로 시작 시간이 개선될 가능성이 있습니다. 이 변경은 Pixel 10의 로딩 시간을 약 30% 줄일 것으로 예상되며, 이는 시작 과정의 초기 단계에서 발생하는 성능 향상입니다. 그러나 이 변화가 실제로 사용자에게 얼마나 큰 차이를 가져올지는 아직 명확하지 않습니다.",
+        "url": "https://www.androidcentral.com/phones/google-pixel/pixel-10-improved-startup-loading-process-change-spotted"
+    },
+    {
+        "title": "Anthropic's Claude Finally Gets Web Search, Months After ChatGPT",
+        "summary_en": "Anthropic has added web search capabilities to its AI chatbot, Claude 3.7 Sonnet, allowing it to access current information beyond its previous knowledge cutoff date of October 2024. This feature, initially available to paid subscribers in the U.S., enables Claude to provide more accurate and up-to-date responses by integrating real-time web data into its answers, with plans to expand access to free users and other countries soon.",
+        "summary_ko": "앤트로픽의 AI 챗봇 클로드가 웹 검색 기능을 추가하여 최신 정보에 접근할 수 있게 되었습니다. 이 기능은 클로드 3.7 소네트 모델에서만 사용 가능하며, 현재 미국 내 유료 사용자에게 프리뷰로 제공되고 있습니다. \n\n클로드는 웹 검색을 통해 최신 정보를 제공하며, 답변에 출처를 직접 인용하여 사용자가 쉽게 사실을 확인할 수 있도록 합니다. 이 기능은 무료 사용자와 다른 국가로도 곧 확대될 예정입니다.",
+        "url": "https://www.macrumors.com/2025/03/21/anthropic-claude-gets-web-search/"
+    }
+]

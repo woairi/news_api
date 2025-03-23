@@ -1,0 +1,1293 @@
+{
+    "status": "ok",
+    "totalResults": 1560,
+    "articles": [
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "Dominic Preston",
+            "title": "Samsung’s One UI 7 is rolling out to Galaxy phones in April",
+            "description": "Samsung has announced that One UI 7, its smartphone software based on Android 15, will start rolling out to existing phones and tablets from April 7th worldwide, with a US rollout slightly later on April 10th.  In the US the update will first arrive on 2024’s…",
+            "url": "https://www.theverge.com/news/632318/samsung-one-ui-7-rollout-april-galaxy-s24-fold-6-flip-6",
+            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/257552_Samsung_Galaxy_S25_review_AJohnson_0007.jpg?quality=90&strip=all&crop=0%2C10.752607989199%2C100%2C78.494784021602&w=1200",
+            "publishedAt": "2025-03-19T09:38:04Z",
+            "content": "One UI 7 running on this year’s Galaxy S25 Plus.\r\n\n\nSamsung has announced that One UI 7, its smartphone software based on Android 15, will start rolling out to existing phones and tablets from April … [+1079 chars]"
+        },
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "Elizabeth Lopatto",
+            "title": "Amazon is blundering into an AI copyright nightmare",
+            "description": "Suno wasnât supposed to be an important part of Amazonâs Alexa Plus presentation. The AI song generation platform was a minor demonstration of how Alexa Plus could integrate into other apps, sandwiched between other announcements. But it caught my attenti…",
+            "url": "https://www.theverge.com/tech/631651/amazon-alexa-suno-ai-generated-song-copyright-nightmare",
+            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/257620_Amazon_AI_copyright_CVirginia_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+            "publishedAt": "2025-03-19T13:29:34Z",
+            "content": "Alexas integration with Suno misses the whole point of music.\r\nAlexas integration with Suno misses the whole point of music.\r\nSuno wasnt supposed to be an important part of Amazons Alexa Plus present… [+5877 chars]"
+        },
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "Umar Shakir",
+            "title": "Here are all the Nvidia DGX Spark versions so far",
+            "description": "Nvidia showed off its own Grace Blackwell-powered “personal AI supercomputers” yesterday, but it also made another announcement: third-party manufacturers can come and make their own versions as well. So far, Asus, Dell, and HP have come forward showing their…",
+            "url": "https://www.theverge.com/news/632685/asus-ascent-gx10-dell-pro-max-gb10-hp-zgx-nano-nvidia-ai",
+            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25822628/PXL_20250108_162058411.jpg?quality=90&strip=all&crop=0%2C15.226825767778%2C100%2C69.546348464445&w=1200",
+            "publishedAt": "2025-03-19T18:28:52Z",
+            "content": "Asus, Dell, HP, and others are making their own supercomputers powered by Nvidias Grace Blackwell platform.\r\nAsus, Dell, HP, and others are making their own supercomputers powered by Nvidias Grace Bl… [+1959 chars]"
+        },
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "Wes Davis",
+            "title": "Day One brings its digital journaling app to Windows",
+            "description": "Automattic-owned Day One has announced a Windows version of its journaling app, available now on the Microsoft Store. The company says it offers “the same trusted, distraction-free experience” as it does on other platforms. It’s also free to use, and won’t co…",
+            "url": "https://www.theverge.com/news/632396/day-one-journaling-app-microsoft-windows-now-available",
+            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/Day-One-logo.png?quality=90&strip=all&crop=0%2C10.723165084465%2C100%2C78.55366983107&w=1200",
+            "publishedAt": "2025-03-19T14:53:59Z",
+            "content": "Its free to use and sync with other platforms during a limited launch period.\r\nIts free to use and sync with other platforms during a limited launch period.\r\nAutomattic-owned Day One has announced a … [+1413 chars]"
+        },
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "Mia Sato",
+            "title": "The weeklong TikTok fight over whether NYC influencers are ‘boring’",
+            "description": "TikTok’s curse or blessing, depending on how you look at it, is that any video made by any random person can get millions of views without much rhyme or reason. Thousands of comments flood in, people make reaction videos, your random thoughts are referenced a…",
+            "url": "https://www.theverge.com/news/632040/nyc-influencers-boring-tiktok-algorithms",
+            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25406818/STK051_TIKTOK_CVirginia_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+            "publishedAt": "2025-03-19T14:06:59Z",
+            "content": "For more than a week, TikTok users have been debating whether all New York City influencers are the same. They are and thats kind of the point.\r\nFor more than a week, TikTok users have been debating … [+6455 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Thomas Maxwell",
+            "title": "Elon Musk Is Joining Microsoft in $30 Billion Data Center Project",
+            "description": "The biggest backer of OpenAI, Microsoft is now building its own AI models and teaming up with Sam Altman's mortal enemy.",
+            "url": "https://gizmodo.com/elon-musk-is-joining-microsoft-in-30-billion-data-center-project-2000578097",
+            "urlToImage": "https://gizmodo.com/app/uploads/2025/03/elon-musk-frown-face-GettyImages-2203703329-copy.jpg",
+            "publishedAt": "2025-03-19T18:10:38Z",
+            "content": "Elon Musk somehow manages to win again. Microsoft, along with BlackRock and UAE-based MGX, have announced they are partnering with his artificial intelligence startup xAI on a $30 billion project to … [+5542 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Kyle Barr",
+            "title": "The VR Hype Cycle Is Over, and Just in Time for the AR Hype Cycle to Begin",
+            "description": "Say goodbye to the 'metaverse' as even a cheap Meta Quest hasn't turned things around. Instead, say hello to the return of 'glassholes.'",
+            "url": "https://gizmodo.com/the-vr-hype-cycle-is-over-and-just-in-time-for-the-ar-hype-cycle-to-begin-2000578035",
+            "urlToImage": "https://gizmodo.com/app/uploads/2024/10/Meta-Quest-7-e1742394570642.jpg",
+            "publishedAt": "2025-03-19T21:10:21Z",
+            "content": "VR headsets are out, and AR glasses are in. Research from analysis firm Counterpoint shows that the global VR shipments trended down through 2024 despite proliferation cheap headsets like the Meta Qu… [+4401 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Cheryl Eddy",
+            "title": "8 TV Shows and Movies to Watch After You Finish Severance",
+            "description": "Hopefully it won't be another long gap between seasons for the Apple TV+ series, but you're definitely going to have some time to fill.",
+            "url": "https://gizmodo.com/what-to-watch-if-you-like-severance-streaming-2000577595",
+            "urlToImage": "https://gizmodo.com/app/uploads/2025/03/Dark_Matter.jpg",
+            "publishedAt": "2025-03-19T16:15:38Z",
+            "content": "The Severance season two finale is this week, making this both a thrilling and devastating moment for its devoted fans. Finally, some answers (maybe?) about all those lingering mysteries! But also, t… [+5922 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Thomas Maxwell",
+            "title": "China Delays BYD Factory in Mexico Over Concerns Tech Will Leak to American Rivals",
+            "description": "Spiderman pointing at Spiderman meme.",
+            "url": "https://gizmodo.com/china-delays-byd-factory-in-mexico-over-concerns-tech-will-leak-to-american-rivals-2000578281",
+            "urlToImage": "https://gizmodo.com/app/uploads/2025/03/GettyImages-2204851234.jpg",
+            "publishedAt": "2025-03-19T20:40:03Z",
+            "content": "China is frequently a target of criticism over allegations that it does not innovate but instead exfiltrates intellectual property developed abroad and wins by undercutting rivals on price. Now that … [+3860 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Blog.google"
+            },
+            "author": "Molly McHugh-JohnsonContributorThe Keyword",
+            "title": "6 tips to get the most out of Deep Research",
+            "description": "This graphic features four stylized web page layouts with pink and red accents on a black background. A light blue Start research button is centered, and a pink and purple star is in the upper left corner.",
+            "url": "https://blog.google/products/gemini/tips-how-to-use-deep-research/",
+            "urlToImage": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/unnamed_1_FYiEeaL.width-1300.png",
+            "publishedAt": "2025-03-19T16:00:00Z",
+            "content": "Aarush and software engineer Mukund Sridhar had an idea to build an AI system that researched all this for you and created a report of options. After a few weeks of prototyping with his team, Mukund … [+1752 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "bradypsnyder@gmail.com (Brady Snyder)",
+            "title": "You can finally use Gemini without a Google account, but there's a catch",
+            "description": "Gemini has long required a Google account for access, but it's now following the footsteps of ChatGPT by dropping that requirement on the web.",
+            "url": "https://www.androidcentral.com/apps-software/you-can-finally-use-gemini-without-a-google-account-but-theres-a-catch",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/Msynp8USt4qpuR962SgJfF-1200-80.jpg",
+            "publishedAt": "2025-03-19T19:57:45Z",
+            "content": "What you need to know\r\n<ul><li>Google is taking a cue from OpenAI and making Gemini available to access without an account.</li><li>You can now use Gemini on the web without signing into your Google … [+2061 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "techkritiko@gmail.com (Jay Bonggolto)",
+            "title": "Gemini is taking over Chromebooks, leaving Google Assistant in the dust",
+            "description": "Gemini is taking Google Assistant’s place on Chromebooks with ChromeOS 134 rollout.",
+            "url": "https://www.androidcentral.com/chromebooks-laptops/gemini-is-taking-over-chromebooks-leaving-google-assistant-in-the-dust",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/w44Rm3wotEbnqdZ8BPWSjM-1200-80.jpg",
+            "publishedAt": "2025-03-19T10:15:04Z",
+            "content": "What you need to know\r\n<ul><li>Google is phasing out Assistant and bringing in Gemini as the new default AI on ChromeOS.</li><li>Tapping Assistant now opens the Gemini PWA, complete with file uploads… [+2328 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "nandika.iyerravi@futurenet.com (Nandika Ravi)",
+            "title": "Pixel 9a arrives with a fresh new look, packs tons of AI features, and a massive battery life",
+            "description": "Google launched its budget phone by adding to its latest Pixel 9 series, which has a sleek new look and all the AI features you'd need.",
+            "url": "https://www.androidcentral.com/phones/google/pixel-9a-arrives-with-a-fresh-new-look",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/KJXtYDWoTq5WCEsME2AsXB-1200-80.jpg",
+            "publishedAt": "2025-03-19T14:00:10Z",
+            "content": "What you need to know\r\n<ul><li>Google Pixel 9a arrives with a new look, ditching the usual pill-shaped aluminum camera bar for a flat rear panel.</li><li>The device comes with an extended battery lif… [+4353 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "michael.hicks@futurenet.com (Michael L Hicks)",
+            "title": "Google Pixel 9a vs. Pixel 8a: More than a facelift",
+            "description": "The Google Pixel 9a will wow you with its larger, brighter display and excellent battery life, but 8a owners may not have enough reason to upgrade.",
+            "url": "https://www.androidcentral.com/phones/google/google-pixel-9a-vs-pixel-8a",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/X4LoRMCV4CBHh7tFn2xGiA-1200-80.jpg",
+            "publishedAt": "2025-03-19T14:00:10Z",
+            "content": "Judging the Google Pixel 9a vs. Pixel 8a is about more than the specs. Yes, Google significantly upgraded the display, main camera, and battery life. You must also weigh its drastic no-camera-bar red… [+12824 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "nickodiaz@sbcglobal.net (Nickolas Diaz)",
+            "title": "Verizon US is first to get satellite texting to any device with select Android smartphones",
+            "description": "Verizon highlighted satellite text messaging arriving for U.S. consumers first for \"select\" devices.",
+            "url": "https://www.androidcentral.com/phones/verizon-wireless/verizon-satellite-texting-us-customers-first-select-phones",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/65hKEGK9vD7preeiWwBoh3-1200-80.jpg",
+            "publishedAt": "2025-03-19T19:22:11Z",
+            "content": "What you need to know\r\n<ul><li>Verizon says its U.S. customers will be the first to receive satellite-based text messaging for \"select\" Android phones.</li><li>The post says only the Galaxy S25 and P… [+3164 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "yorknectar@gmail.com (Judy Sanhz)",
+            "title": "How many software updates will the Google Pixel 9a get?",
+            "description": "You won't have to worry about ending up with an outdated phone for many years to come. Google gives the Pixel 9a various years of updates.",
+            "url": "https://www.androidcentral.com/phones/google/how-many-software-updates-will-the-google-pixel-9a-get",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/iqQmsFnXPX4jGBwouVwAGB-1200-80.jpg",
+            "publishedAt": "2025-03-19T14:00:00Z",
+            "content": "How many software updates will the Google Pixel 9a get?\r\nGoogle gives the Google Pixel 9a seven years of OS and security updates, as well as frequent Pixel Drops, which give users access to fantastic… [+1858 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "roydon.cerejo@gmail.com (Roydon Cerejo)",
+            "title": "Google Pixel 9a vs. Samsung Galaxy S24 FE: It's a tough choice",
+            "description": "The Pixel 9a has a lot going for it at just $500, but so does the Galaxy S24 FE for a bit more money. It'll ultimately depend on software, battery life, and ergonomics.",
+            "url": "https://www.androidcentral.com/phones/google/google-pixel-9a-vs-samsung-galaxy-s24-fe",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/2f7mpfHXguDNwaFGso2TNB-1200-80.jpg",
+            "publishedAt": "2025-03-19T14:00:00Z",
+            "content": "Samsung's FE series has been an excellent choice for anyone who wanted a flagship phone, without the flagship pricing. The latest one is the Galaxy S24 FE, which has all the right upgrades we were ho… [+9360 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "michael.hicks@futurenet.com (Michael L Hicks)",
+            "title": "Google's clinical sleep lead has cool ideas for the future of smartwatch sleep data",
+            "description": "Sleep tracking on smartwatches keeps getting more complicated, but Google's sleep lead has even more ambitious dreams of what comes next.",
+            "url": "https://www.androidcentral.com/wearables/google-clinical-sleep-lead-has-cool-ideas-for-future-of-smartwatch-sleep-tracking",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/ymdSSzjLMx2zACaJskXdEM-1200-80.jpg",
+            "publishedAt": "2025-03-19T17:00:00Z",
+            "content": "My weekly column focuses on the state of Wear OS, from new developments and updates to the latest apps and features we want to highlight.\r\nSmartwatches have tracked sleep for years, but as we see mor… [+8364 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "roydon.cerejo@gmail.com (Roydon Cerejo)",
+            "title": "Google Pixel 9a vs. Pixel 7a: Time to upgrade?",
+            "description": "The Pixel 7a continued to offer tremendous value even with the 8a in the picture, but nearly two years on and it might be time to trade up to the 9a.",
+            "url": "https://www.androidcentral.com/phones/google/google-pixel-9a-vs-pixel-7a",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/BciJF9MfTRJVKdER5zttUB-1200-80.jpg",
+            "publishedAt": "2025-03-19T14:00:00Z",
+            "content": "The Google Pixel 7a was a banger of a budget phone, and it continued to be our go-to recommendation even during the initial phase of the Pixel 8a launch. What makes it even better in 2025 is Google's… [+9719 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "sharmarajat@zoho.com (Rajat Sharma)",
+            "title": "How fast is the Google Pixel 9a charging speed?",
+            "description": "The Google Pixel 9a supports slightly faster charging over its predecessor, when paired with right USB-C charger. It supports wireless charging too.",
+            "url": "https://www.androidcentral.com/phones/google/how-fast-is-the-google-pixel-9a-charging-speed",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/N4Abgy8YJhp4ScmyvkaoTB-1200-80.jpg",
+            "publishedAt": "2025-03-19T14:00:00Z",
+            "content": "How fast is the Google Pixel 9a charging speed?\r\nBest answer: The Google Pixel 9a supports up to 23W wired charging, provided you use Google's 45W USB-C wall charger. In addition to that, it supports… [+2008 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "harish.jonnalagadda@futurenet.com (Harish Jonnalagadda)",
+            "title": "Google does the right thing by delaying Pixel 9a pre-orders",
+            "description": "Google is investigating a 'component quality issue' with initial Pixel 9a units, so it isn't making pre-orders live just yet.",
+            "url": "https://www.androidcentral.com/phones/google/google-does-the-right-thing-by-delaying-pixel-9a-pre-orders",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/kSuT3zZm4ExSHmWU2a3MKB-1200-80.jpg",
+            "publishedAt": "2025-03-19T16:03:00Z",
+            "content": "Google just unveiled the Pixel 9a, bringing a fresh design to its mid-range devices along with the usual slate of upgrades. It gets the Tensor G4 — same as the Pixel 9 Pro XL — alongside a new 48MP c… [+2105 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "patrick.farmer@futurenet.com (Patrick Farmer)",
+            "title": "Forget the Pixel 9a, you can buy the standard Google Pixel 9 for JUST $399 at Mint Mobile today",
+            "description": "Bundle the purchase of the Google Pixel 9 with one year of the Unlimited plan at Mint Mobile and you'll get a straight 50% off both items.",
+            "url": "https://www.androidcentral.com/phones/google/forget-the-pixel-9a-you-can-buy-the-standard-google-pixel-9-for-just-usd399-at-mint-mobile-today",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/WFcrajSuHh2pA2Mx3EkwtN-1200-80.jpg",
+            "publishedAt": "2025-03-19T16:40:55Z",
+            "content": "Everyone is talking about the new Pixel 9a, but if you don't want to wait for the midrange smartphone to drop next month, there's a Google Pixel 9 deal at Mint Mobile that deserves your immediate att… [+1848 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "roydon.cerejo@gmail.com (Roydon Cerejo)",
+            "title": "Google Pixel 9a vs. Pixel 9: Sibling rivalry",
+            "description": "Google's previous A series phone offered far better value than the mainline Pixel, so does this apply to the Pixel 9a vs. Pixel 9 too? We find out if it's more logical to get the new 9a and save $200, over the 9.",
+            "url": "https://www.androidcentral.com/phones/google/google-pixel-9a-vs-pixel-9",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/tEvPRepyrPs4QyTneAFuQa-1200-80.jpg",
+            "publishedAt": "2025-03-19T14:00:00Z",
+            "content": "The Pixel A series has steadily been offering better value with each generation, thus blurring the line between it and the mainline Pixel phones more so than ever. Last year's Pixel 8a was a great ex… [+10902 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "christinep2424@gmail.com (Christine Persaud)",
+            "title": "Does the Google Pixel 9a support Qi2 wireless charging?",
+            "description": "The Google Pixel 9a has the biggest battery in a Pixel phone to date to keep up with your busy lifestyle.",
+            "url": "https://www.androidcentral.com/phones/google/does-the-google-pixel-9a-support-qi2-wireless-charging",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/JTZD98S224YP44HxTa7SVB-1200-80.jpg",
+            "publishedAt": "2025-03-19T14:00:00Z",
+            "content": "Does the Google Pixel 9a support Qi2 wireless charging?\r\nBest answer: No, the Google Pixel 9a does not support Qi2 wireless charging. It is, however, Qi-certified and supports slower wireless chargin… [+3066 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CNET"
+            },
+            "author": "Lori Grunin",
+            "title": "Razer Wants to Be Your Copilot. New Developer Tools May Bring More AI to Games",
+            "description": "The new software developer kit aims to help developers catch more bugs and give better in-game advice.",
+            "url": "https://www.cnet.com/tech/gaming/razer-wants-to-be-your-and-your-fave-game-devs-copilot/",
+            "urlToImage": "https://www.cnet.com/a/img/resize/95b5b0a7c653f01e0e2d982b2f160dd0c3ef9f4e/hub/2025/03/18/51ae6a7e-9952-43b0-8e7b-dd1953a67d19/assetocorsa-freyja-prod-bnr-1920x700-1.jpg?auto=webp&fit=crop&height=675&width=1200",
+            "publishedAt": "2025-03-19T15:00:00Z",
+            "content": "You may or may not care about Razer's developer tools but there are a couple that might affect you as a gamer: two AI helpers tucked into WYVRN, its new, all-in-one software developer kit. Those two … [+1045 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CNET"
+            },
+            "author": "Patrick Holland",
+            "title": "The Pixel 9A's New Design Might Raise Eyebrows, but the Price Is Right",
+            "description": "The $499 Pixel 9A is a follow-up to one of our favorite phones from 2024, the Pixel 8A. Google kept the price under $500 and added a big, 5,100-mAh battery.",
+            "url": "https://www.cnet.com/tech/mobile/the-pixel-9as-new-design-might-raise-eyebrows-but-the-price-is-right/",
+            "urlToImage": "https://www.cnet.com/a/img/resize/cd45a7b0a80b8d4cfa0b6e04a0df9e8d85b2b84d/hub/2025/03/18/43864423-b5ab-4e3e-b343-a6911a16817f/pixel-9a-phone-1617.jpg?auto=webp&fit=crop&height=675&width=1200",
+            "publishedAt": "2025-03-19T14:00:00Z",
+            "content": "The newly announced Google Pixel 9A has big shoes to fill. The affordable phone is the follow-up to one of my favorite phones from 2024, the Pixel 8A, which earned a CNET Editors' Choice Award. With … [+10695 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CNET"
+            },
+            "author": "Andrew Lanxon",
+            "title": "Google Missed a Huge Opportunity With the Pixel 9A",
+            "description": "Commentary: With Apple not refreshing its iPhone SE line, I feel Google had an opportunity that it squandered.",
+            "url": "https://www.cnet.com/tech/mobile/google-missed-a-huge-opportunity-with-the-pixel-9a/",
+            "urlToImage": "https://www.cnet.com/a/img/resize/46e07578c6ec1de5343d2fe45f200fbf9657a1b5/hub/2025/03/18/e4ec5c20-4df2-4245-8184-b1902aa88d5d/pixel-9a-phone-1765.jpg?auto=webp&fit=crop&height=675&width=1200",
+            "publishedAt": "2025-03-19T15:00:00Z",
+            "content": "Google's Pixel 9A takes the essence of what makes the company's Pixel 9 Pro so good and wraps it up in a more affordable package. We've always loved the Pixel A series for their balance of performanc… [+6484 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MacRumors"
+            },
+            "author": "Juli Clover",
+            "title": "Budget Smartphone Battle: iPhone 16e vs. Nothing Phone 3a Pro",
+            "description": "Android smartphone maker Nothing recently came out with the Phone 3a and Phone 3a Pro, just a little after Apple launched the iPhone 16e. Since Nothing's smartphone is targeting roughly the same group of smartphone buyers as the ‌iPhone 16e‌, we thought we'd …",
+            "url": "https://www.macrumors.com/2025/03/19/iphone-16e-vs-nothing-phone-3a-pro/",
+            "urlToImage": "https://images.macrumors.com/t/1xF8DMOEPT04WaAoJ7dr8EazmuE=/2500x/article-new/2025/03/Nothing-Phone-3a-Pro-vs-iPhone-16e-Thumb-1.jpg",
+            "publishedAt": "2025-03-19T17:50:45Z",
+            "content": "Android smartphone maker Nothing recently came out with the Phone 3a and Phone 3a Pro, just a little after Apple launched the iPhone 16e. Since Nothing's smartphone is targeting roughly the same grou… [+2078 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Slashdot.org"
+            },
+            "author": "msmash",
+            "title": "AI Crawlers Haven't Learned To Play Nice With Websites",
+            "description": "SourceHut, an open-source-friendly git-hosting service, says web crawlers for AI companies are slowing down services through their excessive demands for data. From a report: \"SourceHut continues to face disruptions due to aggressive LLM crawlers,\" the biz rep…",
+            "url": "https://slashdot.org/story/25/03/19/1027251/ai-crawlers-havent-learned-to-play-nice-with-websites",
+            "urlToImage": "https://a.fsdn.com/sd/topics/ai_64.png",
+            "publishedAt": "2025-03-19T17:25:00Z",
+            "content": "\"SourceHut continues to face disruptions due to aggressive LLM crawlers,\" the biz reported Monday on its status page. \"We are continuously working to deploy mitigations. We have deployed a number of … [+639 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Alistair Barr",
+            "title": "Apple is becoming a utility. That's hard for fanboys to take.",
+            "description": "Apple's utility-like evolution keeps iPhone sales steady, driving massive market value growth, even as AI delays leave fanboys disappointed.",
+            "url": "https://www.businessinsider.com/apple-becoming-utility-iphone-fanboys-2025-3",
+            "urlToImage": "https://i.insider.com/67d8c2c4b8b41a9673fae9bb?width=1200&format=jpeg",
+            "publishedAt": "2025-03-19T09:00:01Z",
+            "content": "A member of the NYPD Pipes and Drums uses an iPhone to check bagpipe pitch ahead of a St. Patrick's Day Parade.Alexi Rosenfeld/Getty Images\r\n<ul><li>iPhone sales have flatlined for a decade, and Siri… [+8170 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Alistair Barr",
+            "title": "Nvidia CEO Jensen Huang says every company will become an 'AI factory.' Here's what he means.",
+            "description": "Jensen Huang, Nvidia's CEO, envisions companies as 'AI factories' churning out millions of tokens. This is what he's talking about.",
+            "url": "https://www.businessinsider.com/nvidia-jensen-huang-ai-factory-tokens-2025-3",
+            "urlToImage": "https://i.insider.com/67db3264b8b41a9673fb28ab?width=1200&format=jpeg",
+            "publishedAt": "2025-03-19T22:10:21Z",
+            "content": "Nvidia CEO Jensen Huang delivers the keynote address during the GTC 2025 conference in San Jose.Justin Sullivan/Getty Images\r\n<ul><li>Nvidia CEO Jensen Huang predicts companies will become AI factori… [+5329 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Shefali Kapadia",
+            "title": "Companies' biggest barrier to AI isn't tech — it's employee pushback. Here's how to overcome it.",
+            "description": "Companies like Colgate-Palmolive and Rent a Mac include employees in the AI implementation process to prevent anxiety and \"change fatigue.\"",
+            "url": "https://www.businessinsider.com/how-to-prevent-employee-skepticism-push-back-gen-ai-2025-3",
+            "urlToImage": "https://i.insider.com/67d1fb70585f1dff88b1f82a?width=1200&format=jpeg",
+            "publishedAt": "2025-03-19T16:08:01Z",
+            "content": "Getty Images; Karan Singh for BI\r\n<ul><li>When company leaders introduce AI to their workforces, they often face employee skepticism.</li><li>Colgate-Palmolive and Rent a Mac use employee feedback an… [+7240 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Hasan Chowdhury",
+            "title": "2 reasons why Nvidia's Jensen Huang isn't worried",
+            "description": "Nvidia CEO Jensen Huang pointed to powerful new chips and the company's role in a fast-growing area of AI as reasons for demand remaining high.",
+            "url": "https://www.businessinsider.com/jensen-huang-nvidia-ai-chip-demand-gtc-rubin-blackwell-hopper-2025-3",
+            "urlToImage": "https://i.insider.com/67dac73869253ccddf99ac30?width=1200&format=jpeg",
+            "publishedAt": "2025-03-19T15:19:43Z",
+            "content": "Nvidia CEO Jensen Huang showed off powerful new chips to convince investors that demand will remain high.Justin Sullivan/Getty Images\r\n<ul><li>Jensen Huang is confident that queues for Nvidia chips a… [+3128 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Hugh Langley",
+            "title": "In leaked memos, Google bosses address the $32 billion Wiz deal: 'We don't make deals like this every day'",
+            "description": "Top executives at Google highlight the $32 billion Wiz acquisition, the company's largest deal ever, amid a critical time for AI and cybersecurity.",
+            "url": "https://www.businessinsider.com/google-wiz-deal-leaked-memos-2025-3",
+            "urlToImage": "https://i.insider.com/67daf58d585f1dff88b298ba?width=1200&format=jpeg",
+            "publishedAt": "2025-03-19T17:52:23Z",
+            "content": "Google CEO Sundar Pichai.Justin Sullivan/Getty Images\r\n<ul><li>Google agreed to buy cybersecurity firm Wiz for $32 billion, the company's biggest-ever acquisition.</li><li>Google Cloud CEO Thomas Kur… [+3465 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Julia Hornstein",
+            "title": "Shield AI's cofounder says the US military needs 'more affordable, intelligent drones.' He thinks 'millions' could be built under the Trump administration.",
+            "description": "Brandon Tseng believes affordable, intelligent drones are crucial for the US military, highlighting their potential to transform defense strategies.",
+            "url": "https://www.businessinsider.com/affordable-ai-military-drones-shield-ai-2025-3",
+            "urlToImage": "https://i.insider.com/67dae5f1b8b41a9673fb1836?width=1200&format=jpeg",
+            "publishedAt": "2025-03-19T15:45:56Z",
+            "content": "Shield AI cofounder Brandon Tseng. Shield AI\r\n<ul><li>Shield AI builds autonomous drones and AI-powered software for the military.</li><li>Cofounder Brandon Tseng says the US needs more affordable, i… [+5444 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Kenneth Niemeyer,Lauren Edmonds,Emma Cosgrove",
+            "title": "Disney is getting into the next-gen robot game and it's kind of cute",
+            "description": "Disney is partnering with Nvidia and Google DeepMind to create Newton, an open-source physics engine that will help robots learn complex tasks.",
+            "url": "https://www.businessinsider.com/disney-next-gen-robots-bdx-droid-blue-nvidia-google-deepmind-2025-3",
+            "urlToImage": "https://i.insider.com/67db163a585f1dff88b29f34?width=1200&format=jpeg",
+            "publishedAt": "2025-03-19T22:00:32Z",
+            "content": "Star Wars BDX droids at Disney's \"Season of the Force\" event.Paul Bersebach/MediaNews Group/Orange County Register via Getty Images\r\n<ul><li>Disney is partnering with Nvidia and Google DeepMind to cr… [+3671 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Ashley Stewart,Hugh Langley,Melia Russell,Dan Whateley,Madeline Stone,Ben Bergman,Rebecca Torrence",
+            "title": "Tech employees are getting the message: Play time's over",
+            "description": "The tables have turned for tech employees as performance pressure and proclamations of \"efficiency\" and \"intensity\" replace perks and pampering.",
+            "url": "https://www.businessinsider.com/tech-industry-amazon-microsoft-meta-google-companies-intensity-hardcore-2025-3",
+            "urlToImage": "https://i.insider.com/67d9a80369253ccddf999552?width=1200&format=jpeg",
+            "publishedAt": "2025-03-19T09:00:01Z",
+            "content": "Saul Loeb/AFP via Getty; Getty; Rebecca Zisser/BI\r\n<ul><li>A trifecta of economics, post-pandemic realities, and political pressure is changing tech culture.</li><li>From Big Tech to Silicon Valley s… [+11774 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Ashley Stewart",
+            "title": "Microsoft is replacing its chief people officer as it rethinks performance reviews. Read CEO Satya Nadella's email.",
+            "description": "The change comes after Microsoft fired nearly 2,000 employees deemed low-performance were fired by Microsoft in January and February.",
+            "url": "https://www.businessinsider.com/microsoft-replaces-top-hr-exec-performance-reviews-2025-3",
+            "urlToImage": "https://i.insider.com/67daeb64585f1dff88b29707?width=801&format=jpeg",
+            "publishedAt": "2025-03-19T16:50:40Z",
+            "content": "Kathleen Hogan, who was chief people officer at Microsoft, will switch to a role in the company's Office of Strategy and Transformation.Microsoft\r\n<ul><li>Microsoft has replaced its chief people offi… [+5229 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Peter Kafka",
+            "title": "Wait a minute. Has Elon Musk really turned Twitter around, after all?",
+            "description": "Elon Musk scared away many advertisers after he bought Twitter in 2022, and the company's value plummeted. Now it has reportedly recovered.",
+            "url": "https://www.businessinsider.com/elon-musk-x-twitter-value-advertising-2025-3",
+            "urlToImage": "https://i.insider.com/67db1e5f585f1dff88b2a0e3?width=1200&format=jpeg",
+            "publishedAt": "2025-03-19T21:05:46Z",
+            "content": "Elon Musk scared away many of his advertisers after he bought Twitter in 2022, and the company's value plummeted. Now it has reportedly recovered.Samuel Corum/Getty Images\r\n<ul><li>Elon Musk bought T… [+5285 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Hallam Bullock",
+            "title": "Pressure is ramping up in Big Tech. Employees told BI how they feel about it.",
+            "description": "\"Do more with less.\" That's the new mantra in Silicon Valley. Gone are the days of perks and pampering.",
+            "url": "https://www.businessinsider.com/pressure-is-ramping-up-in-big-tech-employees-told-bi-how-they-feel-about-it-2025-3",
+            "urlToImage": "https://i.insider.com/67dabcf0b8b41a9673fb1135?width=1200&format=jpeg",
+            "publishedAt": "2025-03-19T13:27:23Z",
+            "content": "Brendan Smialowski/AFP/Getty\r\n<ul><li>This post originally appeared in the Business Insider Today newsletter.</li><li>You can sign up for Business Insider's daily newsletter here.</li></ul>Good morni… [+7029 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Harvard Business Review"
+            },
+            "author": null,
+            "title": "Alphabet CEO on AI as a Workplace Collaborator",
+            "description": "A conversation with Sundar Pichai about how Google is developing, deploying, and adopting AI.",
+            "url": "https://hbr.org/podcast/2025/03/alphabet-ceo-on-ai-as-a-workplace-collaborator",
+            "urlToImage": "https://hbr.org/resources/images/article_assets/2024/11/wide-hbr-on-strategy-24.png",
+            "publishedAt": "2025-03-19T12:22:00Z",
+            "content": "HANNAH BATES: Welcome to HBR On Strategy—case studies and conversations with the world’s top business and management experts, hand-selected to help you unlock new ways of doing business.\r\nGenerative … [+25350 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Kotaku"
+            },
+            "author": "Kenneth Shepard",
+            "title": "Game Informer Seems To Be Teasing A Comeback",
+            "description": "It’s not every day you get good news in the media landscape, but it looks like we might have some. Game Informer, the longest-running video game magazine in America, was shut down last August by its wretched owners over at GameStop. However, it looks like the…",
+            "url": "https://kotaku.com/game-informer-continue-teaser-coming-back-magazine-1851771006",
+            "urlToImage": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/87e6ded70d085682b4812532829df19d.jpg",
+            "publishedAt": "2025-03-19T17:15:00Z",
+            "content": "Its not every day you get good news in the media landscape, but it looks like we might have some. Game Informer, the longest-running video game magazine in America, was shut down last August by its w… [+1582 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "VentureBeat"
+            },
+            "author": "Ben Dickson",
+            "title": "Beyond RAG: SEARCH-R1 integrates search engines directly into reasoning models",
+            "description": "SEARCH-R1 trains LLMs to gradually think and conduct online search as they generate answers for reasoning problems.",
+            "url": "https://venturebeat.com/ai/beyond-rag-search-r1-integrates-search-engines-directly-into-reasoning-models/",
+            "urlToImage": "https://venturebeat.com/wp-content/uploads/2025/03/cfr0z3n_midcentury_modernist_retrofuturistic_style_det_c17aaff2-438d-490d-a7b3-dfb6b4d7c24d-1.png?w=1024?w=1200&strip=all",
+            "publishedAt": "2025-03-19T15:06:00Z",
+            "content": "Join our daily and weekly newsletters for the latest updates and exclusive content on industry-leading AI coverage. Learn More\r\nLarge language models (LLMs) have seen remarkable advancements in using… [+6051 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "VentureBeat"
+            },
+            "author": "Carl Franzen",
+            "title": "Adobe previews AI generated PowerPoints from raw customer data with ‘Project Slide Wow’",
+            "description": "The fate of Project Slide Wow depends on user interest and engagement, as Adobe monitors social media conversations.",
+            "url": "https://venturebeat.com/ai/adobe-previews-ai-generated-powerpoints-from-raw-customer-data-with-project-slide-wow/",
+            "urlToImage": "https://venturebeat.com/wp-content/uploads/2025/03/two-people-comp-display.png?w=1024?w=1200&strip=all",
+            "publishedAt": "2025-03-19T16:45:50Z",
+            "content": "Join our daily and weekly newsletters for the latest updates and exclusive content on industry-leading AI coverage. Learn More\r\nToday at Adobes annual digital innovation conference Summit 2024 in Las… [+6042 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": null,
+            "title": "At Nvidia's GTC event, Pat Gelsinger reiterated that Jensen 'got lucky with AI,' Intel missed the boat with Larrabee",
+            "description": null,
+            "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_8d6adfb0-49eb-4c52-a1e5-b18f079a4f4a",
+            "urlToImage": null,
+            "publishedAt": "2025-03-19T14:35:43Z",
+            "content": "If you click 'Accept all', we and our partners, including 239 who are part of the IAB Transparency &amp; Consent Framework, will also store and/or access information on a device (in other words, use … [+702 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": "editorial-team@simplywallst.com (Simply Wall St)",
+            "title": "D-Wave Quantum (NYSE:QBTS) Sees 101% Surge Following Notable US$86 Million Q4 Net Loss",
+            "description": "D-Wave Quantum (NYSE:QBTS) saw an impressive price surge of 101% last week, likely influenced by pivotal recent events. The announcement on March 12 of a...",
+            "url": "https://finance.yahoo.com/news/d-wave-quantum-nyse-qbts-173913668.html",
+            "urlToImage": "https://media.zenfs.com/en/simply_wall_st__316/4ede54afa2108a12bdee07c0b0d94a59",
+            "publishedAt": "2025-03-19T17:39:13Z",
+            "content": "D-Wave Quantum saw an impressive price surge of 101% last week, likely influenced by pivotal recent events. The announcement on March 12 of a groundbreaking achievement, where their annealing quantum… [+3461 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "X.com"
+            },
+            "author": "John Gruber",
+            "title": "Apple Silicon Is Groundbreaking for AI",
+            "description": null,
+            "url": "https://x.com/alexocheema/status/1899735281781411907?s=42",
+            "urlToImage": null,
+            "publishedAt": "2025-03-19T20:44:22Z",
+            "content": "Alex Cheema is the founder of EXO Labs, an AI company focused on “AI you can trust with your data” by making systems that run locally, on computers you own and control. Apple provided him with two M3… [+738 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Joe Tilleli",
+            "title": "The Galaxy Z Fold6 is Now Priced at $719, Samsung is Cutting $1300 Off the Official Price",
+            "description": "Save up to $1,000 with a trade-in and another $300 if you choose to go pink.",
+            "url": "https://gizmodo.com/the-galaxy-z-fold6-is-now-priced-at-719-samsung-is-cutting-1300-off-the-official-price-2000577792",
+            "urlToImage": "https://gizmodo.com/app/uploads/2025/03/ZFold6Pink.jpg",
+            "publishedAt": "2025-03-19T11:40:27Z",
+            "content": "Attention all Android-heads. The Samsung Galaxy Z Fold 6 is on sale with a ton of interesting offers. To start off, select colors (on the 512GB model) are on sale for $300 off. A closer looks will sh… [+2175 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Florence Ion",
+            "title": "Google’s Pixel 9a Could Be One of the Best Deals in Smartphones",
+            "description": "$500 gets you all of the best parts of being a Google Pixel user. You just have to want to be a part of this ecosystem.",
+            "url": "https://gizmodo.com/googles-pixel-9a-could-be-one-of-the-best-deals-in-smartphones-2000577856",
+            "urlToImage": "https://gizmodo.com/app/uploads/2025/03/Pixel-9a-Hero.jpg",
+            "publishedAt": "2025-03-19T14:00:16Z",
+            "content": "For some people around the world, it may feel like spring. For us in Gadget Land, it’s “affordable” phone season. Last month, we had Apple’s iPhone 16e make a grand entrance with its $600 offering of… [+3911 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Monica J. White",
+            "title": "More than 90 racing games are about to get a lot more ‘real’ thanks to Razer",
+            "description": "Razer has just rebranded its AI game tool, now called the AI Game Copilot. The company also revealed some other AI-based game goodies.",
+            "url": "https://www.digitaltrends.com/computing/razer-ai-game-copilot-revealed/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2024/09/Razer-last-minute-releases-featuring-Kraken-V4-Pro-Lifestyle.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-19T15:00:29Z",
+            "content": "Razer has just unveiled a bunch of updates to its products and its software stack, and it’s all about AI. For starters, the Razer Sensa HD haptics which we’ve already seen in the Razer Kraken V4 Pro … [+2048 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Willow Roberts",
+            "title": "Razer’s new AI-powered bug detector could help games release faster",
+            "description": "Razer's new AI tech could help game developers find bugs quick and finish games quicker.",
+            "url": "https://www.digitaltrends.com/computing/razers-new-ai-game-development-tech/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/01/razer-blade-15-2025-05.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-19T15:00:10Z",
+            "content": "Razer has announced a new AI-powered game development tool called AI QA Copilot, which aims to help QA testers find and report bugs faster.\r\nA faster QA cycle could help developers get games out of t… [+2147 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Bryan M. Wolfe",
+            "title": "T-Mobile partners with gaming giant to integrate AI into 6G",
+            "description": "We're hearing a little more about 6G and who will help develop it.",
+            "url": "https://www.digitaltrends.com/mobile/t-mobile-partners-with-gaming-giant-to-integrate-ai-into-6g/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/03/Gemini-Generated-6G.jpeg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-19T13:20:38Z",
+            "content": "5G is currently the standard for mobile connectivity. However, consumers will eventually be introduced to 6G. What will this new standard involve? We are starting to get an idea.\r\nNVIDIA has unveiled… [+1733 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Alex Blake",
+            "title": "This AI app boosts my productivity in a way that Apple Intelligence can’t",
+            "description": "I need a transcription tool to help with my interviews, but Apple Intelligence can’t recognize speakers. Fortunately, the MacWhisper app has just stepped up.",
+            "url": "https://www.digitaltrends.com/computing/macwhisper-this-ai-app-boosts-my-productivity-apple-intelligence/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/03/Mac-microphone-by-Khoiru-Abdan-on-Unsplash.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-19T12:02:38Z",
+            "content": "Table of Contents\r\nTable of Contents\r\nComing back for more\r\nBetter than the alternatives\r\nApple Intelligence offers a bunch of interesting features, but if you’ve tried most of them for more than a f… [+3567 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Kunal Khullar",
+            "title": "Intel releases XeSS 2.0 SDK, but keeps the code under lock and key",
+            "description": "Intel's XeSS 2.0 has limited support, but the SDK release should help expand adoption.",
+            "url": "https://www.digitaltrends.com/computing/intel-xess-2-sdk-goes-live/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/03/intel-xess-2.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-19T08:30:22Z",
+            "content": "Intel has finally released the XeSS 2.0 Software Development Kit (SDK) to aid game development through upscaling, frame generation, and latency reduction technologies. The SDK is now accessible via I… [+1975 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Britta O'Boyle",
+            "title": "There’s a new glow in dark phone but good luck buying it",
+            "description": "Realme has announced a couple of new to its portfolio in the P3 Ultra 5G and the P3 5G, with the former being the company’s first “Ultra” device and the world’s first smartphone to feature the MediaTek Dimensity 8350 Ultra chipset. We know, there’s a lot of u…",
+            "url": "https://www.digitaltrends.com/mobile/theres-a-new-glow-in-dark-phone-but-good-luck-buying-it/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/03/Realme-P3-Ultra.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-19T13:12:48Z",
+            "content": "Realme has announced a couple of new smartphones to its portfolio in the P3 Ultra 5G and the P3 5G, with the former being the company’s first “Ultra” device and the world’s first smartphone to featur… [+1755 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Georgina Torbet",
+            "title": "Tens of thousands of galaxies glitter in first mosaics from Euclid Space Telescope",
+            "description": "A European dark matter telescope called Euclid has released its first treasure trove of data, showing galaxies by the thousand.",
+            "url": "https://www.digitaltrends.com/space/euclid-first-deep-fields/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/03/Euclid_Deep_Field_South_16x_zoom.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-19T12:54:24Z",
+            "content": "Scientists working with the Euclid Space Telescope have released their first treasure trove of data, showing distant galaxies in deep field images of stunning detail. The telescope from the European … [+2895 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Derek Malcolm",
+            "title": "Soundcore Rave 3S review: Superb wireless mics make this karaoke speaker sing",
+            "description": "Party speakers are loud and cool, but you know what's cooler? Karaoke speakers, and the Soundcore Rave 3S might be the best one you can buy right now.",
+            "url": "https://www.digitaltrends.com/home-theater/soundcore-rave-3s-party-karaoke-speaker-review/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/03/soundcore-rave-3S-review-horizontal-two-mics.jpeg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-19T12:00:20Z",
+            "content": "Table of Contents\r\nTable of Contents\r\nSoundcore Rave 3S specs\r\nDesign and features\r\nWireless microphones and karaoke FTW\r\nHow does it sound?\r\nLights and Soundcore app\r\nThe bottom line\r\nWhen it comes … [+12633 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Github.io"
+            },
+            "author": null,
+            "title": "AI Blindspots – Blindspots in LLMs I've noticed while AI coding",
+            "description": "Blindspots in LLMs I’ve noticed while AI coding. Sonnet family emphasis. Maybe I will eventually suggest Cursor rules for these problems.",
+            "url": "https://ezyang.github.io/ai-blindspots/",
+            "urlToImage": null,
+            "publishedAt": "2025-03-19T16:48:32Z",
+            "content": "Blindspots in LLMs I’ve noticed while AI coding. Sonnet family emphasis. Maybe I will eventually suggest Cursor rules for these problems.\r\nThis site is made with Hugo Bear."
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "404media.co"
+            },
+            "author": "Emanuel Maiberg",
+            "title": "People Are Using AI to Create Influencers with Down Syndrome Who Sell Nudes",
+            "description": "Instagram’s unwillingness to moderate AI-generated content finds a new low.",
+            "url": "https://www.404media.co/people-are-using-ai-to-create-influencers-with-down-syndrome-who-sell-nudes/",
+            "urlToImage": "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDc2fHxpbnN0YWdyYW18ZW58MHx8fHwxNzQyMzkxNzI2fDA&ixlib=rb-4.0.3&q=80&w=2000",
+            "publishedAt": "2025-03-19T16:13:58Z",
+            "content": "A network of Instagram accounts is using AI to steal content from human creators and deepfake their faces to make them look like they have Down syndrome. 404 Media was able to determine the accounts … [+5410 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Scottishstoater.com"
+            },
+            "author": "Chris Collins",
+            "title": "Scoping a Local-First Image Archive",
+            "description": "For years, I’ve been thinking about how we store and access our digital files, especially photos.",
+            "url": "https://www.scottishstoater.com/2025/03/scoping-a-local-first-image-archive/",
+            "urlToImage": "https://www.scottishstoater.com/static/optimised/u2e5xIdUoW-630.jpeg",
+            "publishedAt": "2025-03-19T19:43:58Z",
+            "content": "For years, Ive been thinking about how we store and access our digital files, especially photos. Everything is moving to the cloud, with complex systems/applications that abstract away what should be… [+5862 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Donotpanic.news"
+            },
+            "author": "Nate Bear",
+            "title": "Google Imports Ex Israeli Spies",
+            "description": "Yesterday Google bought Israeli cybersecurity company Wiz for $32 billion.",
+            "url": "https://www.donotpanic.news/p/google-imports-ex-israeli-spies-the",
+            "urlToImage": "https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa43dd10e-4c2a-4995-b65a-102c3a04a8c7_1800x1200.jpeg",
+            "publishedAt": "2025-03-19T14:29:33Z",
+            "content": "Yesterday Google bought Israeli cybersecurity company Wiz for $32 billion. \r\nThe acquisition will mark the single largest transfer of former Israeli spies into an American company. This is because Wi… [+7716 chars]"
+        },
+        {
+            "source": {
+                "id": "buzzfeed",
+                "name": "Buzzfeed"
+            },
+            "author": "Aaron Hirsch",
+            "title": "If You Get A Perfect Score On This Disney Shoe Quiz, You Deserve A Free Pass To Disney World",
+            "description": "Bibbidi-bobbidi-boot up your Disney knowledgeView Entire Post ›",
+            "url": "https://www.buzzfeed.com/aaronhirsch/disney-shoe-quiz",
+            "urlToImage": "https://img.buzzfeed.com/buzzfeed-static/static/2025-03/17/20/thumb/4jaWTZCuZ.jpg?crop=2000:1047;0,0%26downsize=1250:*",
+            "publishedAt": "2025-03-19T18:42:17Z",
+            "content": "This post uses AI-powered creativity tools. Results can be unpredictable, surprising, and potentially offensive. Please use and share responsibly."
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": null,
+            "title": "AI Weekly: Sandwiches and 2,000-year-old scrolls",
+            "description": null,
+            "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_8d251d1c-6dfb-40d4-8f46-56e1017c4bf4",
+            "urlToImage": null,
+            "publishedAt": "2025-03-19T13:06:15Z",
+            "content": "If you click 'Accept all', we and our partners, including 238 who are part of the IAB Transparency &amp; Consent Framework, will also store and/or access information on a device (in other words, use … [+702 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": null,
+            "title": "Mark Cuban: How To Use AI To Grow Your Income",
+            "description": null,
+            "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_1d003199-f806-46f4-8636-7ab63911a5cc",
+            "urlToImage": null,
+            "publishedAt": "2025-03-19T18:00:27Z",
+            "content": "If you click 'Accept all', we and our partners, including 239 who are part of the IAB Transparency &amp; Consent Framework, will also store and/or access information on a device (in other words, use … [+702 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "AppleInsider"
+            },
+            "author": "news@appleinsider.com (Mike Wuerthele)",
+            "title": "2025 iPad 11 review: Incredibly minor improvements, not enough for Apple Intelligence",
+            "description": "Apple's latest update to the entry-level iPad doesn't add much, sits in a strange spot in the lineup, and is not powerful to join the company's Apple Intelligence push.2025 iPad 11 review: A new entry-level tabletThe entry-level iPad has always filled the rol…",
+            "url": "https://appleinsider.com/articles/25/03/19/2025-ipad-11-review-incredibly-minor-improvements-not-enough-for-apple-intelligence",
+            "urlToImage": "https://photos5.appleinsider.com/gallery/62951-130802-Pink-iPad-on-Couch-xl.jpg",
+            "publishedAt": "2025-03-19T14:03:44Z",
+            "content": "Apple's latest update to the entry-level iPad doesn't add much, sits in a strange spot in the lineup, and is not powerful to join the company's Apple Intelligence push.\r\nThe entry-level iPad has alwa… [+11936 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "AppleInsider"
+            },
+            "author": "news@appleinsider.com (William Gallagher)",
+            "title": "EU will force Apple to totally expose its iPhone features to all who ask",
+            "description": "The European Commission is forcing new rules on Apple — and only Apple — that will likely mean delaying or not releasing more iPhone software updates to the European Union, all in the name of interoperability with rivals.EU flags in Brussels — image credit: E…",
+            "url": "https://appleinsider.com/articles/25/03/19/eu-will-force-apple-to-totally-expose-its-iphone-features-to-all-who-ask",
+            "urlToImage": "https://photos5.appleinsider.com/gallery/59234-120873-000-lede-EU-xl.jpg",
+            "publishedAt": "2025-03-19T14:51:07Z",
+            "content": "The European Commission is forcing new rules on Apple — and only Apple — that will likely mean delaying or not releasing more iPhone software updates to the European Union, all in the name of interop… [+6086 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yanko Design"
+            },
+            "author": "JC Torres",
+            "title": "TECNO CAMON 40 Pro 5G Review: AI For All",
+            "description": "TECNO CAMON 40 Pro 5G Review: AI For AllThe smartphone landscape has witnessed a significant transformation in recent years, with artificial intelligence becoming a central focus of marketing campaigns across all price segments....",
+            "url": "https://www.yankodesign.com/2025/03/19/tecno-camon-40-pro-5g-review-ai-for-all/",
+            "urlToImage": "https://www.yankodesign.com/images/design_news/2025/03/tecno-camon-40-pro-5g-review-ai-for-all/tecno-camon-40-pro-5g-review-02.jpg",
+            "publishedAt": "2025-03-19T15:20:57Z",
+            "content": "PROS:\r\n<ul><li>Improved durability with Gorilla Glass 7i and IP68/69 rating</li><li>Holistic approach to AI</li><li>50MP front camera with autofocus</li><li>Privacy-respecting red LED when using the … [+13567 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yanko Design"
+            },
+            "author": "Gaurav Sood",
+            "title": "NVIDIA debuts world’s smallest personal supercomputer to push boundaries of generative AI",
+            "description": "NVIDIA debuts world’s smallest personal supercomputer to push boundaries of generative AINVIDIA founder and CEO, Jensen Huang revealed to the world the DGX Spark AI supercomputer during the keynote of the GTC 2025 conference in California....",
+            "url": "https://www.yankodesign.com/2025/03/19/nvidia-debuts-worlds-smallest-personal-supercomputer-to-push-boundaries-of-generative-ai/",
+            "urlToImage": "https://www.yankodesign.com/images/design_news/2025/03/nvidia-debuts-worlds-smallest-personal-supercomputer-to-push-the-boundaries-of-generative-ai/NVIDIA-DGX-Spark-Desktop-2.jpg",
+            "publishedAt": "2025-03-19T13:20:23Z",
+            "content": "NVIDIA founder and CEO, Jensen Huang revealed to the world the DGX Spark AI supercomputer during the keynote of the GTC 2025 conference in California. Formerly codenamed Project DIGITS, the high-perf… [+2712 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Windows Central"
+            },
+            "author": "samuelwtolbert@gmail.com (Samuel Tolbert)",
+            "title": "North American game workers form industry-wide union — \"We're done playing\"",
+            "description": "North American video game workers have formed the first gaming industry-wide union for the U.S. and Canada in collaboration with the CWA.",
+            "url": "https://www.windowscentral.com/gaming/north-america-video-game-industry-union-cwa",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/n52YjzmjnvvZD7QxWeC7E-1200-80.jpg",
+            "publishedAt": "2025-03-19T17:14:12Z",
+            "content": "Video game workers across North America formed the first industry-wide union with the Communication Workers of America (CWA), the union shared on Wednesday.\r\nUnited Videogame Workers-CWA Local 9433 i… [+2235 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Windows Central"
+            },
+            "author": "ben.wilson@windowscentral.com (Ben Wilson)",
+            "title": "ARK: Aquatica unveils the worst AI slop I've ever seen in this game trailer — \"Please sell the franchise to literally anyone else.\"",
+            "description": "A new trailer for \"ARK: Aquatica\" appears to have been almost entirely AI-generated, leading to a poor reception for the game.",
+            "url": "https://www.windowscentral.com/gaming/ark-aquatica-unveils-ai-generated-trailer",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/uFHTDQuxmX9rSXsbCHiAcg-1200-80.jpg",
+            "publishedAt": "2025-03-19T16:19:28Z",
+            "content": "In a striking example of how unpopular generative AI in gaming can be among enthusiasts, publisher Snail Games USA is seeing an overwhelmingly negative reaction to its latest game trailer for ARK: Aq… [+3215 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Windows Central"
+            },
+            "author": "richard.devine@futurenet.com (Richard Devine)",
+            "title": "NVIDIA's latest drivers bring DLSS 4 to some of the year's biggest releases so far",
+            "description": "Half Life 2 RTX, inZOI, Assassin's Creed Shadows, and The Last of Us Part 2 are all targeted with the latest NVIDIA drivers.",
+            "url": "https://www.windowscentral.com/gaming/pc-gaming/nvidias-latest-drivers-bring-dlss-4-to-some-of-the-years-biggest-releases-so-far",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/WMfLMSsMfG9THbzxQcpHfX-1200-80.jpg",
+            "publishedAt": "2025-03-19T12:26:07Z",
+            "content": "Driver releases are rarely the most exciting news, but they are important. In this case, NVIDIA's latest lays the groundwork to support some of the hottest titles to launch this year so far, all in o… [+1953 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Windows Central"
+            },
+            "author": "sean.endicott@futurenet.com (Sean Endicott)",
+            "title": "Surface Laptop 7 sale: Save big on \"the clamshell form factor perfected\"",
+            "description": "Microsoft's Surface Laptop 7 earned a perfect score in our review, and now it's on sale for $885. The deal slashes the cost of the thin-and-light laptop.",
+            "url": "https://www.windowscentral.com/hardware/laptops/surface-laptop-7-sale-save-big-on-the-clamshell-form-factor-perfected",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/nvynhxZDyQ2TAeGSQycAa3-1200-80.jpg",
+            "publishedAt": "2025-03-19T16:43:02Z",
+            "content": "\"Surface Laptop 7th Edition is the clamshell form factor perfected.\" That is how our senior editor and Surface expert Zac Bowden began his review of the device.\r\nWith that claim at the top of the pie… [+3284 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Science Daily"
+            },
+            "author": null,
+            "title": "Breakthrough in materials science: AI reveals secrets of dendritic growth in thin films",
+            "description": "Dendritic structures that emerge during the growth of thin films are a major obstacle in large-area fabrication, a key step towards commercialization. However, current methods of studying dendrites involve crude visual inspection and subjective analysis. More…",
+            "url": "https://www.sciencedaily.com/releases/2025/03/250319143433.htm",
+            "urlToImage": "https://www.sciencedaily.com/images/scidaily-icon.png",
+            "publishedAt": "2025-03-19T18:34:33Z",
+            "content": "Thin film devices, composed of layers of materials a few nanometers thick, play an important role in various technologies, from semiconductors to communication technologies. For instance, graphene an… [+3976 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Theregister.com"
+            },
+            "author": "Brandon Vigliarolo",
+            "title": "Datacenter vacancies hit record low as power shortages stall projects",
+            "description": "Supply chain and tariffs issues could spell trouble across multiple markets, warns JLL\nAnalysis ​Despite ongoing construction efforts, the North American colocation datacenter market is grappling with record-high occupancy rates. This surge in demand, coupled…",
+            "url": "https://www.theregister.com/2025/03/19/datacenter_vacancy_record_low/",
+            "urlToImage": "https://regmedia.co.uk/2018/03/21/shutterstock_denied_access.jpg",
+            "publishedAt": "2025-03-19T12:16:07Z",
+            "content": "Analysis Despite ongoing construction efforts, the North American colocation datacenter market is grappling with record-high occupancy rates. This surge in demand, coupled with delays in new projects… [+8815 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MakeUseOf"
+            },
+            "author": "Gavin Phillips",
+            "title": "I Tried Replacing Google With ChatGPT Search, But I'm Not Ditching Google Yet",
+            "description": "It's certainly useful, but for me, it's not an outright swap.",
+            "url": "https://www.makeuseof.com/chatgpt-search-chrome-extension-vs-google-search/",
+            "urlToImage": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2025/03/chatgpt-and-google-apps-on-smartphone-screens.jpg",
+            "publishedAt": "2025-03-19T17:00:15Z",
+            "content": "When OpenAI launched ChatGPT search in November 2024, it also launched a handy Chrome extension for the same tool. The idea is that you can replace Google Search with ChatGPT search, and it'll be jus… [+3695 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MakeUseOf"
+            },
+            "author": "Danny Maiorca",
+            "title": "10 Smartphone Photography Mistakes That Held Me Back for Years",
+            "description": "These mistakes kept me stuck—don’t let them stop you.",
+            "url": "https://www.makeuseof.com/smartphone-photography-mistakes-held-back/",
+            "urlToImage": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/09/person-taking-smartphone-photo-next-to-ocean-and-rocks-1.jpg",
+            "publishedAt": "2025-03-19T21:00:16Z",
+            "content": "You dont need a better camerayou need better habits. For years, I struggled to improve my phone photography, not realizing I was repeating the same mistakes. Once I fixed them, everything changedand … [+6058 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MakeUseOf"
+            },
+            "author": "Jayric Maning",
+            "title": "These Free Apps Will Instantly Improve Your Smartphone Photos",
+            "description": "Edit like a pro, shoot like a pro—all for zero dollars.",
+            "url": "https://www.makeuseof.com/free-apps-improve-smartphone-photos/",
+            "urlToImage": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/05/here_s_how_i_get_the_perfect_composition_in_my_smartphone_photos.jpg",
+            "publishedAt": "2025-03-19T22:00:15Z",
+            "content": "Many of the best photography apps often require premium subscriptions. However, leveling up your smartphone photography doesnt always mean spending more money. There are still a lot of free and power… [+6278 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Phandroid - News for Android"
+            },
+            "author": "Mike Viray",
+            "title": "Google Finally Unveils the Pixel 9a: Here’s What You need to Know!",
+            "description": "Google's latest midrange smartphone is here, and it packs quite a lot of new tricks up its sleeve.\nThe post Google Finally Unveils the Pixel 9a: Here’s What You need to Know! appeared first on Phandroid.",
+            "url": "https://phandroid.com/2025/03/19/google-finally-unveils-the-pixel-9a-heres-what-you-need-to-know/",
+            "urlToImage": "https://phandroid.com/wp-content/uploads/2025/03/pixel-9a-header-scaled.jpg",
+            "publishedAt": "2025-03-19T14:00:49Z",
+            "content": "Another year another new Pixel – well actually, the Pixel 9a is only one of several new Pixel models for 2025, if you count the still-unannounced Pixel 10 series. In any case, Google’s latest midrang… [+2297 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Phandroid - News for Android"
+            },
+            "author": "Tyler Lee",
+            "title": "Pixel 9a Crushes the iPhone 16e in Every Way That Matters",
+            "description": "Pixel 9a vs. iPhone 16e: Google's budget phone wins with a 120Hz OLED, AI cameras, and longer battery—$100 cheaper than Apple’s.\nThe post Pixel 9a Crushes the iPhone 16e in Every Way That Matters appeared first on Phandroid.",
+            "url": "https://phandroid.com/2025/03/19/pixel-9a-crushes-the-iphone-16e-in-every-way-that-matters/",
+            "urlToImage": "https://phandroid.com/wp-content/uploads/2025/03/Pixel-9a_3.jpg",
+            "publishedAt": "2025-03-19T16:00:13Z",
+            "content": "When it comes to budget-friendly smartphones, both Google and Apple claim to offer affordable alternatives to their flagship models. However, when you compare the Pixel 9a ($499) and the iPhone 16e (… [+5798 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Phandroid - News for Android"
+            },
+            "author": "Mike Viray",
+            "title": "The Pixel 9a is Here, but the 8a Remains the Better Affordable Option",
+            "description": "Should you go for last year's midrange Pixel instead?\nThe post The Pixel 9a is Here, but the 8a Remains the Better Affordable Option appeared first on Phandroid.",
+            "url": "https://phandroid.com/2025/03/19/the-pixel-9a-is-here-but-the-8a-remains-the-better-affordable-option/",
+            "urlToImage": "https://phandroid.com/wp-content/uploads/2024/06/pixel-8a-blue-640x456.png",
+            "publishedAt": "2025-03-19T15:00:02Z",
+            "content": "Google’s new Pixel 9a comes with some much-welcome features like the newer Tensor G4 chip, a large battery and bright display, and while it’s an ideal upgrade for people who are looking to switch ove… [+2055 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Webdesignerdepot.com"
+            },
+            "author": "WDD Staff",
+            "title": "From AI to Automation: The 2025 Toolkit for Web Designers & Agencies",
+            "description": "Gone are the days when “pretty pictures” alone could ensure visitor engagement. If your site isn’t responsive, practical, and easy to work with, users will quickly bounce. As a result, we’ve narrowed down a list of 10+ AI and professional design tools for web…",
+            "url": "https://webdesignerdepot.com/ai-design-tools-for-web-designers-2/",
+            "urlToImage": "https://webdesignerdepot-wp.s3.us-east-2.amazonaws.com/2025/03/18200742/1.jpeg",
+            "publishedAt": "2025-03-19T12:08:00Z",
+            "content": "Gone are the days when pretty pictures alone could ensure visitor engagement. If your site isnt responsive, practical, and easy to work with, users will quickly bounce.\r\nAs a result, weve narrowed do… [+23339 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Tympanus.net"
+            },
+            "author": "Fiddle.Digital",
+            "title": "StringTune: The JavaScript Library Born from a Design Agency’s Workflow",
+            "description": "Learn how to use this flexible JavaScript library for animations, smooth scrolling, and interactive effects.",
+            "url": "https://tympanus.net/codrops/2025/03/19/stringtune-the-javascript-library-born-from-a-design-agencys-workflow/",
+            "urlToImage": "https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2025/03/cover-x2-1.jpg?x78614",
+            "publishedAt": "2025-03-19T11:11:31Z",
+            "content": "From our partner:The AI visual builder for Next.js &amp; Tailwind: Generate UI with AI. Customize it with a visual editor.\r\nWe’ve invited the creators of StringTune to give us a deeper look into thei… [+10949 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "XDA Developers"
+            },
+            "author": "Mahnoor Faisal",
+            "title": "NotebookLM can now generate Mind Maps, and studying will never be the same",
+            "description": "Google NotebookLM is already an excellent AI tool for studying, and it just got better with Mind Maps.",
+            "url": "https://www.xda-developers.com/notebooklm-generate-mind-maps/",
+            "urlToImage": "https://static1.xdaimages.com/wordpress/wp-content/uploads/wm/2025/02/google-notebooklm-on-macbook.jpeg",
+            "publishedAt": "2025-03-19T19:04:32Z",
+            "content": "Frankly, most AI tools that students swear by arent all that great. Half the time, they generate inaccurate information, give incorrect answers, or overcomplicate things for no reason. NotebookLM doe… [+2563 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "XDA Developers"
+            },
+            "author": "Usama Jawad",
+            "title": "Microsoft is not shipping an included power adapter for the Surface Pro 11 in some markets",
+            "description": "Microsoft has made the Surface Pro 11's power supply an optional purchase that you need to pay extra for.",
+            "url": "https://www.xda-developers.com/microsoft-not-shipping-power-adapter-surface-pro-11/",
+            "urlToImage": "https://static1.xdaimages.com/wordpress/wp-content/uploads/wm/2025/03/surface-pro-11-5g-10.jpg",
+            "publishedAt": "2025-03-19T13:06:38Z",
+            "content": "Summary\r\n<ul><li>\r\n EU Microsoft Surface Pro 11 no longer includes charger due to laws to reduce e-waste.\r\n </li><li>\r\n Consumers in EU must now pay extra 90/£45 for 65W USB-C charger separately.\r\n <… [+2211 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Authority"
+            },
+            "author": "Rushil Agrawal",
+            "title": "Pixel 9a buyers aren’t getting any special AI perks from Google",
+            "description": "Google is heavily promoting the Pixel 9a’s Gemini features as a key selling point, but the phone doesn't offer any complimentary AI perks.",
+            "url": "https://www.androidauthority.com/pixel-9a-gemini-subscription-3535348/",
+            "urlToImage": "https://www.androidauthority.com/wp-content/uploads/2025/03/Google-Pixel-9a-colors.jpg",
+            "publishedAt": "2025-03-19T14:00:40Z",
+            "content": "<ul><li>Google is heavily promoting the Pixel 9as AI features, showcasing its Gemini-powered capabilities as a major selling point.</li><li>The Pixel 9a only comes with a one-month free trial of Gemi… [+2755 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Authority"
+            },
+            "author": "Aamir Siddiqui",
+            "title": "WhatsApp could soon help add sarcasm and puns to your next message (APK teardown)",
+            "description": "WhatsApp is working on an AI-based text rewriting tool that would let users change the style and tone of their typed message. Read on!",
+            "url": "https://www.androidauthority.com/whatsapp-ai-rewrite-apk-teardown-3536510/",
+            "urlToImage": "https://www.androidauthority.com/wp-content/uploads/2023/05/WhatsApp-logo-on-smartphone-next-to-everyday-accessories-Stock-photo-3.jpg",
+            "publishedAt": "2025-03-19T11:06:21Z",
+            "content": "<ul><li>WhatsApp is exploring a new AI-based text rewriting feature that would help users change the style and tone of their message.</li><li>When users type in the text box, a new Pencil button will… [+2131 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Authority"
+            },
+            "author": "Adamya Sharma",
+            "title": "What do you think of the Pixel 9a — Hot or Not?",
+            "description": "The Pixel 9a packs in plenty of upgrades over the Pixel 8a, but are they enough to keep you interested? Take our poll and share your thought!",
+            "url": "https://www.androidauthority.com/pixel-9a-hot-or-not-poll-3535631/",
+            "urlToImage": "https://www.androidauthority.com/wp-content/uploads/2025/03/Google-Pixel-9a-colors.jpg",
+            "publishedAt": "2025-03-19T14:00:30Z",
+            "content": "The Google Pixel 9a brings plenty of upgrades over the Pixel 8a at an unchanged starting price of $499. That said, the 256GB model is now $50 more expensive and comes in at $599.\r\nWhats improved, you… [+1824 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Authority"
+            },
+            "author": "Aamir Siddiqui",
+            "title": "Photo collages could soon help clean up your WhatsApp status update (APK teardown)",
+            "description": "WhatsApp is working on a photo collages feature for Status Updates, allowing users to choose from grids that accommodate up to six photos.",
+            "url": "https://www.androidauthority.com/whatsapp-layouts-status-update-apk-teardown-3536549/",
+            "urlToImage": "https://www.androidauthority.com/wp-content/uploads/2023/05/WhatsApp-logo-on-smartphone-next-to-everyday-accessories-Stock-photo-1.jpg",
+            "publishedAt": "2025-03-19T11:26:35Z",
+            "content": "<ul><li>WhatsApp is testing a photo collage feature for status updates.</li><li>Users will be able to choose from various grid layouts with up to six photos.</li><li>This feature is currently in deve… [+2231 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Authority"
+            },
+            "author": "Hadlee Simons",
+            "title": "This is the best Google Pixel 9a alternative I can recommend",
+            "description": "Google's latest mid-ranger is here, but what if you're looking for something a little different? This is our best Pixel 9a alternative.",
+            "url": "https://www.androidauthority.com/best-google-pixel-9a-alternative-3535634/",
+            "urlToImage": "https://www.androidauthority.com/wp-content/uploads/2025/02/Samsung-Galaxy-A56-Home-Screen.jpg",
+            "publishedAt": "2025-03-19T14:20:51Z",
+            "content": "The Google Pixel 9a is now official, and its arrived a few months earlier than previously expected. This looks like one of the best cheap phones of 2025 thanks to that Tensor G4 chip, a seven-year up… [+5985 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Authority"
+            },
+            "author": "Mitja Rutnik",
+            "title": "Pixel 9a vs Pixel 9: There’s a clear winner for me",
+            "description": "In the Google Pixel 9a vs Pixel 9 battle, one phone comes out on top for me, and it's not the one you think.",
+            "url": "https://www.androidauthority.com/google-pixel-9a-vs-pixel-9-3536042/",
+            "urlToImage": "https://www.androidauthority.com/wp-content/uploads/2025/03/Google-Pixel-9a-blue-rear-in-hand.jpg",
+            "publishedAt": "2025-03-19T14:00:37Z",
+            "content": "The Pixel lineup has expanded with the arrival of the new Pixel 9a, adding another layer of complexity to the purchase decision. Should you opt for the budget-friendly Pixel 9a, or invest a bit more … [+4903 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Space.com"
+            },
+            "author": "Robert Lea",
+            "title": "Euclid space telescope's 1st results reveal 'a goldmine of data' in search for dark matter and dark energy (images, video)",
+            "description": "The Euclid space telescope has dropped its first data and deep field observations showing millions of galaxies in great detail as it hunts for dark matter and dark energy clues.",
+            "url": "https://www.space.com/the-universe/euclid-space-telescopes-1st-results-reveal-a-goldmine-of-data-in-search-for-dark-matter-and-dark-energy-images-video",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/iFRCDt9qDmvmaUpCs83HUe-1200-80.png",
+            "publishedAt": "2025-03-19T11:00:00Z",
+            "content": "The day that astronomers have been waiting for is here. On Wednesday (March 19), the European Space Agency (ESA) spacecraft Euclid released its first data to the public and to the scientific communit… [+14783 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Authority"
+            },
+            "author": "Andrew Grush",
+            "title": "Pixel 9a vs iPhone 16e: I know which one I’d get",
+            "description": "As an Android user, I prefer the Pixel 9a, but I still think the iPhone 16e is the better phone in several ways.",
+            "url": "https://www.androidauthority.com/pixel-9a-vs-iphone-16e-3535782/",
+            "urlToImage": "https://www.androidauthority.com/wp-content/uploads/2025/03/Google-Pixel-9a-colors.jpg",
+            "publishedAt": "2025-03-19T14:10:11Z",
+            "content": "The Google Pixel 9a is now official, offering a respectable if not groundbreaking follow-up to the Pixel 8a. Googles budget flagship faces several competitors, but the recently introduced iPhone 16e … [+7225 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Authority"
+            },
+            "author": "Nick Fernandez",
+            "title": "Pixel 9a vs Galaxy S24 FE: The choice is clear for me",
+            "description": "Need a new mid-range Android phone? The Google Pixel 9a and Samsung Galaxy S24 FE are great options, but here's the one I'd pick.",
+            "url": "https://www.androidauthority.com/google-pixel-9a-vs-samsung-galaxy-s24-fe-3536175/",
+            "urlToImage": "https://www.androidauthority.com/wp-content/uploads/2024/09/samsung-galaxy-s24-fe-blue-gray-hands-scaled.jpg",
+            "publishedAt": "2025-03-19T14:10:20Z",
+            "content": "The Samsung Galaxy S24 FE really impressed when it launched last year, flying far closer to its flagship counterparts than it had any right to. Now, the Google Pixel 9a promises to do the same, with … [+4960 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Internet"
+            },
+            "author": "info@thehackernews.com (The Hacker News)",
+            "title": "Leaked Black Basta Chats Suggest Russian Officials Aided Leader's Escape from Armenia",
+            "description": "The recently leaked trove of internal chat logs among members of the Black Basta ransomware operation has revealed possible connections between the e-crime gang and Russian authorities.\nThe leak, containing over 200,000 messages from September 2023 to Septemb…",
+            "url": "https://thehackernews.com/2025/03/leaked-black-basta-chats-suggest.html",
+            "urlToImage": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSmwCFNqvTuWYTT75Y5ptoYtOUG0MHW_eIktE0zDSSSVekx3zzYcVC6PbbWNMi9wm78g7pxokBZ3regwjbjg5uSfReOTGvzO2VPWQ9cW46lcSU9SSkD8bQDtflrnh9cpVl61fT4QM1zF2aBqI5F5o83eJ9F6-qtQQMBv2TLH1NUtAVvDZig9BO6e4ahEpS/s728-rw-e365/chats.png",
+            "publishedAt": "2025-03-19T13:50:00Z",
+            "content": "The recently leaked trove of internal chat logs among members of the Black Basta ransomware operation has revealed possible connections between the e-crime gang and Russian authorities.\r\nThe leak, co… [+2980 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "PetaPixel"
+            },
+            "author": "Matt Growcoot",
+            "title": "Google’s New AI-Powered Editing Photo Tool Will Remove Watermarks",
+            "description": "In a concerning development, people have been using a new AI model released by Google to remove watermarks from photos.\n[Read More]",
+            "url": "https://petapixel.com/2025/03/19/google-gemini-flash-2-0-ai-photo-editing-tool-watermarks/",
+            "urlToImage": "https://petapixel.com/assets/uploads/2025/03/Flash-Watermark.jpg",
+            "publishedAt": "2025-03-19T16:39:40Z",
+            "content": "Watermarks, such as this one, can be easily removed by Google Gemini’s Flash 2.0 model.\r\nIn a concerning development, people have been using a new AI model released by Google to remove watermarks fro… [+2467 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "PetaPixel"
+            },
+            "author": "Ken Klein",
+            "title": "US Court of Appeals Unanimously Denies Copyright Protection for AI-Created Images",
+            "description": "A unanimous federal appeals court ruled that pictures generated solely by machines do not qualify for copyright protection.\n[Read More]",
+            "url": "https://petapixel.com/2025/03/19/us-court-of-appeals-unanimously-denies-copyright-protection-for-ai-created-images/",
+            "urlToImage": "https://petapixel.com/assets/uploads/2025/03/federal-court-uphold-thaler-ai-featured.jpg",
+            "publishedAt": "2025-03-19T18:02:13Z",
+            "content": "A unanimous federal appeals court ruled that pictures generated solely by machines do not qualify for copyright protection.\r\nThe Copyright Act of 1976 requires all eligible work to be authorized in t… [+4049 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "PetaPixel"
+            },
+            "author": "Jeremy Gray",
+            "title": "Google Says New Pixel 9a Phone Delivers ‘the Best Camera Under $500’",
+            "description": "Google announced its latest affordable A-series smartphone, the Google Pixel 9a. The new phone promises many of the same features as Google's standard 9-series smartphones and an upgraded main camera.\n[Read More]",
+            "url": "https://petapixel.com/2025/03/19/google-says-new-pixel-9a-phone-delivers-the-best-camera-under-500/",
+            "urlToImage": "https://petapixel.com/assets/uploads/2025/03/google-pixel-9a-featured.jpg",
+            "publishedAt": "2025-03-19T14:00:14Z",
+            "content": "Google announced its latest affordable A-series smartphone, the Google Pixel 9a. The new phone promises many of the same features as Google’s standard 9-series smartphones and an upgraded main camera… [+2428 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "PetaPixel"
+            },
+            "author": "Jeremy Gray",
+            "title": "Euclid Telescope’s First Survey Finds 26 Million Galaxies in Only One Week",
+            "description": "The first survey data from the 600-megapixel Euclid space telescope is available now. The European Space Agency (ESA)'s data release features classified, detailed images of 380,000 galaxies and provide a look at the large-scale organization of the Universe's …",
+            "url": "https://petapixel.com/2025/03/19/euclid-telescopes-first-survey-finds-26-million-galaxies-in-only-one-week/",
+            "urlToImage": "https://petapixel.com/assets/uploads/2025/03/Galaxies_in_different_shapes_captured_by_Euclidfeatured.jpg",
+            "publishedAt": "2025-03-19T16:35:09Z",
+            "content": "This mosaic shows galaxies in different shapes captured by Euclid during its first observations of the Deep Field areas. The European Space Agency released a detailed catalog of more than 380,000 gal… [+6535 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Rolling Stone"
+            },
+            "author": "Jon Blistein",
+            "title": "Jack Harlow and Doja Cat Are Serving Up a New Single on Friday",
+            "description": "Jack Harlow and Doja Cat will join forces for a new single, 'Just Us,' set to arrive this Friday.",
+            "url": "http://www.rollingstone.com/music/music-news/jack-harlow-doja-cat-tease-song-just-us-1235299647/",
+            "urlToImage": "https://www.rollingstone.com/wp-content/uploads/2025/03/Jack-Harlow-and-Doja-song.jpg?crop=0px%2C0px%2C1798px%2C1014px&resize=1600%2C900",
+            "publishedAt": "2025-03-19T19:37:29Z",
+            "content": "Jack Harlow and Doja Cat are teaming up for a new song that’s dropping this Friday, March 21.\r\nHarlow announced the song, titled “Just Us,” on social media. He also shared what appeared to be the cov… [+1383 chars]"
+        }
+    ]
+}

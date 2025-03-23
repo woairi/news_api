@@ -1,0 +1,1306 @@
+{
+    "status": "ok",
+    "totalResults": 1888,
+    "articles": [
+        {
+            "source": {
+                "id": "wired",
+                "name": "Wired"
+            },
+            "author": "Makena Kelly",
+            "title": "FTC Removes Posts Critical of Amazon, Microsoft, and AI Companies",
+            "description": "Business-guidance content published during the Biden administration has been removed from the Federal Trade Commission website.",
+            "url": "https://www.wired.com/story/federal-trade-commission-removed-blogs-critical-of-ai-amazon-microsoft/",
+            "urlToImage": "https://media.wired.com/photos/67d9988cc08419ff06e2ca34/191:100/w_1280,c_limit/ftc-pol-2201176928.jpg",
+            "publishedAt": "2025-03-18T18:02:32Z",
+            "content": "The Trump administrations Federal Trade Commission has removed four years worth of business guidance blogs as of Tuesday morning, including important consumer protection information related to artifi… [+4436 chars]"
+        },
+        {
+            "source": {
+                "id": "wired",
+                "name": "Wired"
+            },
+            "author": "Louryn Strampe",
+            "title": "11 Best Early Amazon Spring Sale Deals (2025)",
+            "description": "Now’s your chance to save on headphones, tablets, and home gadgets.",
+            "url": "https://www.wired.com/story/amazon-spring-sale-2025/",
+            "urlToImage": "https://media.wired.com/photos/67d89eb76d84ddbb960d784f/191:100/w_1280,c_limit/Early%20Amazon%20Spring%20Sale%20Abstract%20Background%20032025%20SOURCE%20Amazon.jpg",
+            "publishedAt": "2025-03-18T13:02:00Z",
+            "content": "Once again we are being subjected to another Amazon sale. This time its the Big Spring Sale, which takes place from March 25 through March 31. And as is usual with these events, every category you co… [+6354 chars]"
+        },
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "Emma Roth",
+            "title": "Hundreds of celebrities warn against letting OpenAI and Google ‘freely exploit’ Hollywood",
+            "description": "More than 400 members of the entertainment industry have signed a letter pushing back on OpenAI and Google’s proposal to allow AI models to train on copyrighted content, as reported earlier by Variety. The letter claims both companies “are arguing for a speci…",
+            "url": "https://www.theverge.com/news/631637/celebrities-warn-openai-google-exploit-hollywood",
+            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/gettyimages-2204193351.jpg?quality=90&strip=all&crop=0%2C10.725635048255%2C100%2C78.54872990349&w=1200",
+            "publishedAt": "2025-03-18T13:42:42Z",
+            "content": "Ben Stiller, Mark Ruffalo, Aubrey Plaza, and others say OpenAI and Google want an exemption to train AI on copyrighted materials.\r\nBen Stiller, Mark Ruffalo, Aubrey Plaza, and others say OpenAI and G… [+1529 chars]"
+        },
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "Andrew J. Hawkins",
+            "title": "GM taps Nvidia to boost its embattled self-driving projects",
+            "description": "At Nvidia’s annual GTC conference in San Jose, Calif. today, the chipmaker announced it was teaming up with General Motors to develop next-generation cars, robots, and factories.  GM says it will apply several of Nvidia’s products to its business, such as the…",
+            "url": "https://www.theverge.com/news/631951/gm-nvidia-gtc-deal-cars-robots-factories",
+            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK083_B_NVIDIA_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+            "publishedAt": "2025-03-18T17:54:11Z",
+            "content": "The automaker will use the deep-pocketed tech giants chips and software to develop next-gen autonomous cars, robots, and manufacturing processes.\r\nThe automaker will use the deep-pocketed tech giants… [+3825 chars]"
+        },
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "Andrew Liszewski",
+            "title": "Nvidia says ‘the age of generalist robotics is here’",
+            "description": "Nvidia has announced that Isaac GR00T N1 — the company’s open-source, pretrained but customizable foundation model that’s designed to expedite the development and capabilities of humanoid robots — is now available. “The age of generalist robotics is here,” sa…",
+            "url": "https://www.theverge.com/news/631743/nvidia-issac-groot-n1-robotics-foundation-model-available",
+            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/GR00T-N1-Image.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+            "publishedAt": "2025-03-18T19:26:27Z",
+            "content": "At GTC 2025, Nvidia demonstrated 1Xs NEO Gamma humanoid robot running its GR00T N1 foundation model.\r\nAt GTC 2025, Nvidia demonstrated 1Xs NEO Gamma humanoid robot running its GR00T N1 foundation mod… [+2624 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Thomas Maxwell",
+            "title": "Italian Newspaper Creates Entirely AI-Generated Edition",
+            "description": "Is it an AI-generated newspaper, or an obituary?",
+            "url": "https://gizmodo.com/italian-newspaper-creates-entirely-ai-generated-edition-2000577463",
+            "urlToImage": "https://gizmodo.com/app/uploads/2024/07/gizmodo-social.jpg",
+            "publishedAt": "2025-03-18T17:45:15Z",
+            "content": "An Italian newspaper says it has created the world’s first issue generated entirely using AI, with journalists limited to asking questions of a chatbot and reading the answers before inserting them. … [+3055 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Florence Ion",
+            "title": "Pebble’s Successor Has Me Stoked for the Return of the Simple Smartwatch",
+            "description": "Even if it's just pretending, the novel simplicity of a watch with a few buttons and a small screen is a welcome respite from the complicated hell we live in.",
+            "url": "https://gizmodo.com/pebbles-successor-has-me-stoked-for-the-return-of-the-simple-smartwatch-2000577589",
+            "urlToImage": "https://gizmodo.com/app/uploads/2025/03/New-Pebble_CoreTime2.jpg",
+            "publishedAt": "2025-03-18T21:00:36Z",
+            "content": "The dream of the cool-but-not-overly-garish smartwatch is alive and well with not-Pebble’s new smartwatches, the Core 2 Duo and the Core Time 2. Pebble, known by diehard nerds for making one of the g… [+3571 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Mike Fazioli",
+            "title": "On Samsung’s Official Store, Here’s The Trick To Save 70% On The New Galaxy S25 Ultra",
+            "description": "A massive $900 limit on trade-in credit, or $300 off without trade, are the latest incentives to make the Galaxy S25 Ultra your favorite smartphone ever.",
+            "url": "https://gizmodo.com/on-samsungs-official-store-heres-the-trick-to-save-70-on-the-new-galaxy-s25-ultra-2000577206",
+            "urlToImage": "https://gizmodo.com/app/uploads/2025/01/samsung-galaxys25ultra.jpg",
+            "publishedAt": "2025-03-18T11:10:05Z",
+            "content": "If you haven’t yet upgraded your smartphone game by switching to the Galaxy S25 Ultra, Samsung is insisting on making it as difficult as possible to resist the temptation. The latest eye-popping ince… [+2331 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Mike Fazioli",
+            "title": "With This Trick, The Best Galaxy Tab S10 Ultra Costs $900 Less Than The iPad M4 Pro",
+            "description": "Samsung has dropped the price of their top-of-the-line Android tablet by $180 and they're offering up to $800 of stackable trade-in credit too.",
+            "url": "https://gizmodo.com/with-this-trick-the-best-galaxy-tab-s10-ultra-costs-900-less-than-the-ipad-m4-pro-2000577230",
+            "urlToImage": "https://gizmodo.com/app/uploads/2024/11/galaxy-tab-s10-ultra-1.jpg",
+            "publishedAt": "2025-03-18T12:10:37Z",
+            "content": "The Samsung Galaxy Tab S10 Ultra is a game-changer in the world of premium tablets, setting new standards in power, performance, and AI-driven innovation. Now it’s setting new standards in affordabil… [+3084 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Mike Fazioli",
+            "title": "Like During Black Friday, Amazon Is Offering 50% Off The World’s Best Roborock Robot Vacuum",
+            "description": "Save $600 on this powerful vacuum and sophisticated self-emptying and refilling mopping robot during Amazon's limited-time 43% off sale.",
+            "url": "https://gizmodo.com/like-during-black-friday-amazon-is-offering-50-off-the-worlds-best-roborock-robot-vacuum-2000577142",
+            "urlToImage": "https://gizmodo.com/app/uploads/2025/03/roborock-Qrevo-Master-Robot-Vacuum-and-Mop-Combo.jpg",
+            "publishedAt": "2025-03-18T12:40:19Z",
+            "content": "If you had the chance to hand off the drudgery of vacuuming and mopping the floors of your home, would you? Of course you would, and when you outsource it to a robot vacuum and mop like the Roborock … [+2468 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "nandika.iyerravi@futurenet.com (Nandika Ravi)",
+            "title": "Gemini gets new features, including one that turns documents into fun podcasts",
+            "description": "Google brings creative tools to Gemini with a new interactive space called Canvas, along with Audio Overviews.",
+            "url": "https://www.androidcentral.com/apps-software/gemini-gets-new-features-canvas-audio-overviews",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/e3PFAew8krnAUyCfNvb6am-1200-80.png",
+            "publishedAt": "2025-03-18T16:00:00Z",
+            "content": "What you need to know\r\n<ul><li>Google announced two new features for Gemini that will help users create documents as well as codes within the application.</li><li>Gemini's Canvas allows people to cre… [+4723 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "techkritiko@gmail.com (Jay Bonggolto)",
+            "title": "Google is dialing back more Assistant features on Android and Nest devices",
+            "description": "Google Assistant’s features are fading out fast as Gemini steps into the spotlight.",
+            "url": "https://www.androidcentral.com/phones/google/google-is-dialing-back-more-assistant-features-on-android-and-nest-devices",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/ADfnbAWLWjdhaCNncfLvwB-1200-80.jpg",
+            "publishedAt": "2025-03-18T08:31:39Z",
+            "content": "What you need to know\r\n<ul><li>Seven more Google Assistant features are getting axed, continuing the trend that started in late 2024.</li><li>Google is not giving a heads-up on when these features wi… [+2893 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "vishnu.skar@gmail.com (Vishnu Sarangapurkar)",
+            "title": "Samsung finally sets a date for the One UI 7 launch",
+            "description": "After rolling out notable amount of One UI 7 betas to Galaxy devices, the company will begin rolling out stable builds.",
+            "url": "https://www.androidcentral.com/apps-software/samsung-will-be-releasing-one-ui-7-on-april-7",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/4y4nARBXegXWSs5ZCQPGMF-1200-80.jpg",
+            "publishedAt": "2025-03-18T12:49:37Z",
+            "content": "What you need to know\r\n<ul><li>Samsung has announced the official rollout of One UI 7, which is set to begin on April 7.</li><li>The Galaxy S24 series alongside the Galaxy Z Fold 6 and Z Flip 6 will … [+2820 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "jerry.hildenbrand@futurenet.com (Jerry Hildenbrand)",
+            "title": "AI will never be able to replace the human experience",
+            "description": "AI may take our jobs, but it will never be good at doing it.",
+            "url": "https://www.androidcentral.com/gaming/ai-will-never-be-able-to-replace-the-human-experience",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/Zh5KPqPn8X5EFBYyKNac29-1200-80.jpg",
+            "publishedAt": "2025-03-18T18:23:53Z",
+            "content": "About a week ago, someone leaked an internal video from Sony's PlayStation Group showing an AI version of the main character Aloy from the hit title Horizon Forbidden West. Not an AI-enhanced or AI-i… [+3064 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "klpmediallc@gmail.com (Tshaka Armstrong)",
+            "title": "These headphones read your mind with the promise of helping you achieve better focus",
+            "description": "Tech has ruined your attention span, but will tech like the MW75 Neuro also restore it? Neurable thinks so!",
+            "url": "https://www.androidcentral.com/accessories/headphones/neurable-mw75-neuro-brain-computer",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/asT4fmxdE3D4DbZwgqiixY-1200-80.jpg",
+            "publishedAt": "2025-03-18T12:00:30Z",
+            "content": "“Brain-computer interface technology” sounds complex and inaccessible, but Neurable is changing that with their Neurable app and premium MW75 Neuro headphones, which contain brain activity (EEG) sens… [+11575 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "patrick.farmer@futurenet.com (Patrick Farmer)",
+            "title": "The Motorola Razr Plus (2024) just crashed well below its Black Friday price, but there's a catch",
+            "description": "Amazon is currently slashing 35% off the Spring Green version of the Motorola Razr Plus (2024), days before the Big Spring Sale is scheduled to kick off.",
+            "url": "https://www.androidcentral.com/phones/the-motorola-razr-plus-2024-just-crashed-well-below-its-black-friday-price-but-theres-a-catch",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/Z6v4VkKxkNVaMthZVwR3FV-1200-80.jpg",
+            "publishedAt": "2025-03-18T18:21:27Z",
+            "content": "Amazon has just announced that its Big Spring Sale event will start on March 25th, but if you don't want to wait for the best Motorola deals, you're in luck. The Motorola Razr Plus (2024), one of our… [+1538 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Central"
+            },
+            "author": "harish.jonnalagadda@futurenet.com (Harish Jonnalagadda)",
+            "title": "Apple iPhone 16e review: Elevated basics",
+            "description": "The iPhone 16e is Apple's affordable phone for 2025. While it has considerable upgrades, it just costs too much at launch.",
+            "url": "https://www.androidcentral.com/phones/apple-iphone-16e-review",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/GCm4NewCaG5DBQ5638r28e-1200-80.jpg",
+            "publishedAt": "2025-03-18T10:27:10Z",
+            "content": "Why you can trust Android Central\r\nOur expert reviewers spend hours testing and comparing products and services so you can choose the best for you. Find out more about how we test.I liked using the i… [+19046 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CNET"
+            },
+            "author": "Alan Bradley",
+            "title": "The Weirdest New Smart Home Appliances You Can Actually Buy",
+            "description": "Weird doesn't mean bad. Here are some of our favorite strange new smart home appliances you can actually buy right now.",
+            "url": "https://www.cnet.com/home/smart-home/the-weirdest-new-smart-home-appliances-you-can-actually-buy/",
+            "urlToImage": "https://www.cnet.com/a/img/resize/97518c7aeb49c1cd9ab25e9df6497db9de31633b/hub/2017/02/25/1fa8f8e6-e75e-4d8a-b38a-0bfab059f790/smartkitcheninstaview.jpg?auto=webp&fit=crop&height=675&width=1200",
+            "publishedAt": "2025-03-18T17:00:08Z",
+            "content": "We live in an era where \"dumb\" appliances are going the way of physical media: directly into the landfill of history. Nowadays, if a new gadget isn't smart and doesn't do at least two unexpected thin… [+9181 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Slashdot.org"
+            },
+            "author": "msmash",
+            "title": "Nvidia Reveals Next-Gen AI Chips, Roadmap Through 2028",
+            "description": "Nvidia unveiled its next wave of AI processors at GTC on Tuesday, announcing Blackwell Ultra chips that will ship in the second half of 2025, followed by the Vera Rubin architecture in 2026. CEO Jensen Huang also revealed that its 2028 chips will be named aft…",
+            "url": "https://tech.slashdot.org/story/25/03/18/201213/nvidia-reveals-next-gen-ai-chips-roadmap-through-2028",
+            "urlToImage": "https://a.fsdn.com/sd/topics/ai_64.png",
+            "publishedAt": "2025-03-18T20:01:00Z",
+            "content": "Nvidia unveiled its next wave of AI processors at GTC on Tuesday, announcing Blackwell Ultra chips that will ship in the second half of 2025, followed by the Vera Rubin architecture in 2026. CEO Jens… [+879 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Slashdot.org"
+            },
+            "author": "BeauHD",
+            "title": "GM Taps Nvidia To Boost Its Self-Driving Projects",
+            "description": "General Motors is partnering with Nvidia to enhance its self-driving and manufacturing capabilities by leveraging Nvidia's AI chips, software, and simulation tools. \"GM says it will apply several of Nvidia's products to its business, such as the Omniverse 3D …",
+            "url": "https://tech.slashdot.org/story/25/03/18/200223/gm-taps-nvidia-to-boost-its-self-driving-projects",
+            "urlToImage": "https://a.fsdn.com/sd/topics/transportation_64.png",
+            "publishedAt": "2025-03-18T20:40:00Z",
+            "content": "GM already uses Nvidia's GPUs to train its AI software for simulation and validation. Today's announcement was about expanding those use cases into improving its manufacturing operations and autonomo… [+1712 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Slashdot.org"
+            },
+            "author": "msmash",
+            "title": "Vance Slams Globalization For Hampering American Innovation",
+            "description": "U.S. Vice President J.D. Vance text for hampering American innovation in a speech to entrepreneurs and venture capitalists on Tuesday, arguing that offshoring has eroded U.S. technological leadership. \"Our workers have been failed by the government of the las…",
+            "url": "https://news.slashdot.org/story/25/03/18/1734252/vance-slams-globalization-for-hampering-american-innovation",
+            "urlToImage": "https://a.fsdn.com/sd/topics/usa_64.png",
+            "publishedAt": "2025-03-18T18:10:00Z",
+            "content": "U.S. Vice President J.D. Vance text for hampering American innovation in a speech to entrepreneurs and venture capitalists on Tuesday, arguing that offshoring has eroded U.S. technological leadership… [+893 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Samantha Stokes",
+            "title": "AI agent startup Onyx raised a larger seed round with this 9-slide pitch deck. Here's an exclusive look.",
+            "description": "Open-source AI agent startup Onyx, which queries company documents and tools, raised a $10 million seed round led by Khosla Ventures and First Round.",
+            "url": "https://www.businessinsider.com/pitch-deck-ai-agent-startup-onyx-seed-round-2025-3",
+            "urlToImage": "https://i.insider.com/67d4967769253ccddf995d1f?width=1200&format=jpeg",
+            "publishedAt": "2025-03-18T09:00:02Z",
+            "content": "Onyx cofounders Chris Weaver and Yuhong Sun.Onyx\r\n<ul><li>AI startup Onyx just raised $10 million from Khosla Ventures and First Round Capital.</li><li>The startup offers an open-source AI agent to s… [+3165 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Madeline Stone",
+            "title": "He sold Deliverr to Shopify for $2.1 billion. Now his new startup is betting big on an AI assistant named Augie.",
+            "description": "Deliverr cofounder Harish Abbott has raised $25 million for his startup building an AI assistant for logistics companies.",
+            "url": "https://www.businessinsider.com/augment-ai-logistics-startup-launches-25-million-seed-funding-2025-3",
+            "urlToImage": "https://i.insider.com/67d8723a69253ccddf99791d?width=800&format=jpeg",
+            "publishedAt": "2025-03-18T09:00:02Z",
+            "content": "Harish Abbott is the CEO and cofounder of Augment.Augment\r\n<ul><li>Former Shopify VP Harish Abbott launched a new startup building an AI assistant for logistics.</li><li>Abbott cofounded Deliverr and… [+5011 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Alex Bitter,Emma Cosgrove",
+            "title": "Nvidia's partnership with Taco Bell means AI could soon do more than take your drive-thru order",
+            "description": "Nvidia and Yum! Brands, the owner of Taco Bell, have a strategic partnership for AI, meaning the technology could extend beyond drive-thru orders.",
+            "url": "https://www.businessinsider.com/nvidia-taco-bell-yum-team-up-on-ai-ordering-2025-3",
+            "urlToImage": "https://i.insider.com/67d347f0b8b41a9673fa9e42?width=1200&format=jpeg",
+            "publishedAt": "2025-03-18T20:00:01Z",
+            "content": "Yum! has been testing AI at some Taco Bell and Pizza Hut.Ethan Miller/Getty Images\r\n<ul><li>Taco Bell is using AI for drive-thru orders through a partnership with Nvidia.</li><li>Voice AI adoption is… [+3483 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Emma Cosgrove,Alistair Barr",
+            "title": "Why Nvidia CEO Jensen Huang paid homage to Denny's at the AI giant's big conference",
+            "description": "Nvidia CEO Jensen Huang paid homage to Denny's at the company's GTC AI conference, highlighting Silicon Valley's penchant for humble origin stories.",
+            "url": "https://www.businessinsider.com/jensen-huang-dennys-nvidia-ai-conference-gtc-2025-3",
+            "urlToImage": "https://i.insider.com/67d9b05e69253ccddf9996fb?width=1200&format=jpeg",
+            "publishedAt": "2025-03-18T18:30:11Z",
+            "content": "Nvidia CEO Jensen Huang at Nvidia's GTC AI conference on March 18.Emma Cosgrove/Business Insider\r\n<ul><li>Nvidia's GTC AI event featured a pop-up Denny's, drawing lines of attendees.</li><li>Nvidia C… [+1931 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Kelsey Baker",
+            "title": "Defense tech firm BlueHalo's CEO sees an opportunity for Trump's 'Golden Dome' project to be more than a missile shield",
+            "description": "Golden Dome could be an all-encompassing threat assessment with buy-in from all areas of the defense tech and AI industries, Jonathan Moneymaker said.",
+            "url": "https://www.businessinsider.com/trump-golden-dome-could-be-more-than-missile-shield-ceo-2025-3",
+            "urlToImage": "https://i.insider.com/67d88ef869253ccddf997fca?width=1200&format=jpeg",
+            "publishedAt": "2025-03-18T12:12:01Z",
+            "content": "U.S. Space Force photo by Airman 1st Class Olga Houtsma\r\n<ul><li>Trump's 'Golden Dome' is a missile shield, though exactly what the project will look like is still a mystery.</li><li>Legacy and new d… [+5075 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "David Valerio",
+            "title": "America wastes $6+ billion worth of recyclables a year. Can robots and AI help?",
+            "description": "The US recycling rate has remained flat for over a decade. Can artificial intelligence and robots change that?",
+            "url": "https://www.businessinsider.com/america-wastes-billions-worth-of-recyclables-can-ai-help-2025-3",
+            "urlToImage": "https://i.insider.com/67d47f95b8b41a9673fabcce?width=1200&format=jpeg",
+            "publishedAt": "2025-03-18T14:05:40Z",
+            "content": "The United States throws away $6.5 billion worth of reusable material every year, and the recycling rate has remained flat for over a decade. Now, tech companies are using artificial intelligence and… [+216 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Jordan Hart",
+            "title": "Palmer Luckey said he bet all his cash on Meta in 2021",
+            "description": "Palmer Luckey, Anduril CEO and Oculus founder, invested all his liquid cash in Meta in 2021 despite his 2016 Facebook firing.",
+            "url": "https://www.businessinsider.com/palmer-luckey-said-spent-all-cash-on-meta-shares-2025-3",
+            "urlToImage": "https://i.insider.com/67d9799469253ccddf9989d7?width=1200&format=jpeg",
+            "publishedAt": "2025-03-18T17:40:16Z",
+            "content": "Anduril CEO Palmer Luckey still invested in Meta after he was ousted.Horacio Villalobos/Getty Images\r\n<ul><li>Palmer Luckey said he invested in Meta after its rebranding despite being fired in 2016.<… [+2329 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Julia Hornstein,Vishal Persaud,Ben Bergman,Leena Rao,Melia Russell,Samantha Stokes",
+            "title": "31 of the top defense tech venture capitalists to know",
+            "description": "A new wave of techno-optimist patriotism and rising geopolitical tensions are driving more venture capital investing to defense tech startups.",
+            "url": "https://www.businessinsider.com/the-top-defense-tech-vc-investors-to-know",
+            "urlToImage": "https://i.insider.com/67d896ba69253ccddf998109?width=1200&format=jpeg",
+            "publishedAt": "2025-03-18T09:00:02Z",
+            "content": "From left: Larsen Jensen of Harpoon Ventures; Dan Gwak of Point72 Private Investments; Katherine Boyle of Andreessen Horowitz; Raj Shah of Shield Capital.Harpoon Ventures, Point72 Private Investments… [+31973 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Julia Hornstein",
+            "title": "The biggest VC winners in the $32 billion Google-Wiz Deal",
+            "description": "Wiz's record $32 billion sale to Google, its biggest acquisition ever, rewards early investors like Sequoia Capital and Index Ventures.",
+            "url": "https://www.businessinsider.com/biggest-venture-capital-investors-google-wiz-payout-2025-3",
+            "urlToImage": "https://i.insider.com/669f1b8f80d4d5da13d61b78?width=1024&format=jpeg",
+            "publishedAt": "2025-03-18T16:23:12Z",
+            "content": "Assaf Rappaport, CEO of Wiz, at Web Summit 2021 in Lisbon, Portugal.Harry Murphy/Getty Images\r\n<ul><li>Google acquired cybersecurity startup Wiz for $32 billion in its largest acquisition ever.</li><… [+6404 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Alistair Barr",
+            "title": "Big Tech's next big rival is sleep",
+            "description": "There are only so many hours in the day. The tech industry may soon bump up against the limits of time, and sleep could be the next frontier.",
+            "url": "https://www.businessinsider.com/big-tech-next-big-rival-sleep-2025-3",
+            "urlToImage": "https://i.insider.com/67d37d0269253ccddf993b9e?width=1200&format=jpeg",
+            "publishedAt": "2025-03-18T09:00:02Z",
+            "content": "A dude sleeping. Where's his iPhone?Tim Kitchen/Getty Images\r\n<ul><li>Generative AI is making it much easier to create online content.</li><li>There's so much more to consume and only so many hours i… [+2984 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Harvard Business Review"
+            },
+            "author": null,
+            "title": "Protect Your Company from Escalating Foreign Cyber Threats - SPONSOR CONTENT FROM THREATLOCKER",
+            "description": "Sponsor content from ThreatLocker.",
+            "url": "https://hbr.org/sponsored/2025/03/protect-your-company-from-escalating-foreign-cyber-threats",
+            "urlToImage": "https://hbr.org/resources/images/article_assets/2025/03/ThreatLocker_imagery_data-breach-02-1.jpg",
+            "publishedAt": "2025-03-18T16:30:18Z",
+            "content": "Skip to content\r\nSponsor content from ThreatLocker.\r\n\"&gt;\r\nSponsor content from ThreatLocker.\r\n\"&gt;\r\nBy Slava Konstantinov\r\nDigital warfare is no longer theoretical or something that happens in iso… [+5469 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "VentureBeat"
+            },
+            "author": "Sean Michael Kerner",
+            "title": "Nvidia debuts Llama Nemotron open reasoning models in a bid to advance agentic AI",
+            "description": "At GTC, Nvidia is rolling out an open source reasoning model family to help advance agentic AI for enterprise deployments.",
+            "url": "https://venturebeat.com/ai/nvidia-debuts-llama-nemotron-open-reasoning-models-in-a-bid-to-advance-agentic-ai/",
+            "urlToImage": "https://venturebeat.com/wp-content/uploads/2025/03/ai_generated_code_nvidia-smk.jpg?w=1024?w=1200&strip=all",
+            "publishedAt": "2025-03-18T19:42:36Z",
+            "content": "Join our daily and weekly newsletters for the latest updates and exclusive content on industry-leading AI coverage. Learn More\r\nNvidia is getting into the open source reasoning model market.\r\nAt the … [+5241 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "VentureBeat"
+            },
+            "author": "Carl Franzen",
+            "title": "Orion Security emerges from stealth using LLMs to track your enterprise’s data flow and stop it from leaking out",
+            "description": "Beyond catching malicious insiders, Orion also distinguishes between human errors and external attackers for specificity.",
+            "url": "https://venturebeat.com/security/orion-security-emerges-from-stealth-using-llms-to-track-your-enterprises-data-flow-and-stop-it-from-leaking-out/",
+            "urlToImage": "https://venturebeat.com/wp-content/uploads/2025/03/cfr0z3n_vector_art_line_art_graphic_novel_style_dark_moody_gr_d8919ec4-9f56-4c74-9b9c-d6c8eb6b8dcd_2.png?w=1024?w=1200&strip=all",
+            "publishedAt": "2025-03-18T14:48:11Z",
+            "content": "Join our daily and weekly newsletters for the latest updates and exclusive content on industry-leading AI coverage. Learn More\r\nIf you pay attention at all to cybersecurity news, theres a strong chan… [+9258 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "VentureBeat"
+            },
+            "author": "Dean Takahashi",
+            "title": "Nvidia partners with telecom leaders to develop AI-native 6G wireless networks",
+            "description": "Nvidia said 6G wireless networks are coming, with help from artificial intelligence processing.",
+            "url": "https://venturebeat.com/games/nvidia-partners-with-telecom-leaders-to-develop-ai-native-6g-wireless-networks/",
+            "urlToImage": "https://venturebeat.com/wp-content/uploads/2025/03/nvidia-6g.jpg?w=1024?w=1200&strip=all",
+            "publishedAt": "2025-03-18T18:00:00Z",
+            "content": "Nvidia said 6G wireless networks are coming, with help from artificial intelligence processing.\r\nAt GTC 2025, Nvidia today unveiled partnerships with industry leaders T-Mobile, Mitre, Cisco, ODC, a p… [+7300 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "VentureBeat"
+            },
+            "author": "Dean Takahashi",
+            "title": "GM and Nvidia collaborate on AI for self-driving cars and vehicle manufacturing",
+            "description": "GM, the largest U.S. automaker, has extended its collaboration with Nvidia to develop self-driving cars and enhance vehicle manufacturing through simulation and accelerated computing. At GTC 2025, Nvidia CEO Jensen Huang announced GM and Nvidia are collaborat…",
+            "url": "https://venturebeat.com/business/gm-and-nvidia-collaborate-on-ai-for-self-driving-cars-and-vehicle-manufacturing/",
+            "urlToImage": "https://venturebeat.com/wp-content/uploads/2025/03/nvidia-gm.jpg?w=1024?w=1200&strip=all",
+            "publishedAt": "2025-03-18T18:23:00Z",
+            "content": "GM, the largest U.S. automaker, has extended its collaboration with Nvidia to develop self-driving cars and enhance vehicle manufacturing through simulation and accelerated computing.\r\nAt GTC 2025, N… [+2813 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "VentureBeat"
+            },
+            "author": "Dean Takahashi",
+            "title": "Muse unveils wearable that combines brainwave tracking and brain oxygen measurements",
+            "description": "Muse by Interaxon, a neurotechnology startup, unveiled Muse S Athena, a consumer wearable that can deliver advanced cognitive fitness insights.",
+            "url": "https://venturebeat.com/games/muse-unveils-wearable-that-combines-brainwave-tracking-and-brain-oxygen-measurements/",
+            "urlToImage": "https://venturebeat.com/wp-content/uploads/2025/03/muse.jpg?w=1024?w=1200&strip=all",
+            "publishedAt": "2025-03-18T12:00:00Z",
+            "content": "Muse by Interaxon, a neurotechnology startup, unveiled Muse S Athena, a consumer wearable that can deliver advanced cognitive fitness insights. It does so by combining two powerful brain sensors: Ele… [+5929 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "VentureBeat"
+            },
+            "author": "Dean Takahashi",
+            "title": "Nvidia will supercharge humanoid robot development with Isaac GR00T N1 foundation model for human-like reasoning",
+            "description": "OK, this is not a drill. The robots are coming. Nvidia announced technologies to supercharge humanoid robot development.",
+            "url": "https://venturebeat.com/games/nvidia-will-supercharge-humanoid-robot-development-with-isaac-gr00t-n1-foundation-model-for-humanoid-reasoning/",
+            "urlToImage": "https://venturebeat.com/wp-content/uploads/2025/03/GR00T-N1-Image.jpg?w=1024?w=1200&strip=all",
+            "publishedAt": "2025-03-18T19:12:00Z",
+            "content": "OK, this is not a drill. The robots are coming. \r\nNvidia announced a portfolio of technologies to supercharge humanoid robot development, including Nvidia Isaac GR00T N1, the worlds first open, fully… [+7529 chars]"
+        },
+        {
+            "source": {
+                "id": "the-next-web",
+                "name": "The Next Web"
+            },
+            "author": "Siôn Geschwindt",
+            "title": "Exclusive: Visoid bags fresh funds for AI that accelerates 3D rendering for architects",
+            "description": "Oslo-based startup Visoid has raised €700,000 in seed funding for its AI software, which helps architects turn their 3D models into striking renders within seconds.  For architects and designers, a good render can mean the difference between winning or losing…",
+            "url": "https://thenextweb.com/news/visoid-ai-accelerates-architectural-3d-renders",
+            "urlToImage": "https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2025%2F03%2FUntitled-design-39.jpg&signature=94c6d2307b77867c2f388a74bdb84d87",
+            "publishedAt": "2025-03-18T14:24:56Z",
+            "content": "Oslo-based startup Visoid has raised 700,000 in seed funding for its AI software, which helps architects turn their 3D models into striking renders within seconds. \r\nFor architects and designers, a g… [+3421 chars]"
+        },
+        {
+            "source": {
+                "id": "the-next-web",
+                "name": "The Next Web"
+            },
+            "author": "Siôn Geschwindt",
+            "title": "Ex-ArianeGroup CEO backs Pangea to build 3D-printed aerospike rocket engines",
+            "description": "Aerospike rocket engines are the stuff of legend in the space industry. Conceived in the 1960s, their unique spiked-nozzle design promises better efficiency, reusability, and performance at all altitudes. But their complexity — and the shutdown of major space…",
+            "url": "https://thenextweb.com/news/arianegroup-ceo-backs-pangea-3d-printed-aerospike-rocket-engines",
+            "urlToImage": "https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2025%2F03%2FUntitled-design-40.jpg&signature=cff91b7e27a064378f79d3c3ff3cac89",
+            "publishedAt": "2025-03-18T17:27:53Z",
+            "content": "Aerospike rocket engines are the stuff of legend in the space industry. Conceived in the 1960s, their unique spiked-nozzle design promises better efficiency, reusability, and performance at all altit… [+4496 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Hackaday"
+            },
+            "author": "Maya Posch",
+            "title": "Checking In On the ISA Wars and Its Impact on CPU Architectures",
+            "description": "An Instruction Set Architecture (ISA) defines the software interface through which for example a central processor unit (CPU) is controlled. Unlike early computer systems which didn’t define a standard ISA …read more",
+            "url": "https://hackaday.com/2025/03/18/checking-in-on-the-isa-wars-and-its-impact-on-cpu-architectures/",
+            "urlToImage": "https://hackaday.com/wp-content/uploads/2017/10/computers.jpg",
+            "publishedAt": "2025-03-18T14:00:58Z",
+            "content": "An Instruction Set Architecture (ISA) defines the software interface through which for example a central processor unit (CPU) is controlled. Unlike early computer systems which didn’t define a standa… [+9814 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": null,
+            "title": "Why SoundHound AI Inc. (SOUN) Went Down On Monday",
+            "description": null,
+            "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_518e387b-c046-4c70-b661-66a105a96949",
+            "urlToImage": null,
+            "publishedAt": "2025-03-18T13:44:32Z",
+            "content": "If you click 'Accept all', we and our partners, including 239 who are part of the IAB Transparency &amp; Consent Framework, will also store and/or access information on a device (in other words, use … [+702 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": null,
+            "title": "AI chips, robots, and reasoning models: 5 takeaways from Nvidia's GTC",
+            "description": null,
+            "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_c1ad0363-219b-41db-b3b2-cde9b94e74bd",
+            "urlToImage": null,
+            "publishedAt": "2025-03-18T21:45:00Z",
+            "content": "If you click 'Accept all', we and our partners, including 238 who are part of the IAB Transparency &amp; Consent Framework, will also store and/or access information on a device (in other words, use … [+702 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "The News Journal"
+            },
+            "author": "Kelly Powers, Delaware News Journal",
+            "title": "University of Delaware lands record $71.5 million donation to business school",
+            "description": "University of Delaware just landed the largest philanthropic donation in its 282-year history.",
+            "url": "https://www.delawareonline.com/story/news/education/2025/03/18/university-of-delaware-record-71-million-gift-business-school-robert-kathleen-siegfried/82514276007/",
+            "urlToImage": "https://media.zenfs.com/en/delaware-online-the-news-journal/6589018c58e366664b2d74f4d2071c10",
+            "publishedAt": "2025-03-18T15:25:45Z",
+            "content": "University of Delaware just landed the largest philanthropic donation in its 282-year history.\r\nAnd the $71.5 million gift stands to transform its business school.\r\nRobert Siegfried Jr. and Kathleen … [+3167 chars]"
+        },
+        {
+            "source": {
+                "id": "time",
+                "name": "Time"
+            },
+            "author": "Jeffrey Kluger",
+            "title": "The Mental Toll of Unexpectedly Spending Months in Space",
+            "description": "NASA astronauts Butch Wilmore's and Suni Williams's eight-day mission lasted nine months. How did they adjust?",
+            "url": "https://time.com/7269193/space-mission-months-mental-toll/",
+            "urlToImage": "https://api.time.com/wp-content/uploads/2025/03/KSC-20240426-PH-FMX02_0084orig.jpg?quality=85&w=1200&h=628&crop=1",
+            "publishedAt": "2025-03-18T18:56:54Z",
+            "content": "The longest eight days Butch Wilmore and Suni Williams ever spent turned out to last more than nine months. On June 5, 2024, the two NASA astronauts launched aboard the maiden mission of Boeings new … [+7059 chars]"
+        },
+        {
+            "source": {
+                "id": "time",
+                "name": "Time"
+            },
+            "author": "LISA MASCARO / AP",
+            "title": "Top Democrats Probe Whether DOGE Is Operating ‘Outside the Bounds’ of U.S. Law",
+            "description": "Top House Democrats are seeking information on whether the Trump Administration’s DOGE is operating “outside the bounds of federal law.\"",
+            "url": "https://time.com/7269132/house-democrats-question-doge-operating-outside-federal-law/",
+            "urlToImage": "https://api.time.com/wp-content/uploads/2025/03/house-democrats-doge.jpg?quality=85&w=1024&h=628&crop=1",
+            "publishedAt": "2025-03-18T14:53:38Z",
+            "content": "WASHINGTON (AP) Top Democrats on the House Judiciary and House Oversight committees have filed a lengthy Freedom of Information Act request questioning whether the Trump administrations DOGE Service … [+4884 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fast Company"
+            },
+            "author": "Scott Nover",
+            "title": "The most innovative companies in video for 2025",
+            "description": "Artificial intelligence disrupted dozens of industries over the past year, and video was no exception. But for the most part, the new technology led to innovations that addressed real problems. Companies such as Captions and Descript harnessed AI to make vide…",
+            "url": "https://www.fastcompany.com/91270234/video-most-innovative-companies-fast-company-2025-youtube-roku-tubi-vimeo-captions-descript-cour-procreate-synthesia-beeble",
+            "urlToImage": "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit/wp-cms-2/2025/03/p-1a-2025_MIC_video.png",
+            "publishedAt": "2025-03-18T11:00:00Z",
+            "content": "Artificial intelligence disrupted dozens of industries over the past year, and video was no exception. But for the most part, the new technology led to innovations that addressed real problems. Compa… [+15737 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fast Company"
+            },
+            "author": "Julia Selinger",
+            "title": "How these 10 most innovative companies are changing the music industry",
+            "description": "The global music industry reached an all-time high of nearly 5 trillion streams in 2024. In the midst of this growth, the most innovative companies in music are making strides to position artists for the future. More streaming means more opportunities for str…",
+            "url": "https://www.fastcompany.com/91269640/music-most-innovative-companies-2025",
+            "urlToImage": "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit/wp-cms-2/2025/03/p-1a-2025_MIC_music.png",
+            "publishedAt": "2025-03-18T11:00:00Z",
+            "content": "The global music industry reached an all-time high of nearly 5 trillion streams in 2024. In the midst of this growth, the most innovative companies in music are making strides to position artists for… [+20157 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fast Company"
+            },
+            "author": "Yasmin Gagne",
+            "title": "The most innovative companies in retail for 2025",
+            "description": "As generative AI advanced at warp speed over the past year, innovative retail companies continued to find practical ways to incorporate the technology, helping shoppers to efficiently find what they want—even when they don’t know what they’re looking for. Ama…",
+            "url": "https://www.fastcompany.com/91269908/retail-most-innovative-companies-2025",
+            "urlToImage": "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit/wp-cms-2/2025/03/p-1a-2025_MIC_retail.png",
+            "publishedAt": "2025-03-18T11:00:00Z",
+            "content": "As generative AI advanced at warp speed over the past year, innovative retail companies continued to find practical ways to incorporate the technology, helping shoppers to efficiently find what they … [+15037 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fast Company"
+            },
+            "author": "Doug Zanger",
+            "title": "The most innovative companies in public relations and brand strategies for 2025",
+            "description": "It sure is noisy out there, isn’t it? Brands never have had to work so hard to be heard above the din. This year’s honorees for innovation in public relations and brand strategy have risen to the top of a competitive heap with bold ideas and work.For many, im…",
+            "url": "https://www.fastcompany.com/91269880/public-relations-brand-strategies-most-innovative-companies-2025",
+            "urlToImage": "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit/wp-cms-2/2025/03/p-1a-2025_MIC_public-relations.png",
+            "publishedAt": "2025-03-18T11:00:00Z",
+            "content": "It sure is noisy out there, isnt it? Brands never have had to work so hard to be heard above the din. This years honorees for innovation in public relations and brand strategy have risen to the top o… [+18579 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fast Company"
+            },
+            "author": "Paul Mueller",
+            "title": "The most innovative companies in sports for 2025",
+            "description": "Artificial intelligence has dominated headlines and advancements in nearly every industry globally. Sports is no exception. As data grows more dynamic and accessible, so do its applications, and the effect is vast.While professional coaches and scouts are usi…",
+            "url": "https://www.fastcompany.com/91270187/sports-most-innovative-companies-2025",
+            "urlToImage": "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit/wp-cms-2/2025/03/p-1a-2025_MIC_sports.png",
+            "publishedAt": "2025-03-18T11:00:00Z",
+            "content": "Artificial intelligence has dominated headlines and advancements in nearly every industry globally. Sports is no exception. As data grows more dynamic and accessible, so do its applications, and the … [+18598 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fast Company"
+            },
+            "author": "Jeff Beer",
+            "title": "How Liquid Death became a go-to partner for outlandish, viral collabs",
+            "description": "Liquid Death is No. 43 on the list of the World’s 50 Most Innovative Companies of 2025. Explore the full list of companies that are reshaping industries and culture.Two girls fawn over a heartthrob in a teen magazine. Suddenly, the dreamboat in question—a lon…",
+            "url": "https://www.fastcompany.com/91270654/liquid-death-most-innovative-companies-2025",
+            "urlToImage": "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit/wp-cms-2/2025/03/p-1-91270654-liquid-death-most-innovative-companies-2025_12a3e3.jpg",
+            "publishedAt": "2025-03-18T11:00:00Z",
+            "content": "Two girls fawn over a heartthrob in a teen magazine. Suddenly, the dreamboat in questiona long-haired rocker in black-and-white face paintmaterializes in the room, holding a coffin-shaped, heavy-meta… [+1808 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fast Company"
+            },
+            "author": "Stirling Kelso",
+            "title": "These are the 10 most innovative companies in travel and hospitality",
+            "description": "This year, the Most Innovative Companies in travel and hospitality reflect a new moment in travel—one that’s personal, responsive, and attuned to the individuality of every journey. Leading the list is the Port of Portland’s new airport terminal—a stunning fu…",
+            "url": "https://www.fastcompany.com/91270216/travel-hospitality-most-innovative-companies-2025",
+            "urlToImage": "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit/wp-cms-2/2025/03/p-1a-2025_MIC_travel-and-hospitality.png",
+            "publishedAt": "2025-03-18T11:00:00Z",
+            "content": "This year, the Most Innovative Companies in travel and hospitality reflect a new moment in travelone thats personal, responsive, and attuned to the individuality of every journey. Leading the list is… [+17549 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fast Company"
+            },
+            "author": "Veronica Irwin",
+            "title": "The most innovative companies in social media for 2025",
+            "description": "This past year has been one of revivals. Low-rise jeans are back in style, digital cameras are the new favorite way to filter photos, and several cellphone companies even pushed us to buy flip phones again. The trend has been true for social media, too. Parti…",
+            "url": "https://www.fastcompany.com/91270177/social-media-most-innovative-companies-2025-duolingo-bluesky-boston-celtics-pinterest-partiful-planoly-sesame-workshop-feeld-strava-yelp",
+            "urlToImage": "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit/wp-cms-2/2025/03/p-1a-2025_MIC_social-media.png",
+            "publishedAt": "2025-03-18T11:00:00Z",
+            "content": "This past year has been one of revivals. Low-rise jeans are back in style, digital cameras are the new favorite way to filter photos, and several cellphone companies even pushed us to buy flip phones… [+16290 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fast Company"
+            },
+            "author": "Elizabeth Segran",
+            "title": "The most innovative fashion and apparel companies for 2025",
+            "description": "Transformation is quietly afoot in the fashion world. This year, we’re seeing companies incorporate technology into their business models to help them scale and outdo the competition. In doing so, they’re changing the clothes we wear every day.Consider Laws o…",
+            "url": "https://www.fastcompany.com/91269526/fashion-apparel-most-innovative-companies-2025",
+            "urlToImage": "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit/wp-cms-2/2025/03/p-1a-2025_MIC_fashion-and-apparel.png",
+            "publishedAt": "2025-03-18T11:00:00Z",
+            "content": "Transformation is quietly afoot in the fashion world. This year, were seeing companies incorporate technology into their business models to help them scale and outdo the competition. In doing so, the… [+16306 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fast Company"
+            },
+            "author": "Heidi Mitchell",
+            "title": "The most innovative companies in wellness and personal care for 2025",
+            "description": "If last year’s wellness innovators were largely about the quantitative self, this year’s honorees take a more empowering, individualized approach to self-care.The mom and baby care brand Frida ventured into fertility, offering at-home insemination kits along …",
+            "url": "https://www.fastcompany.com/91270243/wellness-personal-care-most-innovative-companies-2025-life-time-fitness-homecourt-frida-akita-biosciences-alice-mushrooms-stakt-january-ai-seed-health-wahoo",
+            "urlToImage": "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit/wp-cms-2/2025/03/p-1a-2025_MIC_wellness-and-personal-care.png",
+            "publishedAt": "2025-03-18T11:00:00Z",
+            "content": "If last years wellness innovators were largely about the quantitative self, this years honorees take a more empowering, individualized approach to self-care.\r\nThe mom and baby care brand Frida ventur… [+16859 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fast Company"
+            },
+            "author": "Thom Geier",
+            "title": "The most innovative companies in film and television for 2025",
+            "description": "Hollywood has always been known for innovation, but seismic shifts in the industry threaten to shake its economic underpinnings. Box office is down, cord-cutting continues (with streaming audiences less likely to see the ads that previously paid for content).…",
+            "url": "https://www.fastcompany.com/91269539/film-television-most-innovative-companies-2025-fx-crunchyroll-zinc-metaphysic-maximum-effort-pixar-televisa-univision-netflix-film-first-srh",
+            "urlToImage": "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit/wp-cms-2/2025/03/p-1a-2025_MIC_film-and-tv.png",
+            "publishedAt": "2025-03-18T11:00:00Z",
+            "content": "Hollywood has always been known for innovation, but seismic shifts in the industry threaten to shake its economic underpinnings. Box office is down, cord-cutting continues (with streaming audiences l… [+20293 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fast Company"
+            },
+            "author": "Christopher Zara",
+            "title": "These 10 companies are behind the past year’s most impactful live events and concerts",
+            "description": "In the five years since the COVID pandemic tore through society and shut down in-person events around the world, live events have returned—slowly and carefully at first, and then with a pent-up vengeance that has made maximalist arenas and experiences all the…",
+            "url": "https://www.fastcompany.com/91269479/events-concerts-live-experiences-most-innovative-companies-2025",
+            "urlToImage": "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit/wp-cms-2/2025/03/p-1a-2025_MIC_events-and-live.png",
+            "publishedAt": "2025-03-18T11:00:00Z",
+            "content": "In the five years since the COVID pandemic tore through society and shut down in-person events around the world, live events have returnedslowly and carefully at first, and then with a pent-up vengea… [+16325 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fast Company"
+            },
+            "author": "Patrick Sisson",
+            "title": "The most innovative urban development and real estate companies for 2025",
+            "description": "Defining the future doesn’t happen in sudden bursts, and that’s especially the case in real estate. Change remains a fluid process, with innovation, investment, and even chance slowly shaping the way different visions come into focus.This year’s most innovati…",
+            "url": "https://www.fastcompany.com/91270226/urban-development-real-estate-most-innovative-companies-2025",
+            "urlToImage": "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit/wp-cms-2/2025/03/p-1a-2025_MIC_urban-dev-and-real-estate.png",
+            "publishedAt": "2025-03-18T11:00:00Z",
+            "content": "Defining the future doesnt happen in sudden bursts, and thats especially the case in real estate. Change remains a fluid process, with innovation, investment, and even chance slowly shaping the way d… [+16677 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fast Company"
+            },
+            "author": "Kristen Hawley",
+            "title": "The most innovative companies in restaurants, dining, and food services for 2025",
+            "description": "Five years ago, a global pandemic upended restaurants. Now, the business of dining is focused on the future, introducing new experiences, new technology, and new models that challenge our notion of what makes a restaurant . . . a restaurant. Restaurant chains…",
+            "url": "https://www.fastcompany.com/91269900/restaurants-dining-food-services-most-innovative-companies-2025-cava-wonder-wingstop-resident-salad-and-go-dig-smoodi-blackbird-labs-bit-oyster-master-guild",
+            "urlToImage": "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit/wp-cms-2/2025/03/p-1a-2025_MIC_dining.png",
+            "publishedAt": "2025-03-18T11:00:00Z",
+            "content": "Five years ago, a global pandemic upended restaurants. Now, the business of dining is focused on the future, introducing new experiences, new technology, and new models that challenge our notion of w… [+17534 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fast Company"
+            },
+            "author": "Yasmin Gagne",
+            "title": "The most innovative companies in media and news for 2025",
+            "description": "As the hollowing-out of newsrooms across the country continues, some media outlets have stood apart by doubling down on serving their communities. Last August, the country’s eighth-leading daily newspaper rebranded from Minneapolis Star Tribune to Minnesota S…",
+            "url": "https://www.fastcompany.com/91269631/media-news-most-innovative-companies-2025",
+            "urlToImage": "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit/wp-cms-2/2025/03/p-1a-2025_MIC_media.png",
+            "publishedAt": "2025-03-18T11:00:00Z",
+            "content": "As the hollowing-out of newsrooms across the country continues, some media outlets have stood apart by doubling down on serving their communities. Last August, the countrys eighth-leading daily newsp… [+18211 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Joe Tilleli",
+            "title": "Amazon Slashes Prices of Google’s Flagship Pixel 9 and 9 Pro to Record Lows",
+            "description": "Amazon has the latest smartphones from Google going for a massive discount.",
+            "url": "https://gizmodo.com/amazon-slashes-prices-of-googles-flagship-pixel-9-and-9-pro-to-record-lows-2000577743",
+            "urlToImage": "https://gizmodo.com/app/uploads/2025/02/Pixel-9-Pro.jpg",
+            "publishedAt": "2025-03-18T21:08:50Z",
+            "content": "It might be time to treat yourself to something new and cool with an upgrade to your smartphone. Amazon has given you a reason to not need to wait anymore: the latest Google Pixel 9 and Pixel 9 Pro a… [+1751 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Thomas Maxwell",
+            "title": "Pebble, the Original Smartwatch, Has a Colorful New Successor",
+            "description": "Eric Migicosvky never found a smartwatch to fill the void left by Pebble, so he’s bringing it back under a new name.",
+            "url": "https://gizmodo.com/pebble-the-original-smartwatch-has-a-colorful-new-successor-2000577263",
+            "urlToImage": "https://gizmodo.com/app/uploads/2025/03/introducing-two-new-pebbleos-watches-0-c2p2_03v2.jpg",
+            "publishedAt": "2025-03-18T16:00:05Z",
+            "content": "Months after announcing a plan to bring the Pebble back, Eric Migicovsky’s new company, Core Devices, is showing off specs and images and opening up pre-orders.\r\nEric Migicovsky, founder of Pebble, s… [+5588 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Matthew Gault",
+            "title": "The War in Ukraine Is Fought on Horseback Against Drones Carrying Machine Guns",
+            "description": "War. War never changes.",
+            "url": "https://gizmodo.com/the-war-in-ukraine-is-fought-on-horseback-against-drones-carrying-machine-guns-2000577425",
+            "urlToImage": "https://gizmodo.com/app/uploads/2025/03/UKDroneOperator.jpg",
+            "publishedAt": "2025-03-18T15:05:23Z",
+            "content": "The war in Ukraine is one of robots and horses. Its WW1-style trench warfare with modern killing machines. As Kyiv is perfecting the art of lethal drones on the ground, sea, and air, Moscow has turne… [+5166 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Kyle Barr",
+            "title": "Assassin’s Creed Shadows Shows Ubisoft Still Hasn’t Made Assassin’s Creed",
+            "description": "Assassin’s Creed Shadows is a gorgeous Sengoku-era simulator, but it makes me want to gnaw a hole through my controller.",
+            "url": "https://gizmodo.com/assassins-creed-shadows-shows-ubisoft-still-hasnt-made-assassins-creed-2000577365",
+            "urlToImage": "https://gizmodo.com/app/uploads/2025/03/Assassins-Creed-Shadows-Hero.jpg",
+            "publishedAt": "2025-03-18T17:00:59Z",
+            "content": "Im still waiting for the pure promise of the first Assassins Creed from back in 2007. I still imagine the game series three pillarsstealth, parkour, and combatmixed into a beautiful, brutal choreogra… [+10023 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Tushar Mehta",
+            "title": "A ChatGPT rival may soon control your desktop with voice",
+            "description": "Artificial intelligence startup Anthropic shares the spotlight among top Silicon Valley names for two major reasons. First, the company was founded by former OpenAI alumni who left after developing ideological differences with Sam Altman. Second, Anthropic cl…",
+            "url": "https://www.digitaltrends.com/computing/a-chatgpt-rival-may-soon-control-your-desktop-with-voice/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2024/09/Elitebook-X.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-18T14:49:24Z",
+            "content": "Artificial intelligence startup Anthropic shares the spotlight among top Silicon Valley names for two major reasons. First, the company was founded by former OpenAI alumni who left after developing i… [+2442 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Willow Roberts",
+            "title": "Gemini’s new feature might make it your new favorite group project partner",
+            "description": "Google has dropped new Gemini features designed for creative collaboration with the AI assistant.",
+            "url": "https://www.digitaltrends.com/computing/google-gemini-collab-tools/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/03/Header-image.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-18T16:00:21Z",
+            "content": "Google has released new content for its Gemini assistant called Canvas — a split-screen feature that lets you chat to Gemini on the left and see your changes appear in real-time on the right.\r\nThe id… [+2004 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Luke Edwards",
+            "title": "Quantum computing just got an AI upgrade",
+            "description": "Nvidia is working on a computer that combines AI, super-computing and quantum in one machine to rule them all. This will be born in the newly revealed Nvidia Accelerated Quantum Research Center (NVAQC). made the for quantum computing fans from its GTC Global …",
+            "url": "https://www.digitaltrends.com/computing/nvidia-just-announced-a-super-computer-team-up-to-make-quantum-powers-usable/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/03/NVIDIA-quantum-research-center.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-18T20:27:59Z",
+            "content": "Nvidia is working on a computer that combines AI, super-computing and quantum in one machine to rule them all. This will be born in the newly revealed Nvidia Accelerated Quantum Research Center (NVAQ… [+1884 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Tushar Mehta",
+            "title": "Google says it’s using AI to respond to more of your ailment searches",
+            "description": "Google will include AI-generated medical advice when you search for your conditions on mobile.",
+            "url": "https://www.digitaltrends.com/mobile/google-says-its-using-ai-to-respond-to-more-of-your-ailment-searches/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/02/google-search-on-Android.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-18T16:29:57Z",
+            "content": "Over the last year, Google has been expanding its AI overviews in search results, offering responses compiled with generative AI rather than a list of links. The goal, as you would expect, is to make… [+2082 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Jon Martindale",
+            "title": "AMD 9070 XT is a good upgrade over the 7800 XT",
+            "description": "AMD's new RX 9070 XT has proved itself a worthy upgrade for those with a 7800 XT, with better ray tracing and upscaling capabilities.",
+            "url": "https://www.digitaltrends.com/computing/amd-9070-xt-is-a-good-upgrade-over-the-amd-78000-xt/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2023/09/rx-7800-xt-rx-7700-xt-review-7.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-18T11:51:58Z",
+            "content": "Table of Contents\r\nTable of Contents\r\nPricing and availability\r\nSpecifications\r\nPerformance\r\nThe 9070 XT is much better, if you can get it\r\nThe AMD RX 9070 XT has been hailed as the best graphics car… [+5451 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Willow Roberts",
+            "title": "Microsoft is working on making it easier to talk to your PC",
+            "description": "Microsoft is testing a way to make voice commands for Windows a whole lot more natural and easy to use.",
+            "url": "https://www.digitaltrends.com/computing/windows-voice-commands-are-getting-more-natural/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2024/07/surface-pro-11-04.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-18T14:08:46Z",
+            "content": "Windows 11 has support for voice commands like “Open Edge” largely for accessibility purposes but with the latest Insider preview build, it’s taking a step toward going full Star Trek. Instead of rem… [+1765 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Patrick Hearn",
+            "title": "Fitbit’s newest feature could help you sleep better and longer",
+            "description": "Fitbit's latest sleep-tracking feature is here, and it aims to help you saw logs with all the proficiency of a lumberjack.",
+            "url": "https://www.digitaltrends.com/mobile/fitbits-newest-feature-could-help-you-sleep-better-longer/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2020/02/fitbit-inspire-hr.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-18T12:56:50Z",
+            "content": "The CDC reports that roughly one in three people struggle to get the proper amount of rest, but Fitbit’s latest feature could provide a solution. The Personalized Sleep Schedule is part of Fitbit Lab… [+2052 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Michael Bizzaco",
+            "title": "This LG 65-inch 4K TV is on sale — from $600 down to $350",
+            "description": "The LG 65-inch UT70 Series 4K LED is marked down to $350 today. A bright and colorful world of movies, TV shows, and video games awaits you.",
+            "url": "https://www.digitaltrends.com/home-theater/lg-65-inch-ut70-deal-best-buy-march-2025/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2023/11/LG-65-inch-UT70-Series-4K-TV.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-18T19:35:23Z",
+            "content": "It’s not every day that any 65-inch TV costs less than $400, so you can imagine our surprise when we learned that the LG 65-inch UT70 Series 4K LED is marked down to $350 today at Best Buy! This TV i… [+1628 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Digital Trends"
+            },
+            "author": "Andy Boxall",
+            "title": "Brain-training headband has a game you control with your mind",
+            "description": "The Muse S Athena headband uses several sensors to collect brain activity data, and allows you to control a game with your mind. It's as sci-fi as tech gets.",
+            "url": "https://www.digitaltrends.com/mobile/brain-training-headband-has-a-game-you-control-with-your-mind/",
+            "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/03/muse-s-athena.jpg?resize=1200%2C630&p=1",
+            "publishedAt": "2025-03-18T12:00:19Z",
+            "content": "There’s something very sci-fi about The Muse S Athena, a headband that tracks brain activity and blood flow, ready to help train your mental strength. It uses several sensors to provide insight into … [+3304 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Github.com"
+            },
+            "author": "ai-dynamo",
+            "title": "Nvidia Dynamo: A Datacenter Scale Distributed Inference Serving Framework",
+            "description": "A Datacenter Scale Distributed Inference Serving Framework - ai-dynamo/dynamo",
+            "url": "https://github.com/ai-dynamo/dynamo",
+            "urlToImage": "https://opengraph.githubassets.com/b4358e645857aa17e7561d32dc71cb4a0856ef4a84f31c60f7a0e38b80dde6a5/ai-dynamo/dynamo",
+            "publishedAt": "2025-03-18T20:44:14Z",
+            "content": "| Guides | Architecture and Features | APIs | SDK |\r\nNVIDIA Dynamo is a high-throughput low-latency inference framework designed for serving generative AI and reasoning models in multi-node distribut… [+2539 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Qodo.ai"
+            },
+            "author": "Sagi Medina",
+            "title": "Building Agentic Flows with LangGraph and Model Context Protocol",
+            "description": "Learn how Qodo Gen leverages LangGraph & MCP to build agentic AI workflows for coding, improving automation & tool integration.",
+            "url": "https://www.qodo.ai/blog/building-agentic-flows-with-langgraph-model-context-protocol/",
+            "urlToImage": "https://www.qodo.ai/wp-content/uploads/2025/03/Building-Agentic-Flows-with-LangGraph.png",
+            "publishedAt": "2025-03-18T17:49:56Z",
+            "content": "In the newly released 1.0 version of Qodo Gen, our IDE plugin for AI coding and testing, we introduce agentic workflows that let AI make dynamic decisions to navigate complex coding tasks.\r\nTo enable… [+12298 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Graphite.dev"
+            },
+            "author": null,
+            "title": "Why AI will never replace human code review",
+            "description": "It needs to be said: AI can’t fully replace human code review.  Not now, and likely not ever.",
+            "url": "https://graphite.dev/blog/ai-wont-replace-human-code-review",
+            "urlToImage": "https://www.datocms-assets.com/85246/1742309871-ai_review_is_bad_share_image.png",
+            "publishedAt": "2025-03-18T17:29:19Z",
+            "content": "It needs to be said: AI cant fully replace human code review. \r\nNot now, and likely not ever. And this is coming from someone who spends late nights building a leading AI code review tool. Despite pr… [+10588 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Nvidia.com"
+            },
+            "author": null,
+            "title": "Jensen Huang – Nvidia GTC 2025 Keynote",
+            "description": "Experience GTC 2025 In-Person and Online March 17-21, San Jose",
+            "url": "https://www.nvidia.com/gtc/keynote/",
+            "urlToImage": "https://www.nvidia.com/content/dam/en-zz/Solutions/gtc/social-image/gtc25-web-keynote-og-r3.jpg",
+            "publishedAt": "2025-03-18T17:05:26Z",
+            "content": "Watch Jensen Huang live at the SAP Center as he shares whats next in agentic AI, robotics, accelerated computing, and more."
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Webrtchacks.com"
+            },
+            "author": "Chad Hart",
+            "title": "The Unofficial Guide to OpenAI Realtime WebRTC API",
+            "description": "Walkthrough on how to use the OpenAI Realtime API with WebRTC including tips on WebRTC, overall flow, data channel messaging, and functions",
+            "url": "https://webrtchacks.com/the-unofficial-guide-to-openai-realtime-webrtc-api/",
+            "urlToImage": "https://webrtchacks.com/wp-content/uploads/2025/03/word-image-4424-1.png",
+            "publishedAt": "2025-03-18T12:47:18Z",
+            "content": "OpenAI using WebRTC in its Realtime API is obviously exciting to us here at webrtcHacks. Fippo and I were doing some blackboxing of this based on a quick sample the day of the WebRTC announcement so … [+34289 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Ericmigi.com"
+            },
+            "author": null,
+            "title": "Two new PebbleOS watches",
+            "description": "Including my dream smartwatch…",
+            "url": "https://ericmigi.com/blog/introducing-two-new-pebbleos-watches/",
+            "urlToImage": "https://ericmigi.com/assets/introducing-two-new-pebbleos-watches-0-c2p2_03v2.png",
+            "publishedAt": "2025-03-18T15:59:27Z",
+            "content": "Were excited to announce two new smartwatches that run open source PebbleOS and are compatible with thousands of your beloved Pebble apps. \r\n<ul><li>Core 2Duo has an ultra crisp black and white displ… [+11115 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "9to5Mac"
+            },
+            "author": "Zac Hall",
+            "title": "MacWhisper 12 delivers the most requested feature to the leading AI transcription app",
+            "description": "MacWhisper has been a must-have transcription tool for a while now, and the new version 12 update makes it downright essential. New customers can save 15% at checkout with the promo code listed below \n\n\n\n more…",
+            "url": "https://9to5mac.com/2025/03/18/macwhisper-12-delivers-the-most-requested-feature-to-the-leading-ai-transcription-app/",
+            "urlToImage": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2025/03/macwshisper12.webp?resize=1200%2C628&quality=82&strip=all&ssl=1",
+            "publishedAt": "2025-03-18T18:10:28Z",
+            "content": "MacWhisper has been a must-have transcription tool for a while now, and the new version 12 update makes it downright essential. New customers can save 15% at checkout with the promo code listed below… [+1684 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Popular Science"
+            },
+            "author": "Stan Horaczek",
+            "title": "Samsung is offering enhanced trade-in deals up to $1,000 toward new S25 smartphones, Galaxy tablets, and earbuds",
+            "description": "Even if you have an old iPhone X hanging around from 2017, Samsung will give you some cash for it toward a new device.\nThe post Samsung is offering enhanced trade-in deals up to $1,000 toward new S25 smartphones, Galaxy tablets, and earbuds appeared first on …",
+            "url": "https://www.popsci.com/gear/samsung-galaxy-s25-trade-in-deal/",
+            "urlToImage": "https://www.popsci.com/wp-content/uploads/2025/03/samsung-galaxy-s25-trade-in-deal-main.jpg?quality=85",
+            "publishedAt": "2025-03-18T16:25:00Z",
+            "content": "We may earn revenue from the products available on this page and participate in affiliate programs. Learn more Springtime is all about renewal and rebirth. New flowers are popping up. Baseball is get… [+1530 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Police"
+            },
+            "author": "Chandraveer Mathur",
+            "title": "Google could partner with MediaTek for next gen AI chips: Report",
+            "description": "Google may break nine-year streak with Broadcom to partner with MediaTek for TPU production as AI demand soars",
+            "url": "https://www.androidpolice.com/google-could-partner-with-mediatek-next-gen-ai-chips/",
+            "urlToImage": "https://static1.anpoimages.com/wordpress/wp-content/uploads/2022/09/computer-chips.jpg",
+            "publishedAt": "2025-03-18T12:52:29Z",
+            "content": "Summary\r\n<ul><li>\r\n Google may switch TPU partners from Broadcom to MediaTek for cost optimization.\r\n </li><li>\r\n MediaTek might handle I/O modules in partnership, with Google focusing on more in-hou… [+3405 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Android Police"
+            },
+            "author": "Taylor Kerns",
+            "title": "Google announces historic bid to acquire cloud security startup Wiz for $32 billion",
+            "description": "The deal, which would be the largest acquisition in Google history, will surely face regulatory scrutiny",
+            "url": "https://www.androidpolice.com/google-acquires-wiz/",
+            "urlToImage": "https://static1.anpoimages.com/wordpress/wp-content/uploads/2023/06/google-cloud-platform-app-logos-v2.jpg",
+            "publishedAt": "2025-03-18T18:40:12Z",
+            "content": "Summary\r\n<ul><li>\r\n Google intends to purchase Wiz for $32 billion in cash to enhance cloud security and multi-cloud capabilities.\r\n </li><li>\r\n The acquisition reflects Google's focus on its rapidly… [+2331 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Scientific American"
+            },
+            "author": "Allison Parshall",
+            "title": "Is ChatGPT a Drug? Metaphors Show What Students Think of AI",
+            "description": "Analyzing the metaphors we use to talk about ChatGPT can reveal how we’re thinking about the new tech",
+            "url": "https://www.scientificamerican.com/article/is-chatgpt-a-drug-metaphors-show-what-students-think-of-ai/",
+            "urlToImage": "https://static.scientificamerican.com/dam/m/13718ab94f75e662/original/ai_keyboard_buttons.jpg?m=1742234710.956&w=1200",
+            "publishedAt": "2025-03-18T13:00:00Z",
+            "content": "Using ChatGPT to help you write is like donning a pair of high heels. The reason, according to one postgraduate researcher from China: “It makes my writing look noble and elegant, although I occasion… [+6936 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Scientific American"
+            },
+            "author": "The Editors",
+            "title": "AI Needs to Be More Energy-Efficient",
+            "description": "Artificial Intelligence uses too much energy. Developers need to find better ways to power it or risk adding to the climate crisis",
+            "url": "https://www.scientificamerican.com/article/ai-needs-to-be-more-energy-efficient/",
+            "urlToImage": "https://static.scientificamerican.com/dam/m/5e304f8e4c08bcbe/original/sa0425Agen01A.jpg?m=1741112419.914&w=1200",
+            "publishedAt": "2025-03-18T14:00:00Z",
+            "content": "Artificial intelligence is everywhere: it’s designing new proteins, answering Internet search questions, even running barbecues. Investors are captivated by it—and so is the U.S. president. Just afte… [+6265 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Scientific American"
+            },
+            "author": "Tom Metcalfe",
+            "title": "Newfound Exoplanets around Barnard’s Star Resolve Long-Standing Astronomical Quest",
+            "description": "Four small, newly discovered worlds are less than six light-years away from Earth, and their discovery reinforces a cautionary tale from planet hunting’s prehistory",
+            "url": "https://www.scientificamerican.com/article/newfound-exoplanets-around-barnards-star-resolve-long-standing-astronomical/",
+            "urlToImage": "https://static.scientificamerican.com/dam/m/15809f8d6a351b23/original/exoplanets-orbiting-barnards-star.jpg?m=1742261798.737&w=1200",
+            "publishedAt": "2025-03-18T14:00:00Z",
+            "content": "Astronomers have confirmed the existence of four small planets around Barnard’s Star, one of Earth’s nearest and perhaps most notorious neighboring stars.\r\nThe new discoveries verify a study last yea… [+5383 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": "Jeff Vasishta",
+            "title": "Google Co-Founder Says Employees Should Be In The Office \"At Least\" Every Weekday As Competition In The AI Arms Race Intensifies",
+            "description": "Cancel your weekends! That seemed to be the message Google (NASDAQ:GOOG, GOOGL)) co-founder Sergey Brin told employees when urging them to be in the office “...",
+            "url": "https://finance.yahoo.com/news/google-co-founder-says-employees-141539761.html",
+            "urlToImage": "https://media.zenfs.com/en/benzinga_79/ad2ad08e4d8cd37e780a859c5db8740b",
+            "publishedAt": "2025-03-18T14:15:39Z",
+            "content": "Google Co-Founder Says Employees Should Be In The Office \"At Least\" Every Weekday As Competition In The AI Arms Race Intensifies\r\nBenzinga and Yahoo Finance LLC may earn commission or revenue on some… [+3740 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "AppleInsider"
+            },
+            "author": "news@appleinsider.com (Malcolm Owen)",
+            "title": "Heavily upgraded M3 Ultra Mac Studio is great for AI projects",
+            "description": "The Mac Studio is a great system for running AI models like DeepSeek locally. That is, if you're prepared to pay for M3 Ultra and a lot of upgrades.Mac StudioApple Silicon is dominating the AI-capable PC market, with its capability for machine learning applic…",
+            "url": "https://appleinsider.com/articles/25/03/18/heavily-upgraded-m3-ultra-mac-studio-is-great-for-ai-projects",
+            "urlToImage": "https://photos5.appleinsider.com/gallery/63004-130783-335-hero-xl.jpg",
+            "publishedAt": "2025-03-18T12:09:09Z",
+            "content": "The Mac Studio is a great system for running AI models like DeepSeek locally. That is, if you're prepared to pay for M3 Ultra and a lot of upgrades. \r\nApple Silicon is dominating the AI-capable PC ma… [+3506 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Macworld"
+            },
+            "author": "DealPost Team",
+            "title": "Over 80% off lifetime access to ChatGPT, Gemini, and Midjourney",
+            "description": "Macworld\n\n\n\r\n\n\n\n\nTL;DR: Get lifetime access to ChatGPT, Gemini, Midjourney, and more for just $29.97 (reg. $234) with 1minAI. This deal is available until 3/30 at 11:59 PM—access top AI tools in one place without ongoing fees.\r\n\n\n\n\nAI is a game-changer for pr…",
+            "url": "https://www.macworld.com/article/2638315/over-80-off-lifetime-access-to-chatgpt-gemini-and-midjourney.html",
+            "urlToImage": "https://www.macworld.com/wp-content/uploads/2025/03/sale_326640_article_image-1-1.jpg?quality=50&strip=all&w=1024",
+            "publishedAt": "2025-03-18T08:00:00Z",
+            "content": "Skip to contentType your search and hit enter\r\nWhen you purchase through links in our articles, we may earn a small commission. This doesn't affect our editorial independence\r\n.\r\nTL;DR: Get lifetime … [+1137 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CNET"
+            },
+            "author": "Scott Stein",
+            "title": "Pebble's Two New Watches Revealed: They Have 30-Day Battery Life Now",
+            "description": "The Core 2 Duo and Core Time 2 are arriving in July and December, and I love that they'll last forever on a charge.",
+            "url": "https://www.cnet.com/tech/mobile/pebbles-two-new-watches-revealed-they-have-30-day-battery-life-now/",
+            "urlToImage": "https://www.cnet.com/a/img/resize/5fa2dc00bc457b0c1557edcc6775c6a71a2edfe2/hub/2025/03/17/71a58911-5cdc-47de-b3c9-00f3322c4c2d/01-hero-03v2.png?auto=webp&fit=crop&height=675&width=1200",
+            "publishedAt": "2025-03-18T16:00:12Z",
+            "content": "My retro dreams are coming true. The Pebble Watch, my favorite wearable of the early mid-2010s, is making a comeback. Even better, though, is that the new Pebbles have a battery life that can last a … [+3111 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Windows Central"
+            },
+            "author": "c.cale.hunt@gmail.com (Cale Hunt)",
+            "title": "AI fatigue? Well, HP just updated its AI Companion app — here's what it can do.",
+            "description": "HP's AI Companion app looks more like Copilot+ after an update that adds tools like Snip to Prompt, Spotlight, and Keylogger Protection.",
+            "url": "https://www.windowscentral.com/hardware/hp/amplify-2025-ai-announcements",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/795TSuTZSMKKyYUNLJdJR3-1200-80.jpg",
+            "publishedAt": "2025-03-18T16:00:00Z",
+            "content": "HP's Amplify 2025 conference is underway, and alongside a host of new hardware, the company has unveiled some new and refreshed AI software headed onto its compatible PCs.\r\nI'm most interested in the… [+6734 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Windows Central"
+            },
+            "author": "rebecca.spear@futurenet.com (Rebecca Spear)",
+            "title": "HP just announced literally DOZENS of brand-new AI PCs — These are the ones that excite me most",
+            "description": "HP has announced dozens of new AI PCs. Here are the ones you should definitely take a look at from a mini PC to an All-in-One.",
+            "url": "https://www.windowscentral.com/hardware/hp/hp-announces-dozens-of-new-ai-pcs",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/FiNA8sDUsC3KHZncqbxQtK-1200-80.jpg",
+            "publishedAt": "2025-03-18T21:17:34Z",
+            "content": "During HP's annual Amplify conference, the tech company announced literally dozens (25 if I counted correctly) of new AI PCs that will start launching sometime in Spring 2025.\r\nConsidering their impr… [+6332 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Windows Central"
+            },
+            "author": "sean.endicott@futurenet.com (Sean Endicott)",
+            "title": "HP's most popular laptops break free from Snapdragon exclusivity with AMD and Intel's latest AI chips",
+            "description": "HP just announced a slew of new PCs from its OmniBook range, including OmniBook X laptops powered by AMD and Intel CPUs. In total, 18 OmniBook laptops were unveiled.",
+            "url": "https://www.windowscentral.com/hardware/laptops/hp-omnibook-x-flip-intel-amd",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/cjxSxwKzDuAZf6ZMDxGraK-1200-80.jpg",
+            "publishedAt": "2025-03-18T16:00:00Z",
+            "content": "HP just unveiled a massive expansion to its laptop lineup. Enterprise, commercial, and consumer devices were all announced at its Amplify 2025 conference, but I'm focusing on the OmniBooks here.\r\nIn … [+4566 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Windows Central"
+            },
+            "author": "c.cale.hunt@gmail.com (Cale Hunt)",
+            "title": "HP's OMEN Slim laptop — because nothing screams 'Slim' like lugging around 5 pounds of gaming power",
+            "description": "HP shared a bunch of new gaming hardware at Amplify 2025, including the OMEN 16 Slim designed for mobile gamers. Here's what you need to know.",
+            "url": "https://www.windowscentral.com/gaming/hp-omen-slim-amplify-announcement",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/y9fEvZE5H6eatoiHvtdZca-1200-80.jpg",
+            "publishedAt": "2025-03-18T16:00:00Z",
+            "content": "HP's annual Amplify conference is back for 2025 with a whole lot of new hardware in tow.\r\nThe company's gaming brands, OMEN and Victus, have received laptop refreshes, but the big news involves a com… [+6225 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Windows Central"
+            },
+            "author": "c.cale.hunt@gmail.com (Cale Hunt)",
+            "title": "I'm eager to test the \"world's most powerful workstation\" from HP — loaded with new NVIDIA RTX PRO graphics",
+            "description": "HP claims its new ZBook Fury G1i is the best choice for maximum mobile workstation power, all thanks to RTX PRO \"Blackwell\" graphics and an overhauled three-fan cooling system.",
+            "url": "https://www.windowscentral.com/hardware/laptops/hp-zbook-fury-g1i-announcement",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/evvor6qTgAnAG2Mu8tvDo7-1200-80.jpg",
+            "publishedAt": "2025-03-18T20:00:00Z",
+            "content": "HP has been busy at its Amplify 2025 conference, revealing new PCs, monitors, and accessories across its consumer, gaming, and enterprise brands.\r\nFor power users who employ AI in their workflow, HP'… [+5678 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Windows Central"
+            },
+            "author": "zac.bowden@futurenet.com (Zac Bowden)",
+            "title": "Mysterious Windows 11 \"actions\" menu appears in latest preview build — here's what it's for",
+            "description": "The latest Windows 11 Dev Channel build includes a new actions menu in the Settings app, which lets you configure which suggested actions appear in Click To Do.",
+            "url": "https://www.windowscentral.com/software-apps/windows-11/mysterious-windows-11-actions-menu-appears-in-latest-preview-build",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/cNPCYbRjoVBy9RXHQA9ZzQ-1200-80.jpg",
+            "publishedAt": "2025-03-18T14:54:23Z",
+            "content": "It's a new week, which means Microsoft is now rolling out a new Windows 11 preview build for testers in the Dev Channel. Interestingly, this build includes an undocumented new menu in the Settings ap… [+2066 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Windows Central"
+            },
+            "author": "daniel@windowscentral.com (Daniel Rubino)",
+            "title": "First look: HP’s new all-in-one wonder PC — I wish I had this when I was in college",
+            "description": "HP’s just-announced EliteStudio 8 AiO G1i, which includes a built-in KVM Device Switch for the first time, sets the bar for what all-in-one PCs can be in 2025, and I got an early look at an engineering sample.",
+            "url": "https://www.windowscentral.com/hardware/computers-desktops/first-look-hps-elitestudio-g8-aio-g1i-2025",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/PGEkxsg4j6RdrwyZ3BNiU-1200-80.jpg",
+            "publishedAt": "2025-03-18T16:14:40Z",
+            "content": "HP sent me a first-look engineering sample of its new EliteStudio 8 AiO G1i PC, which was just announced at the HP Amplify Conference.\r\nAll-in-one (AIO) Windows PCs are becoming increasingly popular … [+7240 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Windows Central"
+            },
+            "author": "ben.wilson@windowscentral.com (Ben Wilson)",
+            "title": "Intel's new XeSS 2 tech includes an answer to AMD and NVIDIA's \"Frame Generation\" GPU techniques that boost in-game FPS",
+            "description": "XeSS-FG and XeSS-LL combine Frame Generation and Low Latency techniques to boost performance on various GPUs, not just Intel Arc.",
+            "url": "https://www.windowscentral.com/gaming/pc-gaming/intel-xess-2-now-available-with-frame-generation-low-latency",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/ssmgQYCdiR3fJbgHq2qroT-1200-80.jpg",
+            "publishedAt": "2025-03-18T12:36:13Z",
+            "content": "Intel just released its XeSS 2 SDK for game developers, including improvements to its existing Super Resolution upscaling technology alongside in-house answers to frame generation and low latency tec… [+5057 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Windows Central"
+            },
+            "author": "daniel@windowscentral.com (Daniel Rubino)",
+            "title": "HP’s new EliteBook is the one I want for one reason: Qualcomm Snapdragon X and Arm64",
+            "description": "Qualcomm’s Snapdragon X series chips lands in the new EliteBook 6G1q 14-inch laptop and I think it’s going to be an awesome experience.",
+            "url": "https://www.windowscentral.com/hardware/laptops/hps-new-elitebook-is-the-one-i-want-for-one-reason-qualcomm-snapdragon-x-and-arm64",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/Da9kFo9h3WPPty5vCSjfaY-1200-80.jpg",
+            "publishedAt": "2025-03-18T16:28:14Z",
+            "content": "One of my favorite laptop series is HP’s EliteBooks. While technically for business and enterprise HP’s designs, build quality and features always impressed me, which is why I ranked its EliteBook 10… [+3123 chars]"
+        }
+    ]
+}

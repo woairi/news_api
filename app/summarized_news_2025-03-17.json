@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Inching towards AGI: How reasoning and deep research are expanding AI from statistical prediction to structured problem-solving",
+        "summary_en": "Artificial intelligence (AI) has rapidly evolved from statistical prediction to structured problem-solving, with advancements like GPT-4 and reasoning models signaling a move towards artificial general intelligence (AGI). This shift is transforming AI's capabilities, potentially allowing powerful systems to outperform humans in most tasks within a few years, though opinions vary on the timeline and implications of such developments.",
+        "summary_ko": "인공지능은 예측 분석에서 구조화된 문제 해결로 발전하고 있으며, 이는 과거에는 과학 소설처럼 보였던 기술이 이제 현실이 되고 있습니다. 최근 몇 년간 AI는驚異적인 속도로 발전하여, 예측 분석뿐만 아니라 복잡한 문제 해결에도 적용되고 있습니다.",
+        "url": "https://venturebeat.com/ai/inching-towards-agi-how-reasoning-and-deep-research-are-expanding-ai-from-statistical-prediction-to-structured-problem-solving/"
+    },
+    {
+        "title": "I Asked Voice Assistants Like Alexa and Siri Home Safety Questions. Here's What I Learned",
+        "summary_en": "A recent experiment tested voice assistants like Alexa, Siri, and Google Assistant on their ability to answer home safety questions, revealing their capabilities in providing information on fire extinguishers, smoke alarm laws, and smart home security features. Google Assistant proved to be the most useful for home safety queries, followed by Siri and Alexa, with each having unique strengths and limitations in handling various security-related tasks.",
+        "summary_ko": "음성 비서인 알렉사와 시리를 통해 집안 안전 관련 질문을 테스트한 결과, 화재 경보기 설치 위치나 현관문 잠금 상태 등 다양한 정보를 얻을 수 있었습니다. 특히 알렉사는 화재 소화기 설치에 대한 정보를 잘 제공했으며, 시리는 홈킷 액세서리를 통해 집안의 전등이나 온도 조절 장치를 원격으로 제어할 수 있었습니다.",
+        "url": "https://www.cnet.com/home/security/i-asked-voice-assistants-like-alexa-and-siri-home-safety-questions-heres-what-i-learned/"
+    },
+    {
+        "title": "The Forerunner 975 and 275 will show how much gas Garmin has left in the tank",
+        "summary_en": "Garmin is expected to release new models of its popular Forerunner 275 and 975 running watches in the next few months, which will be crucial in demonstrating whether the company still has innovative ideas for serious runners. The upcoming models are anticipated to feature minor upgrades, such as improved displays and GPS accuracy, but may not include groundbreaking new features, potentially relying on incremental enhancements rather than revolutionary changes.",
+        "summary_ko": "가민의 인기 러닝 워치인 Forerunner 975과 275의 새로운 모델이 곧 출시될 예정입니다. 이 출시가 가민이 여전히 혁신을 이어갈 수 있는지, 아니면 단순한 점진적인 업그레이드에 그칠 것인지 보여줄 것입니다. 새로운 모델은 2025년 3월부터 4월 사이에 나올 것으로 예상되며, Forerunner 275는 중급 모델로 가격은 약 450달러에서 500달러 사이로 책정될 예정입니다.",
+        "url": "https://www.androidcentral.com/wearables/garmin-forerunner-975-and-275-will-show-if-garmin-is-running-out-of-ideas"
+    },
+    {
+        "title": "People are using ChatGPT for therapy. Therapists say it's not a bad idea — if you do it right.",
+        "summary_en": "People are increasingly using ChatGPT as a tool for therapy, finding it helpful for tasks like journal prompts and concrete questions, although therapists caution against relying on it for deeper psychoanalysis. While ChatGPT can provide accessible and instant support, therapists emphasize the importance of using it as a complement rather than a substitute for traditional therapy, highlighting its limitations in offering personalized and nuanced human interaction.",
+        "summary_ko": "요즘 많은 사람들이 ChatGPT를 상담의 도구로 사용하고 있으며, 이는 주로 일기 작성이나 구체적인 질문에 효과적입니다. 그러나 심리 분석 같은 복잡한 문제에는 적합하지 않으며, 사용 시 주의가 필요하다는 의견이 있습니다. 전문가들은 ChatGPT를 보완적인 도구로 사용하는 것이 좋다고 조언합니다.",
+        "url": "https://www.businessinsider.com/chatgpt-therapy-risks-benefits-boundaries-2025-3"
+    },
+    {
+        "title": "At SXSW, a Culture Clash: Can Gen AI and Art Get Along?",
+        "summary_en": "At SXSW, the rapid advancement of AI technology has sparked a culture clash between tech enthusiasts and creatives, with concerns that AI may undermine human creativity despite its potential to enhance and democratize artistic processes. While AI offers tools for faster and more personalized content creation, many in the creative industries worry about its impact on originality and the ethical implications of using AI in art, such as the unauthorized use of existing works to train AI models.",
+        "summary_ko": "SXSW에서 열린 행사에서 AI와 예술의 상호작용이 논의되었습니다. 일부 기술자들은 AI가 창의성을 더욱 발전시킬 수 있는 도구로 보지만, 많은 예술가들은 AI가 예술의 경제적 안정성에 위협이 되고, 창작 과정의 중요한 단계를 생략하는 것으로 보고 있습니다.\n\nAI가 예술에 미치는 영향은 크게 두 가지로 나뉩니다. 한쪽에서는 AI가 새로운 예술 형태를 실험하는 데 도움이 될 수 있다고 보며, 다른 한쪽에서는 AI가 인간의 감정과 경험을 대체할 수 없다고 주장합니다. 예술가들은 AI가 창작 과정에서 필수적인 요소인 시간과 노력을 생략하는 것에 대해 우려하고 있습니다.",
+        "url": "https://www.cnet.com/tech/services-and-software/at-sxsw-a-culture-clash-can-gen-ai-and-art-get-along/"
+    },
+    {
+        "title": "Hackaday Links: March 16, 2025",
+        "summary_en": "A recent firmware update for HP LaserJet MFP M232-M237 models has caused issues, with some printers being blocked from printing due to non-OEM toner detection, even when using genuine HP cartridges. This incident is part of a broader trend of printer manufacturers facing criticism for firmware updates that restrict third-party accessories, with similar controversies involving Bambu Lab and Brother printers, though Brother denies intentionally disabling printers with non-OEM ink.",
+        "summary_ko": "최근 프린터 관련 문제가 심각해지고 있는데, 펌웨어 업데이트로 인해 프린터가 고장 나는 사례가 증가하고 있습니다. 이 문제는 프린터 판매 개선이 이루어질 때까지 지속될 가능성이 있습니다.",
+        "url": "https://hackaday.com/2025/03/16/hackaday-links-march-16-2025/"
+    },
+    {
+        "title": "I saw Google’s Gemini AI erase image watermarks. I am deeply worried",
+        "summary_en": "Google's Gemini 2.0 Flash AI model has been found capable of removing watermarks from copyright-protected images, raising significant ethical and legal concerns about copyright infringement and the misuse of AI technology. This capability, available in Google's AI Studio, allows users to potentially exploit copyrighted material, despite Google's previous commitments to respect intellectual property rights and implement watermarking systems in AI-generated content.",
+        "summary_ko": "구글의 Gemini AI 모델은 저작권 보호된 이미지의 워터마크를 제거할 수 있는 기능을 보유하고 있어 논란이 되고 있습니다. 이 모델은 특히 Getty Images와 같은 유명한 스톡 이미지 제공업체의 사진에서도 워터마크를 제거할 수 있어 저작권 침해에 대한 우려가 커지고 있습니다.",
+        "url": "https://www.digitaltrends.com/computing/google-gemini-ai-remove-watermark-images-copyright-flaw/"
+    },
+    {
+        "title": "AI Is Making Developers Dumb",
+        "summary_en": "The article \"AI Is Making Developers Dumb\" suggests that the increasing reliance on Large Language Models (LLMs) in software development may be diminishing the critical thinking skills of software engineers. While AI tools like Copilot and GPT enhance productivity by automating simple tasks, they can also lead to a lack of deep understanding and foundational knowledge among developers, potentially hindering their ability to tackle complex problems.",
+        "summary_ko": "LLM(대규모 언어 모델)과 같은 AI 도구가 소프트웨어 개발자들의 업무를 단순화하면서, 개발자들이 깊은 이해와 문제 해결 능력을 잃어가는 우려가 제기되고 있습니다. AI가 단순한 코딩 작업을 대신하면서, 개발자들은 복잡한 문제 해결 능력과 창의적인 사고가 부족해질 수 있다는 지적이 있습니다.",
+        "url": "https://eli.cx/blog/ai-is-making-developers-dumb"
+    },
+    {
+        "title": "The Five-Week Solo Startup",
+        "summary_en": "The concept of launching a solo startup in just five weeks is ambitious and challenging, appealing to optimists and those willing to take significant risks. This approach requires rapid decision-making, efficient resource allocation, and a clear vision, leveraging tools and strategies that can help solo founders quickly validate their ideas and bring them to market.",
+        "summary_ko": "\"다섯 주 솔로 스타트업\"은 낙관론자나 미친 사람들에게는 충분한 시간을 제공하여 회사를 시작할 수 있는 기회를 제공합니다. 이 프로젝트는 단기간 내에 창업을 시도하는 사람들에게 도전과 기회를 제시합니다.",
+        "url": "https://taylor.town/5w"
+    },
+    {
+        "title": "Sketch-of-Thought: Efficient LLM Reasoning",
+        "summary_en": "Researchers have introduced Sketch-of-Thought (SoT), a novel prompting framework that significantly reduces the verbosity of large language models while maintaining their reasoning accuracy. SoT achieves a 76% reduction in token usage by leveraging cognitive-inspired paradigms like Conceptual Chaining, Chunked Symbolism, and Expert Lexicons, making it more efficient than traditional Chain of Thought (CoT) prompting methods.",
+        "summary_ko": "Sketch-of-Thought(SoT)는 대규모 언어 모델의 Chain of Thought(CoT) 프롬프팅의 과도한 중간 출력 문제를 해결하기 위해 설계된 프레임워크입니다. 이 방법은 인지 과학에 기반한 세 가지 패러다임(Conceptual Chaining, Chunked Symbolism, Expert Lexicons)을 사용하여 중간 단계의 토큰 사용을 최대 76% 줄이면서도 정확성을 유지합니다.\n\nSoT는 다양한 언어와 멀티모달 시나리오에서 테스트되었으며, 특히 수학적 및 멀티 홉 추론에서 정확성을 향상시키는 데 효과적입니다. 또한, 이 프레임워크는 경량 라우터 모델을 통해 각 질의에 적합한 패러다임을 동적으로 선택하여 효율성을 높입니다.",
+        "url": "https://arxiv.org/abs/2503.05179"
+    }
+]

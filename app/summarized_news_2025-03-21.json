@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Samsung’s One UI 7 is rolling out to Galaxy phones in April",
+        "summary_en": "Samsung has confirmed that One UI 7, its Android 15-based software update, will begin rolling out globally on April 7, with the US receiving it on April 10. The update will initially be available for the Galaxy S24 series, Galaxy Z Fold 6, and Z Flip 6, with other models like the S23 series receiving it later.",
+        "summary_ko": "삼성은 One UI 7을 4월 7일부터 전 세계적으로 갤럭시 스마트폰과 태블릿에 배포하기 시작합니다. 이 업데이트는 Android 15 기반으로, AI 기능을 강화하고 사용자 인터페이스를 개선하여 사용자 경험을 더욱 자연스럽고 직관적으로 만듭니다. 미국에서는 4월 10일부터 시작됩니다. \n\nOne UI 7은 Galaxy S24 시리즈, Z Fold 6, Z Flip 6 등에서 먼저 시작되며, 이후 다른 기기에도 확대됩니다. 이 업데이트는 Now Bar, AI Select, Writing Assist 등 다양한 AI 기능을 포함하고 있습니다.",
+        "url": "https://www.theverge.com/news/632318/samsung-one-ui-7-rollout-april-galaxy-s24-fold-6-flip-6"
+    },
+    {
+        "title": "Here are all the Nvidia DGX Spark versions so far",
+        "summary_en": "Nvidia has unveiled its DGX Spark and DGX Station, personal AI supercomputers powered by the Grace Blackwell platform, designed for developers, researchers, and data scientists to develop and run AI models locally before deploying them to the cloud. Third-party manufacturers like Asus, Dell, and HP are also set to produce their own versions of these systems, expanding the availability of these powerful AI computing tools.",
+        "summary_ko": "NVIDIA는 Grace Blackwell 플랫폼을 기반으로 하는 개인용 AI 슈퍼컴퓨터인 DGX Spark와 DGX Station을 발표했습니다. 이 시스템들은 AI 개발자와 연구자들이 데스크탑에서 대규모 AI 모델을 프로토타이핑하고 미세 조정할 수 있도록 설계되었습니다. 또한, ASUS, Dell, HP 등 제3의 제조업체들이 자체 버전을 개발할 수 있도록 허용되었습니다.",
+        "url": "https://www.theverge.com/news/632685/asus-ascent-gx10-dell-pro-max-gb10-hp-zgx-nano-nvidia-ai"
+    },
+    {
+        "title": "Amazon is blundering into an AI copyright nightmare",
+        "summary_en": "Amazon's integration of Suno, an AI song generator, into its Alexa+ platform has sparked controversy due to copyright issues. Suno has admitted to training its AI on copyrighted music without permission, leading to lawsuits from major record companies, yet Amazon has proceeded with the partnership despite these legal challenges.",
+        "summary_ko": "아마존의 AI 기술은 저작권 침해 논란에 휩싸여 있습니다. 특히, 아마존의 AI 모델이 저작권 침해 사실이 확인될 경우 손해 배상을 포함한 적절한 조치를 취할 것이라고 밝혔습니다. 그러나 최근 아마존과 관련된 AI 스타트업인 앤트로픽이 저작권 침해 소송에 휘말리며 AI 기술의 법적 문제가 심화되고 있습니다.",
+        "url": "https://www.theverge.com/tech/631651/amazon-alexa-suno-ai-generated-song-copyright-nightmare"
+    },
+    {
+        "title": "Day One brings its digital journaling app to Windows",
+        "summary_en": "Day One, a popular digital journaling app, has launched a Windows version, offering users a distraction-free experience similar to its other platforms. The app is available on the Microsoft Store and is free to use, with features like local-first storage, end-to-end encryption, and cross-device syncing, making it accessible across multiple devices.",
+        "summary_ko": "Automattic 소유의 Day One이 Windows용 디지털 저널링 앱을 출시했습니다. 이 앱은 다른 플랫폼과 동일한 신뢰할 수 있는 방해받지 않는 경험을 제공하며, 무료로 사용할 수 있습니다. \n\nDay One은 사용자가 생각, 기억, 아이디어를 자유롭게 기록할 수 있는 공간을 제공하며, 사진과 비디오를 추가할 수 있습니다. 또한 일일 프롬프트와 강력한 검색 기능을 통해 사용자에게 영감을 주고 조직을 돕습니다.",
+        "url": "https://www.theverge.com/news/632396/day-one-journaling-app-microsoft-windows-now-available"
+    },
+    {
+        "title": "The VR Hype Cycle Is Over, and Just in Time for the AR Hype Cycle to Begin",
+        "summary_en": "The VR hype cycle appears to be waning, as even affordable options like the Meta Quest have not significantly boosted its popularity, leading some to suggest that the metaverse concept may be losing momentum. Meanwhile, augmented reality (AR) is poised to take center stage, potentially reviving the \"glassholes\" trend, as interest shifts towards more practical and accessible AR technologies.",
+        "summary_ko": "가상현실(VR)과 메타버스에 대한 관심이 식어가는 가운데, 증강현실(AR)이 주목받기 시작하고 있습니다. 특히 저렴한 VR 기기인 메타 퀘스트도 메타버스에 대한 열기를 되살리지 못했으며, 대신 증강현실 기술이 다시 주목받고 있습니다.",
+        "url": "https://gizmodo.com/the-vr-hype-cycle-is-over-and-just-in-time-for-the-ar-hype-cycle-to-begin-2000578035"
+    },
+    {
+        "title": "The weeklong TikTok fight over whether NYC influencers are ‘boring’",
+        "summary_en": "A TikTok user sparked a heated debate by calling New York City influencers \"boring\" and \"basic,\" claiming they all wear similar jewelry and clothing, leading to a viral video with millions of views. The controversy has prompted various reactions, with some influencers defending themselves and others agreeing that the NYC influencer scene lacks diversity and originality, sparking a broader discussion about the nature of influencer culture.",
+        "summary_ko": "TikTok에서 뉴욕시 기반 인플루언서들이 \"재미없고 기본적\"이라는 비판이 제기되면서 논란이 일고 있습니다. 이 논란은 한 사용자가 뉴욕 인플루언서들이 모두 비슷한 스타일을 가지고 있으며, 같은 브랜드의 제품을 사용한다고 지적하면서 시작되었습니다. \n\n이 비판에 대해 일부 인플루언서들은 반박하며 자신들의 개성을 강조하고 있으며, 다른 사용자들은 뉴욕의 다양성과 개성을 더 잘 반영할 필요가 있다고 주장하고 있습니다. 이 논란은 TikTok에서 많은 관심을 받고 있으며, 다양한 의견이 교환되고 있습니다.",
+        "url": "https://www.theverge.com/news/632040/nyc-influencers-boring-tiktok-algorithms"
+    },
+    {
+        "title": "Elon Musk Is Joining Microsoft in $30 Billion Data Center Project",
+        "summary_en": "Elon Musk's AI startup, xAI, is partnering with Microsoft, BlackRock, and MGX on a $30 billion project to develop data centers and infrastructure, marking a significant shift in the AI landscape as Microsoft distances itself from OpenAI. This collaboration aims to build extensive computing infrastructure, with xAI leveraging its integration with X (formerly Twitter) to differentiate its AI offerings, while Microsoft develops its own in-house AI models.",
+        "summary_ko": "일론 머스크의 xAI는 마이크로소프트와 블랙록이 주도하는 300억 달러 규모의 데이터센터 프로젝트에 참여합니다. 이 프로젝트는 AI 인프라 구축을 목표로 하며, Nvidia도 기술 고문으로 참여하고 있습니다. 마이크로소프트는 OpenAI에 130억 달러를 투자했지만, 최근에는 자체 AI 모델 개발에 집중하고 있습니다.",
+        "url": "https://gizmodo.com/elon-musk-is-joining-microsoft-in-30-billion-data-center-project-2000578097"
+    },
+    {
+        "title": "8 TV Shows and Movies to Watch After You Finish Severance",
+        "summary_en": "For fans of the Apple TV+ series \"Severance,\" several movies and TV shows offer similar themes and intrigue, including \"Office Space,\" \"Eternal Sunshine of the Spotless Mind,\" and TV series like \"Homecoming\" and \"Black Mirror.\" These recommendations provide a mix of sci-fi mystery, corporate dystopia, and existential exploration, helping to fill the gap until the next season of \"Severance\" arrives.",
+        "summary_ko": "애플 TV+ 시리즈 '세브란스'의 시즌 간격이 길지 않기를 바라지만, 그동안 다른 흥미로운 작품을 시청할 수 있는 시간이 있을 것입니다. '세브란스'를 마친 후 시청할 만한 8개의 TV 쇼와 영화를 추천하는 기사가 있습니다.",
+        "url": "https://gizmodo.com/what-to-watch-if-you-like-severance-streaming-2000577595"
+    },
+    {
+        "title": "6 tips to get the most out of Deep Research",
+        "summary_en": "The article \"6 tips to get the most out of Deep Research\" provides guidance on maximizing the potential of Deep Research, a tool designed for in-depth investigations. It suggests starting with simple questions, adjusting prompts as needed, asking follow-up questions, and utilizing features like \"Show thinking\" and \"Sites browsed\" to enhance the research experience, making it particularly useful for complex or local inquiries.",
+        "summary_ko": "Deep Research를 최대한 활용하기 위해서는 명확하고 구체적인 검색어를 사용하고, 다단계 연구 흐름을 따르는 것이 중요합니다. 또한, 데이터 분석 기능을 활용하여 Python 코드를 실행하고, 신뢰성을 높이기 위해 출처를 확인하는 것이 필요합니다. \n\nDeep Research는 단순한 텍스트 기반 응답을 넘어 데이터 분석 및 보고서 작성까지 가능하며, 이를 통해 보다 체계적인 연구를 수행할 수 있습니다.",
+        "url": "https://blog.google/products/gemini/tips-how-to-use-deep-research/"
+    },
+    {
+        "title": "China Delays BYD Factory in Mexico Over Concerns Tech Will Leak to American Rivals",
+        "summary_en": "China has delayed approval for BYD's planned factory in Mexico due to concerns that the company's advanced electric vehicle technology could leak to the United States, given Mexico's close proximity and trade relationship with the U.S. The delay affects BYD's ambitious plans to build a plant that would create thousands of jobs and produce a significant number of vehicles, highlighting geopolitical tensions in the automotive industry.",
+        "summary_ko": "중국 정부는 BYD의 멕시코 공장 건설 승인을 지연시키고 있습니다. 이는 멕시코에 인접한 미국으로 BYD의 첨단 기술이 유출될 수 있다는 우려 때문입니다. 멕시코 공장에서 생산된 차량은 멕시코 시장에만 판매될 계획이었지만, 기술 유출에 대한 두려움이 중국 당국의 주요 우려 사항입니다. \n\nBYD는 멕시코에서 연간 15만 대의 전기차를 생산할 계획이었으며, 이는 멕시코 시장에서의 판매를 목표로 했습니다. 그러나 멕시코 정부의 미국과의 무역 관계 우선 정책과 중국 기업에 대한 적대적인 태도도 BYD의 공장 건설을 어렵게 하고 있습니다.",
+        "url": "https://gizmodo.com/china-delays-byd-factory-in-mexico-over-concerns-tech-will-leak-to-american-rivals-2000578281"
+    }
+]

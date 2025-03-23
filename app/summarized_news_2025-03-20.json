@@ -1,0 +1,62 @@
+[
+    {
+        "title": "GM taps Nvidia to boost its embattled self-driving projects",
+        "summary_en": "General Motors is partnering with Nvidia to enhance its self-driving and manufacturing capabilities by leveraging Nvidia's AI chips, software, and simulation tools. This collaboration will help GM develop next-generation vehicles with advanced driver assistance and autonomous driving features, while also improving manufacturing efficiency and robotics through Nvidia's technology.",
+        "summary_ko": "제너럴 모터스(GM)는 엔비디아와 협력하여 차세대 자동차, 로봇, 공장을 개발할 계획입니다. 이 협력은 엔비디아의 AI 기술을 활용해 GM의 제조 공정을 최적화하고, 첨단 운전자 지원 시스템과 자율주행 기술을 강화하는 데 중점을 두고 있습니다.",
+        "url": "https://www.theverge.com/news/631951/gm-nvidia-gtc-deal-cars-robots-factories"
+    },
+    {
+        "title": "11 Best Early Amazon Spring Sale Deals (2025)",
+        "summary_en": "Amazon's Big Spring Sale for 2025 is set to run from March 25 to March 31, offering early deals on a variety of products, including headphones, tablets, and home gadgets. Some of the notable early deals include discounts on Apple iPads, Google Pixel Buds Pro 2, Samsung TVs, and Beats headphones, providing significant savings ahead of the official sale period.",
+        "summary_ko": "아마존의 빅 스프링 세일이 곧 시작되며, 현재 이미 다양한 제품에 대한 조기 할인 혜택을 제공하고 있습니다. 이 세일에서는 헤드폰, 태블릿, 홈 가젯 등 다양한 제품에 대해 할인 혜택을 받을 수 있습니다.",
+        "url": "https://www.wired.com/story/amazon-spring-sale-2025/"
+    },
+    {
+        "title": "Hundreds of celebrities warn against letting OpenAI and Google ‘freely exploit’ Hollywood",
+        "summary_en": "Over 400 members of the entertainment industry, including notable figures like Ben Stiller, Paul McCartney, and Aubrey Plaza, have signed a letter opposing OpenAI and Google's proposal to use copyrighted content for AI training without permission. The celebrities argue that weakening copyright protections would allow tech companies to exploit creative works without fair compensation, potentially harming the entertainment industry and broader knowledge sectors.",
+        "summary_ko": "400여 명의 할리우드 인사들이 오픈AI와 구글의 저작권 보호 완화 제안에 반대하는 서한을 보냈습니다. 이들은 AI 모델이 저작권 콘텐츠를 사용하는 것이 창작 산업에 해를 끼칠 수 있다고 주장하며, 저작권 보호를 강화해야 한다고 요구하고 있습니다. 할리우드 인사들은 이러한 변화가 미국의 창작 산업과 경제에 부정적인 영향을 미칠 수 있다고 우려하고 있습니다.",
+        "url": "https://www.theverge.com/news/631637/celebrities-warn-openai-google-exploit-hollywood"
+    },
+    {
+        "title": "FTC Removes Posts Critical of Amazon, Microsoft, and AI Companies",
+        "summary_en": "The Federal Trade Commission (FTC) has removed over 300 business guidance blogs published during the Biden administration, including content critical of Amazon and Microsoft's data practices. This move aligns with the new FTC chair's agenda, which focuses on issues like censorship rather than data collection regulations, potentially easing restrictions on tech companies.",
+        "summary_ko": "미국 연방거래위원회(FTC)는 바이든 행정부 시절에 게시된 300여 개의 기업 가이드 콘텐츠를 웹사이트에서 삭제했습니다. 삭제된 콘텐츠에는 아마존과 마이크로소프트의 데이터 수집 및 사용에 대한 비판과 인공지능 관련 소비자 보호 정보가 포함되어 있었습니다. \n\n이 결정은 FTC의 새로운 방향과 일치하며, 빅테크 기업에 대한 규제 완화가 가능해질 수 있습니다. 이는 소비자 보호보다 검열 문제에 더 중점을 두고 있는 것으로 보입니다.",
+        "url": "https://www.wired.com/story/federal-trade-commission-removed-blogs-critical-of-ai-amazon-microsoft/"
+    },
+    {
+        "title": "Nvidia says ‘the age of generalist robotics is here’",
+        "summary_en": "Nvidia has introduced the Isaac GR00T N1, an open-source foundation model designed to accelerate the development of humanoid robots by enabling them to perform a wide range of tasks with greater efficiency and adaptability. This model, part of Nvidia's broader push into generalist robotics, features a dual-system architecture inspired by human cognition, allowing robots to reason and act in complex environments with improved precision and fluidity.",
+        "summary_ko": "NVIDIA는 인간형 로봇 개발을 가속화하기 위해 Isaac GR00T N1이라는 오픈 소스, 사전 학습된 모델을 발표했습니다. 이 모델은 인간의 인지 원리를 기반으로 한 이중 시스템 아키텍처를 특징으로 하며, 다양한 작업에 쉽게 일반화할 수 있습니다. NVIDIA의 CEO는 \"일반화된 로봇 시대가 시작되었다\"고 선언하며, 이 기술이 로봇 개발을 혁신적으로 변화시킬 것이라고 강조했습니다. GR00T N1은 개발자들이 특정 로봇이나 작업에 맞게 후속 학습할 수 있도록 설계되었습니다.",
+        "url": "https://www.theverge.com/news/631743/nvidia-issac-groot-n1-robotics-foundation-model-available"
+    },
+    {
+        "title": "Italian Newspaper Creates Entirely AI-Generated Edition",
+        "summary_en": "Italian newspaper Il Foglio has made history by publishing the world's first entirely AI-generated edition, marking a significant experiment in the role of artificial intelligence in journalism. The four-page edition, part of a month-long project, includes AI-generated articles on various topics, such as politics and social issues, but lacks direct human quotations, highlighting both the capabilities and limitations of AI in content creation.",
+        "summary_ko": "이탈리아의 중도 보수 일간지 일폴리오가 세계 최초로 인공지능(AI)을 활용해 신문을 제작하고 발행했습니다. 이 신문은 기사 작성, 제목, 인용문, 요약 등 모든 과정을 AI가 담당했으며, 기자들은 질문을 입력하는 역할만 맡았습니다. \n\n발행된 신문은 이탈리아 내 도널드 트럼프 지지자, 블라디미르 푸틴의 약속 파기, 이탈리아 경제 등 다양한 주제를 다루고 있으며, AI가 생성한 독자 편지도 포함되어 있습니다.",
+        "url": "https://gizmodo.com/italian-newspaper-creates-entirely-ai-generated-edition-2000577463"
+    },
+    {
+        "title": "Pebble’s Successor Has Me Stoked for the Return of the Simple Smartwatch",
+        "summary_en": "Pebble's founder, Eric Migicovsky, has launched two new smartwatches, the Core 2 Duo and Core Time 2, which embody the simplicity and long battery life of the original Pebble devices. These watches, available for pre-order, offer features like e-paper displays, buttons for music control, and hackable software, appealing to those seeking a straightforward smartwatch experience without the complexity of modern devices.",
+        "summary_ko": "최근의 스마트워치의 복잡함에서 벗어나, 몇 개의 버튼과 작은 화면만 있는 시계의 단순함이 환영받고 있습니다. 이러한 단순함은 복잡한 현대 생활에서 일종의 휴식을 제공하는 요소로 작용할 수 있습니다.",
+        "url": "https://gizmodo.com/pebbles-successor-has-me-stoked-for-the-return-of-the-simple-smartwatch-2000577589"
+    },
+    {
+        "title": "On Samsung’s Official Store, Here’s The Trick To Save 70% On The New Galaxy S25 Ultra",
+        "summary_en": "Samsung is offering significant discounts on the Galaxy S25 Ultra, with up to $900 in trade-in credit or a $300 upfront discount available for those without a trade-in. These deals can significantly reduce the price of the device, making it more accessible to consumers looking to upgrade to this premium smartphone.",
+        "summary_ko": "삼성은 갤럭시 S25 울트라 구매 시 최대 900달러의 트레이드인 크레딧이나 300달러의 즉시 할인 혜택을 제공하고 있습니다. 이 혜택은 최신 플래그십 스마트폰을 저렴하게 구매할 수 있는 절호의 기회로, 특히 트레이드인 옵션을 활용하면 큰 절감 효과를 볼 수 있습니다.",
+        "url": "https://gizmodo.com/on-samsungs-official-store-heres-the-trick-to-save-70-on-the-new-galaxy-s25-ultra-2000577206"
+    },
+    {
+        "title": "With This Trick, The Best Galaxy Tab S10 Ultra Costs $900 Less Than The iPad M4 Pro",
+        "summary_en": "Samsung is offering significant discounts on the Galaxy Tab S10 Ultra, with prices potentially dropping by up to $980 when combining a $180 price reduction with up to $800 in trade-in credits. This brings the cost of the Galaxy Tab S10 Ultra closer to $900 less than the iPad Pro M4, making it a more competitive option in the premium tablet market.",
+        "summary_ko": "삼성은 갤럭시탭 S10 울트라의 가격을 180달러 인하하고, 최대 800달러의 교환 보상 혜택을 제공하여 아이패드 M4 프로보다 900달러 저렴하게 구매할 수 있게 했습니다. 이 혜택은 삼성의 안드로이드 태블릿을 더욱 매력적으로 만드는 요소로 작용하고 있습니다.",
+        "url": "https://gizmodo.com/with-this-trick-the-best-galaxy-tab-s10-ultra-costs-900-less-than-the-ipad-m4-pro-2000577230"
+    },
+    {
+        "title": "Like During Black Friday, Amazon Is Offering 50% Off The World’s Best Roborock Robot Vacuum",
+        "summary_en": "Amazon is offering a significant discount on a powerful Roborock robot vacuum, allowing customers to save $600 during a limited-time sale with a 43% discount. This deal highlights Amazon's ability to provide substantial savings on high-end cleaning devices, similar to those seen during major shopping events like Black Friday.",
+        "summary_ko": "아마존은 한정 시간 동안 로보락 로봇청소기를 43% 할인하여 최대 600달러를 절약할 수 있는 기회를 제공하고 있습니다. 이 로봇청소기는 강력한 흡입력과 스스로 비우고 채우는 물걸레 기능을 갖춘 고급 모델입니다.",
+        "url": "https://gizmodo.com/like-during-black-friday-amazon-is-offering-50-off-the-worlds-best-roborock-robot-vacuum-2000577142"
+    }
+]
