@@ -1,0 +1,12 @@
+services:
+  ai-news-bot:
+    build: .
+    container_name: ai-news-bot
+    env_file:
+      - .env
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./logs:/var/log   # cron 로그 실시간 확인용
+      - ./data:/app/data  # 데이터베이스 저장용
