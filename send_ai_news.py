@@ -118,14 +118,28 @@ def send_telegram(summary, env_vars):
 🔗 https://news.hyung.life"""
     
     tg_url = f"https://api.telegram.org/bot{env_vars['TG_TOKEN']}/sendMessage"
-    payload = {
-        'chat_id': env_vars['TG_CHAT'],
-        'text': telegram_message,
-        'parse_mode': 'HTML'
-    }
-    response = requests.post(tg_url, json=payload, timeout=30)
-    response.raise_for_status()
-    return response
+    max_length = 4096
+    
+    if len(telegram_message) <= max_length:
+        payload = {
+            'chat_id': env_vars['TG_CHAT'],
+            'text': telegram_message,
+            'parse_mode': 'HTML'
+        }
+        response = requests.post(tg_url, json=payload, timeout=60)
+        response.raise_for_status()
+        return response
+    else:
+        parts = [telegram_message[i:i+max_length] for i in range(0, len(telegram_message), max_length)]
+        for part in parts:
+            payload = {
+                'chat_id': env_vars['TG_CHAT'],
+                'text': part,
+                'parse_mode': 'HTML'
+            }
+            response = requests.post(tg_url, json=payload, timeout=60)
+            response.raise_for_status()
+        return response
 
 def run_news_bot(send_email_flag=True, send_telegram_flag=True):
     """메인 뉴스봇 실행 함수"""

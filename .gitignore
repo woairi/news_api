@@ -1,0 +1,13 @@
+# Database
+data/news_summaries.db
+news_summaries.db
+
+# Logs
+logs/cron.log
+
+# Environment
+.env
+
+# Python
+__pycache__/
+*.pyc
