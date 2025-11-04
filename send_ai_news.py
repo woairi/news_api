@@ -10,7 +10,7 @@ import google.genai as genai
 import sqlite3
 from bs4 import BeautifulSoup
 from email.utils import parsedate_to_datetime
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 
 load_dotenv()
 
@@ -262,7 +262,7 @@ def extract_datacenter_articles(html: str) -> List[Dict]:
     return articles
 
 
-def fetch_datacenter_articles() -> List[Dict]:
+def fetch_datacenter_articles() -> Tuple[List[Dict], str]:
     """DatacenterDynamics 채널별 어제 기사 수집"""
     target_date = (dt.datetime.utcnow() - dt.timedelta(days=1)).date()
     collected: Dict[str, Dict] = {}
@@ -298,7 +298,7 @@ def fetch_datacenter_articles() -> List[Dict]:
 
     articles = list(collected.values())
     articles.sort(key=lambda x: x.get("published_at", ""), reverse=True)
-    return articles
+    return articles, target_date.isoformat()
 
 def ensure_summary_table(cursor: sqlite3.Cursor) -> None:
     """요약 저장 테이블과 스키마를 확보"""
@@ -348,16 +348,28 @@ def save_summary_to_db(date, summary_text, articles_list, category: str = CATEGO
     conn.commit()
     conn.close()
 
-def send_email(summary_map: Dict[str, str], env_vars):
+def format_section(title: str, summary: str) -> str:
+    return f"{title}\n\n{summary}" if summary else title
+
+
+def send_email(summary_map: Dict[str, Dict[str, str]], env_vars):
     """이메일 전송"""
     sections = []
-    ai_summary = summary_map.get(CATEGORY_AI_NEWS)
+    ai_entry = summary_map.get(CATEGORY_AI_NEWS) or {}
+    ai_summary = ai_entry.get("summary")
+    ai_date = ai_entry.get("date")
     if ai_summary:
-        sections.append(ai_summary)
+        title = f"🤖 AI 뉴스 요약 ({ai_date})" if ai_date else "🤖 AI 뉴스 요약"
+        sections.append(format_section(title, ai_summary))
 
-    dc_summary = summary_map.get(CATEGORY_DATACENTER)
+    dc_entry = summary_map.get(CATEGORY_DATACENTER) or {}
+    dc_summary = dc_entry.get("summary")
+    dc_date = dc_entry.get("date")
     if dc_summary:
-        sections.append("📊 DatacenterDynamics 요약\n\n" + dc_summary)
+        title = "📊 DatacenterDynamics 요약"
+        if dc_date:
+            title += f" ({dc_date})"
+        sections.append(format_section(title, dc_summary))
 
     if not sections:
         return
@@ -381,9 +393,12 @@ def send_email(summary_map: Dict[str, str], env_vars):
         smtp.login(env_vars['SMTP_USER'], env_vars['SMTP_PASS'])
         smtp.sendmail(env_vars['SMTP_USER'], [env_vars['EMAIL_TO']], msg.as_string())
 
-def build_telegram_message(title: str, summary: str) -> str:
+def build_telegram_message(title: str, summary: str, date: Optional[str] = None) -> str:
     """텔레그램 메시지 포맷"""
-    heading = f"{title}\n\n" if title else ""
+    heading_title = f"{title}" if title else ""
+    if date:
+        heading_title = f"{heading_title} ({date})" if heading_title else f"{date}"
+    heading = f"{heading_title}\n\n" if heading_title else ""
     return f"""🌐 웹사이트에서 보기: https://news.hyung.life
 
 {heading}{summary}
@@ -393,7 +408,7 @@ def build_telegram_message(title: str, summary: str) -> str:
 🔗 https://news.hyung.life"""
 
 
-def send_telegram(summary_map: Dict[str, str], env_vars):
+def send_telegram(summary_map: Dict[str, Dict[str, str]], env_vars):
     """텔레그램 메시지 전송"""
     tg_url = f"https://api.telegram.org/bot{env_vars['TG_TOKEN']}/sendMessage"
     max_length = 4096
@@ -405,10 +420,11 @@ def send_telegram(summary_map: Dict[str, str], env_vars):
 
     last_response = None
     for category, title in message_order:
-        summary = summary_map.get(category)
+        entry = summary_map.get(category) or {}
+        summary = entry.get("summary")
         if not summary:
             continue
-        telegram_message = build_telegram_message(title, summary)
+        telegram_message = build_telegram_message(title, summary, entry.get("date"))
         if len(telegram_message) <= max_length:
             payload = {
                 'chat_id': env_vars['TG_CHAT'],
@@ -455,10 +471,11 @@ def run_news_bot(send_email_flag=True, send_telegram_flag=True):
 
         # DatacenterDynamics 수집
         print("[3/7] DatacenterDynamics 기사 수집 중...")
-        dc_articles = []
+        dc_articles: List[Dict] = []
         dc_summary = None
+        dc_target_date = (dt.datetime.utcnow() - dt.timedelta(days=1)).date().isoformat()
         try:
-            dc_articles = fetch_datacenter_articles()
+            dc_articles, dc_target_date = fetch_datacenter_articles()
             print(f"[정보] DatacenterDynamics 기사 {len(dc_articles)}건 수집")
         except Exception as fetch_error:
             print(f"[경고] DatacenterDynamics 수집 실패: {fetch_error}")
@@ -479,11 +496,17 @@ def run_news_bot(send_email_flag=True, send_telegram_flag=True):
         print("[5/7] 데이터베이스 저장 중...")
         today = dt.datetime.now().strftime("%Y-%m-%d")
         save_summary_to_db(today, ai_summary, ai_articles[:10], category=CATEGORY_AI_NEWS)
-        save_summary_to_db(today, dc_summary, dc_articles[:10], category=CATEGORY_DATACENTER)
+        save_summary_to_db(dc_target_date, dc_summary, dc_articles[:10], category=CATEGORY_DATACENTER)
 
         summary_map = {
-            CATEGORY_AI_NEWS: ai_summary,
-            CATEGORY_DATACENTER: dc_summary,
+            CATEGORY_AI_NEWS: {
+                "summary": ai_summary,
+                "date": today,
+            },
+            CATEGORY_DATACENTER: {
+                "summary": dc_summary,
+                "date": dc_target_date,
+            },
         }
 
         # 이메일 전송
@@ -506,6 +529,7 @@ def run_news_bot(send_email_flag=True, send_telegram_flag=True):
             'articles_count': len(ai_articles),
             'datacenter_articles_count': len(dc_articles),
             'datacenter_summary': dc_summary,
+            'datacenter_date': dc_target_date,
         }
 
     except Exception as e:
