@@ -315,8 +315,7 @@ def ensure_summary_table(cursor: sqlite3.Cursor) -> None:
     columns = {row[1] for row in cursor.execute('PRAGMA table_info(summaries)')}
     if 'category' not in columns:
         cursor.execute("ALTER TABLE summaries ADD COLUMN category TEXT NOT NULL DEFAULT 'ai_news'")
-    else:
-        cursor.execute("UPDATE summaries SET category = 'ai_news' WHERE category IS NULL OR TRIM(category) = ''")
+    cursor.execute("UPDATE summaries SET category = 'ai_news' WHERE category IS NULL OR TRIM(category) = ''")
 
     # 중복 레코드 정리: 동일한 날짜/카테고리의 최신(id 최대) 레코드만 유지
     cursor.execute('''

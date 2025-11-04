@@ -150,6 +150,47 @@ def get_all_dates(category: Optional[str] = None) -> List[str]:
     conn.close()
     return dates
 
+
+def convert_utc_to_kst(value: Optional[str]) -> Optional[str]:
+    if not value:
+        return None
+    try:
+        utc_dt = dt.datetime.strptime(value, "%Y-%m-%d %H:%M:%S").replace(tzinfo=dt.timezone.utc)
+        kst_dt = utc_dt.astimezone(dt.timezone(dt.timedelta(hours=9)))
+        return kst_dt.strftime("%Y-%m-%d %H:%M:%S KST")
+    except ValueError:
+        return value
+
+
+def get_summary_status() -> Dict[str, Dict[str, Optional[str]]]:
+    conn = sqlite3.connect(get_db_path())
+    cursor = conn.cursor()
+    cursor.execute('''
+        SELECT
+            category,
+            MAX(date) AS latest_date,
+            MAX(created_at) AS latest_created_at,
+            COUNT(*) AS total_count
+        FROM summaries
+        GROUP BY category
+    ''')
+    stats = {}
+    for category, latest_date, latest_created, total_count in cursor.fetchall():
+        stats[category] = {
+            'latest_date': latest_date,
+            'latest_created_at': latest_created,
+            'latest_created_at_kst': convert_utc_to_kst(latest_created),
+            'total_count': total_count,
+        }
+    cursor.execute('SELECT MAX(created_at) FROM summaries')
+    last_run = cursor.fetchone()[0]
+    conn.close()
+    return {
+        'categories': stats,
+        'last_run': last_run,
+        'last_run_kst': convert_utc_to_kst(last_run),
+    }
+
 # 데이터베이스 초기화
 init_db()
 
@@ -199,6 +240,14 @@ async def read_root():
                 padding: 40px 20px;
                 text-align: center;
             }
+
+            .header-status {
+                margin-top: 25px;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                align-items: center;
+            }
             
             .header h1 {
                 font-size: 2.5em;
@@ -212,9 +261,10 @@ async def read_root():
             }
             
             .calendar-container {
-                padding: 30px 20px;
+                padding: 24px 20px;
                 background: #f8f9fa;
-                border-bottom: 1px solid #e9ecef;
+                border-radius: 20px;
+                box-shadow: 0 12px 24px rgba(0,0,0,0.08);
             }
             
             .calendar-container h3 {
@@ -229,7 +279,25 @@ async def read_root():
                 gap: 10px;
                 justify-content: center;
             }
-            
+
+            .recent-dates-section .date-buttons {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 8px;
+                max-height: 220px;
+                overflow-y: auto;
+                padding-right: 6px;
+            }
+
+            .recent-dates-section .date-buttons::-webkit-scrollbar {
+                width: 6px;
+            }
+
+            .recent-dates-section .date-buttons::-webkit-scrollbar-thumb {
+                background: rgba(102, 126, 234, 0.35);
+                border-radius: 3px;
+            }
+
             .date-button {
                 padding: 12px 20px;
                 background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -241,6 +309,12 @@ async def read_root():
                 font-weight: 500;
                 transition: all 0.3s ease;
                 box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            }
+
+            .recent-dates-section .date-button {
+                width: 100%;
+                padding: 10px 14px;
+                min-width: 0;
             }
             
             .date-button:hover {
@@ -290,6 +364,22 @@ async def read_root():
             .date-button.active {
                 outline: 2px solid rgba(255, 255, 255, 0.9);
             }
+
+            .date-button.latest {
+                border: 2px solid rgba(102, 126, 234, 0.6);
+            }
+
+            .tab-info {
+                text-align: center;
+                font-size: 0.9em;
+                color: #555;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            .tab-info strong {
+                color: #2c3e50;
+            }
             
             .loading {
                 text-align: center;
@@ -318,20 +408,52 @@ async def read_root():
                 box-shadow: 0 5px 15px rgba(0,0,0,0.08);
                 transition: transform 0.3s ease;
             }
-            
+
             .article-item:hover {
                 transform: translateY(-3px);
                 box-shadow: 0 8px 25px rgba(0,0,0,0.15);
             }
-            
+
+            .article-header {
+                display: flex;
+                gap: 12px;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-bottom: 12px;
+            }
+
+            .article-index {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 36px;
+                padding: 6px 10px;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                border-radius: 999px;
+                font-weight: 700;
+                font-size: 0.9em;
+            }
+
             .article-title {
                 font-size: 1.2em;
                 font-weight: 700;
                 color: #2c3e50;
-                margin-bottom: 15px;
+                margin: 0;
+                line-height: 1.4;
+                flex: 1;
                 line-height: 1.4;
             }
-            
+
+            .article-source {
+                padding: 6px 12px;
+                background: rgba(102, 126, 234, 0.12);
+                color: #4c5bd4;
+                border-radius: 999px;
+                font-size: 0.85em;
+                font-weight: 600;
+            }
+
             .article-summary {
                 font-size: 1em;
                 line-height: 1.6;
@@ -366,9 +488,92 @@ async def read_root():
             
             .date-selection-grid {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 40px;
-                align-items: start;
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .status-grid {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 16px;
+                margin-bottom: 0;
+            }
+
+            .status-card {
+                background: rgba(255, 255, 255, 0.96);
+                border-radius: 15px;
+                padding: 18px 20px;
+                box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+                border-left: 5px solid #667eea;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                min-width: 220px;
+            }
+
+            .status-card.datacenterdynamics {
+                border-left-color: #2ecc71;
+            }
+
+            .status-title {
+                font-weight: 700;
+                color: #1f2a44;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 1.05em;
+            }
+
+            .status-info {
+                font-size: 0.95em;
+                color: #1f2a44;
+                font-weight: 600;
+            }
+
+            .status-info strong {
+                color: #1f2a44;
+                font-weight: 700;
+            }
+
+            .header .status-card .status-info {
+                color: #1f2a44;
+                font-weight: 600;
+            }
+
+            .header .status-card .status-info strong {
+                color: #1f2a44;
+                font-weight: 700;
+            }
+
+            .header-status > .status-info {
+                color: rgba(255, 255, 255, 0.9);
+                font-weight: 600;
+            }
+
+            .header-status > .status-info strong {
+                color: #ffffff;
+            }
+
+            .layout-grid {
+                display: grid;
+                grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+                gap: 24px;
+                margin-top: 30px;
+            }
+
+            .layout-main {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .layout-side {
+                display: flex;
+                width: 100%;
+            }
+
+            .layout-side .calendar-container {
+                width: 100%;
             }
             
             .recent-dates-section {
@@ -452,6 +657,20 @@ async def read_root():
             }
             
             /* 모바일 반응형 */
+            @media (max-width: 1024px) {
+                .layout-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .layout-side {
+                    margin-top: 15px;
+                }
+
+                .status-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+
             @media (max-width: 768px) {
                 body {
                     padding: 10px;
@@ -469,7 +688,11 @@ async def read_root():
                 .summary-container {
                     padding: 20px 15px;
                 }
-                
+
+                .layout-side {
+                    margin-top: 10px;
+                }
+
                 .date-selection-grid {
                     grid-template-columns: 1fr;
                     gap: 20px;
@@ -511,6 +734,10 @@ async def read_root():
                 .date-buttons {
                     gap: 8px;
                 }
+
+                .status-grid {
+                    grid-template-columns: 1fr;
+                }
                 
                 .date-button {
                     padding: 8px 12px;
@@ -542,36 +769,57 @@ async def read_root():
                 <div style="margin-top: 15px;">
                     <a href="/admin/login" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9em; border: 1px solid rgba(255,255,255,0.3); padding: 8px 16px; border-radius: 15px; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255,255,255,0.1)'" onmouseout="this.style.background='transparent'">⚙️ 시스템 설정</a>
                 </div>
-            </div>
-            
-            <div class="calendar-container">
-                <div class="date-selection-grid">
-                    <div class="recent-dates-section">
-                        <h3>📅 최근 일주일 요약</h3>
-                        <div class="date-buttons" id="recentButtons"></div>
-                    </div>
-                    
-                    <div class="older-dates-section">
-                        <h3>📅 이전 날짜 선택</h3>
-                        <div class="calendar-section">
-                            <input type="date" id="datePicker" class="date-picker">
-                            <button class="search-button" onclick="searchByDate()">🔍 조회</button>
+                <div class="header-status">
+                    <div class="status-grid" id="statusGrid">
+                        <div class="status-card" data-category="ai_news">
+                            <div class="status-title">🤖 AI 뉴스</div>
+                            <div class="status-info">기준일: <strong id="status-ai-date">-</strong></div>
+                            <div class="status-info">업데이트: <strong id="status-ai-run">-</strong></div>
                         </div>
-                        <div class="older-dates-info">
-                            <p>일주일 이전 날짜는 달력에서 선택하세요</p>
+                        <div class="status-card datacenterdynamics" data-category="datacenterdynamics">
+                            <div class="status-title">📊 DatacenterDynamics</div>
+                            <div class="status-info">전일 기준일: <strong id="status-dc-date">-</strong></div>
+                            <div class="status-info">업데이트: <strong id="status-dc-run">-</strong></div>
                         </div>
                     </div>
+                    <div class="status-info">최근 실행 시각: <strong id="status-last-run">-</strong></div>
                 </div>
             </div>
-            
-            <div class="summary-container">
-                <div class="summary-tabs">
-                    <button class="tab-button active" id="tab-ai_news" onclick="switchCategory('ai_news')">🤖 AI 뉴스</button>
-                    <button class="tab-button" id="tab-datacenterdynamics" onclick="switchCategory('datacenterdynamics')">📊 DatacenterDynamics</button>
+
+            <div class="layout-grid">
+                <div class="layout-main">
+                    <div class="summary-container">
+                        <div class="summary-tabs">
+                            <button class="tab-button active" id="tab-ai_news" onclick="switchCategory('ai_news')">🤖 AI 뉴스</button>
+                            <button class="tab-button" id="tab-datacenterdynamics" onclick="switchCategory('datacenterdynamics')">📊 DatacenterDynamics</button>
+                        </div>
+                        <div class="tab-info" id="tabInfo">최근 48시간 인기 AI 기사 요약을 확인하세요.</div>
+                        <div id="summaryContent">
+                            <p class="loading">📋 날짜를 선택하면 요약을 확인할 수 있습니다</p>
+                        </div>
+                    </div>
                 </div>
-                <div id="summaryContent">
-                    <p class="loading">📋 날짜를 선택하면 요약을 확인할 수 있습니다</p>
-                </div>
+                <aside class="layout-side">
+                    <div class="calendar-container">
+                        <div class="date-selection-grid">
+                            <div class="recent-dates-section">
+                                <h3>📅 최근 일주일 요약</h3>
+                                <div class="date-buttons" id="recentButtons"></div>
+                            </div>
+
+                            <div class="older-dates-section">
+                                <h3>📅 이전 날짜 선택</h3>
+                                <div class="calendar-section">
+                                    <input type="date" id="datePicker" class="date-picker">
+                                    <button class="search-button" onclick="searchByDate()">🔍 조회</button>
+                                </div>
+                                <div class="older-dates-info">
+                                    <p>일주일 이전 날짜는 달력에서 선택하세요</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </div>
 
@@ -580,9 +828,23 @@ async def read_root():
                 'ai_news': 'AI 뉴스 요약',
                 'datacenterdynamics': 'DatacenterDynamics 요약'
             };
+            const TAB_BASE_MESSAGES = {
+                'ai_news': '최근 48시간 인기 AI 기사 요약을 확인하세요.',
+                'datacenterdynamics': 'DatacenterDynamics 요약은 전일 기사 기준으로 제공됩니다.'
+            };
             let currentCategory = 'ai_news';
             let currentSelectedDate = null;
             let availableDates = [];
+            let latestDateByCategory = {};
+            let statusData = {};
+            const tabInfoElement = document.getElementById('tabInfo');
+            const statusElements = {
+                aiDate: document.getElementById('status-ai-date'),
+                aiRun: document.getElementById('status-ai-run'),
+                dcDate: document.getElementById('status-dc-date'),
+                dcRun: document.getElementById('status-dc-run'),
+                lastRun: document.getElementById('status-last-run'),
+            };
 
             function updateActiveTab() {
                 document.querySelectorAll('.tab-button').forEach(button => {
@@ -604,6 +866,71 @@ async def read_root():
                         button.classList.remove('active');
                     }
                 });
+            }
+
+            function updateTabInfo(summaryDate = null) {
+                if (!tabInfoElement) return;
+                const baseMessage = TAB_BASE_MESSAGES[currentCategory] || '';
+                if (summaryDate) {
+                    if (currentCategory === 'datacenterdynamics') {
+                        tabInfoElement.innerHTML = `${baseMessage} <strong>(요약 기준일: ${summaryDate})</strong>`;
+                    } else {
+                        tabInfoElement.innerHTML = `${baseMessage} <strong>(요약 생성일: ${summaryDate})</strong>`;
+                    }
+                    return;
+                }
+
+                const latest = latestDateByCategory[currentCategory];
+                if (latest) {
+                    if (currentCategory === 'datacenterdynamics') {
+                        tabInfoElement.innerHTML = `${baseMessage} <strong>(가장 최근 기준일: ${latest})</strong>`;
+                    } else {
+                        tabInfoElement.innerHTML = `${baseMessage} <strong>(가장 최근 생성일: ${latest})</strong>`;
+                    }
+                } else {
+                    tabInfoElement.textContent = baseMessage;
+                }
+            }
+
+            function applyStatusToUI() {
+                const categories = statusData.categories || {};
+                const aiStatus = categories['ai_news'] || {};
+                const dcStatus = categories['datacenterdynamics'] || {};
+                if (statusElements.aiDate) {
+                    statusElements.aiDate.textContent = aiStatus.latest_date || '-';
+                }
+                if (statusElements.aiRun) {
+                    statusElements.aiRun.textContent = aiStatus.latest_created_at_kst || aiStatus.latest_created_at || '-';
+                }
+                if (statusElements.dcDate) {
+                    statusElements.dcDate.textContent = dcStatus.latest_date || '-';
+                }
+                if (statusElements.dcRun) {
+                    statusElements.dcRun.textContent = dcStatus.latest_created_at_kst || dcStatus.latest_created_at || '-';
+                }
+                if (statusElements.lastRun) {
+                    statusElements.lastRun.textContent = statusData.last_run_kst || statusData.last_run || '-';
+                }
+            }
+
+            async function loadStatus() {
+                try {
+                    const response = await fetch('/api/status');
+                    if (!response.ok) {
+                        throw new Error('status fetch failed');
+                    }
+                    statusData = await response.json();
+                    const categories = statusData.categories || {};
+                    Object.entries(categories).forEach(([category, info]) => {
+                        if (info && info.latest_date) {
+                            latestDateByCategory[category] = info.latest_date;
+                        }
+                    });
+                    applyStatusToUI();
+                    updateTabInfo();
+                } catch (error) {
+                    console.warn('상태 정보를 불러오지 못했습니다', error);
+                }
             }
 
             // 날짜 필터링 함수
@@ -631,6 +958,7 @@ async def read_root():
                 updateActiveTab();
                 currentSelectedDate = null;
                 document.getElementById('summaryContent').innerHTML = '<p class="loading">📡 요약을 불러오는 중...</p>';
+                updateTabInfo();
                 await loadDates();
                 await loadTodaySummary();
             }
@@ -641,6 +969,7 @@ async def read_root():
                     const response = await fetch(`/api/dates?category=${currentCategory}`);
                     const dates = await response.json();
                     availableDates = dates;
+                    latestDateByCategory[currentCategory] = dates.length > 0 ? dates[0] : null;
                     const container = document.getElementById('recentButtons');
                     const categoryLabel = CATEGORY_TITLES[currentCategory] || '선택한';
                     
@@ -654,8 +983,8 @@ async def read_root():
                     if (recent.length === 0) {
                         container.innerHTML = '<p class="no-summaries">최근 일주일 요약이 없습니다</p>';
                     } else {
-                        container.innerHTML = recent.map(date => 
-                            `<button class="date-button" onclick="loadSummary('${date}')">${date}</button>`
+                        container.innerHTML = recent.map((date, index) => 
+                            `<button class="date-button${index === 0 ? ' latest' : ''}" data-date="${date}" onclick="loadSummary('${date}')">${date}</button>`
                         ).join('');
                     }
                     if (!currentSelectedDate && dates.length > 0) {
@@ -714,6 +1043,7 @@ async def read_root():
                 const lines = summaryText.split('\\n');
                 const articles = [];
                 let currentArticle = null;
+                const headerPattern = /^(\\d+)\\.\\s*(.+?)(?:\\s*\\(([^)]+)\\))?$/;
                 
                 for (const line of lines) {
                     const trimmed = line.trim();
@@ -723,10 +1053,22 @@ async def read_root():
                         if (currentArticle) {
                             articles.push(currentArticle);
                         }
+                        const headerText = trimmed.replace('📰', '').trim();
+                        let index = null;
+                        let titleText = headerText;
+                        let source = '';
+                        const match = headerText.match(headerPattern);
+                        if (match) {
+                            index = match[1];
+                            titleText = match[2].trim();
+                            source = match[3] ? match[3].trim() : '';
+                        }
                         currentArticle = {
-                            title: trimmed.replace('📰', '').trim(),
+                            title: titleText,
                             summary: '',
-                            link: ''
+                            link: '',
+                            index,
+                            source,
                         };
                     } else if (trimmed.startsWith('📝')) {
                         if (currentArticle) {
@@ -767,12 +1109,20 @@ async def read_root():
                         const message = (data.summary || '파싱할 수 있는 기사가 없습니다').replace(/\\n/g, '<br>');
                         html += `<p class="no-summaries">${message}</p>`;
                     } else {
-                        articles.forEach(article => {
+                        articles.forEach((article, index) => {
+                            const displayIndex = article.index || String(index + 1);
+                            const sourceBadge = article.source ? `<span class="article-source">${article.source}</span>` : '';
+                            const summaryBlock = article.summary ? `<div class="article-summary">${article.summary}</div>` : '';
+                            const linkBlock = article.link ? `<a href="${article.link}" class="article-link" target="_blank" rel="noopener noreferrer">🔗 원문 보기</a>` : '';
                             html += `
                                 <div class="article-item">
-                                    <div class="article-title">${article.title}</div>
-                                    <div class="article-summary">${article.summary}</div>
-                                    ${article.link ? `<a href="${article.link}" class="article-link" target="_blank" rel="noopener noreferrer">🔗 원문 보기</a>` : ''}
+                                    <div class="article-header">
+                                        <span class="article-index">#${displayIndex}</span>
+                                        <div class="article-title">${article.title}</div>
+                                        ${sourceBadge}
+                                    </div>
+                                    ${summaryBlock}
+                                    ${linkBlock}
                                 </div>
                             `;
                         });
@@ -781,11 +1131,13 @@ async def read_root():
                     container.innerHTML = html;
                     currentSelectedDate = date;
                     highlightSelectedDateButtons();
+                    updateTabInfo(data.date);
                 } catch (error) {
                     console.error('요약 로드 실패:', error);
                     container.innerHTML = '<p class="no-summaries">❌ 요약을 불러오는데 실패했습니다</p>';
                     currentSelectedDate = null;
                     highlightSelectedDateButtons();
+                    updateTabInfo();
                 }
             }
 
@@ -806,6 +1158,7 @@ async def read_root():
                         document.getElementById('summaryContent').innerHTML = '<p class="no-summaries">오늘 날짜에는 저장된 요약이 없습니다</p>';
                         currentSelectedDate = null;
                         highlightSelectedDateButtons();
+                        updateTabInfo();
                     }
                 } catch (error) {
                     console.log('오늘 요약이 없습니다');
@@ -815,6 +1168,7 @@ async def read_root():
                         document.getElementById('summaryContent').innerHTML = '<p class="no-summaries">오늘 날짜에는 저장된 요약이 없습니다</p>';
                         currentSelectedDate = null;
                         highlightSelectedDateButtons();
+                        updateTabInfo();
                     }
                 }
             }
@@ -822,6 +1176,8 @@ async def read_root():
             // 페이지 로드 시 기본 탭 상태 설정 후 데이터 로드
             async function initializePage() {
                 updateActiveTab();
+                updateTabInfo();
+                await loadStatus();
                 await loadDates();
                 await loadTodaySummary();
             }
@@ -841,6 +1197,10 @@ async def get_dates(category: Optional[str] = None):
 async def get_today():
     """서버의 오늘 날짜를 반환"""
     return {"today": dt.datetime.now().strftime("%Y-%m-%d")}
+
+@app.get("/api/status")
+async def get_status():
+    return get_summary_status()
 
 @app.get("/api/summary/{date}")
 async def get_summary_by_date(date: str, category: Optional[str] = None):
