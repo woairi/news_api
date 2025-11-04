@@ -13,6 +13,9 @@
 - `requirements.txt`: `beautifulsoup4` 의존성을 추가했습니다.
 - `README.md`: DatacenterDynamics 요약 기능을 주요 기능 항목에 반영했습니다.
 
+### 🐛 버그 수정
+- DatacenterDynamics 요약을 기사 발행 날짜로 저장하도록 수정해 하루 전 기사도 정상 노출되도록 했습니다.
+
 ## [2025-11-04] - 롤백: 데이터센터 뉴스 요약 기능 추가 시도
 
 ### 롤백
