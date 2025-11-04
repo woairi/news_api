@@ -16,9 +16,18 @@ from dotenv import load_dotenv
 import sys
 sys.path.append('.')
 try:
-    from send_ai_news import run_news_bot
+    from send_ai_news import (
+        run_news_bot,
+        ensure_summary_table,
+        CATEGORY_AI_NEWS,
+        CATEGORY_DATACENTER,
+    )
 except ImportError:
     print("Warning: send_ai_news module not found, manual send feature disabled")
+    run_news_bot = None
+    ensure_summary_table = None
+    CATEGORY_AI_NEWS = "ai_news"
+    CATEGORY_DATACENTER = "datacenterdynamics"
 
 load_dotenv()
 
@@ -54,34 +63,66 @@ def get_db_path():
 def init_db():
     conn = sqlite3.connect(get_db_path())
     cursor = conn.cursor()
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS summaries (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            date TEXT NOT NULL,
-            summary TEXT NOT NULL,
-            articles_json TEXT NOT NULL,
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        )
-    ''')
+    if ensure_summary_table:
+        ensure_summary_table(cursor)
+    else:
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS summaries (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                date TEXT NOT NULL,
+                summary TEXT NOT NULL,
+                articles_json TEXT NOT NULL,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                category TEXT NOT NULL DEFAULT 'ai_news'
+            )
+        ''')
+        cursor.execute('''
+            CREATE UNIQUE INDEX IF NOT EXISTS idx_summaries_date_category
+            ON summaries(date, category)
+        ''')
     conn.commit()
     conn.close()
 
 # 요약 저장
-def save_summary(date: str, summary: str, articles: List[Dict]):
+def save_summary(date: str, summary: str, articles: List[Dict], category: str = CATEGORY_AI_NEWS):
     conn = sqlite3.connect(get_db_path())
     cursor = conn.cursor()
+    if ensure_summary_table:
+        ensure_summary_table(cursor)
+    else:
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS summaries (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                date TEXT NOT NULL,
+                summary TEXT NOT NULL,
+                articles_json TEXT NOT NULL,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                category TEXT NOT NULL DEFAULT 'ai_news'
+            )
+        """)
+        cursor.execute("""
+            CREATE UNIQUE INDEX IF NOT EXISTS idx_summaries_date_category
+            ON summaries(date, category)
+        """)
     cursor.execute('''
-        INSERT OR REPLACE INTO summaries (date, summary, articles_json)
-        VALUES (?, ?, ?)
-    ''', (date, summary, json.dumps(articles, ensure_ascii=False)))
+        INSERT INTO summaries (date, summary, articles_json, category)
+        VALUES (?, ?, ?, ?)
+        ON CONFLICT(date, category) DO UPDATE SET
+            summary=excluded.summary,
+            articles_json=excluded.articles_json,
+            created_at=CURRENT_TIMESTAMP
+    ''', (date, summary, json.dumps(articles, ensure_ascii=False), category))
     conn.commit()
     conn.close()
 
 # 요약 조회
-def get_summary(date: str) -> Optional[Dict]:
+def get_summary(date: str, category: str = CATEGORY_AI_NEWS) -> Optional[Dict]:
     conn = sqlite3.connect(get_db_path())
     cursor = conn.cursor()
-    cursor.execute('SELECT summary, articles_json FROM summaries WHERE date = ?', (date,))
+    cursor.execute(
+        'SELECT summary, articles_json FROM summaries WHERE date = ? AND category = ?',
+        (date, category)
+    )
     result = cursor.fetchone()
     conn.close()
     
@@ -89,15 +130,22 @@ def get_summary(date: str) -> Optional[Dict]:
         return {
             'date': date,
             'summary': result[0],
-            'articles': json.loads(result[1])
+            'articles': json.loads(result[1]),
+            'category': category
         }
     return None
 
 # 모든 요약 날짜 조회
-def get_all_dates() -> List[str]:
+def get_all_dates(category: Optional[str] = None) -> List[str]:
     conn = sqlite3.connect(get_db_path())
     cursor = conn.cursor()
-    cursor.execute('SELECT DISTINCT date FROM summaries ORDER BY date DESC')
+    if category:
+        cursor.execute(
+            'SELECT DISTINCT date FROM summaries WHERE category = ? ORDER BY date DESC',
+            (category,)
+        )
+    else:
+        cursor.execute('SELECT DISTINCT date FROM summaries ORDER BY date DESC')
     dates = [row[0] for row in cursor.fetchall()]
     conn.close()
     return dates
@@ -207,6 +255,40 @@ async def read_root():
             .summary-container {
                 padding: 30px 20px;
                 min-height: 400px;
+            }
+
+            .summary-tabs {
+                display: flex;
+                gap: 12px;
+                justify-content: center;
+                margin-bottom: 20px;
+                flex-wrap: wrap;
+            }
+
+            .tab-button {
+                padding: 10px 20px;
+                border-radius: 25px;
+                border: 2px solid #667eea;
+                background: white;
+                color: #667eea;
+                font-size: 0.95em;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .tab-button:hover {
+                background: rgba(102, 126, 234, 0.1);
+            }
+
+            .tab-button.active {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            }
+
+            .date-button.active {
+                outline: 2px solid rgba(255, 255, 255, 0.9);
             }
             
             .loading {
@@ -455,8 +537,8 @@ async def read_root():
     <body>
         <div class="container">
             <div class="header">
-                <h1>📰 AI 뉴스 요약</h1>
-                <p>최신 AI 뉴스를 한눈에 확인하세요</p>
+                <h1>📰 AI & Datacenter 뉴스 요약</h1>
+                <p>AI와 데이터센터 뉴스를 한눈에 확인하세요</p>
                 <div style="margin-top: 15px;">
                     <a href="/admin/login" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9em; border: 1px solid rgba(255,255,255,0.3); padding: 8px 16px; border-radius: 15px; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255,255,255,0.1)'" onmouseout="this.style.background='transparent'">⚙️ 시스템 설정</a>
                 </div>
@@ -483,6 +565,10 @@ async def read_root():
             </div>
             
             <div class="summary-container">
+                <div class="summary-tabs">
+                    <button class="tab-button active" id="tab-ai_news" onclick="switchCategory('ai_news')">🤖 AI 뉴스</button>
+                    <button class="tab-button" id="tab-datacenterdynamics" onclick="switchCategory('datacenterdynamics')">📊 DatacenterDynamics</button>
+                </div>
                 <div id="summaryContent">
                     <p class="loading">📋 날짜를 선택하면 요약을 확인할 수 있습니다</p>
                 </div>
@@ -490,6 +576,36 @@ async def read_root():
         </div>
 
         <script>
+            const CATEGORY_TITLES = {
+                'ai_news': 'AI 뉴스 요약',
+                'datacenterdynamics': 'DatacenterDynamics 요약'
+            };
+            let currentCategory = 'ai_news';
+            let currentSelectedDate = null;
+            let availableDates = [];
+
+            function updateActiveTab() {
+                document.querySelectorAll('.tab-button').forEach(button => {
+                    const tabId = `tab-${currentCategory}`;
+                    if (button.id === tabId) {
+                        button.classList.add('active');
+                    } else {
+                        button.classList.remove('active');
+                    }
+                });
+            }
+
+            function highlightSelectedDateButtons() {
+                const buttons = document.querySelectorAll('.date-button');
+                buttons.forEach(button => {
+                    if (button.textContent === currentSelectedDate) {
+                        button.classList.add('active');
+                    } else {
+                        button.classList.remove('active');
+                    }
+                });
+            }
+
             // 날짜 필터링 함수
             function filterDates(dates) {
                 const now = new Date();
@@ -509,16 +625,27 @@ async def read_root():
                 
                 return { recent, older };
             }
+
+            async function switchCategory(category) {
+                currentCategory = category;
+                updateActiveTab();
+                currentSelectedDate = null;
+                document.getElementById('summaryContent').innerHTML = '<p class="loading">📡 요약을 불러오는 중...</p>';
+                await loadDates();
+                await loadTodaySummary();
+            }
             
             // 날짜 버튼 로드
             async function loadDates() {
                 try {
-                    const response = await fetch('/api/dates');
+                    const response = await fetch(`/api/dates?category=${currentCategory}`);
                     const dates = await response.json();
+                    availableDates = dates;
                     const container = document.getElementById('recentButtons');
+                    const categoryLabel = CATEGORY_TITLES[currentCategory] || '선택한';
                     
                     if (dates.length === 0) {
-                        container.innerHTML = '<p class="no-summaries">저장된 요약이 없습니다</p>';
+                        container.innerHTML = `<p class="no-summaries">${categoryLabel} 기록이 없습니다</p>`;
                         return;
                     }
                     
@@ -530,6 +657,11 @@ async def read_root():
                         container.innerHTML = recent.map(date => 
                             `<button class="date-button" onclick="loadSummary('${date}')">${date}</button>`
                         ).join('');
+                    }
+                    if (!currentSelectedDate && dates.length > 0) {
+                        await loadSummary(dates[0]);
+                    } else {
+                        highlightSelectedDateButtons();
                     }
                     
                     // 달력 최대 날짜 설정 (가장 오래된 날짜까지)
@@ -620,18 +752,20 @@ async def read_root():
                 container.innerHTML = '<p class="loading">📡 요약을 불러오는 중...</p>';
                 
                 try {
-                    const response = await fetch(`/api/summary/${date}`);
+                    const response = await fetch(`/api/summary/${date}?category=${currentCategory}`);
                     if (!response.ok) {
                         throw new Error('요약을 찾을 수 없습니다');
                     }
                     
                     const data = await response.json();
                     const articles = parseSummary(data.summary);
+                    const categoryLabel = CATEGORY_TITLES[currentCategory] || 'AI 뉴스 요약';
                     
-                    let html = `<div class="summary-header">📅 ${data.date} AI 뉴스 요약</div>`;
+                    let html = `<div class="summary-header">📅 ${data.date} ${categoryLabel}</div>`;
                     
                     if (articles.length === 0) {
-                        html += '<p class="no-summaries">파싱할 수 있는 기사가 없습니다</p>';
+                        const message = (data.summary || '파싱할 수 있는 기사가 없습니다').replace(/\\n/g, '<br>');
+                        html += `<p class="no-summaries">${message}</p>`;
                     } else {
                         articles.forEach(article => {
                             html += `
@@ -645,15 +779,16 @@ async def read_root():
                     }
                     
                     container.innerHTML = html;
+                    currentSelectedDate = date;
+                    highlightSelectedDateButtons();
                 } catch (error) {
                     console.error('요약 로드 실패:', error);
                     container.innerHTML = '<p class="no-summaries">❌ 요약을 불러오는데 실패했습니다</p>';
+                    currentSelectedDate = null;
+                    highlightSelectedDateButtons();
                 }
             }
 
-            // 페이지 로드 시 날짜 버튼 로드 및 오늘 요약 자동 로드
-            loadDates();
-            
             // 오늘 날짜 요약 자동 로드
             async function loadTodaySummary() {
                 try {
@@ -662,25 +797,45 @@ async def read_root():
                     const todayData = await todayResponse.json();
                     const today = todayData.today;
                     
-                    const response = await fetch(`/api/summary/${today}`);
+                    const response = await fetch(`/api/summary/${today}?category=${currentCategory}`);
                     if (response.ok) {
                         await loadSummary(today);
+                    } else if (availableDates.length > 0) {
+                        await loadSummary(availableDates[0]);
+                    } else {
+                        document.getElementById('summaryContent').innerHTML = '<p class="no-summaries">오늘 날짜에는 저장된 요약이 없습니다</p>';
+                        currentSelectedDate = null;
+                        highlightSelectedDateButtons();
                     }
                 } catch (error) {
                     console.log('오늘 요약이 없습니다');
+                    if (availableDates.length > 0) {
+                        await loadSummary(availableDates[0]);
+                    } else {
+                        document.getElementById('summaryContent').innerHTML = '<p class="no-summaries">오늘 날짜에는 저장된 요약이 없습니다</p>';
+                        currentSelectedDate = null;
+                        highlightSelectedDateButtons();
+                    }
                 }
             }
             
-            // 페이지 로드 후 오늘 요약 확인
-            setTimeout(loadTodaySummary, 500);
+            // 페이지 로드 시 기본 탭 상태 설정 후 데이터 로드
+            async function initializePage() {
+                updateActiveTab();
+                await loadDates();
+                await loadTodaySummary();
+            }
+
+            initializePage();
         </script>
     </body>
     </html>
     """)
 
 @app.get("/api/dates")
-async def get_dates():
-    return get_all_dates()
+async def get_dates(category: Optional[str] = None):
+    target_category = category or CATEGORY_AI_NEWS
+    return get_all_dates(target_category)
 
 @app.get("/api/today")
 async def get_today():
@@ -688,15 +843,16 @@ async def get_today():
     return {"today": dt.datetime.now().strftime("%Y-%m-%d")}
 
 @app.get("/api/summary/{date}")
-async def get_summary_by_date(date: str):
-    summary = get_summary(date)
+async def get_summary_by_date(date: str, category: Optional[str] = None):
+    target_category = category or CATEGORY_AI_NEWS
+    summary = get_summary(date, target_category)
     if not summary:
         raise HTTPException(status_code=404, detail="Summary not found")
     return summary
 
 @app.post("/api/summary")
-async def save_summary_endpoint(date: str, summary: str, articles: List[Dict]):
-    save_summary(date, summary, articles)
+async def save_summary_endpoint(date: str, summary: str, articles: List[Dict], category: Optional[str] = None):
+    save_summary(date, summary, articles, category or CATEGORY_AI_NEWS)
     return {"message": "Summary saved successfully"}
 
 # 설정 페이지 관련 엔드포인트

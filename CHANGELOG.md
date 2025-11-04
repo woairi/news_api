@@ -1,5 +1,18 @@
 # 변경 내역
 
+## [2025-11-04] - DatacenterDynamics 요약 재도입
+
+### 🚀 기능 추가
+- `send_ai_news.py`: DatacenterDynamics 주요 채널 크롤링, 메타데이터 파싱, Gemini 기반 요약 및 카테고리 저장/발송 로직을 추가했습니다.
+- `web_app.py`: 요약 카테고리 탭 UI, API 파라미터, 관리자 모듈 연동 등 데이터센터 요약 조회 기능을 확장했습니다.
+
+### 🐛 버그 수정
+- `web_app.py`: 초기 로딩 시 최신 요약이 표시되지 않던 문제와 줄바꿈 치환 정규식 오류를 수정했습니다.
+
+### 🛠️ 기타
+- `requirements.txt`: `beautifulsoup4` 의존성을 추가했습니다.
+- `README.md`: DatacenterDynamics 요약 기능을 주요 기능 항목에 반영했습니다.
+
 ## [2025-11-04] - 롤백: 데이터센터 뉴스 요약 기능 추가 시도
 
 ### 롤백
