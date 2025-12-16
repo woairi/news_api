@@ -29,6 +29,7 @@ def get_env_vars():
     """환경변수 로드 및 검증"""
     env_vars = {
         'NEWS_KEY': os.getenv("NEWS_API_KEY"),
+        'NEWS_KEYWORDS': os.getenv("NEWS_KEYWORDS", "AI OR ChatGPT OR GPT-4 OR Claude OR Gemini"),
         'GEMINI_KEY': os.getenv("GEMINI_API_KEY"),
         'TG_TOKEN': os.getenv("TG_TOKEN"),
         'TG_CHAT': os.getenv("TG_CHAT"),
@@ -38,20 +39,22 @@ def get_env_vars():
         'SMTP_PASS': os.getenv("SMTP_PASS"),
         'EMAIL_TO': os.getenv("EMAIL_TO")
     }
-    
+
     required_vars = ['NEWS_KEY', 'GEMINI_KEY', 'TG_TOKEN', 'TG_CHAT', 'SMTP_USER', 'SMTP_PASS', 'EMAIL_TO']
     missing_vars = [var for var in required_vars if not env_vars[var]]
-    
+
     if missing_vars:
         raise ValueError(f"[env] 다음 환경변수가 설정되지 않았습니다: {', '.join(missing_vars)}")
-    
+
     return env_vars
 
-def fetch_news(news_key):
+def fetch_news(news_key, keywords):
     """뉴스 API에서 AI 관련 뉴스 수집"""
     from_date = (dt.datetime.utcnow() - dt.timedelta(hours=48)).strftime("%Y-%m-%d")
+    # URL 인코딩을 위해 keywords를 quote 처리
+    encoded_keywords = urllib.parse.quote(keywords)
     news_url = (
-        "https://newsapi.org/v2/everything?q=AI%20AND%20(NVIDIA%20OR%20OpenAI%20OR%20Gemini%20OR%20LLM)"
+        f"https://newsapi.org/v2/everything?q={encoded_keywords}"
         f"&from={from_date}&sortBy=popularity&pageSize=20&language=en&apiKey={news_key}"
     )
     response = requests.get(news_url, timeout=30)
@@ -454,8 +457,8 @@ def run_news_bot(send_email_flag=True, send_telegram_flag=True):
         env_vars = get_env_vars()
         
         # 뉴스 수집
-        print("[1/7] AI 뉴스 수집 중...")
-        ai_articles = fetch_news(env_vars['NEWS_KEY'])
+        print(f"[1/7] AI 뉴스 수집 중... (키워드: {env_vars['NEWS_KEYWORDS']})")
+        ai_articles = fetch_news(env_vars['NEWS_KEY'], env_vars['NEWS_KEYWORDS'])
         if not ai_articles:
             raise ValueError("수집된 AI 뉴스 기사가 없습니다")
 

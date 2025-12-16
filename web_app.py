@@ -1549,7 +1549,52 @@ async def admin_settings():
                         <h2>🔑 API 키 설정</h2>
                         <div class="env-grid" id="apiSettings"></div>
                     </div>
-                    
+
+                    <div class="section">
+                        <h2>🔍 뉴스 검색 키워드</h2>
+                        <p style="color: #666; margin-bottom: 15px; font-size: 0.9em;">
+                            뉴스 검색에 사용할 키워드를 설정합니다. OR, AND, 괄호를 사용하여 복잡한 검색 쿼리를 만들 수 있습니다.
+                        </p>
+                        <div style="background: white; padding: 15px; border-radius: 10px;">
+                            <textarea id="keywordsInput"
+                                      style="width: 100%; min-height: 80px; padding: 12px; border: 2px solid #e9ecef; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 0.95em; resize: vertical;"
+                                      placeholder="예: AI OR ChatGPT OR (Machine Learning AND Deep Learning)"></textarea>
+                            <div style="margin-top: 10px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                                <button onclick="updateKeywords()"
+                                        style="padding: 10px 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 500; transition: transform 0.3s ease;"
+                                        onmouseover="this.style.transform='translateY(-2px)'"
+                                        onmouseout="this.style.transform='translateY(0)'">
+                                    💾 키워드 저장
+                                </button>
+                                <button onclick="testKeywords()"
+                                        style="padding: 10px 20px; background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 500; transition: transform 0.3s ease;"
+                                        onmouseover="this.style.transform='translateY(-2px)'"
+                                        onmouseout="this.style.transform='translateY(0)'">
+                                    🧪 키워드 테스트
+                                </button>
+                                <button onclick="resetKeywords()"
+                                        style="padding: 10px 20px; background: #6c757d; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 500; transition: transform 0.3s ease;"
+                                        onmouseover="this.style.transform='translateY(-2px)'"
+                                        onmouseout="this.style.transform='translateY(0)'">
+                                    🔄 원래 값으로
+                                </button>
+                            </div>
+                            <div id="testResults" style="margin-top: 15px; display: none; padding: 15px; background: #e8f5e9; border-radius: 8px; border-left: 4px solid #27ae60;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                    <h4 style="margin: 0; color: #27ae60;">🧪 테스트 결과</h4>
+                                    <button onclick="closeTestResults()" style="background: none; border: none; cursor: pointer; font-size: 1.2em; color: #666;">✕</button>
+                                </div>
+                                <div id="testResultsContent"></div>
+                            </div>
+                            <div style="margin-top: 10px; font-size: 0.85em; color: #666;">
+                                <strong>예시:</strong><br>
+                                • AI OR ChatGPT OR GPT-4<br>
+                                • (Artificial Intelligence) AND (Machine Learning)<br>
+                                • Twice OR SAF OR (Methanol AND Ship)
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="section">
                         <h2>⏰ 스케줄 설정</h2>
                         <div class="env-grid" id="scheduleSettings"></div>
@@ -1559,6 +1604,8 @@ async def admin_settings():
         </div>
         
         <script>
+            let originalKeywords = '';
+
             function checkAuth() {
                 const token = sessionStorage.getItem('admin_token');
                 if (!token) {
@@ -1567,12 +1614,12 @@ async def admin_settings():
                 }
                 return token;
             }
-            
+
             function logout() {
                 sessionStorage.removeItem('admin_token');
                 window.location.href = '/admin/login';
             }
-            
+
             function createEnvItem(label, value, description = '') {
                 const isSet = value && value !== '(설정되지 않음)';
                 return `
@@ -1586,7 +1633,7 @@ async def admin_settings():
                     </div>
                 `;
             }
-            
+
             async function loadSettings() {
                 const token = checkAuth();
                 if (!token) return;
@@ -1625,15 +1672,130 @@ async def admin_settings():
                         createEnvItem('Gemini API 키', data.GEMINI_API_KEY, 'AI 요약용 API 키');
                     
                     // 스케줄 설정
-                    document.getElementById('scheduleSettings').innerHTML = 
+                    document.getElementById('scheduleSettings').innerHTML =
                         createEnvItem('크론 시간', data.CRON_TIME, '실행 시간 (분 시간 형식)') +
                         createEnvItem('관리자 비밀번호', data.ADMIN_PASSWORD ? '설정됨' : '(기본값)', '이 설정 페이지 접근용');
-                    
+
+                    // 뉴스 검색 키워드 표시
+                    originalKeywords = data.NEWS_KEYWORDS || '';
+                    document.getElementById('keywordsInput').value = originalKeywords;
+
                     document.getElementById('loadingMessage').style.display = 'none';
                     document.getElementById('settingsContent').style.display = 'block';
-                    
+
                 } catch (error) {
                     document.getElementById('loadingMessage').innerHTML = '❌ 설정 로드 실패: ' + error.message;
+                }
+            }
+
+            function resetKeywords() {
+                document.getElementById('keywordsInput').value = originalKeywords;
+                showStatusMessage('🔄 키워드가 원래 값으로 복원되었습니다', 'info', 3000);
+            }
+
+            async function updateKeywords() {
+                const token = checkAuth();
+                if (!token) return;
+
+                const keywords = document.getElementById('keywordsInput').value.trim();
+                if (!keywords) {
+                    showStatusMessage('⚠️ 키워드를 입력해주세요', 'error', 3000);
+                    return;
+                }
+
+                showStatusMessage('💾 키워드 저장 중...', 'info');
+
+                try {
+                    const response = await fetch('/admin/api/update-keywords', {
+                        method: 'POST',
+                        headers: {
+                            'Authorization': `Bearer ${token}`,
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ keywords: keywords })
+                    });
+
+                    const result = await response.json();
+
+                    if (response.ok && result.success) {
+                        originalKeywords = keywords;
+                        showStatusMessage(`✅ ${result.message}`, 'success', 5000);
+                    } else {
+                        showStatusMessage(`❌ 저장 실패: ${result.message || '알 수 없는 오류'}`, 'error', 5000);
+                    }
+                } catch (error) {
+                    showStatusMessage(`❌ 네트워크 오류: ${error.message}`, 'error', 5000);
+                }
+            }
+
+            function closeTestResults() {
+                document.getElementById('testResults').style.display = 'none';
+            }
+
+            async function testKeywords() {
+                const token = checkAuth();
+                if (!token) return;
+
+                const keywords = document.getElementById('keywordsInput').value.trim();
+                if (!keywords) {
+                    showStatusMessage('⚠️ 키워드를 입력해주세요', 'error', 3000);
+                    return;
+                }
+
+                showStatusMessage('🧪 키워드 테스트 중... (최대 30초 소요)', 'info');
+
+                const testResultsDiv = document.getElementById('testResults');
+                const testResultsContent = document.getElementById('testResultsContent');
+                testResultsDiv.style.display = 'none';
+
+                try {
+                    const response = await fetch('/admin/api/test-keywords', {
+                        method: 'POST',
+                        headers: {
+                            'Authorization': `Bearer ${token}`,
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ keywords: keywords })
+                    });
+
+                    const result = await response.json();
+
+                    if (response.ok && result.success) {
+                        showStatusMessage('✅ 테스트 완료!', 'success', 3000);
+
+                        let html = `
+                            <div style="margin-bottom: 10px;">
+                                <strong>검색 키워드:</strong> <code style="background: white; padding: 2px 6px; border-radius: 3px;">${keywords}</code>
+                            </div>
+                            <div style="margin-bottom: 10px;">
+                                <strong>수집된 기사 수:</strong> <span style="font-size: 1.2em; font-weight: bold; color: #27ae60;">${result.count}개</span>
+                            </div>
+                        `;
+
+                        if (result.count > 0) {
+                            html += `<div style="margin-top: 15px;">
+                                <strong>샘플 기사 제목 (최대 5개):</strong>
+                                <ul style="margin-top: 8px; padding-left: 20px;">`;
+
+                            result.sample_titles.forEach(title => {
+                                html += `<li style="margin-bottom: 5px;">${title}</li>`;
+                            });
+
+                            html += `</ul></div>`;
+                        } else {
+                            html += `<div style="margin-top: 10px; padding: 10px; background: #fff3cd; border-radius: 5px; color: #856404;">
+                                ⚠️ 해당 키워드로 최근 48시간 내 기사를 찾을 수 없습니다. 다른 키워드를 시도해보세요.
+                            </div>`;
+                        }
+
+                        testResultsContent.innerHTML = html;
+                        testResultsDiv.style.display = 'block';
+                        testResultsDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    } else {
+                        showStatusMessage(`❌ 테스트 실패: ${result.message || '알 수 없는 오류'}`, 'error', 5000);
+                    }
+                } catch (error) {
+                    showStatusMessage(`❌ 네트워크 오류: ${error.message}`, 'error', 5000);
                 }
             }
             
@@ -1735,20 +1897,23 @@ async def get_env_vars(request: Request):
         "SMTP_USER": os.getenv("SMTP_USER", ""),
         "SMTP_PASS": mask_sensitive_value(os.getenv("SMTP_PASS", "")),
         "EMAIL_TO": os.getenv("EMAIL_TO", ""),
-        
+
         # 텔레그램 설정
         "TG_TOKEN": mask_sensitive_value(os.getenv("TG_TOKEN", "")),
         "TG_CHAT": os.getenv("TG_CHAT", ""),
-        
+
         # API 키
         "NEWS_API_KEY": mask_sensitive_value(os.getenv("NEWS_API_KEY", "")),
         "GEMINI_API_KEY": mask_sensitive_value(os.getenv("GEMINI_API_KEY", "")),
-        
+
+        # 뉴스 검색 설정
+        "NEWS_KEYWORDS": os.getenv("NEWS_KEYWORDS", "AI OR ChatGPT OR GPT-4 OR Claude OR Gemini"),
+
         # 기타 설정
         "CRON_TIME": os.getenv("CRON_TIME", ""),
         "ADMIN_PASSWORD": "설정됨" if os.getenv("ADMIN_PASSWORD") else "(기본값: admin123)"
     }
-    
+
     return env_vars
 
 @app.post("/admin/api/send-telegram")
@@ -1788,19 +1953,19 @@ async def send_full_manual(request: Request):
     auth_header = request.headers.get("authorization")
     if not auth_header or not auth_header.startswith("Bearer "):
         raise HTTPException(status_code=401, detail="인증이 필요합니다")
-    
+
     token = auth_header.replace("Bearer ", "")
     if not verify_session(token):
         raise HTTPException(status_code=401, detail="유효하지 않은 토큰입니다")
-    
+
     try:
         # send_ai_news 모듈 import 체크
         if 'run_news_bot' not in globals():
             raise HTTPException(status_code=500, detail="뉴스봇 모듈을 로드할 수 없습니다")
-        
+
         # 뉴스봇 실행 (이메일 + 텔레그램 모두 전송)
         result = run_news_bot(send_email_flag=True, send_telegram_flag=True)
-        
+
         if result['success']:
             return {
                 "success": True,
@@ -1809,9 +1974,132 @@ async def send_full_manual(request: Request):
             }
         else:
             raise HTTPException(status_code=500, detail=result['message'])
-            
+
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"전송 실패: {str(e)}")
+
+@app.post("/admin/api/update-keywords")
+async def update_keywords(request: Request):
+    """뉴스 검색 키워드 업데이트 API (인증 필요)"""
+    auth_header = request.headers.get("authorization")
+    if not auth_header or not auth_header.startswith("Bearer "):
+        raise HTTPException(status_code=401, detail="인증이 필요합니다")
+
+    token = auth_header.replace("Bearer ", "")
+    if not verify_session(token):
+        raise HTTPException(status_code=401, detail="유효하지 않은 토큰입니다")
+
+    try:
+        # 요청 본문에서 키워드 추출
+        body = await request.json()
+        new_keywords = body.get('keywords', '').strip()
+
+        if not new_keywords:
+            raise HTTPException(status_code=400, detail="키워드가 비어있습니다")
+
+        # .env 파일 경로 결정
+        env_path = '/app/.env' if os.path.exists('/app/.env') else '.env'
+
+        # .env 파일 읽기
+        with open(env_path, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+
+        # NEWS_KEYWORDS 라인 찾아서 업데이트
+        updated = False
+        for i, line in enumerate(lines):
+            if line.strip().startswith('NEWS_KEYWORDS='):
+                lines[i] = f'NEWS_KEYWORDS={new_keywords}\n'
+                updated = True
+                break
+
+        # NEWS_KEYWORDS가 없으면 추가
+        if not updated:
+            # NEWS_API_KEY 다음에 추가
+            for i, line in enumerate(lines):
+                if line.strip().startswith('NEWS_API_KEY='):
+                    lines.insert(i + 1, '\n')
+                    lines.insert(i + 2, '# --- 뉴스 검색 키워드 (OR로 구분, 복잡한 쿼리는 괄호 사용 가능) ---\n')
+                    lines.insert(i + 3, f'NEWS_KEYWORDS={new_keywords}\n')
+                    break
+
+        # .env 파일 저장
+        with open(env_path, 'w', encoding='utf-8') as f:
+            f.writelines(lines)
+
+        # 환경변수 다시 로드
+        load_dotenv(override=True)
+
+        return {
+            "success": True,
+            "message": "키워드가 성공적으로 저장되었습니다. 다음 뉴스 수집부터 적용됩니다.",
+            "keywords": new_keywords
+        }
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"키워드 업데이트 실패: {str(e)}")
+
+@app.post("/admin/api/test-keywords")
+async def test_keywords(request: Request):
+    """뉴스 검색 키워드 테스트 API (인증 필요)"""
+    auth_header = request.headers.get("authorization")
+    if not auth_header or not auth_header.startswith("Bearer "):
+        raise HTTPException(status_code=401, detail="인증이 필요합니다")
+
+    token = auth_header.replace("Bearer ", "")
+    if not verify_session(token):
+        raise HTTPException(status_code=401, detail="유효하지 않은 토큰입니다")
+
+    try:
+        # 요청 본문에서 키워드 추출
+        body = await request.json()
+        test_keywords_str = body.get('keywords', '').strip()
+
+        if not test_keywords_str:
+            raise HTTPException(status_code=400, detail="키워드가 비어있습니다")
+
+        # send_ai_news 모듈 import 체크
+        if 'run_news_bot' not in globals():
+            raise HTTPException(status_code=500, detail="뉴스봇 모듈을 로드할 수 없습니다")
+
+        # 뉴스 API 키 가져오기
+        news_api_key = os.getenv("NEWS_API_KEY")
+        if not news_api_key:
+            raise HTTPException(status_code=500, detail="NEWS_API_KEY가 설정되지 않았습니다")
+
+        # send_ai_news.py의 fetch_news 함수 import
+        from send_ai_news import fetch_news
+
+        # 테스트용으로 뉴스 수집 (요약 생성이나 전송은 하지 않음)
+        articles = fetch_news(news_api_key, test_keywords_str)
+
+        # 결과 생성
+        count = len(articles)
+        sample_titles = []
+
+        if count > 0:
+            # 최대 5개의 샘플 타이틀 추출
+            for article in articles[:5]:
+                title = article.get('title', '제목 없음')
+                source_info = article.get('source')
+                if isinstance(source_info, dict):
+                    source_name = source_info.get('name', '출처 미상')
+                else:
+                    source_name = '출처 미상'
+                sample_titles.append(f"{title} ({source_name})")
+
+        return {
+            "success": True,
+            "count": count,
+            "sample_titles": sample_titles,
+            "keywords": test_keywords_str
+        }
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"키워드 테스트 실패: {str(e)}")
 
 if __name__ == "__main__":
     import uvicorn

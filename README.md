@@ -5,10 +5,12 @@ AI 뉴스 수집 및 한국어 요약 시스템 - 매일 AI 관련 뉴스를 자
 ## 🌟 주요 기능
 
 - **자동 뉴스 수집**: NewsAPI를 통해 최신 AI 관련 뉴스 48시간 분량 수집
+- **검색 키워드 관리**: 웹 설정 페이지에서 뉴스 검색 키워드를 실시간으로 수정 가능 (OR, AND, 괄호 지원)
 - **데이터센터 특화 요약**: DatacenterDynamics 주요 채널(에너지·투자·클라우드)에서 전일 기사 수집·요약, 웹/메신저 동시 제공
 - **AI 요약 생성**: Google Gemini API를 사용한 한국어 요약 자동 생성
 - **멀티 채널 배포**: 이메일(SMTP) + 텔레그램 동시 발송
 - **웹 인터페이스**: AI/Datacenter 탭, 전일 대비 Datacenter 안내, KST 기준 상태 패널, 2열 요약·날짜 레이아웃 등으로 가독성 향상
+- **관리자 페이지**: 환경변수 확인, 키워드 관리, 수동 전송 등 시스템 관리 기능
 - **수동 전송**: 웹 UI에서 즉시 텔레그램 메시지 전송 가능
 - **스케줄링**: Docker + Cron을 통한 매일 자동 실행 (오전 7:35 KST)
 
@@ -30,6 +32,9 @@ cd ai-news-bot
 NEWS_API_KEY=your_newsapi_key
 GEMINI_API_KEY=your_gemini_key
 
+# 뉴스 검색 키워드 (OR, AND, 괄호 사용 가능)
+NEWS_KEYWORDS=AI OR ChatGPT OR GPT-4 OR Claude OR Gemini
+
 # 텔레그램 봇
 TG_TOKEN=your_telegram_bot_token
 TG_CHAT=your_telegram_chat_id
@@ -45,6 +50,8 @@ EMAIL_TO=recipient_email_address
 CRON_TIME=35 7  # 크론 실행 시간 (분 시간) - 현재: 매일 오전 7시 35분 KST
 ADMIN_PASSWORD=your_admin_password  # 웹 관리자 페이지 접근용 (기본값: admin123)
 ```
+
+> **💡 팁**: `NEWS_KEYWORDS`는 웹 관리자 페이지(http://localhost:8001/admin/settings)에서도 수정할 수 있습니다!
 
 ### 3. 의존성 설치
 
@@ -67,9 +74,15 @@ docker compose down
 
 ### 5. 웹 인터페이스 접속
 
-- 메인 페이지: http://localhost:8001/
-- 관리자 로그인: http://localhost:8001/admin/login
-- 관리자 설정: http://localhost:8001/admin/settings
+- **메인 페이지**: http://localhost:8001/
+  - AI 뉴스 & DatacenterDynamics 요약 확인
+  - 날짜별 히스토리 조회
+
+- **관리자 페이지**: http://localhost:8001/admin/login
+  - 기본 비밀번호: `admin123`
+  - 환경변수 확인
+  - **뉴스 검색 키워드 관리** (실시간 수정)
+  - 수동 텔레그램 전송
 
 ## 🛠️ 개발 환경 설정
 
@@ -85,6 +98,27 @@ uvicorn web_app:app --host 0.0.0.0 --port 8001 --reload
 # 뉴스 봇 단독 실행
 python send_ai_news.py
 ```
+
+## ⚙️ 주요 설정
+
+### 뉴스 검색 키워드 커스터마이징
+
+뉴스 검색 키워드는 두 가지 방법으로 설정할 수 있습니다:
+
+1. **웹 관리자 페이지** (권장)
+   - http://localhost:8001/admin/settings 접속
+   - "뉴스 검색 키워드" 섹션에서 직접 수정
+   - 실시간 저장 및 적용
+
+2. **.env 파일 직접 수정**
+   ```env
+   NEWS_KEYWORDS=AI OR ChatGPT OR GPT-4 OR Claude OR Gemini
+   ```
+
+**검색 쿼리 예시:**
+- 단순 OR 검색: `AI OR ChatGPT OR GPT-4`
+- AND 조건 추가: `(Artificial Intelligence) AND (Machine Learning)`
+- 복합 쿼리: `Twice OR SAF OR (Methanol AND Ship)`
 
 ## 📝 변경 사항
 
