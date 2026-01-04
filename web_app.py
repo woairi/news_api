@@ -84,7 +84,7 @@ def init_db():
     conn.close()
 
 # 요약 저장
-def save_summary(date: str, summary: str, articles: List[Dict], category: str = CATEGORY_AI_NEWS):
+def save_summary(date: str, summary: str, articles: List[Dict], category: str = CATEGORY_AI_NEWS, ai_provider: str = "gemini"):
     conn = sqlite3.connect(get_db_path())
     cursor = conn.cursor()
     if ensure_summary_table:
@@ -97,7 +97,8 @@ def save_summary(date: str, summary: str, articles: List[Dict], category: str = 
                 summary TEXT NOT NULL,
                 articles_json TEXT NOT NULL,
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                category TEXT NOT NULL DEFAULT 'ai_news'
+                category TEXT NOT NULL DEFAULT 'ai_news',
+                ai_provider TEXT NOT NULL DEFAULT 'gemini'
             )
         """)
         cursor.execute("""
@@ -105,13 +106,14 @@ def save_summary(date: str, summary: str, articles: List[Dict], category: str = 
             ON summaries(date, category)
         """)
     cursor.execute('''
-        INSERT INTO summaries (date, summary, articles_json, category)
-        VALUES (?, ?, ?, ?)
+        INSERT INTO summaries (date, summary, articles_json, category, ai_provider)
+        VALUES (?, ?, ?, ?, ?)
         ON CONFLICT(date, category) DO UPDATE SET
             summary=excluded.summary,
             articles_json=excluded.articles_json,
+            ai_provider=excluded.ai_provider,
             created_at=CURRENT_TIMESTAMP
-    ''', (date, summary, json.dumps(articles, ensure_ascii=False), category))
+    ''', (date, summary, json.dumps(articles, ensure_ascii=False), category, ai_provider))
     conn.commit()
     conn.close()
 
@@ -120,18 +122,19 @@ def get_summary(date: str, category: str = CATEGORY_AI_NEWS) -> Optional[Dict]:
     conn = sqlite3.connect(get_db_path())
     cursor = conn.cursor()
     cursor.execute(
-        'SELECT summary, articles_json FROM summaries WHERE date = ? AND category = ?',
+        'SELECT summary, articles_json, ai_provider FROM summaries WHERE date = ? AND category = ?',
         (date, category)
     )
     result = cursor.fetchone()
     conn.close()
-    
+
     if result:
         return {
             'date': date,
             'summary': result[0],
             'articles': json.loads(result[1]),
-            'category': category
+            'category': category,
+            'ai_provider': result[2] if len(result) > 2 else 'gemini'
         }
     return None
 
@@ -452,6 +455,24 @@ async def read_root():
                 border-radius: 999px;
                 font-size: 0.85em;
                 font-weight: 600;
+            }
+
+            .ai-provider-badge {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 32px;
+                padding: 4px 10px;
+                background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+                color: white;
+                border-radius: 999px;
+                font-weight: 700;
+                font-size: 0.75em;
+                letter-spacing: 0.5px;
+            }
+
+            .ai-provider-badge.perplexity {
+                background: linear-gradient(135deg, #e67e22 0%, #f39c12 100%);
             }
 
             .article-summary {
@@ -1098,12 +1119,18 @@ async def read_root():
                     if (!response.ok) {
                         throw new Error('요약을 찾을 수 없습니다');
                     }
-                    
+
                     const data = await response.json();
                     const articles = parseSummary(data.summary);
                     const categoryLabel = CATEGORY_TITLES[currentCategory] || 'AI 뉴스 요약';
-                    
-                    let html = `<div class="summary-header">📅 ${data.date} ${categoryLabel}</div>`;
+
+                    // AI Provider 뱃지 생성
+                    const aiProvider = data.ai_provider || 'gemini';
+                    const providerClass = aiProvider === 'perplexity' ? 'perplexity' : '';
+                    const providerLabel = aiProvider === 'perplexity' ? 'P' : 'G';
+                    const providerBadge = `<span class="ai-provider-badge ${providerClass}" title="${aiProvider === 'perplexity' ? 'Perplexity Sonar' : 'Google Gemini'}">${providerLabel}</span>`;
+
+                    let html = `<div class="summary-header">📅 ${data.date} ${categoryLabel} ${providerBadge}</div>`;
                     
                     if (articles.length === 0) {
                         const message = (data.summary || '파싱할 수 있는 기사가 없습니다').replace(/\\n/g, '<br>');
@@ -1551,6 +1578,36 @@ async def admin_settings():
                     </div>
 
                     <div class="section">
+                        <h2>🤖 AI 요약 Provider 설정</h2>
+                        <p style="color: #666; margin-bottom: 15px; font-size: 0.9em;">
+                            뉴스 요약에 사용할 AI 모델을 선택합니다.
+                        </p>
+                        <div style="background: white; padding: 15px; border-radius: 10px;">
+                            <div style="margin-bottom: 10px;">
+                                <label for="aiProviderSelect" style="display: block; margin-bottom: 8px; font-weight: 600; color: #2c3e50;">AI Provider</label>
+                                <select id="aiProviderSelect"
+                                        style="width: 100%; padding: 12px; border: 2px solid #e9ecef; border-radius: 8px; font-size: 1em; background: white; cursor: pointer;">
+                                    <option value="gemini">Google Gemini</option>
+                                    <option value="perplexity">Perplexity Sonar</option>
+                                </select>
+                            </div>
+                            <div style="margin-top: 10px; display: flex; gap: 10px; align-items: center;">
+                                <button onclick="updateAIProvider()"
+                                        style="padding: 10px 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 500; transition: transform 0.3s ease;"
+                                        onmouseover="this.style.transform='translateY(-2px)'"
+                                        onmouseout="this.style.transform='translateY(0)'">
+                                    💾 Provider 저장
+                                </button>
+                            </div>
+                            <div style="margin-top: 10px; font-size: 0.85em; color: #666;">
+                                <strong>참고:</strong><br>
+                                • Google Gemini: 빠르고 정확한 요약<br>
+                                • Perplexity Sonar: 웹 검색 기반 컨텍스트 이해
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
                         <h2>🔍 뉴스 검색 키워드</h2>
                         <p style="color: #666; margin-bottom: 15px; font-size: 0.9em;">
                             뉴스 검색에 사용할 키워드를 설정합니다. OR, AND, 괄호를 사용하여 복잡한 검색 쿼리를 만들 수 있습니다.
@@ -1667,9 +1724,14 @@ async def admin_settings():
                         createEnvItem('채팅 ID', data.TG_CHAT, '메시지를 받을 채팅 ID');
                     
                     // API 키 설정
-                    document.getElementById('apiSettings').innerHTML = 
+                    document.getElementById('apiSettings').innerHTML =
                         createEnvItem('NewsAPI 키', data.NEWS_API_KEY, '뉴스 수집용 API 키') +
-                        createEnvItem('Gemini API 키', data.GEMINI_API_KEY, 'AI 요약용 API 키');
+                        createEnvItem('Gemini API 키', data.GEMINI_API_KEY, 'Google Gemini API 키') +
+                        createEnvItem('Perplexity API 키', data.PERPLEXITY_API_KEY, 'Perplexity Sonar API 키');
+
+                    // AI Provider 설정
+                    const aiProvider = data.AI_PROVIDER || 'gemini';
+                    document.getElementById('aiProviderSelect').value = aiProvider;
                     
                     // 스케줄 설정
                     document.getElementById('scheduleSettings').innerHTML =
@@ -1730,6 +1792,36 @@ async def admin_settings():
 
             function closeTestResults() {
                 document.getElementById('testResults').style.display = 'none';
+            }
+
+            async function updateAIProvider() {
+                const token = checkAuth();
+                if (!token) return;
+
+                const aiProvider = document.getElementById('aiProviderSelect').value;
+
+                showStatusMessage('💾 AI Provider 저장 중...', 'info');
+
+                try {
+                    const response = await fetch('/admin/api/update-ai-provider', {
+                        method: 'POST',
+                        headers: {
+                            'Authorization': `Bearer ${token}`,
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ ai_provider: aiProvider })
+                    });
+
+                    const result = await response.json();
+
+                    if (response.ok && result.success) {
+                        showStatusMessage(`✅ ${result.message}`, 'success', 5000);
+                    } else {
+                        showStatusMessage(`❌ 저장 실패: ${result.message || '알 수 없는 오류'}`, 'error', 5000);
+                    }
+                } catch (error) {
+                    showStatusMessage(`❌ 네트워크 오류: ${error.message}`, 'error', 5000);
+                }
             }
 
             async function testKeywords() {
@@ -1905,6 +1997,10 @@ async def get_env_vars(request: Request):
         # API 키
         "NEWS_API_KEY": mask_sensitive_value(os.getenv("NEWS_API_KEY", "")),
         "GEMINI_API_KEY": mask_sensitive_value(os.getenv("GEMINI_API_KEY", "")),
+        "PERPLEXITY_API_KEY": mask_sensitive_value(os.getenv("PERPLEXITY_API_KEY", "")),
+
+        # AI Provider 설정
+        "AI_PROVIDER": os.getenv("AI_PROVIDER", "gemini"),
 
         # 뉴스 검색 설정
         "NEWS_KEYWORDS": os.getenv("NEWS_KEYWORDS", "AI OR ChatGPT OR GPT-4 OR Claude OR Gemini"),
@@ -2039,6 +2135,70 @@ async def update_keywords(request: Request):
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"키워드 업데이트 실패: {str(e)}")
+
+@app.post("/admin/api/update-ai-provider")
+async def update_ai_provider(request: Request):
+    """AI Provider 업데이트 API (인증 필요)"""
+    auth_header = request.headers.get("authorization")
+    if not auth_header or not auth_header.startswith("Bearer "):
+        raise HTTPException(status_code=401, detail="인증이 필요합니다")
+
+    token = auth_header.replace("Bearer ", "")
+    if not verify_session(token):
+        raise HTTPException(status_code=401, detail="유효하지 않은 토큰입니다")
+
+    try:
+        # 요청 본문에서 provider 추출
+        body = await request.json()
+        new_provider = body.get('ai_provider', 'gemini').strip().lower()
+
+        if new_provider not in ['gemini', 'perplexity']:
+            raise HTTPException(status_code=400, detail="유효하지 않은 AI Provider입니다. 'gemini' 또는 'perplexity'를 선택하세요.")
+
+        # .env 파일 경로 결정
+        env_path = '/app/.env' if os.path.exists('/app/.env') else '.env'
+
+        # .env 파일 읽기
+        with open(env_path, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+
+        # AI_PROVIDER 라인 찾아서 업데이트
+        updated = False
+        for i, line in enumerate(lines):
+            if line.strip().startswith('AI_PROVIDER='):
+                lines[i] = f'AI_PROVIDER={new_provider}\n'
+                updated = True
+                break
+
+        # AI_PROVIDER가 없으면 추가
+        if not updated:
+            # GEMINI_API_KEY 다음에 추가
+            for i, line in enumerate(lines):
+                if line.strip().startswith('GEMINI_API_KEY='):
+                    lines.insert(i + 1, '\n')
+                    lines.insert(i + 2, '# --- AI Provider 선택 (gemini 또는 perplexity) ---\n')
+                    lines.insert(i + 3, f'AI_PROVIDER={new_provider}\n')
+                    break
+
+        # .env 파일 저장
+        with open(env_path, 'w', encoding='utf-8') as f:
+            f.writelines(lines)
+
+        # 환경변수 다시 로드
+        load_dotenv(override=True)
+
+        provider_name = "Google Gemini" if new_provider == "gemini" else "Perplexity Sonar"
+
+        return {
+            "success": True,
+            "message": f"AI Provider가 {provider_name}(으)로 변경되었습니다. 다음 뉴스 수집부터 적용됩니다.",
+            "ai_provider": new_provider
+        }
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"AI Provider 업데이트 실패: {str(e)}")
 
 @app.post("/admin/api/test-keywords")
 async def test_keywords(request: Request):

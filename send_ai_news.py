@@ -30,7 +30,9 @@ def get_env_vars():
     env_vars = {
         'NEWS_KEY': os.getenv("NEWS_API_KEY"),
         'NEWS_KEYWORDS': os.getenv("NEWS_KEYWORDS", "AI OR ChatGPT OR GPT-4 OR Claude OR Gemini"),
+        'AI_PROVIDER': os.getenv("AI_PROVIDER", "gemini"),
         'GEMINI_KEY': os.getenv("GEMINI_API_KEY"),
+        'PERPLEXITY_KEY': os.getenv("PERPLEXITY_API_KEY"),
         'TG_TOKEN': os.getenv("TG_TOKEN"),
         'TG_CHAT': os.getenv("TG_CHAT"),
         'SMTP_HOST': os.getenv("SMTP_HOST"),
@@ -40,7 +42,19 @@ def get_env_vars():
         'EMAIL_TO': os.getenv("EMAIL_TO")
     }
 
-    required_vars = ['NEWS_KEY', 'GEMINI_KEY', 'TG_TOKEN', 'TG_CHAT', 'SMTP_USER', 'SMTP_PASS', 'EMAIL_TO']
+    # AI Provider에 따라 필수 키 설정
+    required_vars = ['NEWS_KEY', 'TG_TOKEN', 'TG_CHAT', 'SMTP_USER', 'SMTP_PASS', 'EMAIL_TO']
+
+    ai_provider = env_vars['AI_PROVIDER'].lower()
+    if ai_provider == 'gemini':
+        required_vars.append('GEMINI_KEY')
+    elif ai_provider == 'perplexity':
+        required_vars.append('PERPLEXITY_KEY')
+    else:
+        # 기본값은 gemini
+        env_vars['AI_PROVIDER'] = 'gemini'
+        required_vars.append('GEMINI_KEY')
+
     missing_vars = [var for var in required_vars if not env_vars[var]]
 
     if missing_vars:
@@ -61,20 +75,15 @@ def fetch_news(news_key, keywords):
     response.raise_for_status()
     return response.json().get("articles", [])
 
-def generate_summary(
+def generate_summary_with_gemini(
     articles: List[Dict],
     gemini_key: str,
-    intro_text: str = "최근 48시간 인기 AI 기사 목록입니다",
-    summary_label: str = "AI 기사",
-    limit: int = 10,
+    intro_text: str,
+    summary_label: str,
 ) -> str:
     """Gemini API를 사용하여 한국어 요약 생성"""
-    if not articles:
-        return "📭 요약할 기사가 없습니다."
-
-    selected = articles[:limit]
     bullet_lines = []
-    for idx, article in enumerate(selected):
+    for idx, article in enumerate(articles):
         title = article.get('title') or f"제목 미확인 {idx + 1}"
         url = article.get('url') or article.get('link')
         if not url:
@@ -105,9 +114,101 @@ def generate_summary(
 📝 [3문장 한국어 요약]
 🔗 [원문 링크]
 
-각 기사 사이에 빈 줄을 추가하여 구분하세요. 총 {len(selected)}개 {summary_label} 기사를 요약하세요."""
+각 기사 사이에 빈 줄을 추가하여 구분하세요. 총 {len(articles)}개 {summary_label} 기사를 요약하세요."""
     )
     return response.text.strip()
+
+
+def generate_summary_with_perplexity(
+    articles: List[Dict],
+    perplexity_key: str,
+    intro_text: str,
+    summary_label: str,
+) -> str:
+    """Perplexity Sonar API를 사용하여 한국어 요약 생성"""
+    bullet_lines = []
+    for idx, article in enumerate(articles):
+        title = article.get('title') or f"제목 미확인 {idx + 1}"
+        url = article.get('url') or article.get('link')
+        if not url:
+            continue
+        source_info = article.get('source')
+        if isinstance(source_info, dict):
+            source_name = source_info.get('name')
+        else:
+            source_name = None
+        source_name = source_name or article.get('source_name') or "출처 미상"
+        bullet_lines.append(f"- {title} ({source_name}) - {url}")
+
+    if not bullet_lines:
+        return "📭 요약할 기사가 없습니다."
+
+    bullets = "\n".join(bullet_lines)
+
+    # Perplexity API 호출
+    headers = {
+        "Authorization": f"Bearer {perplexity_key}",
+        "Content-Type": "application/json",
+    }
+
+    payload = {
+        "model": "sonar",
+        "messages": [
+            {
+                "role": "system",
+                "content": "당신은 뉴스 기사를 요약하는 전문가입니다. 각 기사를 정확하고 간결하게 한국어로 요약하세요."
+            },
+            {
+                "role": "user",
+                "content": f"""다음은 {intro_text}:
+
+{bullets}
+
+각 기사를 다음 형식으로 한국어 요약하세요:
+
+📰 [기사 번호]. [기사 제목] ([언론사])
+📝 [3문장 한국어 요약]
+🔗 [원문 링크]
+
+각 기사 사이에 빈 줄을 추가하여 구분하세요. 총 {len(articles)}개 {summary_label} 기사를 요약하세요."""
+            }
+        ],
+        "temperature": 0.2,
+        "max_tokens": 4000,
+    }
+
+    response = requests.post(
+        "https://api.perplexity.ai/chat/completions",
+        headers=headers,
+        json=payload,
+        timeout=60
+    )
+    response.raise_for_status()
+
+    result = response.json()
+    return result['choices'][0]['message']['content'].strip()
+
+
+def generate_summary(
+    articles: List[Dict],
+    api_key: str,
+    intro_text: str = "최근 48시간 인기 AI 기사 목록입니다",
+    summary_label: str = "AI 기사",
+    limit: int = 10,
+    provider: str = "gemini",
+) -> str:
+    """AI API를 사용하여 한국어 요약 생성 (provider: 'gemini' 또는 'perplexity')"""
+    if not articles:
+        return "📭 요약할 기사가 없습니다."
+
+    selected = articles[:limit]
+
+    provider = provider.lower()
+    if provider == "perplexity":
+        return generate_summary_with_perplexity(selected, api_key, intro_text, summary_label)
+    else:
+        # 기본값은 gemini
+        return generate_summary_with_gemini(selected, api_key, intro_text, summary_label)
 
 
 def parse_datacenter_datetime(raw_value: Optional[str]) -> Optional[dt.datetime]:
@@ -312,13 +413,17 @@ def ensure_summary_table(cursor: sqlite3.Cursor) -> None:
             summary TEXT NOT NULL,
             articles_json TEXT NOT NULL,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            category TEXT NOT NULL DEFAULT 'ai_news'
+            category TEXT NOT NULL DEFAULT 'ai_news',
+            ai_provider TEXT NOT NULL DEFAULT 'gemini'
         )
     ''')
     columns = {row[1] for row in cursor.execute('PRAGMA table_info(summaries)')}
     if 'category' not in columns:
         cursor.execute("ALTER TABLE summaries ADD COLUMN category TEXT NOT NULL DEFAULT 'ai_news'")
+    if 'ai_provider' not in columns:
+        cursor.execute("ALTER TABLE summaries ADD COLUMN ai_provider TEXT NOT NULL DEFAULT 'gemini'")
     cursor.execute("UPDATE summaries SET category = 'ai_news' WHERE category IS NULL OR TRIM(category) = ''")
+    cursor.execute("UPDATE summaries SET ai_provider = 'gemini' WHERE ai_provider IS NULL OR TRIM(ai_provider) = ''")
 
     # 중복 레코드 정리: 동일한 날짜/카테고리의 최신(id 최대) 레코드만 유지
     cursor.execute('''
@@ -333,20 +438,21 @@ def ensure_summary_table(cursor: sqlite3.Cursor) -> None:
     ''')
 
 
-def save_summary_to_db(date, summary_text, articles_list, category: str = CATEGORY_AI_NEWS):
+def save_summary_to_db(date, summary_text, articles_list, category: str = CATEGORY_AI_NEWS, ai_provider: str = "gemini"):
     """데이터베이스에 요약 저장"""
     db_path = '/app/data/news_summaries.db' if os.path.exists('/app/data') else 'news_summaries.db'
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     ensure_summary_table(cursor)
     cursor.execute('''
-        INSERT INTO summaries (date, summary, articles_json, category)
-        VALUES (?, ?, ?, ?)
+        INSERT INTO summaries (date, summary, articles_json, category, ai_provider)
+        VALUES (?, ?, ?, ?, ?)
         ON CONFLICT(date, category) DO UPDATE SET
             summary=excluded.summary,
             articles_json=excluded.articles_json,
+            ai_provider=excluded.ai_provider,
             created_at=CURRENT_TIMESTAMP
-    ''', (date, summary_text, json.dumps(articles_list, ensure_ascii=False), category))
+    ''', (date, summary_text, json.dumps(articles_list, ensure_ascii=False), category, ai_provider))
     conn.commit()
     conn.close()
 
@@ -455,7 +561,11 @@ def run_news_bot(send_email_flag=True, send_telegram_flag=True):
     try:
         # 환경변수 로드
         env_vars = get_env_vars()
-        
+
+        # AI Provider 설정
+        ai_provider = env_vars['AI_PROVIDER'].lower()
+        api_key = env_vars['PERPLEXITY_KEY'] if ai_provider == 'perplexity' else env_vars['GEMINI_KEY']
+
         # 뉴스 수집
         print(f"[1/7] AI 뉴스 수집 중... (키워드: {env_vars['NEWS_KEYWORDS']})")
         ai_articles = fetch_news(env_vars['NEWS_KEY'], env_vars['NEWS_KEYWORDS'])
@@ -463,12 +573,13 @@ def run_news_bot(send_email_flag=True, send_telegram_flag=True):
             raise ValueError("수집된 AI 뉴스 기사가 없습니다")
 
         # AI 요약 생성
-        print("[2/7] AI 요약 생성 중...")
+        print(f"[2/7] AI 요약 생성 중... (Provider: {ai_provider.upper()})")
         ai_summary = generate_summary(
             ai_articles,
-            env_vars['GEMINI_KEY'],
+            api_key,
             intro_text="최근 48시간 인기 AI 기사 목록입니다",
             summary_label="AI 뉴스",
+            provider=ai_provider,
         )
 
         # DatacenterDynamics 수집
@@ -483,13 +594,14 @@ def run_news_bot(send_email_flag=True, send_telegram_flag=True):
             print(f"[경고] DatacenterDynamics 수집 실패: {fetch_error}")
 
         # DatacenterDynamics 요약 생성
-        print("[4/7] DatacenterDynamics 요약 생성 중...")
+        print(f"[4/7] DatacenterDynamics 요약 생성 중... (Provider: {ai_provider.upper()})")
         if dc_articles:
             dc_summary = generate_summary(
                 dc_articles,
-                env_vars['GEMINI_KEY'],
+                api_key,
                 intro_text="DatacenterDynamics에서 어제 발행된 데이터센터 관련 기사 목록입니다",
                 summary_label="DatacenterDynamics",
+                provider=ai_provider,
             )
         else:
             dc_summary = "📭 어제 날짜에 요약할 DatacenterDynamics 기사가 없습니다."
@@ -497,8 +609,8 @@ def run_news_bot(send_email_flag=True, send_telegram_flag=True):
         # 데이터베이스 저장
         print("[5/7] 데이터베이스 저장 중...")
         today = dt.datetime.now().strftime("%Y-%m-%d")
-        save_summary_to_db(today, ai_summary, ai_articles[:10], category=CATEGORY_AI_NEWS)
-        save_summary_to_db(dc_target_date, dc_summary, dc_articles[:10], category=CATEGORY_DATACENTER)
+        save_summary_to_db(today, ai_summary, ai_articles[:10], category=CATEGORY_AI_NEWS, ai_provider=ai_provider)
+        save_summary_to_db(dc_target_date, dc_summary, dc_articles[:10], category=CATEGORY_DATACENTER, ai_provider=ai_provider)
 
         summary_map = {
             CATEGORY_AI_NEWS: {
