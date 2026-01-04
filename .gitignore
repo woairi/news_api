@@ -11,3 +11,9 @@ logs/cron.log
 # Python
 __pycache__/
 *.pyc
+
+# Claude documentation
+claudedocs/
+
+# Serena cache
+.serena/
