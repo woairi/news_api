@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI & 데이터센터 뉴스 요약 서비스 - 최신 기술 트렌드를 빠르게 확인하세요.">
+    <title>AI News Briefing</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav class="app-bar">
+        <div class="logo-area">
+            <span class="logo-icon">📰</span>
+            <h1 class="app-title">AI News Briefing</h1>
+        </div>
+        <div class="actions">
+            <a href="/admin/login" class="btn btn-outlined" style="margin-right: 8px;">⚙️ 설정</a>
+            <button id="themeToggle" class="theme-toggle" aria-label="테마 변경">
+                🌓
+            </button>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <!-- Main Content Area -->
+        <main>
+            <!-- Status Section -->
+            <section class="card status-card">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                    <div>
+                        <h2 style="font-size: 1.1rem; margin-bottom: 4px;">시스템 상태</h2>
+                        <div style="font-size: 0.9rem; opacity: 0.9;">
+                            AI 뉴스 업데이트: <strong id="status-ai-run">-</strong>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.9rem; opacity: 0.9;">
+                            DCD 업데이트: <strong id="status-dc-run">-</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Content Tabs -->
+            <div class="tabs">
+                <button class="tab active" data-category="ai_news">🤖 AI 뉴스</button>
+                <button class="tab" data-category="datacenterdynamics">📊 DatacenterDynamics</button>
+            </div>
+
+            <div id="tabInfo" class="mb-4" style="color: var(--md-sys-color-on-surface-variant);">
+                최근 인기 기사 요약을 확인하세요.
+            </div>
+
+            <!-- Articles Container -->
+            <div id="summaryContent">
+                <div class="text-center" style="padding: 40px;">
+                    <div class="spinner"></div> <!-- Add spinner CSS later if needed -->
+                    <p>데이터를 불러오는 중입니다...</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Sidebar (Date Selection) -->
+        <aside class="sidebar">
+            <div class="card">
+                <h3 style="font-size: 1.1rem; margin-bottom: 12px; color: var(--md-sys-color-on-surface);">📅 날짜 선택</h3>
+                
+                <h4 style="font-size: 0.9rem; color: var(--md-sys-color-primary); margin-top: 10px;">최근 7일</h4>
+                <div id="recentButtons" class="date-grid">
+                    <!-- Chips will be injected here -->
+                </div>
+
+                <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--md-sys-color-outline);">
+                    <h4 style="font-size: 0.9rem; color: var(--md-sys-color-primary); margin-bottom: 8px;">이전 날짜 검색</h4>
+                    <div style="display: flex; gap: 8px;">
+                        <input type="date" id="datePicker" style="padding: 8px; border-radius: 8px; border: 1px solid var(--md-sys-color-outline); background: var(--md-sys-color-surface); color: var(--md-sys-color-on-surface); flex-grow: 1;">
+                        <button id="searchDateBtn" class="btn btn-primary" style="padding: 8px 16px;">Go</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

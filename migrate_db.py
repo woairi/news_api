@@ -5,11 +5,19 @@ import os
 
 def migrate_database():
     """기존 데이터베이스에 ai_provider 컬럼 추가"""
-    db_path = '/app/data/news_summaries.db' if os.path.exists('/app/data') else 'data/news_summaries.db'
+    # DB 경로 결정 logic matching web_app.py mostly, but checking where file actually is
+    if os.path.exists('/app/data/news_summaries.db'):
+        db_path = '/app/data/news_summaries.db'
+    elif os.path.exists('news_summaries.db'):
+        db_path = 'news_summaries.db'
+    elif os.path.exists('data/news_summaries.db'):
+        db_path = 'data/news_summaries.db'
+    else:
+        # Default to root if creating new
+        db_path = 'news_summaries.db'
 
     if not os.path.exists(db_path):
         print(f"[정보] 데이터베이스 파일이 없습니다: {db_path}")
-        print("[정보] 새로운 데이터베이스가 자동으로 생성됩니다.")
         return
 
     print(f"[1/3] 데이터베이스 연결 중: {db_path}")
@@ -18,8 +26,25 @@ def migrate_database():
 
     # 현재 컬럼 확인
     print("[2/3] 테이블 구조 확인 중...")
-    columns = {row[1] for row in cursor.execute('PRAGMA table_info(summaries)')}
+    try:
+        columns = {row[1] for row in cursor.execute('PRAGMA table_info(summaries)')}
+    except sqlite3.OperationalError:
+        print("[오류] summaries 테이블을 찾을 수 없습니다.")
+        return
+        
     print(f"[정보] 현재 컬럼: {columns}")
+
+    # category 컬럼 추가
+    if 'category' not in columns:
+        print("[2-1/3] category 컬럼 추가 중...")
+        try:
+            cursor.execute("ALTER TABLE summaries ADD COLUMN category TEXT NOT NULL DEFAULT 'ai_news'")
+            # 기존 데이터 인덱스 생성
+            cursor.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_summaries_date_category ON summaries(date, category)")
+            conn.commit()
+            print("[완료] ✅ category 컬럼이 성공적으로 추가되었습니다!")
+        except Exception as e:
+            print(f"[오류] category 컬럼 추가 실패: {e}")
 
     # ai_provider 컬럼 추가
     if 'ai_provider' not in columns:

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시스템 설정 - AI News Briefing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script>
+        // Init theme
+        const savedTheme = localStorage.getItem('theme') || 'system';
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'system') {
+            document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+        } else {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+    </script>
+</head>
+<body>
+    <nav class="app-bar">
+        <div class="logo-area">
+            <span class="logo-icon">⚙️</span>
+            <h1 class="app-title">시스템 설정</h1>
+        </div>
+        <div class="actions" style="display: flex; gap: 8px;">
+            <a href="/" class="btn btn-outlined">📰 메인</a>
+            <button onclick="logout()" class="btn btn-outlined">🚪 로그아웃</button>
+            <button id="themeToggle" class="theme-toggle" aria-label="테마 변경">🌓</button>
+        </div>
+    </nav>
+
+    <div class="main-container" style="grid-template-columns: 1fr;">
+        <main>
+            <!-- Loading State -->
+            <div id="loadingMessage" class="text-center" style="padding: 40px;">
+                <div class="spinner"></div>
+                <p>환경변수 정보를 불러오는 중...</p>
+            </div>
+
+            <div id="settingsContent" class="hidden">
+                <!-- Actions Toolbar -->
+                <div class="card" style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+                    <div>
+                        <h2 style="font: var(--md-sys-typescale-title-large); margin-bottom: 4px;">관리 작업</h2>
+                        <p style="color: var(--md-sys-color-on-surface-variant); font-size: 0.9rem;">시스템 상태 확인 및 수동 작업</p>
+                    </div>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <button onclick="refreshData()" class="btn btn-outlined">🔄 새로고침</button>
+                        <button onclick="sendTelegramManual()" class="btn btn-primary">📱 텔레그램 전송</button>
+                    </div>
+                </div>
+
+                <!-- Settings Grid Layout -->
+                <div class="settings-layout">
+                    <!-- Left Column: Env Vars -->
+                    <div class="settings-col">
+                        <div class="card">
+                            <h3 class="card-title">📧 이메일 설정</h3>
+                            <div class="env-grid" id="emailSettings"></div>
+                        </div>
+
+                        <div class="card">
+                            <h3 class="card-title">📱 텔레그램 설정</h3>
+                            <div class="env-grid" id="telegramSettings"></div>
+                        </div>
+
+                        <div class="card">
+                            <h3 class="card-title">🔑 API 키 설정</h3>
+                            <div class="env-grid" id="apiSettings"></div>
+                        </div>
+                        
+                         <div class="card">
+                            <h3 class="card-title">⏰ 스케줄 설정</h3>
+                            <div class="env-grid" id="scheduleSettings"></div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Interactive Settings -->
+                    <div class="settings-col">
+                        <!-- AI Provider Settings -->
+                        <div class="card highlight-card">
+                            <h2 class="mb-4" style="font: var(--md-sys-typescale-headline-medium);">🤖 AI 모델 설정</h2>
+                            <p style="margin-bottom: 20px; color: var(--md-sys-color-on-surface-variant);">
+                                뉴스 요약에 사용할 AI 모델을 선택하세요.
+                            </p>
+                            
+                            <div class="form-group">
+                                <label for="aiProviderSelect" class="form-label">AI Provider</label>
+                                <div class="select-wrapper">
+                                    <select id="aiProviderSelect" class="select-field">
+                                        <option value="gemini">Google Gemini</option>
+                                        <option value="perplexity">Perplexity Sonar</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <button onclick="updateAIProvider()" class="btn btn-primary" style="width: 100%;">💾 설정 저장</button>
+                            
+                            <div style="margin-top: 20px; font-size: 0.85rem; color: var(--md-sys-color-on-surface-variant); background: rgba(0,0,0,0.03); padding: 12px; border-radius: 8px;">
+                                <div style="margin-bottom: 4px;"><strong>💡 모델 특징</strong></div>
+                                • <strong>Google Gemini:</strong> 빠르고 정확한 텍스트 요약<br>
+                                • <strong>Perplexity Sonar:</strong> 실시간 웹 검색 기반 컨텍스트
+                            </div>
+                        </div>
+
+                        <!-- Keyword Settings -->
+                        <div class="card">
+                            <h2 class="mb-4" style="font: var(--md-sys-typescale-headline-medium);">🔍 뉴스 키워드</h2>
+                            <p style="margin-bottom: 16px; color: var(--md-sys-color-on-surface-variant);">
+                                검색할 키워드를 설정하세요. (OR, AND, 괄호 사용 가능)
+                            </p>
+                            
+                            <div class="form-group">
+                                <textarea id="keywordsInput" class="text-field text-field-area" placeholder="예: AI OR ChatGPT"></textarea>
+                            </div>
+                            
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px;">
+                                <button onclick="updateKeywords()" class="btn btn-primary">💾 저장</button>
+                                <button onclick="testKeywords()" class="btn btn-secondary">🧪 테스트</button>
+                            </div>
+                             <button onclick="resetKeywords()" class="btn btn-outlined" style="width: 100%;">🔄 취소</button>
+
+                            <!-- Test Results -->
+                            <div id="testResults" class="hidden" style="margin-top: 16px; padding: 16px; background-color: var(--md-sys-color-surface-variant); border-radius: 8px; border: 1px solid var(--md-sys-color-outline);">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid var(--md-sys-color-outline); padding-bottom: 8px;">
+                                    <h4 style="margin: 0; font-size: 0.9rem;">🧪 테스트 결과</h4>
+                                    <button onclick="closeTestResults()" class="btn btn-text" style="padding: 4px; min-width: auto; height: 24px; width: 24px;">✕</button>
+                                </div>
+                                <div id="testResultsContent" style="font-size: 0.9rem;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">메시지</div>
+
+    <script>
+        // --- Authentication & Initialization ---
+        let originalKeywords = '';
+        let statusTimeout = null;
+
+        function checkAuth() {
+            const token = sessionStorage.getItem('admin_token');
+            if (!token) {
+                window.location.href = '/admin/login';
+                return false;
+            }
+            return token;
+        }
+
+        function logout() {
+            sessionStorage.removeItem('admin_token');
+            window.location.href = '/admin/login';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.getElementById('themeToggle');
+            themeToggle.addEventListener('click', () => {
+                const current = document.documentElement.getAttribute('data-theme');
+                const next = current === 'dark' ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', next);
+                localStorage.setItem('theme', next);
+            });
+
+            loadSettings();
+        });
+
+        // --- Data Loading ---
+        function createEnvItem(label, value, description) {
+            const isSet = value && value !== '(설정되지 않음)';
+            return `
+                <div class="env-item">
+                    <div class="env-label-row">
+                        <span class="status-indicator ${isSet ? 'status-ok' : 'status-error'}"></span>
+                        <span class="env-label-text">${label}</span>
+                    </div>
+                    <div class="env-value">${value || '(설정되지 않음)'}</div>
+                </div>
+            `;
+        }
+
+        async function loadSettings() {
+            const token = checkAuth();
+            if (!token) return;
+            
+            try {
+                const response = await fetch('/admin/api/env', {
+                    headers: { 'Authorization': `Bearer ${token}` }
+                });
+                
+                if (!response.ok) {
+                    if (response.status === 401) { logout(); return; }
+                    throw new Error('설정 로드 실패');
+                }
+                
+                const data = await response.json();
+                
+                // Render Env Vars
+                document.getElementById('emailSettings').innerHTML = 
+                    createEnvItem('SMTP 호스트', data.SMTP_HOST) +
+                    createEnvItem('SMTP 포트', data.SMTP_PORT) +
+                    createEnvItem('발신자', data.SMTP_USER) +
+                    createEnvItem('수신자', data.EMAIL_TO); // password hidden for security in UI or show as asterisk
+                
+                document.getElementById('telegramSettings').innerHTML = 
+                    createEnvItem('봇 토큰', data.TG_TOKEN) +
+                    createEnvItem('채팅 ID', data.TG_CHAT);
+                
+                document.getElementById('apiSettings').innerHTML =
+                    createEnvItem('NewsAPI', data.NEWS_API_KEY) +
+                    createEnvItem('Gemini', data.GEMINI_API_KEY) +
+                    createEnvItem('Perplexity', data.PERPLEXITY_API_KEY);
+
+                document.getElementById('scheduleSettings').innerHTML =
+                    createEnvItem('CRON Time', data.CRON_TIME);
+
+                // Set Form Values
+                document.getElementById('aiProviderSelect').value = data.AI_PROVIDER || 'gemini';
+                originalKeywords = data.NEWS_KEYWORDS || '';
+                document.getElementById('keywordsInput').value = originalKeywords;
+
+                // Show Content
+                document.getElementById('loadingMessage').classList.add('hidden');
+                document.getElementById('settingsContent').classList.remove('hidden');
+
+            } catch (error) {
+                showToast(`❌ ${error.message}`);
+            }
+        }
+
+        function refreshData() {
+            document.getElementById('loadingMessage').classList.remove('hidden');
+            document.getElementById('settingsContent').classList.add('hidden');
+            loadSettings();
+        }
+
+        // --- Actions ---
+        function showToast(message, duration = 3000) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            
+            if (statusTimeout) clearTimeout(statusTimeout);
+            statusTimeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+
+        async function updateAIProvider() {
+            const token = checkAuth(); if(!token) return;
+            const aiProvider = document.getElementById('aiProviderSelect').value;
+            
+            showToast('💾 저장 중...');
+            try {
+                const res = await fetch('/admin/api/update-ai-provider', {
+                    method: 'POST',
+                    headers: { 
+                        'Authorization': `Bearer ${token}`,
+                        'Content-Type': 'application/json' 
+                    },
+                    body: JSON.stringify({ ai_provider: aiProvider })
+                });
+                const result = await res.json();
+                if(res.ok) showToast(`✅ ${result.message}`);
+                else showToast(`❌ ${result.message}`);
+            } catch (e) { showToast(`❌ 오류: ${e.message}`); }
+        }
+
+        function resetKeywords() {
+            document.getElementById('keywordsInput').value = originalKeywords;
+            showToast('🔄 복원되었습니다.');
+        }
+
+        async function updateKeywords() {
+            const token = checkAuth(); if(!token) return;
+            const keywords = document.getElementById('keywordsInput').value.trim();
+            if(!keywords) return showToast('⚠️ 키워드를 입력하세요.');
+
+            showToast('💾 저장 중...');
+            try {
+                const res = await fetch('/admin/api/update-keywords', {
+                    method: 'POST',
+                    headers: { 
+                        'Authorization': `Bearer ${token}`,
+                        'Content-Type': 'application/json' 
+                    },
+                    body: JSON.stringify({ keywords })
+                });
+                const result = await res.json();
+                if(res.ok) {
+                    originalKeywords = keywords;
+                    showToast(`✅ ${result.message}`);
+                } else showToast(`❌ ${result.message}`);
+            } catch (e) { showToast(`❌ 오류: ${e.message}`); }
+        }
+
+        async function sendTelegramManual() {
+            const token = checkAuth(); if(!token) return;
+            if(!confirm('지금 텔레그램 메시지를 전송하시겠습니까?')) return;
+
+            showToast('🚀 전송 요청 중...');
+            try {
+                const res = await fetch('/admin/api/send-telegram', {
+                    method: 'POST',
+                    headers: { 'Authorization': `Bearer ${token}` }
+                });
+                const result = await res.json();
+                if(res.ok) showToast(`✅ ${result.message}`);
+                else showToast(`❌ ${result.message}`);
+            } catch (e) { showToast(`❌ 오류: ${e.message}`); }
+        }
+
+        async function testKeywords() {
+            const token = checkAuth(); if(!token) return;
+            const keywords = document.getElementById('keywordsInput').value.trim();
+            if(!keywords) return showToast('⚠️ 키워드를 입력하세요.');
+
+            showToast('🧪 테스트 중... (최대 30초)');
+            const resultsArea = document.getElementById('testResults');
+            const contentArea = document.getElementById('testResultsContent');
+            resultsArea.classList.add('hidden');
+
+            try {
+                const res = await fetch('/admin/api/test-keywords', {
+                    method: 'POST',
+                    headers: { 
+                        'Authorization': `Bearer ${token}`,
+                        'Content-Type': 'application/json' 
+                    },
+                    body: JSON.stringify({ keywords })
+                });
+                const result = await res.json();
+                
+                if(res.ok) {
+                    let html = `<div><strong>기사 수:</strong> ${result.count}개</div>`;
+                    if(result.sample_titles?.length) {
+                        html += `<ul style="margin-top:8px; padding-left:20px;">` + 
+                                result.sample_titles.map(t => `<li>${t}</li>`).join('') + 
+                                `</ul>`;
+                    }
+                    contentArea.innerHTML = html;
+                    resultsArea.classList.remove('hidden');
+                    showToast('✅ 테스트 완료');
+                } else showToast(`❌ 실패: ${result.message}`);
+            } catch (e) { showToast(`❌ 오류: ${e.message}`); }
+        }
+
+        function closeTestResults() {
+            document.getElementById('testResults').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>

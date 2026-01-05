@@ -9,9 +9,7 @@ COPY requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir -r /app/requirements.txt
 
 # 소스 복사
-COPY send_ai_news.py /app/send_ai_news.py
-COPY web_app.py /app/web_app.py
-COPY .env /app/.env
+COPY . /app/
 
 # 크론 설치
 RUN apt-get update && apt-get install -y cron && rm -rf /var/lib/apt/lists/*
