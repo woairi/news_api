@@ -1,5 +1,29 @@
 # 변경 내역
 
+## [2026-01-05] - 저장소 이전 및 보안 개선
+
+### 🔒 보안
+- **Git 히스토리 정리**: `.env` 파일을 모든 커밋 히스토리에서 완전히 제거하여 API 키 노출 방지
+- **환경변수 보호**: `.gitignore`에 `.env` 파일이 포함되어 있으며, Git에서 추적되지 않도록 설정됨
+
+### 🚀 기능 추가
+- **Fluent Design 테마**: Microsoft Fluent Design 스타일의 새로운 UI 테마 추가
+- **Glassmorphism 테마**: 현대적인 glassmorphism 스타일의 UI 테마 추가
+- **Material Design 3**: 프론트엔드를 Material Design 3로 전면 개편 및 SPA 아키텍처 적용
+- **AI Provider 선택**: Gemini 또는 Perplexity AI 중 선택 가능한 요약 엔진 추가
+
+### 🔧 기타
+- **저장소 이전**: `woairi/ai_news_bot` → `woairi/news_api`로 GitHub 저장소 이전
+- **프론트엔드 정적 파일**: CSS 및 HTML 스타일 업데이트
+- **뉴스 키워드**: 검색 키워드 및 AI 제공자 설정 업데이트
+
+### ⚠️ 주의사항
+- 저장소 URL이 변경되었습니다: `https://github.com/woairi/news_api.git`
+- 기존 저장소를 사용하던 경우 원격 저장소 URL을 업데이트해야 합니다:
+  ```bash
+  git remote set-url origin https://github.com/woairi/news_api.git
+  ```
+
 ## [2025-11-04] - DatacenterDynamics 요약 재도입
 
 ### 🚀 기능 추가

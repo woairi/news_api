@@ -19,8 +19,8 @@ AI 뉴스 수집 및 한국어 요약 시스템 - 매일 AI 관련 뉴스를 자
 ### 1. 저장소 복제
 
 ```bash
-git clone https://github.com/your-username/ai-news-bot.git
-cd ai-news-bot
+git clone https://github.com/woairi/news_api.git
+cd news_api
 ```
 
 ### 2. 필요한 환경변수 설정
