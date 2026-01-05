@@ -17,3 +17,4 @@ claudedocs/
 
 # Serena cache
 .serena/
+.claude
