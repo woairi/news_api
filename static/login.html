@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/style.css?v=2">
+    <link rel="stylesheet" href="/static/css/style.css?v=3">
     <script>
-        // Init theme immediately
+        // Init theme and design immediately
         const savedTheme = localStorage.getItem('theme') || 'system';
+        const savedDesign = localStorage.getItem('design') || 'material';
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
         if (savedTheme === 'system') {
             document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
         } else {
             document.documentElement.setAttribute('data-theme', savedTheme);
         }
+
+        document.documentElement.setAttribute('data-design', savedDesign);
     </script>
 </head>
+
 <body>
     <div class="login-container">
         <div class="card">
@@ -27,14 +33,15 @@
                 <h1 style="margin-top: 16px; font: var(--md-sys-typescale-headline-medium);">관리자 로그인</h1>
                 <p style="color: var(--md-sys-color-on-surface-variant);">시스템 설정을 변경하려면 로그인하세요.</p>
             </div>
-            
+
             <form id="loginForm" onsubmit="handleLogin(event)">
                 <div class="form-group">
                     <label for="password" class="form-label">비밀번호</label>
                     <input type="password" id="password" name="password" class="text-field" required autofocus>
                 </div>
-                
-                <div id="errorMessage" style="color: var(--md-sys-color-error); margin-bottom: 16px; display: none; text-align: center;">
+
+                <div id="errorMessage"
+                    style="color: var(--md-sys-color-error); margin-bottom: 16px; display: none; text-align: center;">
                     비밀번호가 올바르지 않습니다.
                 </div>
 
@@ -53,7 +60,7 @@
             const password = document.getElementById('password').value;
             const errorMessage = document.getElementById('errorMessage');
             const submitBtn = event.target.querySelector('button[type="submit"]');
-            
+
             submitBtn.disabled = true;
             submitBtn.textContent = '로그인 중...';
             errorMessage.style.display = 'none';
@@ -68,7 +75,7 @@
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                     body: formData
                 });
-                
+
                 if (response.ok) {
                     const data = await response.json();
                     sessionStorage.setItem('admin_token', data.token);
@@ -88,4 +95,5 @@
         }
     </script>
 </body>
+
 </html>

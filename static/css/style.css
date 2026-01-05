@@ -4,31 +4,31 @@
     --md-sys-color-on-primary: #FFFFFF;
     --md-sys-color-primary-container: #EADDFF;
     --md-sys-color-on-primary-container: #21005D;
-    
+
     --md-sys-color-secondary: #625B71;
     --md-sys-color-on-secondary: #FFFFFF;
     --md-sys-color-secondary-container: #E8DEF8;
     --md-sys-color-on-secondary-container: #1D192B;
-    
+
     --md-sys-color-tertiary: #7D5260;
     --md-sys-color-on-tertiary: #FFFFFF;
     --md-sys-color-tertiary-container: #FFD8E4;
     --md-sys-color-on-tertiary-container: #31111D;
-    
+
     --md-sys-color-error: #B3261E;
     --md-sys-color-on-error: #FFFFFF;
     --md-sys-color-error-container: #F9DEDC;
     --md-sys-color-on-error-container: #410E0B;
-    
+
     --md-sys-color-background: #FDFBFF;
     --md-sys-color-on-background: #1C1B1F;
     --md-sys-color-surface: #FDFBFF;
     --md-sys-color-on-surface: #1C1B1F;
-    
+
     --md-sys-color-surface-variant: #E7E0EC;
     --md-sys-color-on-surface-variant: #49454F;
     --md-sys-color-outline: #79747E;
-    
+
     /* Elevations */
     --md-sys-elevation-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
     --md-sys-elevation-2: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
@@ -50,6 +50,90 @@
     --border-radius-sm: 8px;
 }
 
+/* ============================= */
+/* Fluent Design System - Light Theme */
+/* ============================= */
+[data-design="fluent"] {
+    --md-sys-color-primary: #0078D4;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-primary-container: #C7E0F4;
+    --md-sys-color-on-primary-container: #001A2C;
+
+    --md-sys-color-secondary: #605E5C;
+    --md-sys-color-on-secondary: #FFFFFF;
+    --md-sys-color-secondary-container: #E1DFDD;
+    --md-sys-color-on-secondary-container: #1B1A19;
+
+    --md-sys-color-tertiary: #8764B8;
+    --md-sys-color-on-tertiary: #FFFFFF;
+    --md-sys-color-tertiary-container: #E6D5F5;
+    --md-sys-color-on-tertiary-container: #2B1541;
+
+    --md-sys-color-error: #D13438;
+    --md-sys-color-on-error: #FFFFFF;
+    --md-sys-color-error-container: #FDEAEA;
+    --md-sys-color-on-error-container: #410E0B;
+
+    --md-sys-color-background: #F3F2F1;
+    --md-sys-color-on-background: #201F1E;
+    --md-sys-color-surface: #FFFFFF;
+    --md-sys-color-on-surface: #201F1E;
+
+    --md-sys-color-surface-variant: #F3F2F1;
+    --md-sys-color-on-surface-variant: #605E5C;
+    --md-sys-color-outline: #8A8886;
+
+    /* Fluent-style elevations (softer shadows) */
+    --md-sys-elevation-1: 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.108);
+    --md-sys-elevation-2: 0 3.2px 7.2px 0 rgba(0, 0, 0, 0.132), 0 0.6px 1.8px 0 rgba(0, 0, 0, 0.108);
+    --md-sys-elevation-3: 0 6.4px 14.4px 0 rgba(0, 0, 0, 0.132), 0 1.2px 3.6px 0 rgba(0, 0, 0, 0.108);
+
+    /* Fluent Design uses Segoe UI primarily, fallback to system fonts */
+    --md-sys-typescale-display-large: 400 57px/64px 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --md-sys-typescale-headline-large: 600 32px/40px 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --md-sys-typescale-headline-medium: 600 28px/36px 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --md-sys-typescale-title-large: 600 22px/28px 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --md-sys-typescale-body-large: 400 16px/24px 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --md-sys-typescale-body-medium: 400 14px/20px 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --md-sys-typescale-label-large: 600 14px/20px 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+    /* Fluent uses smaller, sharper border radius */
+    --border-radius-lg: 8px;
+    --border-radius-md: 4px;
+    --border-radius-sm: 2px;
+}
+
+[data-design="fluent"][data-theme="dark"] {
+    --md-sys-color-primary: #60CDFF;
+    --md-sys-color-on-primary: #003E51;
+    --md-sys-color-primary-container: #004E68;
+    --md-sys-color-on-primary-container: #B3E5FC;
+
+    --md-sys-color-secondary: #D2D0CE;
+    --md-sys-color-on-secondary: #3B3A39;
+    --md-sys-color-secondary-container: #484644;
+    --md-sys-color-on-secondary-container: #E1DFDD;
+
+    --md-sys-color-tertiary: #C2A9E1;
+    --md-sys-color-on-tertiary: #412D5C;
+    --md-sys-color-tertiary-container: #5A3F7A;
+    --md-sys-color-on-tertiary-container: #E6D5F5;
+
+    --md-sys-color-error: #F48B8E;
+    --md-sys-color-on-error: #601410;
+    --md-sys-color-error-container: #8C1D18;
+    --md-sys-color-on-error-container: #FDEAEA;
+
+    --md-sys-color-background: #201F1E;
+    --md-sys-color-on-background: #E1DFDD;
+    --md-sys-color-surface: #292827;
+    --md-sys-color-on-surface: #E1DFDD;
+
+    --md-sys-color-surface-variant: #3B3A39;
+    --md-sys-color-on-surface-variant: #C8C6C4;
+    --md-sys-color-outline: #979593;
+}
+
 /* Dark Theme */
 @media (prefers-color-scheme: dark) {
     :root {
@@ -57,27 +141,27 @@
         --md-sys-color-on-primary: #381E72;
         --md-sys-color-primary-container: #4F378B;
         --md-sys-color-on-primary-container: #EADDFF;
-        
+
         --md-sys-color-secondary: #CCC2DC;
         --md-sys-color-on-secondary: #332D41;
         --md-sys-color-secondary-container: #4A4458;
         --md-sys-color-on-secondary-container: #E8DEF8;
-        
+
         --md-sys-color-tertiary: #EFB8C8;
         --md-sys-color-on-tertiary: #492532;
         --md-sys-color-tertiary-container: #633B48;
         --md-sys-color-on-tertiary-container: #FFD8E4;
-        
+
         --md-sys-color-error: #F2B8B5;
         --md-sys-color-on-error: #601410;
         --md-sys-color-error-container: #8C1D18;
         --md-sys-color-on-error-container: #F9DEDC;
-        
+
         --md-sys-color-background: #1C1B1F;
         --md-sys-color-on-background: #E6E1E5;
         --md-sys-color-surface: #1C1B1F;
         --md-sys-color-on-surface: #E6E1E5;
-        
+
         --md-sys-color-surface-variant: #49454F;
         --md-sys-color-on-surface-variant: #CAC4D0;
         --md-sys-color-outline: #938F99;
@@ -89,17 +173,17 @@
     --md-sys-color-on-primary: #381E72;
     --md-sys-color-primary-container: #4F378B;
     --md-sys-color-on-primary-container: #EADDFF;
-    
+
     --md-sys-color-secondary: #CCC2DC;
     --md-sys-color-on-secondary: #332D41;
     --md-sys-color-secondary-container: #4A4458;
     --md-sys-color-on-secondary-container: #E8DEF8;
-    
+
     --md-sys-color-background: #1C1B1F;
     --md-sys-color-on-background: #E6E1E5;
     --md-sys-color-surface: #1C1B1F;
     --md-sys-color-on-surface: #E6E1E5;
-    
+
     --md-sys-color-surface-variant: #49454F;
     --md-sys-color-on-surface-variant: #CAC4D0;
     --md-sys-color-outline: #938F99;
@@ -184,6 +268,34 @@ body {
     background-color: var(--md-sys-color-surface-variant);
 }
 
+.design-select {
+    padding: 8px 32px 8px 12px;
+    border: 1px solid var(--md-sys-color-outline);
+    border-radius: 20px;
+    background-color: var(--md-sys-color-surface);
+    color: var(--md-sys-color-on-surface);
+    font: var(--md-sys-typescale-body-medium);
+    cursor: pointer;
+    transition: all 0.2s;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23605E5C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+
+.design-select:hover {
+    background-color: var(--md-sys-color-surface-variant);
+    border-color: var(--md-sys-color-primary);
+}
+
+.design-select:focus {
+    outline: none;
+    border-color: var(--md-sys-color-primary);
+    border-width: 2px;
+    padding: 7px 31px 7px 11px;
+}
+
+
 .main-container {
     max-width: var(--layout-max-width);
     margin: 0 auto;
@@ -200,9 +312,9 @@ body {
     align-items: center;
     justify-content: center;
     padding: 24px;
-    background: linear-gradient(135deg, 
-        var(--md-sys-color-background) 0%, 
-        var(--md-sys-color-surface-variant) 100%);
+    background: linear-gradient(135deg,
+            var(--md-sys-color-background) 0%,
+            var(--md-sys-color-surface-variant) 100%);
 }
 
 .login-container .card {
@@ -219,7 +331,8 @@ body {
     margin-bottom: 16px;
     box-shadow: var(--md-sys-elevation-1);
     border: 1px solid var(--md-sys-color-outline);
-    border-color: rgba(121, 116, 126, 0.12); /* Subtle border */
+    border-color: rgba(121, 116, 126, 0.12);
+    /* Subtle border */
 }
 
 .card-title {
@@ -366,7 +479,8 @@ body {
     font: var(--md-sys-typescale-label-large);
 }
 
-.text-field, .select-field {
+.text-field,
+.select-field {
     width: 100%;
     box-sizing: border-box;
     padding: 12px 16px;
@@ -379,7 +493,8 @@ body {
     appearance: none;
 }
 
-.text-field:focus, .select-field:focus {
+.text-field:focus,
+.select-field:focus {
     outline: none;
     border-color: var(--md-sys-color-primary);
     border-width: 2px;
@@ -434,7 +549,7 @@ body {
 }
 
 .env-item:hover {
-    background-color: rgba(0,0,0,0.01);
+    background-color: rgba(0, 0, 0, 0.01);
 }
 
 .env-label-row {
@@ -462,14 +577,21 @@ body {
     border-radius: 50%;
     flex-shrink: 0;
 }
-.status-ok { background-color: #27ae60; }
-.status-error { background-color: var(--md-sys-color-error); }
+
+.status-ok {
+    background-color: #27ae60;
+}
+
+.status-error {
+    background-color: var(--md-sys-color-error);
+}
 
 /* Select Wrapper for Arrow */
 .select-wrapper {
     position: relative;
     width: 100%;
 }
+
 .select-wrapper::after {
     content: "▼";
     font-size: 0.8rem;
@@ -498,6 +620,7 @@ body {
     pointer-events: none;
     z-index: 2000;
 }
+
 .toast.show {
     opacity: 0.95;
     transform: translateX(-50%) translateY(0);
@@ -650,13 +773,23 @@ body {
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* Utils */
-.hidden { display: none !important; }
-.text-center { text-align: center; }
-.mb-4 { margin-bottom: 16px; }
+.hidden {
+    display: none !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-4 {
+    margin-bottom: 16px;
+}
 
 /* Settings Page Enhancements */
 .settings-actions {
@@ -667,7 +800,7 @@ body {
     justify-content: space-between;
 }
 
-.settings-actions > div:first-child {
+.settings-actions>div:first-child {
     flex: 1;
     min-width: 200px;
 }
@@ -689,21 +822,35 @@ body {
     .settings-layout {
         grid-template-columns: 1fr;
     }
+
     .main-container {
         grid-template-columns: 1fr;
     }
+
     .sidebar {
         position: static;
         order: -1;
     }
+
     .settings-actions {
         flex-direction: column;
         align-items: stretch;
     }
+
     .settings-actions .btn-group {
         width: 100%;
     }
+
     .settings-actions .btn-group button {
         flex: 1;
+    }
+
+    .actions {
+        flex-wrap: wrap;
+    }
+
+    .design-select {
+        order: -1;
+        width: 100%;
     }
 }

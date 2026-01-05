@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/style.css?v=2">
+    <link rel="stylesheet" href="/static/css/style.css?v=3">
     <script>
-        // Init theme
+        // Init theme and design
         const savedTheme = localStorage.getItem('theme') || 'system';
+        const savedDesign = localStorage.getItem('design') || 'material';
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
         if (savedTheme === 'system') {
             document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
         } else {
             document.documentElement.setAttribute('data-theme', savedTheme);
         }
+
+        document.documentElement.setAttribute('data-design', savedDesign);
     </script>
 </head>
+
 <body class="settings-page">
     <nav class="app-bar">
         <div class="logo-area">
@@ -28,6 +34,10 @@
         <div class="actions" style="display: flex; gap: 8px;">
             <a href="/" class="btn btn-outlined">📰 메인</a>
             <button onclick="logout()" class="btn btn-outlined">🚪 로그아웃</button>
+            <select id="designSelect" class="design-select" aria-label="디자인 시스템 선택">
+                <option value="material">Material Design</option>
+                <option value="fluent">Fluent Design</option>
+            </select>
             <button id="themeToggle" class="theme-toggle" aria-label="테마 변경">🌓</button>
         </div>
     </nav>
@@ -45,7 +55,8 @@
                 <div class="card settings-actions">
                     <div>
                         <h2 style="font: var(--md-sys-typescale-title-large); margin-bottom: 4px;">관리 작업</h2>
-                        <p style="color: var(--md-sys-color-on-surface-variant); font-size: 0.9rem;">시스템 상태 확인 및 수동 작업</p>
+                        <p style="color: var(--md-sys-color-on-surface-variant); font-size: 0.9rem;">시스템 상태 확인 및 수동 작업
+                        </p>
                     </div>
                     <div class="btn-group">
                         <button onclick="refreshData()" class="btn btn-outlined">🔄 새로고침</button>
@@ -71,8 +82,8 @@
                             <h3 class="card-title">🔑 API 키 설정</h3>
                             <div class="env-grid" id="apiSettings"></div>
                         </div>
-                        
-                         <div class="card">
+
+                        <div class="card">
                             <h3 class="card-title">⏰ 스케줄 설정</h3>
                             <div class="env-grid" id="scheduleSettings"></div>
                         </div>
@@ -86,7 +97,7 @@
                             <p style="margin-bottom: 20px; color: var(--md-sys-color-on-surface-variant);">
                                 뉴스 요약에 사용할 AI 모델을 선택하세요.
                             </p>
-                            
+
                             <div class="form-group">
                                 <label for="aiProviderSelect" class="form-label">AI Provider</label>
                                 <div class="select-wrapper">
@@ -96,10 +107,12 @@
                                     </select>
                                 </div>
                             </div>
-                            
-                            <button onclick="updateAIProvider()" class="btn btn-primary" style="width: 100%;">💾 설정 저장</button>
-                            
-                            <div style="margin-top: 20px; font-size: 0.85rem; color: var(--md-sys-color-on-surface-variant); background: rgba(0,0,0,0.03); padding: 12px; border-radius: 8px;">
+
+                            <button onclick="updateAIProvider()" class="btn btn-primary" style="width: 100%;">💾 설정
+                                저장</button>
+
+                            <div
+                                style="margin-top: 20px; font-size: 0.85rem; color: var(--md-sys-color-on-surface-variant); background: rgba(0,0,0,0.03); padding: 12px; border-radius: 8px;">
                                 <div style="margin-bottom: 4px;"><strong>💡 모델 특징</strong></div>
                                 • <strong>Google Gemini:</strong> 빠르고 정확한 텍스트 요약<br>
                                 • <strong>Perplexity Sonar:</strong> 실시간 웹 검색 기반 컨텍스트
@@ -112,22 +125,27 @@
                             <p style="margin-bottom: 16px; color: var(--md-sys-color-on-surface-variant);">
                                 검색할 키워드를 설정하세요. (OR, AND, 괄호 사용 가능)
                             </p>
-                            
+
                             <div class="form-group">
-                                <textarea id="keywordsInput" class="text-field text-field-area" placeholder="예: AI OR ChatGPT"></textarea>
+                                <textarea id="keywordsInput" class="text-field text-field-area"
+                                    placeholder="예: AI OR ChatGPT"></textarea>
                             </div>
-                            
+
                             <div class="btn-grid-2" style="margin-bottom: 8px;">
                                 <button onclick="updateKeywords()" class="btn btn-primary">💾 저장</button>
                                 <button onclick="testKeywords()" class="btn btn-secondary">🧪 테스트</button>
                             </div>
-                             <button onclick="resetKeywords()" class="btn btn-outlined" style="width: 100%;">🔄 취소</button>
+                            <button onclick="resetKeywords()" class="btn btn-outlined" style="width: 100%;">🔄
+                                취소</button>
 
                             <!-- Test Results -->
-                            <div id="testResults" class="hidden" style="margin-top: 16px; padding: 16px; background-color: var(--md-sys-color-surface-variant); border-radius: 8px; border: 1px solid var(--md-sys-color-outline);">
-                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid var(--md-sys-color-outline); padding-bottom: 8px;">
+                            <div id="testResults" class="hidden"
+                                style="margin-top: 16px; padding: 16px; background-color: var(--md-sys-color-surface-variant); border-radius: 8px; border: 1px solid var(--md-sys-color-outline);">
+                                <div
+                                    style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid var(--md-sys-color-outline); padding-bottom: 8px;">
                                     <h4 style="margin: 0; font-size: 0.9rem;">🧪 테스트 결과</h4>
-                                    <button onclick="closeTestResults()" class="btn btn-text" style="padding: 4px; min-width: auto; height: 24px; width: 24px;">✕</button>
+                                    <button onclick="closeTestResults()" class="btn btn-text"
+                                        style="padding: 4px; min-width: auto; height: 24px; width: 24px;">✕</button>
                                 </div>
                                 <div id="testResultsContent" style="font-size: 0.9rem;"></div>
                             </div>
@@ -162,11 +180,23 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             const themeToggle = document.getElementById('themeToggle');
+            const designSelect = document.getElementById('designSelect');
+
+            // Theme toggle
             themeToggle.addEventListener('click', () => {
                 const current = document.documentElement.getAttribute('data-theme');
                 const next = current === 'dark' ? 'light' : 'dark';
                 document.documentElement.setAttribute('data-theme', next);
                 localStorage.setItem('theme', next);
+            });
+
+            // Design system selector
+            const currentDesign = localStorage.getItem('design') || 'material';
+            designSelect.value = currentDesign;
+            designSelect.addEventListener('change', () => {
+                const newDesign = designSelect.value;
+                document.documentElement.setAttribute('data-design', newDesign);
+                localStorage.setItem('design', newDesign);
             });
 
             loadSettings();
@@ -189,30 +219,30 @@
         async function loadSettings() {
             const token = checkAuth();
             if (!token) return;
-            
+
             try {
                 const response = await fetch('/admin/api/env', {
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
-                
+
                 if (!response.ok) {
                     if (response.status === 401) { logout(); return; }
                     throw new Error('설정 로드 실패');
                 }
-                
+
                 const data = await response.json();
-                
+
                 // Render Env Vars
-                document.getElementById('emailSettings').innerHTML = 
+                document.getElementById('emailSettings').innerHTML =
                     createEnvItem('SMTP 호스트', data.SMTP_HOST) +
                     createEnvItem('SMTP 포트', data.SMTP_PORT) +
                     createEnvItem('발신자', data.SMTP_USER) +
                     createEnvItem('수신자', data.EMAIL_TO); // password hidden for security in UI or show as asterisk
-                
-                document.getElementById('telegramSettings').innerHTML = 
+
+                document.getElementById('telegramSettings').innerHTML =
                     createEnvItem('봇 토큰', data.TG_TOKEN) +
                     createEnvItem('채팅 ID', data.TG_CHAT);
-                
+
                 document.getElementById('apiSettings').innerHTML =
                     createEnvItem('NewsAPI', data.NEWS_API_KEY) +
                     createEnvItem('Gemini', data.GEMINI_API_KEY) +
@@ -246,7 +276,7 @@
             const toast = document.getElementById('toast');
             toast.textContent = message;
             toast.classList.add('show');
-            
+
             if (statusTimeout) clearTimeout(statusTimeout);
             statusTimeout = setTimeout(() => {
                 toast.classList.remove('show');
@@ -254,21 +284,21 @@
         }
 
         async function updateAIProvider() {
-            const token = checkAuth(); if(!token) return;
+            const token = checkAuth(); if (!token) return;
             const aiProvider = document.getElementById('aiProviderSelect').value;
-            
+
             showToast('💾 저장 중...');
             try {
                 const res = await fetch('/admin/api/update-ai-provider', {
                     method: 'POST',
-                    headers: { 
+                    headers: {
                         'Authorization': `Bearer ${token}`,
-                        'Content-Type': 'application/json' 
+                        'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({ ai_provider: aiProvider })
                 });
                 const result = await res.json();
-                if(res.ok) showToast(`✅ ${result.message}`);
+                if (res.ok) showToast(`✅ ${result.message}`);
                 else showToast(`❌ ${result.message}`);
             } catch (e) { showToast(`❌ 오류: ${e.message}`); }
         }
@@ -279,22 +309,22 @@
         }
 
         async function updateKeywords() {
-            const token = checkAuth(); if(!token) return;
+            const token = checkAuth(); if (!token) return;
             const keywords = document.getElementById('keywordsInput').value.trim();
-            if(!keywords) return showToast('⚠️ 키워드를 입력하세요.');
+            if (!keywords) return showToast('⚠️ 키워드를 입력하세요.');
 
             showToast('💾 저장 중...');
             try {
                 const res = await fetch('/admin/api/update-keywords', {
                     method: 'POST',
-                    headers: { 
+                    headers: {
                         'Authorization': `Bearer ${token}`,
-                        'Content-Type': 'application/json' 
+                        'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({ keywords })
                 });
                 const result = await res.json();
-                if(res.ok) {
+                if (res.ok) {
                     originalKeywords = keywords;
                     showToast(`✅ ${result.message}`);
                 } else showToast(`❌ ${result.message}`);
@@ -302,8 +332,8 @@
         }
 
         async function sendTelegramManual() {
-            const token = checkAuth(); if(!token) return;
-            if(!confirm('지금 텔레그램 메시지를 전송하시겠습니까?')) return;
+            const token = checkAuth(); if (!token) return;
+            if (!confirm('지금 텔레그램 메시지를 전송하시겠습니까?')) return;
 
             showToast('🚀 전송 요청 중...');
             try {
@@ -312,15 +342,15 @@
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
                 const result = await res.json();
-                if(res.ok) showToast(`✅ ${result.message}`);
+                if (res.ok) showToast(`✅ ${result.message}`);
                 else showToast(`❌ ${result.message}`);
             } catch (e) { showToast(`❌ 오류: ${e.message}`); }
         }
 
         async function testKeywords() {
-            const token = checkAuth(); if(!token) return;
+            const token = checkAuth(); if (!token) return;
             const keywords = document.getElementById('keywordsInput').value.trim();
-            if(!keywords) return showToast('⚠️ 키워드를 입력하세요.');
+            if (!keywords) return showToast('⚠️ 키워드를 입력하세요.');
 
             showToast('🧪 테스트 중... (최대 30초)');
             const resultsArea = document.getElementById('testResults');
@@ -330,20 +360,20 @@
             try {
                 const res = await fetch('/admin/api/test-keywords', {
                     method: 'POST',
-                    headers: { 
+                    headers: {
                         'Authorization': `Bearer ${token}`,
-                        'Content-Type': 'application/json' 
+                        'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({ keywords })
                 });
                 const result = await res.json();
-                
-                if(res.ok) {
+
+                if (res.ok) {
                     let html = `<div><strong>기사 수:</strong> ${result.count}개</div>`;
-                    if(result.sample_titles?.length) {
-                        html += `<ul style="margin-top:8px; padding-left:20px;">` + 
-                                result.sample_titles.map(t => `<li>${t}</li>`).join('') + 
-                                `</ul>`;
+                    if (result.sample_titles?.length) {
+                        html += `<ul style="margin-top:8px; padding-left:20px;">` +
+                            result.sample_titles.map(t => `<li>${t}</li>`).join('') +
+                            `</ul>`;
                     }
                     contentArea.innerHTML = html;
                     resultsArea.classList.remove('hidden');
@@ -357,4 +387,5 @@
         }
     </script>
 </body>
+
 </html>
