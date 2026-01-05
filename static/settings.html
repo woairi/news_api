@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style.css?v=2">
     <script>
         // Init theme
         const savedTheme = localStorage.getItem('theme') || 'system';
@@ -19,7 +19,7 @@
         }
     </script>
 </head>
-<body>
+<body class="settings-page">
     <nav class="app-bar">
         <div class="logo-area">
             <span class="logo-icon">⚙️</span>
@@ -32,7 +32,7 @@
         </div>
     </nav>
 
-    <div class="main-container" style="grid-template-columns: 1fr;">
+    <div class="main-container">
         <main>
             <!-- Loading State -->
             <div id="loadingMessage" class="text-center" style="padding: 40px;">
@@ -42,12 +42,12 @@
 
             <div id="settingsContent" class="hidden">
                 <!-- Actions Toolbar -->
-                <div class="card" style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+                <div class="card settings-actions">
                     <div>
                         <h2 style="font: var(--md-sys-typescale-title-large); margin-bottom: 4px;">관리 작업</h2>
                         <p style="color: var(--md-sys-color-on-surface-variant); font-size: 0.9rem;">시스템 상태 확인 및 수동 작업</p>
                     </div>
-                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <div class="btn-group">
                         <button onclick="refreshData()" class="btn btn-outlined">🔄 새로고침</button>
                         <button onclick="sendTelegramManual()" class="btn btn-primary">📱 텔레그램 전송</button>
                     </div>
@@ -117,7 +117,7 @@
                                 <textarea id="keywordsInput" class="text-field text-field-area" placeholder="예: AI OR ChatGPT"></textarea>
                             </div>
                             
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px;">
+                            <div class="btn-grid-2" style="margin-bottom: 8px;">
                                 <button onclick="updateKeywords()" class="btn btn-primary">💾 저장</button>
                                 <button onclick="testKeywords()" class="btn btn-secondary">🧪 테스트</button>
                             </div>
