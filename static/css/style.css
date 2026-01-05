@@ -134,6 +134,219 @@
     --md-sys-color-outline: #979593;
 }
 
+/* ============================= */
+/* Glassmorphism Design - Light Theme */
+/* ============================= */
+[data-design="glass"] {
+    --md-sys-color-primary: #667eea;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-primary-container: rgba(102, 126, 234, 0.15);
+    --md-sys-color-on-primary-container: #667eea;
+
+    --md-sys-color-secondary: #764ba2;
+    --md-sys-color-on-secondary: #FFFFFF;
+    --md-sys-color-secondary-container: rgba(118, 75, 162, 0.15);
+    --md-sys-color-on-secondary-container: #764ba2;
+
+    --md-sys-color-tertiary: #f093fb;
+    --md-sys-color-on-tertiary: #FFFFFF;
+    --md-sys-color-tertiary-container: rgba(240, 147, 251, 0.15);
+    --md-sys-color-on-tertiary-container: #764ba2;
+
+    --md-sys-color-error: #ff6b6b;
+    --md-sys-color-on-error: #FFFFFF;
+    --md-sys-color-error-container: rgba(255, 107, 107, 0.15);
+    --md-sys-color-on-error-container: #ff6b6b;
+
+    /* Glassmorphism uses transparent/translucent backgrounds */
+    --md-sys-color-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --md-sys-color-on-background: #1a1a2e;
+    --md-sys-color-surface: rgba(255, 255, 255, 0.25);
+    --md-sys-color-on-surface: #1a1a2e;
+
+    --md-sys-color-surface-variant: rgba(255, 255, 255, 0.15);
+    --md-sys-color-on-surface-variant: #2d2d44;
+    --md-sys-color-outline: rgba(255, 255, 255, 0.3);
+
+    /* Glassmorphism specific properties */
+    --glass-blur: blur(10px);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.18);
+    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+    /* Softer elevations with glass effect */
+    --md-sys-elevation-1: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    --md-sys-elevation-2: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+    --md-sys-elevation-3: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+    /* Typography - modern sans-serif */
+    --md-sys-typescale-display-large: 400 57px/64px 'Roboto', sans-serif;
+    --md-sys-typescale-headline-large: 600 32px/40px 'Roboto', sans-serif;
+    --md-sys-typescale-headline-medium: 600 28px/36px 'Roboto', sans-serif;
+    --md-sys-typescale-title-large: 600 22px/28px 'Roboto', sans-serif;
+    --md-sys-typescale-body-large: 400 16px/24px 'Roboto', sans-serif;
+    --md-sys-typescale-body-medium: 400 14px/20px 'Roboto', sans-serif;
+    --md-sys-typescale-label-large: 600 14px/20px 'Roboto', sans-serif;
+
+    /* Rounded corners for glass effect */
+    --border-radius-lg: 20px;
+    --border-radius-md: 16px;
+    --border-radius-sm: 12px;
+}
+
+/* Glassmorphism-specific body background */
+[data-design="glass"] body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Glass effect for cards and surfaces */
+[data-design="glass"] .card,
+[data-design="glass"] .app-bar,
+[data-design="glass"] .article-item {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Stronger glass for status card */
+[data-design="glass"] .status-card {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Glass buttons */
+[data-design="glass"] .btn-primary {
+    background: rgba(102, 126, 234, 0.8);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+[data-design="glass"] .btn-primary:hover {
+    background: rgba(102, 126, 234, 0.9);
+    box-shadow: 0 8px 16px 0 rgba(102, 126, 234, 0.4);
+}
+
+[data-design="glass"] .btn-secondary {
+    background: rgba(118, 75, 162, 0.8);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+[data-design="glass"] .btn-outlined {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--md-sys-color-on-surface);
+}
+
+/* Glass input fields */
+[data-design="glass"] .text-field,
+[data-design="glass"] .select-field,
+[data-design="glass"] .design-select,
+[data-design="glass"] .date-input {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ============================= */
+/* Glassmorphism Design - Dark Theme */
+/* ============================= */
+[data-design="glass"][data-theme="dark"] {
+    --md-sys-color-primary: #a78bfa;
+    --md-sys-color-on-primary: #1a1a2e;
+    --md-sys-color-primary-container: rgba(167, 139, 250, 0.15);
+    --md-sys-color-on-primary-container: #c4b5fd;
+
+    --md-sys-color-secondary: #c084fc;
+    --md-sys-color-on-secondary: #1a1a2e;
+    --md-sys-color-secondary-container: rgba(192, 132, 252, 0.15);
+    --md-sys-color-on-secondary-container: #e9d5ff;
+
+    --md-sys-color-tertiary: #f0abfc;
+    --md-sys-color-on-tertiary: #1a1a2e;
+    --md-sys-color-tertiary-container: rgba(240, 171, 252, 0.15);
+    --md-sys-color-on-tertiary-container: #fae8ff;
+
+    --md-sys-color-error: #fca5a5;
+    --md-sys-color-on-error: #1a1a2e;
+    --md-sys-color-error-container: rgba(252, 165, 165, 0.15);
+    --md-sys-color-on-error-container: #fee2e2;
+
+    --md-sys-color-background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    --md-sys-color-on-background: #e5e7eb;
+    --md-sys-color-surface: rgba(30, 30, 46, 0.4);
+    --md-sys-color-on-surface: #e5e7eb;
+
+    --md-sys-color-surface-variant: rgba(30, 30, 46, 0.3);
+    --md-sys-color-on-surface-variant: #d1d5db;
+    --md-sys-color-outline: rgba(255, 255, 255, 0.2);
+
+    --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+
+    --md-sys-elevation-1: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    --md-sys-elevation-2: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    --md-sys-elevation-3: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+[data-design="glass"][data-theme="dark"] body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    background-attachment: fixed;
+}
+
+[data-design="glass"][data-theme="dark"] .card,
+[data-design="glass"][data-theme="dark"] .app-bar,
+[data-design="glass"][data-theme="dark"] .article-item {
+    background: rgba(30, 30, 46, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+[data-design="glass"][data-theme="dark"] .status-card {
+    background: rgba(167, 139, 250, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+[data-design="glass"][data-theme="dark"] .btn-primary {
+    background: rgba(167, 139, 250, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+[data-design="glass"][data-theme="dark"] .btn-primary:hover {
+    background: rgba(167, 139, 250, 0.8);
+}
+
+[data-design="glass"][data-theme="dark"] .btn-secondary {
+    background: rgba(192, 132, 252, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+[data-design="glass"][data-theme="dark"] .btn-outlined {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+[data-design="glass"][data-theme="dark"] .text-field,
+[data-design="glass"][data-theme="dark"] .select-field,
+[data-design="glass"][data-theme="dark"] .design-select,
+[data-design="glass"][data-theme="dark"] .date-input {
+    background: rgba(30, 30, 46, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--md-sys-color-on-surface);
+}
+
 /* Dark Theme */
 @media (prefers-color-scheme: dark) {
     :root {
